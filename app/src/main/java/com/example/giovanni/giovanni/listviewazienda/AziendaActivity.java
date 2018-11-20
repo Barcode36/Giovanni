@@ -1,0 +1,79 @@
+package com.example.giovanni.giovanni.listviewazienda;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.example.giovanni.giovanni.R;
+import com.example.giovanni.giovanni.pojo.Azienda;
+
+public class AziendaActivity extends AppCompatActivity {
+
+    private Button bAzienda;
+    private Button bInserisci;
+    private Button bCerca;
+    private Azienda azienda;
+    private Intent intent;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_azienda);
+
+        azienda = new Azienda();
+        azienda.init();
+
+        bAzienda = findViewById(R.id.buttonAzienda);
+        bInserisci = findViewById(R.id.buttonInserisci);
+        bCerca = findViewById(R.id.buttonCerca);
+
+        bAzienda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                intent = new Intent(getApplicationContext(), ListActivity.class);
+                intent.putExtra("AZIENDA", azienda);
+                startActivity(intent);
+            }
+        });
+
+        bInserisci.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                intent = new Intent(getApplicationContext(), InsertActivity.class);
+                intent.putExtra("INSERT", azienda);
+                startActivityForResult(intent, 500);
+            }
+        });
+
+        bCerca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                intent = new Intent(getApplicationContext(), FindActivity.class);
+                intent.putExtra("FIND", azienda);
+                startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == 500) {
+            if (resultCode == Activity.RESULT_OK) {
+                azienda = (Azienda) data.getSerializableExtra("result");
+            }
+            // Posso anche cancellare il seguente blocco if.
+            if (resultCode == Activity.RESULT_CANCELED) {
+                Toast.makeText(getApplicationContext(), "Back", Toast.LENGTH_SHORT).show();
+                // azienda = (Azienda) data.getSerializableExtra("result");
+            }
+        }
+    }
+}

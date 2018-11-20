@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serializablemagazzino.StoreActivity">
+
+    <TextView
+        android:id="@+id/textMagazzino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/magazzino"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/giada" />
+
+    <TextView
+        android:id="@+id/textArticolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMagazzino"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/blu_ceruleo" />
+
+    <TextView
+        android:id="@+id/textArticoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textArticolo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textSize="20sp"
+        android:textColor="@color/azzurro_scuro" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerViewActivity"
+    android:background="@color/red"
+    android:padding="@dimen/dimen_15dp">
+
+    <RelativeLayout
+        android:id="@+id/title_recyclerview_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recyclerview"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="@dimen/dimen_15dp"
+            android:textColor="@color/red" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_recyclerview_container"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/recyclerview_setonclicklistener"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_setonclicklistener" />
+
+            <Button
+                android:id="@+id/recyclerview_cambiaprezzo"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_cambiaprezzo" />
+
+            <Button
+                android:id="@+id/recyclerview_project"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_project" />
+
+            <Button
+                android:id="@+id/recyclerview_add_item"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_add_item" />
+
+            <Button
+                android:id="@+id/recyclerview_header_item"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_header_item" />
+
+            <Button
+                android:id="@+id/recyclerview_sticky_header"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_sticky_header" />
+
+            <Button
+                android:id="@+id/recyclerview_openfragment"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_openfragment" />
+
+            <Button
+                android:id="@+id/recyclerview_viewpager"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_viewpager" />
+
+            <Button
+                android:id="@+id/recyclerview_search_checkbox"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/recyclerview_search_checkbox" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listviewazienda.InsertActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:text="@string/scegli_dipendente"
+        android:textAlignment="center"
+        android:textColor="@color/giada"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:background="@drawable/spinner_container">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:entries="@array/spinner_items"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_25dp"
+        android:layout_marginEnd="@dimen/dimen_25dp"
+        android:ems="10"
+        android:hint="@string/inserire_id"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColorHint="@color/green"
+        android:textColor="@color/orange" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_25dp"
+        android:layout_marginEnd="@dimen/dimen_25dp"
+        android:ems="10"
+        android:hint="@string/inserire_nome"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColorHint="@color/green"
+        android:textColor="@color/orange" />
+
+    <EditText
+        android:id="@+id/editCognome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_25dp"
+        android:layout_marginEnd="@dimen/dimen_25dp"
+        android:ems="10"
+        android:hint="@string/inserire_cognome"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColorHint="@color/green"
+        android:textColor="@color/orange" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_30dp">
+
+        <Button
+            android:id="@+id/buttonConferma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/conferma"
+            android:textColor="@color/azzurro_fiordaliso"
+            android:background="@drawable/custom_button" />
+
+    </RelativeLayout>
+
+</LinearLayout>

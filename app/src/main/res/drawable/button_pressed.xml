@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:exitFadeDuration="1000"
+    android:enterFadeDuration="@integer/duration_of_animation">
+
+    <corners android:radius="@dimen/dimen_15dp" />
+
+    <solid
+        android:angle="0"
+        android:color="@color/black" />
+</shape>

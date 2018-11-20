@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listviewazienda.FindActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_250dp"
+        app:srcCompat="@drawable/dipendenti2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimen_20dp" >
+
+        <EditText
+            android:id="@+id/editCerca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/cerca_id"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColorHint="@color/azzurro_scuro"
+            android:textColor="@color/azzurro_scuro" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp" >
+
+            <Button
+                android:id="@+id/buttonConferma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/conferma"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10dp">
+
+            <ListView
+                android:id="@+id/listaRicerca"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/textElenco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:textSize="18sp"
+                android:textColor="@color/azzurro" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

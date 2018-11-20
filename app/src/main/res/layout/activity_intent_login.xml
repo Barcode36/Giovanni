@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginintent.LoginIntentActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginStart="@dimen/dimen_50dp"
+        android:layout_marginEnd="@dimen/dimen_50dp"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginStart="@dimen/dimen_50dp"
+        android:layout_marginEnd="@dimen/dimen_50dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp">
+
+        <Button
+            android:id="@+id/button_login"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_accedi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="@string/accedi"
+        android:textAlignment="center"
+        android:textColor="@color/magenta" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp">
+
+        <!-- @drawable/round_button richiama il file xml all'interno della cartella drawable e lo associa a buttonSignUp -->
+        <Button
+            android:id="@+id/button_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="@string/signup"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_registrati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/registrati"
+        android:textAlignment="center"
+        android:textColor="@color/magenta" />
+
+    <TextView
+        android:id="@+id/text_dati_utenti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/dati_utenti"
+        android:textAlignment="center"
+        android:textColor="@color/blu_ceruleo" />
+
+</LinearLayout>

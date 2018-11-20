@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_5dp"
+    tools:context=".fragments.FragmentsActivity"
+    android:orientation="vertical"
+    android:background="@color/carta_da_zucchero">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:padding="@dimen/dimen_1dp"
+                android:text="Inserisci A"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="inserisciA"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Inserisci B"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="inserisciB"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Inserisci C"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="inserisciC"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Rimuovi A"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="rimuoviA"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Rimuovi B"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="rimuoviB"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Rimuovi C"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="rimuoviC"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Da A a B"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="daAaB"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Da B a A"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="daBaA"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Attach A"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="attachA"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="Detach A"
+                android:textColor="@color/azzurro_fiordaliso"
+                android:background="@drawable/custom_button"
+                android:onClick="detachA"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/white">
+
+    </FrameLayout>
+
+</LinearLayout>

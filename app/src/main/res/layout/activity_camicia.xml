@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serializablemagazzino.CamiciaActivity">
+
+    <ImageView
+        android:id="@+id/imageCamicia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/camicia" />
+
+    <TextView
+        android:id="@+id/textCamicia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:text="@string/camicia"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/giada" />
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCamicia"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/digita_id"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editID"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/digita_nome_prodotto"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editPrezzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNome"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/digita_prezzo"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTaglia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPrezzo"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/digita_taglia"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editColore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTaglia"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/digita_colore"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/buttonAggiungi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:text="@string/aggiungi"
+        android:textColor="@color/azzurro_fiordaliso"
+        android:background="@drawable/custom_button" />
+
+</RelativeLayout>

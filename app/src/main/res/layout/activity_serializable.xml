@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".serializablemagazzino.SerializableActivity">
+
+    <TextView
+        android:id="@+id/textTitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:text="@string/scegli_articolo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/giada" />
+
+    <Button
+        android:id="@+id/buttonCamicia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_200dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/camicia"
+        style="@style/MenuButton" />
+
+    <Button
+        android:id="@+id/buttonLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonCamicia"
+        android:text="@string/libro"
+        style="@style/MenuButton" />
+
+    <com.example.giovanni.giovanni.utils.MultiValueSpinnerView
+        android:id="@+id/holidays_spinner"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:thickStrokeWidth="16dp"
+        app:thinStrokeWidth="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonLibro"
+        android:layout_marginTop="@dimen/dimen_15dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carta_da_zucchero"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textSize="24sp"
+        android:textColor="@color/azzurro_scuro"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/dialog_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_150dp"
+        android:textSize="20sp"
+        android:textColor="@color/azzurro"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/dialog_button"
+        style="@style/MenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_80dp"
+        android:layout_marginEnd="@dimen/dimen_80dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button_close_dialog" />
+
+</LinearLayout>
