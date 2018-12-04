@@ -41,6 +41,9 @@
     <string name="checkbox1">CheckBox 1</string>
     <string name="checkbox2">CheckBox 2</string>
     <string name="check">Check</string>
+    <string name="contract_conditions">Ho preso visione e accetto le Condizioni di Contratto</string>
+    <string name="economic_conditions">Ho preso visione e accetto le Condizioni Economiche di Contratto</string>
+    <string name="conditions_accepted">Condizioni accettate</string>
 
     <string name="serializable">Serializable Magazzino\nRegex</string>
     <string name="scegli_articolo">QUALE ARTICOLO VUOI INSERIRE?</string>
@@ -174,5 +177,6 @@
     <string name="search_by_name_or_msisdn">Cerca per nome o msisdn</string>
     <string name="no_result_by_search">Nessun risultato con questa stringa di ricerca.</string>
     <string name="no_list">Nessuna lista presente.</string>
+    <string name="reset">Reset</string>
 
 </resources>

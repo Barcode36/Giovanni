@@ -5,6 +5,192 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+
+                <CheckBox
+                    android:id="@+id/contractConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/checkbox_selector"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/contract_conditions"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+
+                <ImageView
+                    android:id="@+id/contractConditionsInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ico_info"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+
+                <CheckBox
+                    android:id="@+id/economicConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/checkbox_selector"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/economic_conditions"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+
+                <ImageView
+                    android:id="@+id/economicConditionsInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ico_info"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <RelativeLayout
+            android:id="@+id/ico_description_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_description" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_toEndOf="@+id/ico_description_container">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_compat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/conditions_accepted"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:theme="@style/SwitchCompatTheme"
+                android:enabled="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch_compat">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/grey" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

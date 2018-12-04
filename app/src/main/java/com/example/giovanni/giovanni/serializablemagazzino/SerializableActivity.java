@@ -7,7 +7,6 @@ import android.widget.Button;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.pojo.Magazzino;
-import com.example.giovanni.giovanni.utils.MultiValueSpinnerView;
 
 public class SerializableActivity extends AppCompatActivity {
 
@@ -36,8 +35,5 @@ public class SerializableActivity extends AppCompatActivity {
             intent.putExtra("LIBRO", magazzino);
             startActivity(intent);
         });
-
-        MultiValueSpinnerView spinnerView = findViewById(R.id.holidays_spinner);
-        spinnerView.setValues(167, 140, 104, 20);
     }
 }

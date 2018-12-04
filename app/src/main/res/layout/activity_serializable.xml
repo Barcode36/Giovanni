@@ -36,14 +36,4 @@
         android:text="@string/libro"
         style="@style/MenuButton" />
 
-    <com.example.giovanni.giovanni.utils.MultiValueSpinnerView
-        android:id="@+id/holidays_spinner"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        app:thickStrokeWidth="16dp"
-        app:thinStrokeWidth="2dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/buttonLibro"
-        android:layout_marginTop="@dimen/dimen_15dp"/>
-
 </RelativeLayout>

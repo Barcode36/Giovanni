@@ -6,12 +6,13 @@ import java.util.*
 class DateManager {
 
     companion object {
+
         var BASE_FORMAT: String = "E MMM dd HH:mm:ss z yyyy"
         var REQUEST_DATE_FORMAT: String = "yyyy-MM-dd HH:mm:ss"
 
         fun getStrDateTitle(start_date: String, end_date: String): StringBuilder {
-            var startDate = SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.UK).parse(start_date)
-            var endDate = SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.UK).parse(end_date)
+            val startDate = SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.UK).parse(start_date)
+            val endDate = SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.UK).parse(end_date)
 
             return StringBuilder()
                     .append(SimpleDateFormat("dd MMMM yyyy", Locale.ITALY).format(startDate))
@@ -21,123 +22,123 @@ class DateManager {
                     .append(SimpleDateFormat("HH:mm", Locale.ITALY).format(endDate))
         }
 
-        //example: 13:00 - 15:30
-        fun getMeetingHour(start_date: String, end_date: String): StringBuilder {
-            var startDate = SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.UK).parse(start_date)
-            var endDate = SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.UK).parse(end_date)
+        // Example: 13:00 - 15:30
+        fun getMeetingHour(startDate: String, endDate: String): StringBuilder {
+            val dataInizio = SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.UK).parse(startDate)
+            val dataFine = SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.UK).parse(endDate)
 
             return StringBuilder()
-                    .append(SimpleDateFormat("HH:mm", Locale.ITALY).format(startDate))
+                    .append(SimpleDateFormat("HH:mm", Locale.ITALY).format(dataInizio))
                     .append(" - ")
-                    .append(SimpleDateFormat("HH:mm", Locale.ITALY).format(endDate))
+                    .append(SimpleDateFormat("HH:mm", Locale.ITALY).format(dataFine))
         }
     }
 
-    private var _str_date: String = ""
-    private var _date: Date? = null
+    private var dataString: String = ""
+    private var data: Date? = null
 
     constructor(date: Date) {
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        _str_date = sdf.format(date)
-        _date = date
+        dataString = sdf.format(date)
+        data = date
     }
 
     constructor(millis: Long) {
-        var d: Date = Date(millis)
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+        val date = Date(millis)
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        _str_date = sdf.format(d)
-        _date = d
+        dataString = sdf.format(date)
+        data = date
     }
 
-    constructor(dateStr: String) {
-        _str_date = dateStr
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+    constructor(dateString: String) {
+        dataString = dateString
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        _date = sdf.parse(_str_date)
+        data = sdf.parse(dataString)
     }
 
     // Formato Data delle response del server.
-    public fun getServerDateFormat(): String {
-        return _str_date
+    fun getServerDateFormat(): String {
+        return dataString
     }
 
     // Formato Data da usare nelle request YYYY-MM-dd HH:mm:ss
-    public fun getRequestDateFormat(): String {
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+    fun getRequestDateFormat(): String {
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
 
-        var sdfTo = SimpleDateFormat(REQUEST_DATE_FORMAT, Locale.UK)
+        val sdfTo = SimpleDateFormat(REQUEST_DATE_FORMAT, Locale.UK)
         sdfTo.timeZone = TimeZone.getDefault()
 
-        var date_from_formatted = sdf.parse(_str_date)
-        var date_to_formatted = StringBuilder().append(sdfTo.format(date_from_formatted)).toString()
-        return date_to_formatted
+        val dateFromFormatted = sdf.parse(dataString)
+        val dateToFormatted = StringBuilder().append(sdfTo.format(dateFromFormatted)).toString()
+        return dateToFormatted
     }
 
 //    fun getFormatDate(toFormat: String): String {
-//        val date_formatted = SimpleDateFormat(BASE_FORMAT, Locale.UK).parse(_str_date)
+//        val date_formatted = SimpleDateFormat(BASE_FORMAT, Locale.UK).parse(dataString)
 //        val retValue = StringBuilder().append(SimpleDateFormat(toFormat, Locale.UK).format(date_formatted)).toString()
 //        return retValue
 //    }
 
     // Return dd MMMM yyyy
     fun getDatePickerFormatDate(): StringBuilder {
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        var formattedDate = sdf.parse(_str_date)
+        val formattedDate = sdf.parse(dataString)
         return StringBuilder().append(SimpleDateFormat("dd MMMM yyyy", Locale.ITALY).format(formattedDate))
     }
 
     // Return HH:mm
     fun getDatePickerFormatTime(): StringBuilder {
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        var formattedHour = sdf.parse(_str_date)
+        val formattedHour = sdf.parse(dataString)
         return StringBuilder().append(SimpleDateFormat("HH:mm", Locale.ITALY).format(formattedHour))
     }
 
     fun getDatePickerHour(): Int {
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        var formattedHour = sdf.parse(_str_date)
+        val formattedHour = sdf.parse(dataString)
         return SimpleDateFormat("HH", Locale.UK).format(formattedHour).toInt()
     }
 
     fun getDatePickerMinute(): Int {
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        var formattedHour = sdf.parse(_str_date)
+        val formattedHour = sdf.parse(dataString)
         return SimpleDateFormat("mm", Locale.UK).format(formattedHour).toInt()
     }
 
     fun setHourDate(hourOfDay: Int, minute: Int) {
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        var formattedHour = sdf.parse(_str_date)
+        val formattedHour = sdf.parse(dataString)
         var baseFormat = BASE_FORMAT;
         baseFormat = baseFormat.replace("HH", hourOfDay.toString())
         baseFormat = baseFormat.replace("mm", minute.toString())
-        _str_date = SimpleDateFormat(baseFormat, Locale.UK).format(formattedHour)
-        _date = sdf.parse(_str_date)
+        dataString = SimpleDateFormat(baseFormat, Locale.UK).format(formattedHour)
+        data = sdf.parse(dataString)
     }
 
     fun setDateFromPicker(year: Int, month: Int, dayOfMonth: Int) {
-        var c: Calendar = Calendar.getInstance()
-        c.set(Calendar.MONTH, month)
-        c.set(Calendar.YEAR, year)
-        c.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-        c.set(Calendar.HOUR_OF_DAY, getDatePickerHour())
-        c.set(Calendar.MINUTE, getDatePickerMinute())
-        var sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
+        val calendar: Calendar = Calendar.getInstance()
+        calendar.set(Calendar.MONTH, month)
+        calendar.set(Calendar.YEAR, year)
+        calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+        calendar.set(Calendar.HOUR_OF_DAY, getDatePickerHour())
+        calendar.set(Calendar.MINUTE, getDatePickerMinute())
+        val sdf = SimpleDateFormat(BASE_FORMAT, Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
-        _str_date = sdf.format(c.time)
-        _date = c.time
-        //_str_date = SimpleDateFormat(BASE_FORMAT, Locale.UK).parse(formattedHour)
+        dataString = sdf.format(calendar.time)
+        data = calendar.time
+        // dataString = SimpleDateFormat(BASE_FORMAT, Locale.UK).parse(formattedHour)
     }
 
     fun getDate(): Date {
-        return this._date!!
+        return this.data!!
     }
 }

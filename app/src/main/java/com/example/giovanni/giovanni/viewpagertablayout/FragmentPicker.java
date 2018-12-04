@@ -35,8 +35,6 @@ public class FragmentPicker extends Fragment implements DatePickerDialog.OnDateS
     private String pickerOra;
     private String pickerData;
 
-    // Messaggio per testare il commit + la push
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {

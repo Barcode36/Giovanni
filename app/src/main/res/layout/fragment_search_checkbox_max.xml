@@ -1,34 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <include layout="@layout/edittext_search" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/search_checkbox_recyclerview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/no_result"
+        <include layout="@layout/edittext_search" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_checkbox_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dimen_80dp"
+            android:clipToPadding="false"/>
+
+        <TextView
+            android:id="@+id/no_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:text="@string/no_result_by_search"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_15dp"
-        android:text="@string/no_result_by_search"
-        android:textAlignment="center"
-        android:textColor="@color/grey"
-        android:textSize="16sp"
-        android:visibility="gone"/>
+        android:background="@color/lightGrey"
+        android:layout_alignParentBottom="true">
 
-    <Button
-        android:id="@+id/button_enabled"
-        style="@style/CustomButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:enabled="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_alignParentTop="true"/>
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button_enabled"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:enabled="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

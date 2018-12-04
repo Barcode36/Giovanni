@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.example.giovanni.giovanni.R;
+import com.example.giovanni.giovanni.utils.MultiValueSpinnerView;
 
 public class SetLayoutActivity extends AppCompatActivity {
 
@@ -25,6 +26,9 @@ public class SetLayoutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_layout);
+
+        MultiValueSpinnerView spinnerView = findViewById(R.id.holidays_spinner);
+        spinnerView.setValues(167, 140, 104, 20);
 
         relativeVariable = findViewById(R.id.relative_variable);
         Button buttonSetHeight = findViewById(R.id.button_set_height);

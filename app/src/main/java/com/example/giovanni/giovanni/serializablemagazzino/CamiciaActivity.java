@@ -3,10 +3,9 @@ package com.example.giovanni.giovanni.serializablemagazzino;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.text.InputType;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.giovanni.giovanni.R;
@@ -18,7 +17,6 @@ import java.util.regex.Pattern;
 
 public class CamiciaActivity extends AppCompatActivity {
 
-    private Button buttonAggiungi;
     private EditText eID;
     private EditText eNome;
     private EditText ePrezzo;
@@ -32,7 +30,6 @@ public class CamiciaActivity extends AppCompatActivity {
     private String taglia;
     private int tagliaInt;
     private String colore;
-    private ImageView imageView;
 
     private Intent intent;
     private Camicia camicia;
@@ -76,77 +73,75 @@ public class CamiciaActivity extends AppCompatActivity {
         intent = getIntent();
         magazzino = (Magazzino) intent.getSerializableExtra("CAMICIA");
 
-        buttonAggiungi = findViewById(R.id.buttonAggiungi);
+        Button buttonAggiungi = findViewById(R.id.buttonAggiungi);
         eID = findViewById(R.id.editID);
         eNome = findViewById(R.id.editNome);
         ePrezzo = findViewById(R.id.editPrezzo);
         eTaglia = findViewById(R.id.editTaglia);
         eColore = findViewById(R.id.editColore);
-        imageView = findViewById(R.id.imageCamicia);
 
-        buttonAggiungi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        eNome.setInputType(InputType.TYPE_CLASS_TEXT); // Kotlin: eNome.inputType = InputType.TYPE_CLASS_TEXT;
 
-                if (eID.getText().toString().equals("") ||
-                        eNome.getText().toString().equals("") ||
-                        ePrezzo.getText().toString().equals("") ||
-                        eTaglia.getText().toString().equals("") ||
-                        eColore.getText().toString().equals("")) {
-                    Toast.makeText(getApplicationContext(), "Riempi tutti i campi", Toast.LENGTH_SHORT).show();
-                } else {
-                    ID = eID.getText().toString();
-                    Pattern pID = Pattern.compile(INT_REGEX);
-                    Matcher mID = pID.matcher(ID);
-                    if (!mID.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore ID non valido", Toast.LENGTH_SHORT).show();
-                        eID.setText("");
-                    } else
-                        idInt = Integer.parseInt(ID);
+        buttonAggiungi.setOnClickListener(v -> {
 
-                    nome = eNome.getText().toString();
-                    Pattern pNome = Pattern.compile(NOME_REGEX);
-                    Matcher mNome = pNome.matcher(nome);
-                    if (!mNome.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore nome non valido", Toast.LENGTH_SHORT).show();
-                        eNome.setText("");
-                    }
+            if (eID.getText().toString().equals("") ||
+                    eNome.getText().toString().equals("") ||
+                    ePrezzo.getText().toString().equals("") ||
+                    eTaglia.getText().toString().equals("") ||
+                    eColore.getText().toString().equals("")) {
+                Toast.makeText(getApplicationContext(), "Riempi tutti i campi", Toast.LENGTH_SHORT).show();
+            } else {
+                ID = eID.getText().toString();
+                Pattern pID = Pattern.compile(INT_REGEX);
+                Matcher mID = pID.matcher(ID);
+                if (!mID.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore ID non valido", Toast.LENGTH_SHORT).show();
+                    eID.setText("");
+                } else
+                    idInt = Integer.parseInt(ID);
 
-                    prezzo = ePrezzo.getText().toString();
-                    Pattern pPrezzo = Pattern.compile(PREZZO_REGEX);
-                    Matcher mPrezzo = pPrezzo.matcher(prezzo);
-                    if (!mPrezzo.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore prezzo non valido", Toast.LENGTH_SHORT).show();
-                        ePrezzo.setText("");
-                    } else
-                        prezzoDouble = Double.parseDouble(prezzo);
+                nome = eNome.getText().toString();
+                Pattern pNome = Pattern.compile(NOME_REGEX);
+                Matcher mNome = pNome.matcher(nome);
+                if (!mNome.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore nome non valido", Toast.LENGTH_SHORT).show();
+                    eNome.setText("");
+                }
 
-                    taglia = eTaglia.getText().toString();
-                    Pattern pTaglia = Pattern.compile(INT_REGEX);
-                    Matcher mTaglia = pTaglia.matcher(taglia);
-                    if (!mTaglia.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore taglia non valido", Toast.LENGTH_SHORT).show();
-                        eTaglia.setText("");
-                    } else
-                        tagliaInt = Integer.parseInt(taglia);
+                prezzo = ePrezzo.getText().toString();
+                Pattern pPrezzo = Pattern.compile(PREZZO_REGEX);
+                Matcher mPrezzo = pPrezzo.matcher(prezzo);
+                if (!mPrezzo.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore prezzo non valido", Toast.LENGTH_SHORT).show();
+                    ePrezzo.setText("");
+                } else
+                    prezzoDouble = Double.parseDouble(prezzo);
 
-                    colore = eColore.getText().toString();
-                    Pattern pColore = Pattern.compile(COLORE_REGEX);
-                    Matcher mColore = pColore.matcher(colore);
-                    if (!mColore.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore colore non valido", Toast.LENGTH_SHORT).show();
-                        eColore.setText("");
-                    }
+                taglia = eTaglia.getText().toString();
+                Pattern pTaglia = Pattern.compile(INT_REGEX);
+                Matcher mTaglia = pTaglia.matcher(taglia);
+                if (!mTaglia.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore taglia non valido", Toast.LENGTH_SHORT).show();
+                    eTaglia.setText("");
+                } else
+                    tagliaInt = Integer.parseInt(taglia);
 
-                    if(mID.matches() && mNome.matches() && mPrezzo.matches() && mTaglia.matches() && mColore.matches()) {
+                colore = eColore.getText().toString();
+                Pattern pColore = Pattern.compile(COLORE_REGEX);
+                Matcher mColore = pColore.matcher(colore);
+                if (!mColore.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore colore non valido", Toast.LENGTH_SHORT).show();
+                    eColore.setText("");
+                }
 
-                        camicia = new Camicia(idInt, nome, prezzoDouble, tagliaInt, colore);
-                        magazzino.addArticoli(camicia);
+                if(mID.matches() && mNome.matches() && mPrezzo.matches() && mTaglia.matches() && mColore.matches()) {
 
-                        intent = new Intent(getApplicationContext(), StoreActivity.class);
-                        intent.putExtra("ARTICOLO", camicia);
-                        startActivity(intent);
-                    }
+                    camicia = new Camicia(idInt, nome, prezzoDouble, tagliaInt, colore);
+                    magazzino.addArticoli(camicia);
+
+                    intent = new Intent(getApplicationContext(), StoreActivity.class);
+                    intent.putExtra("ARTICOLO", camicia);
+                    startActivity(intent);
                 }
             }
         });

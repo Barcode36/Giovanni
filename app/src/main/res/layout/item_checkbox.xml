@@ -20,7 +20,9 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.5">
+            android:layout_weight="0.6"
+            android:paddingStart="@dimen/dimen_0dp"
+            android:paddingEnd="@dimen/dimen_10dp">
 
             <TextView
                 android:id="@+id/textNome"

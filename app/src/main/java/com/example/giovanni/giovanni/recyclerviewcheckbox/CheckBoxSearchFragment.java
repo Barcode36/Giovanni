@@ -26,7 +26,6 @@ public class CheckBoxSearchFragment extends Fragment implements CheckBoxSearchAd
     private CheckBoxSearchAdapter adapter;
 
     private EditText editSearch;
-    private ImageView iconSearch;
     private String sentence;
     private List<Persona> filtered;
     private TextView noResult;
@@ -46,7 +45,7 @@ public class CheckBoxSearchFragment extends Fragment implements CheckBoxSearchAd
         adapter.notifyDataSetChanged();
 
         editSearch = view.findViewById(R.id.edit_search);
-        iconSearch = view.findViewById(R.id.icon_search);
+        ImageView iconSearch = view.findViewById(R.id.icon_search);
         noResult = view.findViewById(R.id.no_result);
 
         editSearch.setOnEditorActionListener((v, actionId, event) -> {
@@ -123,8 +122,18 @@ public class CheckBoxSearchFragment extends Fragment implements CheckBoxSearchAd
         list.add(new Persona("Giovanni", "Petito", "3331582355", false));
         list.add(new Persona("Raffaele", "Petito", "3802689011", false));
         list.add(new Persona("Teresa", "Petito", "3343540536", false));
+        list.add(new Persona("Salvatore", "Pragliola", "3384672609", false));
         list.add(new Persona("Angelina", "Basile", "3334392578", false));
         list.add(new Persona("Vincenzo", "Petito", "3666872262", false));
+        list.add(new Persona("Giovanni", "Basile", "3884723340", false));
+        list.add(new Persona("Marco", "Basile", "3892148853", false));
+        list.add(new Persona("Antonio", "D'Ascia", "3315605694", false));
+        list.add(new Persona("Giovanni", "D'Ascia", "3331711437", false));
+        list.add(new Persona("Mariano", "Pinto", "3397016728", false));
+        list.add(new Persona("Pasquale", "Amato", "3665917760", false));
+        list.add(new Persona("Francesco", "Mongiello", "3299376402", false));
+        list.add(new Persona("Gianluigi", "Santillo", "3386124867", false));
+        list.add(new Persona("Daniele", "Musacchia", "3494977374", false));
 
         return list;
     }
