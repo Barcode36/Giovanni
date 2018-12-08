@@ -102,8 +102,11 @@ public class CheckBoxFragment extends Fragment {
         switchCompat.setOnClickListener(v -> {
             if (switchCompat.isChecked())
                 switchCompat.setTextColor(getResources().getColor(R.color.black));
-            else
+            else {
                 switchCompat.setTextColor(getResources().getColor(R.color.grey));
+                contractConditions.setChecked(false);
+                economicConditions.setChecked(false);
+            }
         });
 
         contractConditionsInfo.setTag("https://kotlinlang.org/docs/kotlin-docs.pdf");

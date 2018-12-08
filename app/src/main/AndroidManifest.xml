@@ -31,7 +31,7 @@
         <activity android:name=".gradientdrawable.GradientDrawableActivity" />
         <activity android:name=".recyclerviewviewpager.RecyclerViewViewPagerActivity" />
         <activity android:name=".viewpagernewinstance.ViewPagerNewInstanceActivity" />
-        <activity android:name=".setlayout.SetLayoutActivity" />
+        <activity android:name=".textlayout.TextLayoutActivity" />
         <activity android:name=".offset.OffsetActivity" />
         <activity android:name=".loginintent.PodcastActivity" />
         <activity android:name=".loginintent.ResultActivity" />

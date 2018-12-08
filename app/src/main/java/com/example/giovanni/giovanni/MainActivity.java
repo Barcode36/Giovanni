@@ -10,17 +10,14 @@ import com.example.giovanni.giovanni.fragmentdialog.MainDialogActivity;
 import com.example.giovanni.giovanni.log.LogActivity;
 import com.example.giovanni.giovanni.mvpaddtextchangedlistener.AddTextActivity;
 import com.example.giovanni.giovanni.asynctaskcounter.AsyncTaskCounterActivity;
-import com.example.giovanni.giovanni.custombutton.CustomButtonActivity;
 import com.example.giovanni.giovanni.fragments.FragmentsActivity;
-import com.example.giovanni.giovanni.gradientdrawable.GradientDrawableActivity;
 import com.example.giovanni.giovanni.loginintent.LoginIntentActivity;
 import com.example.giovanni.giovanni.mvplogin.login.LoginJavaActivity;
 import com.example.giovanni.giovanni.mvploginkotlin.login.LoginKotlinActivity;
 import com.example.giovanni.giovanni.navigationdrawer.NavigationDrawerActivity;
 import com.example.giovanni.giovanni.offset.OffsetActivity;
 import com.example.giovanni.giovanni.serializablemagazzino.SerializableActivity;
-import com.example.giovanni.giovanni.setlayout.SetLayoutActivity;
-import com.example.giovanni.giovanni.settext.SetTextActivity;
+import com.example.giovanni.giovanni.textlayout.TextLayoutActivity;
 import com.example.giovanni.giovanni.viewpagernewinstance.ViewPagerNewInstanceActivity;
 import com.example.giovanni.giovanni.viewpagertablayout.ViewPagerActivity;
 
@@ -46,9 +43,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.settext).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), SetTextActivity.class)));
-
         findViewById(R.id.login_intent).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), LoginIntentActivity.class)));
 
@@ -57,9 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.listview).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), ListViewActivity.class)));
-
-        findViewById(R.id.custom_button).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), CustomButtonActivity.class)));
 
         findViewById(R.id.recyclerview).setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(), RecyclerViewActivity.class)));
@@ -76,11 +67,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.asynctask_counter).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), AsyncTaskCounterActivity.class)));
 
-        findViewById(R.id.gradientdrawable).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), GradientDrawableActivity.class)));
-
-        findViewById(R.id.set_layout).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), SetLayoutActivity.class)));
+        findViewById(R.id.text_layout).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), TextLayoutActivity.class)));
 
         findViewById(R.id.offset).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), OffsetActivity.class)));

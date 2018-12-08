@@ -15,7 +15,7 @@
             android:id="@+id/search_checkbox_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="@dimen/dimen_80dp"
+            android:paddingBottom="@dimen/dimen_50dp"
             android:clipToPadding="false"/>
 
         <TextView
@@ -33,7 +33,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/dimen_50dp"
         android:background="@color/lightGrey"
         android:layout_alignParentBottom="true">
 
@@ -47,7 +47,7 @@
             android:id="@+id/button_enabled"
             style="@style/CustomButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/reset"
             android:enabled="false"/>
 

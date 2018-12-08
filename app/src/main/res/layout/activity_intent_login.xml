@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -30,61 +29,135 @@
         android:inputType="textPassword"
         android:textAlignment="center" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_25dp">
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button_login"
-            style="@style/CustomButton"
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/login"/>
+            android:layout_weight="0.5">
 
-    </RelativeLayout>
+            <Button
+                android:id="@+id/button_login"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/login"/>
 
-    <TextView
-        android:id="@+id/text_accedi"
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <!-- @drawable/round_button richiama il file xml all'interno della cartella drawable e lo associa a buttonSignUp -->
+            <Button
+                android:id="@+id/button_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="@string/signup"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_5dp"
-        android:text="@string/accedi"
-        android:textAlignment="center"
-        android:textColor="@color/magenta" />
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/text_accedi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/accedi"
+                android:textAlignment="center"
+                android:textColor="@color/magenta" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/text_registrati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/registrati"
+                android:textAlignment="center"
+                android:textColor="@color/magenta" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.46">
+
+            <com.example.giovanni.giovanni.utils.CustomButton
+                android:id="@+id/button_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+            </com.example.giovanni.giovanni.utils.CustomButton>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.46">
+
+            <com.example.giovanni.giovanni.utils.CustomButton
+                android:id="@+id/button_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+            </com.example.giovanni.giovanni.utils.CustomButton>
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_25dp">
+        android:layout_height="wrap_content">
 
-        <!-- @drawable/round_button richiama il file xml all'interno della cartella drawable e lo associa a buttonSignUp -->
-        <Button
-            android:id="@+id/button_signup"
+        <TextView
+            android:id="@+id/text_dati_utenti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/round_button"
-            android:text="@string/signup"
             android:layout_centerInParent="true"
-            android:textColor="@color/white" />
+            android:text="@string/dati_utenti"
+            android:textAlignment="center"
+            android:textColor="@color/blu_ceruleo" />
+
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/text_registrati"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_10dp"
-        android:text="@string/registrati"
-        android:textAlignment="center"
-        android:textColor="@color/magenta" />
-
-    <TextView
-        android:id="@+id/text_dati_utenti"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_15dp"
-        android:text="@string/dati_utenti"
-        android:textAlignment="center"
-        android:textColor="@color/blu_ceruleo" />
 
 </LinearLayout>

@@ -49,14 +49,6 @@
                 android:text="@string/log" />
 
             <Button
-                android:id="@+id/settext"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/settext" />
-
-            <Button
                 android:id="@+id/login_intent"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
@@ -73,20 +65,20 @@
                 android:text="@string/serializable" />
 
             <Button
+                android:id="@+id/text_layout"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/text_layout" />
+
+            <Button
                 android:id="@+id/listview"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/listview" />
-
-            <Button
-                android:id="@+id/custom_button"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/custom_button" />
 
             <Button
                 android:id="@+id/recyclerview"
@@ -127,22 +119,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/asynctask_counter" />
-
-            <Button
-                android:id="@+id/gradientdrawable"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/gradientdrawable" />
-
-            <Button
-                android:id="@+id/set_layout"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/set_layout" />
 
             <Button
                 android:id="@+id/offset"

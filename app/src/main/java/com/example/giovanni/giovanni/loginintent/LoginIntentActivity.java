@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.pojo.DatabaseUtenti;
 import com.example.giovanni.giovanni.pojo.Persona;
+import com.example.giovanni.giovanni.utils.CustomButton;
 
 public class LoginIntentActivity extends AppCompatActivity {
 
@@ -25,6 +26,8 @@ public class LoginIntentActivity extends AppCompatActivity {
     private EditText ePassword;
     private TextView tAccedi;
     private TextView tRegistrati;
+    private CustomButton buttonOne;
+    private CustomButton buttonTwo;
     private String username;
     private String password;
     private DatabaseUtenti database;
@@ -43,6 +46,8 @@ public class LoginIntentActivity extends AppCompatActivity {
         ePassword = findViewById(R.id.edit_password);
         tAccedi = findViewById(R.id.text_accedi);
         tRegistrati = findViewById(R.id.text_registrati);
+        buttonOne = findViewById(R.id.button_one);
+        buttonTwo = findViewById(R.id.button_two);
 
         database = new DatabaseUtenti();
 
@@ -98,6 +103,22 @@ public class LoginIntentActivity extends AppCompatActivity {
                     tRegistrati.setText(signupError);
                     tAccedi.setText("");
                 }
+            }
+        });
+
+        buttonOne.setOnClickListener(view -> {
+            boolean selection = !buttonOne.isSelected();
+            buttonOne.setSelected(selection);
+            if (selection) {
+                buttonTwo.setSelected(false);
+            }
+        });
+
+        buttonTwo.setOnClickListener(view -> {
+            boolean selection = !buttonTwo.isSelected();
+            buttonTwo.setSelected(selection);
+            if (selection) {
+                buttonOne.setSelected(false);
             }
         });
     }

@@ -5,7 +5,7 @@
     <string name="listview">ListView</string>
     <string name="recyclerview">RecyclerView</string>
 
-    <string name="log">ViewPager + TabLayout\naddOnPageChangeListener\nToast\nArray\nArticolo\nAscensore\nDipendente e Progetto\nDipendente, Manager e Azienda</string>
+    <string name="log">Toast\nArray\nArticolo\nAscensore\nDipendente e Progetto\nDipendente, Manager e Azienda\nViewPager + TabLayout\naddOnPageChangeListener</string>
     <string name="title">Titolo</string>
     <string name="study_the_code">Studiare l\'applicazione analizzando su Logcat i suoi log e inserendo il TAG opportuno.</string>
     <string name="array">Array</string>
@@ -17,10 +17,10 @@
     <string name="digita_nome">Digita il tuo nome</string>
     <string name="digita_numero">Digita un numero a tre o più cifre</string>
     <string name="invio">Invio</string>
-    <string name="settext">SetText</string>
     <string name="long_text">Il contenuto di questa stringa è troppo lungo per essere contenuto tutto nel layout.</string>
 
-    <string name="login_intent">Login\nIntent And startActivityForResult\nCustomButton\nround_button\ncustom_button</string>
+    <string name="login_intent">Login\n@style/CustomButton\n@drawable/round_button\n@drawable/custom_button\nCustomButton Class\n@drawable/button_selector\nIntent + startActivityForResult</string>
+    <string name="android">Android</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
@@ -89,8 +89,6 @@
 
     <string name="twolistview_onebutton_adapter">Two ListView One Button\nAdapter Rubrica</string>
 
-    <string name="custom_button">Custom Button</string>
-    <string name="android">Android</string>
     <string name="recyclerview_setonclicklistener">setOnClickListener\nCardView\nclipToPadding</string>
     <string name="recyclerview_cambiaprezzo">Cambia Prezzo</string>
     <string name="prodotto">Prodotto:</string>
@@ -145,8 +143,7 @@
 
     <string name="recyclerview_search_checkbox">Search and Checkbox</string>
 
-    <string name="gradientdrawable">GradientDrawable\ninclude View\ninflate (Activity/Fragment)\nColor.parseColor()\nsetTranslationX()</string>
-    <string name="set_layout">Set Layout</string>
+    <string name="text_layout">SetText\nSet Layout</string>
     <string name="setpivotx">setPivotX</string>
     <string name="startanimation">startAnimation</string>
 
