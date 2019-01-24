@@ -12,10 +12,8 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.pojo.Persona;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,8 +60,14 @@ public class CheckBoxSearchFragment extends Fragment implements CheckBoxSearchAd
 
     @Override
     public boolean onItemClicked(Persona persona, boolean isChecked) {
-        for (int i=0; i<list.size(); i++) {
-            list.get(i).setChecked(list.get(i) == persona);
+        if (isChecked) {
+            for (int i=0; i<list.size(); i++) {
+                list.get(i).setChecked(list.get(i) == persona);
+            }
+        } else {
+            for (int i=0; i<list.size(); i++) {
+                list.get(i).setChecked(false);
+            }
         }
         adapter.notifyDataSetChanged();
         return true;

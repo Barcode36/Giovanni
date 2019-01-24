@@ -19,9 +19,10 @@ public class Persona implements Serializable {
     private String username;
     private String email;
     private String codiceFiscale;
-    public String password;
-    public List<Gruppo> lista;
-    boolean checked;
+    private String password;
+    private List<Gruppo> lista;
+    private String tipo;
+    private boolean checked;
 
     public Persona() {
         this.id = 0;
@@ -87,6 +88,14 @@ public class Persona implements Serializable {
         this.nome = nome;
         this.cognome = cognome;
         this.msisdn = msisdn;
+        this.checked = checked;
+    }
+
+    public Persona(String nome, String cognome, String msisdn, String tipo, boolean checked) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.msisdn = msisdn;
+        this.tipo = tipo;
         this.checked = checked;
     }
 
@@ -210,6 +219,14 @@ public class Persona implements Serializable {
         this.lista = lista;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     public boolean isChecked() {
         return checked;
     }
@@ -220,11 +237,11 @@ public class Persona implements Serializable {
 
     public void init() {
 
-        inserisci(new Gruppo(001, "Nirvana", 3));
-        inserisci(new Gruppo(002, "Pearl Jam", 5));
-        inserisci(new Gruppo(003, "Soundgarden", 4));
-        inserisci(new Gruppo(004, "Stone Temple Pilots", 4));
-        inserisci(new Gruppo(005, "Audioslave", 4));
+        inserisci(new Gruppo(1, "Nirvana", 3));
+        inserisci(new Gruppo(2, "Pearl Jam", 5));
+        inserisci(new Gruppo(3, "Soundgarden", 4));
+        inserisci(new Gruppo(4, "Stone Temple Pilots", 4));
+        inserisci(new Gruppo(5, "Audioslave", 4));
     }
 
     private void inserisci(Gruppo gruppo) {

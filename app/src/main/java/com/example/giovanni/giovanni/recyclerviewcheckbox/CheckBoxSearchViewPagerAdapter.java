@@ -6,10 +6,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class CheckBoxSearchViewPagerAdapter extends FragmentPagerAdapter {
 
-    private String [] fragments = {"Search & Checkbox", "Check 3 items"};
+    private String [] fragments = {"Search & Checkbox", "Check 3 items", "Accordion"};
 
     private CheckBoxSearchFragment checkBoxSearchFragment = new CheckBoxSearchFragment();
     private MaxCheckBoxSearchFragment maxCheckBoxSearchFragment = new MaxCheckBoxSearchFragment();
+    private AccordionFragment accordionFragment = new AccordionFragment();
 
     CheckBoxSearchViewPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -20,6 +21,7 @@ public class CheckBoxSearchViewPagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0: return checkBoxSearchFragment;
             case 1: return maxCheckBoxSearchFragment;
+            case 2: return accordionFragment;
         }
         return null;
     }

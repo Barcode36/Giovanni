@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.pojo.Persona;
 
@@ -69,17 +68,17 @@ public class MaxCheckBoxSearchAdapter extends RecyclerView.Adapter<MaxCheckBoxSe
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        public CheckBox checkBox;
-        public TextView nome;
-        public TextView cognome;
-        public TextView msisdn;
+        CheckBox checkBox;
+        TextView nome;
+        TextView cognome;
+        TextView msisdn;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            this.checkBox = itemView.findViewById(R.id.recyclerview_checkbox);
-            this.nome = itemView.findViewById(R.id.textNome);
-            this.cognome = itemView.findViewById(R.id.textCognome);
-            this.msisdn = itemView.findViewById(R.id.textMsisdn);
+            this.checkBox = itemView.findViewById(R.id.checkbox_item);
+            this.nome = itemView.findViewById(R.id.text_nome_checkbox);
+            this.cognome = itemView.findViewById(R.id.text_cognome_checkbox);
+            this.msisdn = itemView.findViewById(R.id.text_msisdn_checkbox);
         }
     }
 

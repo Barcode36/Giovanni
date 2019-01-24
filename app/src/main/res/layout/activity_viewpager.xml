@@ -25,4 +25,11 @@
         android:layout_height="match_parent" >
     </android.support.v4.view.ViewPager>
 
+    <!-- Contenitore del Pull to Refresh -->
+    <FrameLayout
+        android:id="@+id/frame_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/white" />
+
 </LinearLayout>

@@ -3,21 +3,17 @@ package com.example.giovanni.giovanni.viewpagertablayout
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.DatePicker
 import android.widget.TextView
 import com.example.giovanni.giovanni.R
-import kotlinx.android.synthetic.main.fragment_picker.*
-import kotlinx.android.synthetic.main.fragment_picker_kotlin.*
-import java.text.ParseException
+import com.example.giovanni.giovanni.utils.BaseFragment
 import java.text.SimpleDateFormat
 import java.util.*
 
-class FragmentPickerKotlin : Fragment(), DatePickerDialog.OnDateSetListener {
+class FragmentPickerKotlin : BaseFragment(), DatePickerDialog.OnDateSetListener {
 
     var meetingDate_start: DateManager? = null
     var meetingDate_end: DateManager? = null
@@ -97,6 +93,38 @@ class FragmentPickerKotlin : Fragment(), DatePickerDialog.OnDateSetListener {
 
         ora_inizio_meeting?.setOnClickListener(oraInizioCalendarClickListener) // Riprendere dalla riga 269 di W3AppDipendenti
         ora_fine_meeting?.setOnClickListener(oraFineCalendarClickListener)
+
+        multiSwipeRefreshLayout = view.findViewById(R.id.multi_swipe_refresh_layout)
+        multiSwipeRefreshLayout?.setSwipeableChildren(R.id.linear_layout_child)
+        multiSwipeRefreshLayout?.setOnRefreshListener {
+
+            meetingDate_start = DateManager(Date())
+            meetingDate_end = DateManager(Date().time + (60 * 60 * 1000))
+            data_meeting_default?.text = meetingDate_start?.getDatePickerFormatDate()
+            ora_inizio_meeting_default?.text = meetingDate_start?.getDatePickerFormatTime()
+            ora_fine_meeting_default?.text = meetingDate_end?.getDatePickerFormatTime()
+
+            ora_inizio_meeting_request?.text = meetingDate_start?.getRequestDateFormat()
+            ora_fine_meeting_request?.text = meetingDate_end?.getRequestDateFormat()
+            data_inizio_fine_request?.text = DateManager.getStrDateTitle(meetingDate_start!!.getServerDateFormat(), meetingDate_end!!.getServerDateFormat())
+            ora_inizio_fine_request?.text = DateManager.getMeetingHour(meetingDate_start!!.getServerDateFormat(), meetingDate_end!!.getServerDateFormat())
+
+            stopSwipeRefresh()
+        }
+
+        /*
+
+        // ---------- //
+        // -- JAVA -- //
+        // ---------- //
+
+        multiSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+            }
+        });
+        */
 
         return view
     }
