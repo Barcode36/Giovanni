@@ -1,6 +1,7 @@
 package com.example.giovanni.giovanni.recyclerviewcheckbox;
 
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,10 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
         if (persona.getTipo().equals(SWITCH_TYPE)) {
             holder.nomeSwitch.setText(persona.getNome());
             holder.cognomeSwitch.setText(persona.getCognome());
+            holder.switchCompat.setOnCheckedChangeListener(null);
+            holder.switchCompat.setChecked(persona.isChecked());
+            holder.switchCompat.setOnCheckedChangeListener((buttonView, isChecked) ->
+                    onItemViewClicked.onItemClicked(persona, isChecked));
         }
         if (persona.getTipo().equals(ACCORDION_TYPE)) {
             holder.nomeAccordion.setText(persona.getNome());
@@ -96,6 +101,7 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
 
         TextView nomeSwitch;
         TextView cognomeSwitch;
+        SwitchCompat switchCompat;
         TextView nomeAccordion;
         TextView cognomeAccordion;
         CheckBox checkBox;
@@ -107,6 +113,7 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
             super(itemView);
             this.nomeSwitch = itemView.findViewById(R.id.text_nome_switch);
             this.cognomeSwitch = itemView.findViewById(R.id.text_cognome_switch);
+            this.switchCompat = itemView.findViewById(R.id.switch_compat);
             this.nomeAccordion = itemView.findViewById(R.id.text_nome_accordion);
             this.cognomeAccordion = itemView.findViewById(R.id.text_cognome_accordion);
             this.checkBox = itemView.findViewById(R.id.checkbox_item);

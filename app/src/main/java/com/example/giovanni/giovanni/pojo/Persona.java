@@ -43,6 +43,10 @@ public class Persona implements Serializable {
         this.checked = false;
     }
 
+    public Persona(String cognome) {
+        this.cognome = cognome;
+    }
+
     public Persona(int id, String nome, String cognome, String msisdn) {
         this.id = id;
         this.nome = nome;

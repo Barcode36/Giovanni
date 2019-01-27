@@ -17,53 +17,96 @@ import java.util.List;
 
 public class AccordionFragment extends Fragment implements AccordionAdapter.OnItemViewClicked {
 
+    private static final String SWITCH_TYPE = "switch";
     private static final String ACCORDION_TYPE = "accordion";
     private static final String CHECKBOX_TYPE = "checkbox";
 
     private View view;
+    private AccordionAdapter adapter;
     private List<Persona> list;
     private List<Persona> collapsedList;
-    private RecyclerView recyclerView;
-    private AccordionAdapter adapter;
+    private List<Persona> cognomi;
+    private boolean isCollapsed;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_accordion, container, false);
 
-        recyclerView = view.findViewById(R.id.accordion_recyclerview);
+        RecyclerView recyclerView = view.findViewById(R.id.accordion_recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter = new AccordionAdapter(this);
         recyclerView.setAdapter(adapter);
         list = init();
+        cognomi = initCognomi();
+        isCollapsed = true;
+
+        updateSwitch();
+
+        return view;
+    }
+
+    public void updateSwitch() {
 
         collapsedList = new ArrayList<>();
+
         for (Persona persona : list) {
             if (!persona.getTipo().equals(CHECKBOX_TYPE)) {
                 collapsedList.add(persona);
             }
         }
+
+        for (Persona persona : list) {
+            persona.setChecked(false);
+        }
+
+        for (Persona persona : collapsedList) {
+            persona.setChecked(false);
+        }
+
+        for (Persona cognome : cognomi) {
+            for (Persona persona : list) {
+                if (persona.getCognome().equalsIgnoreCase(cognome.getCognome())) {
+                    persona.setChecked(true);
+                }
+            }
+            for (Persona persona : collapsedList) {
+                if (persona.getCognome().equalsIgnoreCase(cognome.getCognome())) {
+                    persona.setChecked(true);
+                }
+            }
+        }
+
         adapter.setList(collapsedList);
         adapter.notifyDataSetChanged();
-
-        return view;
     }
 
     @Override
     public boolean onItemClicked(Persona persona, boolean isChecked) {
 
+        if (persona.getTipo().equals(SWITCH_TYPE)) {
+            persona.setChecked(isChecked);
+            if (isCollapsed) {
+                adapter.setList(collapsedList);
+            } else {
+                adapter.setList(list);
+            }
+        }
         if (persona.getTipo().equals(ACCORDION_TYPE)) {
             if (isChecked) {
                 adapter.setList(list);
                 view.findViewById(R.id.arrow_down).setVisibility(View.VISIBLE);
                 view.findViewById(R.id.arrow_up).setVisibility(View.GONE);
+                isCollapsed = false;
             } else {
                 adapter.setList(collapsedList);
                 view.findViewById(R.id.arrow_down).setVisibility(View.GONE);
                 view.findViewById(R.id.arrow_up).setVisibility(View.VISIBLE);
+                isCollapsed = true;
             }
-        } else if (persona.getTipo().equals(CHECKBOX_TYPE)) {
+        }
+        if (persona.getTipo().equals(CHECKBOX_TYPE)) {
             if (isChecked) {
                 for (int i=0; i<list.size(); i++) {
                     list.get(i).setChecked(list.get(i) == persona);
@@ -98,5 +141,16 @@ public class AccordionFragment extends Fragment implements AccordionAdapter.OnIt
         list.add(new Persona("Daniele", "Musacchia", "3494977374", "switch", false));
 
         return list;
+    }
+
+    public List<Persona> initCognomi() {
+
+        List<Persona> cognomi = new ArrayList<>();
+        cognomi.add(new Persona("Petito"));
+        cognomi.add(new Persona("Pinto"));
+        cognomi.add(new Persona("Mongiello"));
+        cognomi.add(new Persona("Musacchia"));
+
+        return cognomi;
     }
 }

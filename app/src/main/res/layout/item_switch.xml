@@ -13,7 +13,7 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="0.8">
 
             <TextView
                 android:id="@+id/text_nome_switch"
@@ -39,6 +39,21 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:gravity="start|center_vertical"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_compat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:theme="@style/SwitchCompatTheme"
+                android:checked="false"/>
 
         </RelativeLayout>
 
