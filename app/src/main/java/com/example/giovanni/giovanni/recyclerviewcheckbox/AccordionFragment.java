@@ -77,7 +77,6 @@ public class AccordionFragment extends Fragment implements AccordionAdapter.OnIt
                 }
             }
         }
-
         adapter.setList(collapsedList);
         adapter.notifyDataSetChanged();
     }
