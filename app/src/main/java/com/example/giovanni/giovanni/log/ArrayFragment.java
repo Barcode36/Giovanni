@@ -11,6 +11,11 @@ import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.example.giovanni.giovanni.utils.UtilsJava.turnToString;
+
 public class ArrayFragment extends Fragment {
 
     public static String TAG = "TAGARRAY";
@@ -62,6 +67,13 @@ public class ArrayFragment extends Fragment {
         occorrenzeA(frase);
         occorrenzeVocali(frase);
         occorrenzeOgniVocale(frase);
+
+        List<String> listaArticoli = new ArrayList<>();
+        for (String articolo : articoli) {
+            listaArticoli.add(articolo);
+        }
+        String stringaArticoli = turnToString(listaArticoli);
+        Log.i(TAG, "stringaArticoli: " + stringaArticoli);
 
         return view;
     }

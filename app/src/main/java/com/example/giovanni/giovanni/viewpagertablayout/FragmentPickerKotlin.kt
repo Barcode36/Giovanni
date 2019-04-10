@@ -10,6 +10,7 @@ import android.widget.DatePicker
 import android.widget.TextView
 import com.example.giovanni.giovanni.R
 import com.example.giovanni.giovanni.utils.BaseFragment
+import com.example.giovanni.giovanni.utils.DateManager
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -113,7 +114,6 @@ class FragmentPickerKotlin : BaseFragment(), DatePickerDialog.OnDateSetListener 
         }
 
         /*
-
         // ---------- //
         // -- JAVA -- //
         // ---------- //

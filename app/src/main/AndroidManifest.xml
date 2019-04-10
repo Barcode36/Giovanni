@@ -6,29 +6,29 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/audioslave_blue"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/audioslave_blue"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".custombutton.CustomButtonActivity" />
+
         <activity android:name=".recyclerviewsetonclicklistener.RecyclerViewPersonaActivity" />
         <activity android:name=".viewpagertablayout.ViewPagerActivity" />
         <activity android:name=".recyclerviewheaderitem.RecyclerViewHeaderItemActivity" />
-        <activity android:name=".settext.SetTextActivity" />
         <activity android:name=".loginintent.LoginIntentActivity" />
         <activity android:name=".asynctaskcounter.AsyncTaskCounterActivity" />
         <activity android:name=".recyclerviewstickyheader.RecyclerViewStickyHeaderActivity" />
         <activity android:name=".recyclerviewadditem.RecyclerViewAddItemActivity" />
-        <activity android:name=".gradientdrawable.GradientDrawableActivity" />
         <activity android:name=".recyclerviewviewpager.RecyclerViewViewPagerActivity" />
         <activity android:name=".viewpagernewinstance.ViewPagerNewInstanceActivity" />
         <activity android:name=".textlayout.TextLayoutActivity" />
@@ -70,7 +70,8 @@
         <activity android:name=".mvploginkotlin.main.MainLoginKotlinActivity" />
         <activity android:name=".fragmentdialog.MainDialogActivity" />
         <activity android:name=".recyclerviewcheckbox.CheckBoxSearchActivity" />
-        <activity android:name=".log.LogActivity"></activity>
+        <activity android:name=".log.LogActivity" />
+
     </application>
 
 </manifest>

@@ -44,6 +44,8 @@
     <string name="contract_conditions">Ho preso visione e accetto le Condizioni di Contratto</string>
     <string name="economic_conditions">Ho preso visione e accetto le Condizioni Economiche di Contratto</string>
     <string name="conditions_accepted">Condizioni accettate</string>
+    <string name="show_keyboard">Show Keyboard</string>
+    <string name="hide_keyboard">Hide Keyboard</string>
 
     <string name="serializable">Serializable Magazzino\nRegex</string>
     <string name="scegli_articolo">QUALE ARTICOLO VUOI INSERIRE?</string>
@@ -160,6 +162,7 @@
 
     <string name="nav_header_title_giovanni_petito">Giovanni Petito</string>
     <string name="nav_header_subtitle_email_giovanni">giovanni.petito88@gmail.com</string>
+    <string name="msisdn_giovanni">3331582355</string>
 
     <string name="addtextchangedlistener">MVP Pattern\nAddTextChangedListener\nProgressBar</string>
     <string name="mvp_java_login">MVP Pattern\nJava Login\nProgressBar</string>

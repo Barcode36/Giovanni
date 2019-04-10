@@ -42,6 +42,7 @@ public class CheckBoxSearchAdapter extends RecyclerView.Adapter<CheckBoxSearchAd
         holder.checkBox.setOnCheckedChangeListener(null);
         holder.checkBox.setChecked(persona.isChecked());
         holder.checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            persona.setChecked(isChecked);
             onItemViewClicked.onItemClicked(persona, isChecked);
         });
     }

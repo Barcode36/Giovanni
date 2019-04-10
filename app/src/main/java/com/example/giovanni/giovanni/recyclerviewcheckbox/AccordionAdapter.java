@@ -44,10 +44,13 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
         if (persona.getTipo().equals(SWITCH_TYPE)) {
             holder.nomeSwitch.setText(persona.getNome());
             holder.cognomeSwitch.setText(persona.getCognome());
+
             holder.switchCompat.setOnCheckedChangeListener(null);
             holder.switchCompat.setChecked(persona.isChecked());
-            holder.switchCompat.setOnCheckedChangeListener((buttonView, isChecked) ->
-                    onItemViewClicked.onItemClicked(persona, isChecked));
+            holder.switchCompat.setOnCheckedChangeListener((buttonView, isChecked) -> {
+                persona.setChecked(isChecked);
+                onItemViewClicked.onItemClicked(persona, isChecked);
+            });
         }
         if (persona.getTipo().equals(ACCORDION_TYPE)) {
             holder.nomeAccordion.setText(persona.getNome());
@@ -68,6 +71,7 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
             holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    persona.setChecked(isChecked);
                     onItemViewClicked.onItemClicked(persona, isChecked);
                 }
             });

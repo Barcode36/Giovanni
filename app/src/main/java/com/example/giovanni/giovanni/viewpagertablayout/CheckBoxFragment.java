@@ -1,8 +1,5 @@
 package com.example.giovanni.giovanni.viewpagertablayout;
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,12 +11,16 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
+import com.example.giovanni.giovanni.utils.UtilsKotlin;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.example.giovanni.giovanni.utils.UtilsJava.openUrl;
 
 public class CheckBoxFragment extends Fragment {
 
@@ -49,6 +50,11 @@ public class CheckBoxFragment extends Fragment {
 
         ImageView contractConditionsInfo = view.findViewById(R.id.contractConditionsInfo);
         ImageView economicConditionsInfo = view.findViewById(R.id.economicConditionsInfo);
+
+        Button showKeyboard = view.findViewById(R.id.show_keyboard);
+        Button hideKeyboard = view.findViewById(R.id.hide_keyboard);
+        RelativeLayout phone = view.findViewById(R.id.phone_container);
+        RelativeLayout mail = view.findViewById(R.id.mail_container);
 
         checkbox1.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
@@ -122,15 +128,27 @@ public class CheckBoxFragment extends Fragment {
             openUrl(getContext(), (String) v.getTag());
         });
 
-        return view;
-    }
+        showKeyboard.setOnClickListener(v -> {
 
-    public void openUrl(Context context, String url) {
-        if (url != null && !url.isEmpty()) {
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            context.startActivity(intent);
-        }
+//            UtilsKotlin.Companion.showSoftKeyboardKotlin();
+        });
+
+        hideKeyboard.setOnClickListener(v -> {
+
+//            UtilsKotlin.Companion.hideSoftKeyboardKotlin();
+        });
+
+        phone.setOnClickListener(v -> {
+
+            UtilsKotlin.Companion.callContact(getContext(), "3331582355");
+        });
+
+        mail.setOnClickListener(v -> {
+
+            UtilsKotlin.Companion.sendEmail(getContext(), "giovanni.petito88@gmail.com");
+        });
+
+        return view;
     }
 
 //    private void showInfo(final String url) {

@@ -95,24 +95,26 @@ public class AccordionFragment extends Fragment implements AccordionAdapter.OnIt
         if (persona.getTipo().equals(ACCORDION_TYPE)) {
             if (isChecked) {
                 adapter.setList(list);
-                view.findViewById(R.id.arrow_down).setVisibility(View.VISIBLE);
-                view.findViewById(R.id.arrow_up).setVisibility(View.GONE);
+                view.findViewById(R.id.arrow_down).setVisibility(View.GONE);
+                view.findViewById(R.id.arrow_up).setVisibility(View.VISIBLE);
                 isCollapsed = false;
             } else {
                 adapter.setList(collapsedList);
-                view.findViewById(R.id.arrow_down).setVisibility(View.GONE);
-                view.findViewById(R.id.arrow_up).setVisibility(View.VISIBLE);
+                view.findViewById(R.id.arrow_down).setVisibility(View.VISIBLE);
+                view.findViewById(R.id.arrow_up).setVisibility(View.GONE);
                 isCollapsed = true;
             }
         }
         if (persona.getTipo().equals(CHECKBOX_TYPE)) {
             if (isChecked) {
                 for (int i=0; i<list.size(); i++) {
-                    list.get(i).setChecked(list.get(i) == persona);
+                    list.get(i).setChecked(list.get(i).getTipo().equals(CHECKBOX_TYPE)
+                            ? list.get(i) == persona
+                            : list.get(i).isChecked());
                 }
             } else {
                 for (int i=0; i<list.size(); i++) {
-                    list.get(i).setChecked(false);
+                    list.get(i).setChecked(!list.get(i).getTipo().equals(CHECKBOX_TYPE) && list.get(i).isChecked());
                 }
             }
         }

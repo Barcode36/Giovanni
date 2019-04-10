@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="@string/digita_id"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         android:textAlignment="center" />
 
     <EditText
@@ -55,7 +55,7 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="@string/digita_prezzo"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         android:textAlignment="center" />
 
     <EditText
