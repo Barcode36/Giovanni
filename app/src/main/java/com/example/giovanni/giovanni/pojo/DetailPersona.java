@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class DetailPersona implements Serializable {
 
-    public String chiave;
-    public String valore;
+    private String chiave;
+    private String valore;
 
     public DetailPersona() {
         this.chiave = null;
