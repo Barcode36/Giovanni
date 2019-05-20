@@ -1,6 +1,7 @@
 package com.example.giovanni.giovanni.viewpagertablayout;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.SwitchCompat;
@@ -9,14 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.utils.UtilsKotlin;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +29,7 @@ public class CheckBoxFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_checkbox, container, false);
 
         lista = new ArrayList<>();
@@ -53,8 +49,6 @@ public class CheckBoxFragment extends Fragment {
 
         Button showKeyboard = view.findViewById(R.id.show_keyboard);
         Button hideKeyboard = view.findViewById(R.id.hide_keyboard);
-        RelativeLayout phone = view.findViewById(R.id.phone_container);
-        RelativeLayout mail = view.findViewById(R.id.mail_container);
 
         checkbox1.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
@@ -73,26 +67,23 @@ public class CheckBoxFragment extends Fragment {
         });
 
         buttonCheck.setOnClickListener(v -> {
-            String text = "";
+            StringBuilder text = new StringBuilder();
             for(String scelta : lista) {
-                text = text + scelta + "\n";
+                text.append(scelta).append("\n");
             }
-            tCheck.setText(text);
+            tCheck.setText(text.toString());
             tCheck.setEnabled(true);
         });
 
-        contractConditions.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                contractConditionsChecked = isChecked;
-                boolean checked = contractConditionsChecked && economicConditionsChecked;
-                switchCompat.setEnabled(checked);
-                switchCompat.setChecked(checked);
-                if (checked)
-                    switchCompat.setTextColor(getResources().getColor(R.color.black));
-                else
-                    switchCompat.setTextColor(getResources().getColor(R.color.grey));
-            }
+        contractConditions.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            contractConditionsChecked = isChecked;
+            boolean checked = contractConditionsChecked && economicConditionsChecked;
+            switchCompat.setEnabled(checked);
+            switchCompat.setChecked(checked);
+            if (checked)
+                switchCompat.setTextColor(getResources().getColor(R.color.black));
+            else
+                switchCompat.setTextColor(getResources().getColor(R.color.grey));
         });
         economicConditions.setOnCheckedChangeListener((buttonView, isChecked) -> {
             economicConditionsChecked = isChecked;
@@ -136,16 +127,6 @@ public class CheckBoxFragment extends Fragment {
         hideKeyboard.setOnClickListener(v -> {
 
 //            UtilsKotlin.Companion.hideSoftKeyboardKotlin();
-        });
-
-        phone.setOnClickListener(v -> {
-
-            UtilsKotlin.Companion.callContact(getContext(), "3331582355");
-        });
-
-        mail.setOnClickListener(v -> {
-
-            UtilsKotlin.Companion.sendEmail(getContext(), "giovanni.petito88@gmail.com");
         });
 
         return view;

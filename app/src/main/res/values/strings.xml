@@ -165,7 +165,6 @@
     <string name="msisdn_giovanni">3331582355</string>
 
     <string name="addtextchangedlistener">MVP Pattern\nAddTextChangedListener\nProgressBar</string>
-    <string name="mvp_java_login">MVP Pattern\nJava Login\nProgressBar</string>
     <string name="mvp_kotlin_login">MVP Pattern\nKotlin Login\nProgressBar</string>
     <string name="username_error">Il campo Username non può essere vuoto</string>
     <string name="password_error">Il campo Password non può essere vuoto</string>

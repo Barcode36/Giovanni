@@ -64,8 +64,6 @@
             android:label="@string/navigationdrawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".mvpaddtextchangedlistener.AddTextActivity" />
-        <activity android:name=".mvplogin.login.LoginJavaActivity" />
-        <activity android:name=".mvplogin.main.MainLoginJavaActivity" />
         <activity android:name=".mvploginkotlin.login.LoginKotlinActivity" />
         <activity android:name=".mvploginkotlin.main.MainLoginKotlinActivity" />
         <activity android:name=".fragmentdialog.MainDialogActivity" />

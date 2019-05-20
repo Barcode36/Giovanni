@@ -5,14 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import com.example.giovanni.giovanni.fragmentdialog.MainDialogActivity;
 import com.example.giovanni.giovanni.log.LogActivity;
 import com.example.giovanni.giovanni.mvpaddtextchangedlistener.AddTextActivity;
 import com.example.giovanni.giovanni.asynctaskcounter.AsyncTaskCounterActivity;
 import com.example.giovanni.giovanni.fragments.FragmentsActivity;
 import com.example.giovanni.giovanni.loginintent.LoginIntentActivity;
-import com.example.giovanni.giovanni.mvplogin.login.LoginJavaActivity;
 import com.example.giovanni.giovanni.mvploginkotlin.login.LoginKotlinActivity;
 import com.example.giovanni.giovanni.navigationdrawer.NavigationDrawerActivity;
 import com.example.giovanni.giovanni.offset.OffsetActivity;
@@ -78,9 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.addtextchangedlistener).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), AddTextActivity.class)));
-
-        findViewById(R.id.mvp_java_login).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), LoginJavaActivity.class)));
 
         findViewById(R.id.mvp_kotlin_login).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), LoginKotlinActivity.class)));

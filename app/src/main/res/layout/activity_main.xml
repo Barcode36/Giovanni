@@ -145,14 +145,6 @@
                 android:text="@string/addtextchangedlistener" />
 
             <Button
-                android:id="@+id/mvp_java_login"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/mvp_java_login" />
-
-            <Button
                 android:id="@+id/mvp_kotlin_login"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
