@@ -14,7 +14,7 @@ import com.example.giovanni.giovanni.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.giovanni.giovanni.utils.UtilsJava.turnToString;
+import static com.example.giovanni.giovanni.utils.Utils.turnToString;
 
 public class ArrayFragment extends Fragment {
 

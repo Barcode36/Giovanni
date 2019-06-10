@@ -16,7 +16,7 @@ import com.example.giovanni.giovanni.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.giovanni.giovanni.utils.UtilsJava.openUrl;
+import static com.example.giovanni.giovanni.utils.Utils.openUrl;
 
 public class CheckBoxFragment extends Fragment {
 

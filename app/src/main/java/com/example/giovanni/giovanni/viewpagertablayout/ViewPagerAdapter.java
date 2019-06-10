@@ -6,13 +6,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    private String [] fragments = {"Calcolatrice", "Parallax effect", "Pin effect", "Pickers Java", "Pickers Kotlin", "CheckBox"};
+    private String [] fragments = {"Calcolatrice", "Parallax effect", "Pin effect", "Pickers Java", "CheckBox"};
 
     private FragmentCalcolatrice fragmentCalcolatrice = new FragmentCalcolatrice();
     private FragmentParallax fragmentParallax = new FragmentParallax();
     private FragmentPin fragmentPin = new FragmentPin();
     private FragmentPicker fragmentPicker = new FragmentPicker();
-    private FragmentPickerKotlin fragmentPickerKotlin = new FragmentPickerKotlin();
     private CheckBoxFragment checkBoxFragment = new CheckBoxFragment();
 
     ViewPagerAdapter(FragmentManager fm) {
@@ -26,8 +25,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 1: return fragmentParallax;
             case 2: return fragmentPin;
             case 3: return fragmentPicker;
-            case 4: return fragmentPickerKotlin;
-            case 5: return checkBoxFragment;
+            case 4: return checkBoxFragment;
         }
         return null;
     }

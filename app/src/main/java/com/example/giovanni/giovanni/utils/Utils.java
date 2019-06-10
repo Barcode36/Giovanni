@@ -3,11 +3,10 @@ package com.example.giovanni.giovanni.utils;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.view.inputmethod.InputMethodManager;
 
 import java.util.List;
 
-public class UtilsJava {
+public class Utils {
 
     public static String turnToString(List<String> list) {
         String combinations = "";
