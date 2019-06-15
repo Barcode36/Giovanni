@@ -9,7 +9,6 @@ import com.example.giovanni.giovanni.recyclercambiaprezzo.RecyclerArticoliActivi
 import com.example.giovanni.giovanni.recyclerviewadditem.RecyclerViewAddItemActivity;
 import com.example.giovanni.giovanni.recyclerviewheaderitem.RecyclerViewHeaderItemActivity;
 import com.example.giovanni.giovanni.recyclerviewcheckbox.CheckBoxSearchActivity;
-import com.example.giovanni.giovanni.recyclerviewsetonclicklistener.RecyclerViewPersonaActivity;
 import com.example.giovanni.giovanni.recyclerviewstickyheader.RecyclerViewStickyHeaderActivity;
 import com.example.giovanni.giovanni.recyclerviewproject.LoginActivity;
 import com.example.giovanni.giovanni.recyclerviewviewpager.RecyclerViewViewPagerActivity;
@@ -20,9 +19,6 @@ public class RecyclerViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview);
-
-        findViewById(R.id.recyclerview_setonclicklistener).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), RecyclerViewPersonaActivity.class)));
 
         findViewById(R.id.recyclerview_cambiaprezzo).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), RecyclerArticoliActivity.class)));

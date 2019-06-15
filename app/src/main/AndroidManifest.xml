@@ -22,7 +22,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".recyclerviewsetonclicklistener.RecyclerViewPersonaActivity" />
         <activity android:name=".viewpagertablayout.ViewPagerActivity" />
         <activity android:name=".recyclerviewheaderitem.RecyclerViewHeaderItemActivity" />
         <activity android:name=".loginintent.LoginIntentActivity" />

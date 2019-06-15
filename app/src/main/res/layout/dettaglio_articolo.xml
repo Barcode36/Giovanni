@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card"
+    android:id="@+id/card_articolo"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardBackgroundColor="@color/carta_da_zucchero"
@@ -21,16 +22,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.3"
                 android:text="@string/prodotto"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textNome"
-                android:layout_width="wrap_content"
+                android:id="@+id/text_nome"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.7"
                 android:layout_marginStart="@dimen/dimen_15dp"
                 android:textColor="@color/green"
                 android:textSize="18sp"
@@ -44,16 +47,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.3"
                 android:text="@string/prezzo"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textPrezzo"
-                android:layout_width="wrap_content"
+                android:id="@+id/text_prezzo"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.7"
                 android:layout_marginStart="@dimen/dimen_15dp"
                 android:textColor="@color/green"
                 android:textSize="18sp"
@@ -67,16 +72,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.3"
                 android:text="@string/data"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textData"
-                android:layout_width="wrap_content"
+                android:id="@+id/text_data"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.7"
                 android:layout_marginStart="@dimen/dimen_15dp"
                 android:textColor="@color/green"
                 android:textSize="18sp"

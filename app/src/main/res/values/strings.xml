@@ -91,8 +91,7 @@
 
     <string name="twolistview_onebutton_adapter">Two ListView One Button\nAdapter Rubrica</string>
 
-    <string name="recyclerview_setonclicklistener">setOnClickListener\nCardView\nclipToPadding</string>
-    <string name="recyclerview_cambiaprezzo">Cambia Prezzo</string>
+    <string name="recyclerview_cambiaprezzo">CardView cambia prezzo\nsetOnClickListener\nclipToPadding</string>
     <string name="prodotto">Prodotto:</string>
     <string name="prezzo">Prezzo:</string>
     <string name="cambia_prezzo">Cambia il prezzo</string>

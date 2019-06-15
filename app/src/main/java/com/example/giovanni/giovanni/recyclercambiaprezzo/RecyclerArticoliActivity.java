@@ -18,22 +18,35 @@ import java.util.Locale;
 
 public class RecyclerArticoliActivity extends AppCompatActivity {
 
-    private RecyclerView mRecyclerView;
-    private LinearLayoutManager mLayoutManager;
     private ArticoliAdapter mAdapter;
+    String data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_articoli);
 
-        mRecyclerView = findViewById(R.id.articoli_recyclerview);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.ITALY);
+        data = sdf.format(new Date());
+
+        RecyclerView mRecyclerView = findViewById(R.id.articoli_recyclerview);
         mRecyclerView.setHasFixedSize(true);
 
-        mLayoutManager = new LinearLayoutManager(this);
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+
+        /*
+        O anche solo:
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
+
+        Se voglio una griglia:
+        mLayoutManager = new GridLayoutManager(this, 2);
+        */
+
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         final List<Articolo> lista = init();
+        Articolo articolo = new Articolo("Frutta", 1.00, data);
+        lista.add(articolo);
 
         mAdapter = new ArticoliAdapter(lista, getApplicationContext());
         mRecyclerView.setAdapter(mAdapter);
@@ -52,9 +65,6 @@ public class RecyclerArticoliActivity extends AppCompatActivity {
     }
 
     public List<Articolo> init() {
-
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.ITALY);
-        String data = sdf.format(new Date());
 
         List<Articolo> list = new ArrayList<>();
         list.add(new Articolo("Latte", 1.50, data));
