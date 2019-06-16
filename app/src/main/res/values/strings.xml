@@ -172,6 +172,7 @@
     <string name="button_show_dialog">Show Dialog</string>
     <string name="button_close_dialog">Close Dialog</string>
 
+    <string name="activate_the_search">Attiva la ricerca</string>
     <string name="search_by_name_or_msisdn">Cerca per nome o msisdn</string>
     <string name="no_result_by_search">Nessun risultato con questa stringa di ricerca.</string>
     <string name="no_list">Nessuna lista presente.</string>

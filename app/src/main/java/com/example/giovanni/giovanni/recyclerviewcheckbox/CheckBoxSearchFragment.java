@@ -1,6 +1,7 @@
 package com.example.giovanni.giovanni.recyclerviewcheckbox;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -30,7 +31,7 @@ public class CheckBoxSearchFragment extends Fragment implements CheckBoxSearchAd
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_search_checkbox, container, false);
 
         recyclerView = view.findViewById(R.id.search_checkbox_recyclerview);
@@ -74,7 +75,7 @@ public class CheckBoxSearchFragment extends Fragment implements CheckBoxSearchAd
     }
 
     private void filter() {
-        editSearch.clearFocus();
+        // editSearch.clearFocus();
         if (sentence != null && sentence.equalsIgnoreCase(editSearch.getText().toString()))
             return;
         sentence = editSearch.getText().toString();

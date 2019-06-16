@@ -9,14 +9,79 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/edittext_search" />
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:text="@string/activate_the_search"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edittext_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/search_by_name_or_msisdn"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkGrey"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:imeOptions="actionSearch"
+                    style="@style/EmployeeEditText" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/close_action"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/switch_compat"
+                android:src="@drawable/ico_close"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_compat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:theme="@style/SwitchCompatTheme" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkGrey"/>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/search_checkbox_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="@dimen/dimen_50dp"
-            android:clipToPadding="false"/>
+            android:clipToPadding="false"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/no_result"
