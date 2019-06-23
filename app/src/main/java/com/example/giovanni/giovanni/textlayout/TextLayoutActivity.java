@@ -1,14 +1,9 @@
 package com.example.giovanni.giovanni.textlayout;
 
 import android.content.res.Resources;
-import android.graphics.Color;
-import android.graphics.drawable.GradientDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.TypedValue;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,9 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.utils.MultiValueSpinnerView;
 
 public class TextLayoutActivity extends AppCompatActivity {
 
@@ -37,11 +30,6 @@ public class TextLayoutActivity extends AppCompatActivity {
     private ImageView bart;
     private RelativeLayout homerContainer;
     private RelativeLayout bartContainer;
-
-    private View view;
-    private RelativeLayout relativeContainer;
-    private ImageView bar;
-    private int progressbarwidth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +54,7 @@ public class TextLayoutActivity extends AppCompatActivity {
                 helloWorld.substring(0, 1).toUpperCase() +
                 helloWorld.substring(1, 6) +
                 helloWorld.substring(6, 7).toUpperCase() +
-                helloWorld.substring(7, helloWorld.length());
+                helloWorld.substring(7);
 
         tHello.setText(hellodUpper);
         tHello.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18); // setTextSize() setta la size programmaticamente.
@@ -85,44 +73,6 @@ public class TextLayoutActivity extends AppCompatActivity {
         bInvioNumero.setOnClickListener(v -> {
             numero = eNumero.getText().toString();
             tNumero.setText(formatCount(numero));
-        });
-
-        ViewGroup viewGroup = findViewById(R.id.gradient_drawable_container);
-        view = getLayoutInflater().inflate(R.layout.activity_text_layout, viewGroup, false);
-
-//        LayoutInflater inflater = LayoutInflater.from(TextLayoutActivity.this);
-//        View view = inflater.inflate(R.layout.activity_text_layout, null);
-
-        View content = findViewById(R.id.content);
-        Button buttonMoveBar = findViewById(R.id.button_move_bar);
-        relativeContainer = content.findViewById(R.id.relative_container);
-        RelativeLayout progressBar = content.findViewById(R.id.progress_bar);
-        bar = content.findViewById(R.id.bar);
-
-        int azzurro = Color.parseColor("#007FFF");
-
-        GradientDrawable drawableBar = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[] {
-                getResources().getColor(R.color.red),
-                getResources().getColor(R.color.yellow),
-                azzurro});
-
-        drawableBar.setCornerRadius(50f);
-        progressBar.setBackgroundDrawable(drawableBar);
-
-        view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                if (relativeContainer != null) {
-                    progressbarwidth = (relativeContainer.getWidth() * 1000 )/5;
-                }
-            }
-        });
-        view.requestLayout();
-
-        buttonMoveBar.setOnClickListener(v -> {
-//          bar.setTranslationX(progressbarwidth);
-            bar.setTranslationX(200);
         });
 
         relativeVariable = findViewById(R.id.relative_variable);
@@ -180,9 +130,6 @@ public class TextLayoutActivity extends AppCompatActivity {
             bart.startAnimation(scaleAnimation);
             bartContainer.startAnimation(scaleAnimation);
         });
-
-        MultiValueSpinnerView spinnerView = findViewById(R.id.multivaluespinnerview);
-        spinnerView.setValues(167, 140, 104, 20);
     }
 
     private String formatCount(String string) {
