@@ -44,8 +44,6 @@
     <string name="contract_conditions">Ho preso visione e accetto le Condizioni di Contratto</string>
     <string name="economic_conditions">Ho preso visione e accetto le Condizioni Economiche di Contratto</string>
     <string name="conditions_accepted">Condizioni accettate</string>
-    <string name="show_keyboard">Show Keyboard</string>
-    <string name="hide_keyboard">Hide Keyboard</string>
 
     <string name="serializable">Serializable Magazzino\nRegex</string>
     <string name="scegli_articolo">QUALE ARTICOLO VUOI INSERIRE?</string>
@@ -111,7 +109,7 @@
 
     <string name="recyclerview_add_item">Add Item</string>
     <string name="san_martino">La nebbia a gl\'irti colli\npiovigginando sale,\ne sotto il maestrale\nurla e biancheggia il mar;\n\nma per le vie del borgo\ndal ribollir de\' tini\nva l\'aspro odor de i vini\nl\'anime a rallegrar.\n\nGira su\' ceppi accesi\nlo spiedo scoppiettando:\nsta il cacciator fischiando\nsu l\'uscio a rimirar\n\ntra le rossastre nubi\nstormi d\'uccelli neri,\ncom\'esuli pensieri,\nnel vespero migrar.</string>
-    <string name="viewpager_tablayout">Calcolatrice\nParallax Effect\nPin Effect + FloatingActionButton\nTimePickerDialog + DatePickerDialog\nPull to Refresh\nCheckBox and openUrl</string>
+    <string name="viewpager_tablayout">Calcolatrice\nParallax Effect\nPin Effect + FAB\nPull to Refresh\nCheckBox and openUrl</string>
     <string name="fragment_1">Fragment 1</string>
     <string name="fragment_2">Fragment 2</string>
     <string name="fragment_3">Fragment 3</string>

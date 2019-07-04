@@ -47,9 +47,6 @@ public class CheckBoxFragment extends Fragment {
         ImageView contractConditionsInfo = view.findViewById(R.id.contractConditionsInfo);
         ImageView economicConditionsInfo = view.findViewById(R.id.economicConditionsInfo);
 
-        Button showKeyboard = view.findViewById(R.id.show_keyboard);
-        Button hideKeyboard = view.findViewById(R.id.hide_keyboard);
-
         checkbox1.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 lista.add("CheckBox 1");
@@ -107,50 +104,13 @@ public class CheckBoxFragment extends Fragment {
         });
 
         contractConditionsInfo.setTag("https://kotlinlang.org/docs/kotlin-docs.pdf");
-        contractConditionsInfo.setOnClickListener(v -> {
-//          showInfo((String) v.getTag());
-            openUrl(getContext(), (String) v.getTag());
-
-        });
+        contractConditionsInfo.setOnClickListener(v ->
+                openUrl(getContext(), (String) v.getTag()));
 
         economicConditionsInfo.setTag("https://kotlinlang.org/docs/kotlin-docs.pdf");
-        economicConditionsInfo.setOnClickListener(v -> {
-//          showInfo((String) v.getTag());
-            openUrl(getContext(), (String) v.getTag());
-        });
-
-        showKeyboard.setOnClickListener(v -> {
-
-//            UtilsKotlin.Companion.showSoftKeyboardKotlin();
-        });
-
-        hideKeyboard.setOnClickListener(v -> {
-
-//            UtilsKotlin.Companion.hideSoftKeyboardKotlin();
-        });
+        economicConditionsInfo.setOnClickListener(v ->
+                openUrl(getContext(), (String) v.getTag()));
 
         return view;
     }
-
-//    private void showInfo(final String url) {
-//        mDialog.showInfoDialog(
-//                getString(R.string.utility_conditions_title).toUpperCase(),
-//                getString(R.string.utility_info_message),
-//                getString(R.string.btn_open),
-//                new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        openUrl(getContext(), (String) v.getTag());
-//                        mDialog.dismissAlertDialog();
-//                    }
-//                },
-//                getString(R.string.btn_cancel),
-//                new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        mDialog.dismissAlertDialog();
-//                    }
-//                }
-//        );
-//    }
 }

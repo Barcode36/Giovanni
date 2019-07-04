@@ -44,11 +44,11 @@ public class NavigationDrawerActivity extends AppCompatActivity
         // Fin qui è tutto codice di default, ora inizia il mio codice:
         setTitle("Giovanni Petito Home");
         /*
-        Se scrivo il codice seguente, quando l'applicazione parte viene visualizzato il FragmentPicker.
+        Se scrivo il codice seguente, quando l'applicazione parte viene visualizzato il FragmentPull.
         setTitle("Fragment 1");
-        FragmentPicker fragment1 = new FragmentPicker();
+        FragmentPull fragment1 = new FragmentPull();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fram, fragment1, "FragmentPicker");
+        fragmentTransaction.replace(R.id.fram, fragment1, "FragmentPull");
         fragmentTransaction.commit();
         */
 

@@ -248,42 +248,4 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dimen_5dp"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5">
-
-            <Button
-                android:id="@+id/show_keyboard"
-                style="@style/MenuButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/show_keyboard" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5">
-
-            <Button
-                android:id="@+id/hide_keyboard"
-                style="@style/MenuButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/hide_keyboard" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
 </LinearLayout>

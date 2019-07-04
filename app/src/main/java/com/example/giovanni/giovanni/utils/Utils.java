@@ -30,11 +30,4 @@ public class Utils {
             context.startActivity(intent);
         }
     }
-
-//    public static void hideSoftKeyboardKotlin() {
-//        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//        if (imm != null) {
-//            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-//        }
-//    }
 }
