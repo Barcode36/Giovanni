@@ -1,41 +1,47 @@
-package com.example.giovanni.giovanni.recyclerviewcheckbox;
+package com.example.giovanni.giovanni.accordion;
 
+import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
+import android.util.AttributeSet;
 import android.view.View;
-import android.view.ViewGroup;
-
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.pojo.Persona;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class AccordionFragment extends Fragment implements AccordionAdapter.OnItemViewClicked {
+public class AccordionActivity extends AppCompatActivity implements AccordionAdapter.OnItemViewClicked {
 
     private static final String SWITCH_TYPE = "switch";
     private static final String ACCORDION_TYPE = "accordion";
     private static final String CHECKBOX_TYPE = "checkbox";
 
-    private View view;
+    private RecyclerView recyclerView;
     private AccordionAdapter adapter;
     private List<Persona> list;
     private List<Persona> collapsedList;
     private List<Persona> cognomi;
     private boolean isCollapsed;
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_accordion, container, false);
+    private EditText editSearch;
+    private String sentence;
+    private List<Persona> filtered;
+    private TextView noResult;
 
-        RecyclerView recyclerView = view.findViewById(R.id.accordion_recyclerview);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_accordion);
+
+        recyclerView = findViewById(R.id.accordion_recyclerview);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         adapter = new AccordionAdapter(this);
         recyclerView.setAdapter(adapter);
         list = init();
@@ -44,7 +50,24 @@ public class AccordionFragment extends Fragment implements AccordionAdapter.OnIt
 
         updateSwitch();
 
-        return view;
+        editSearch = findViewById(R.id.edit_search);
+        ImageView iconSearch = findViewById(R.id.icon_search);
+        noResult = findViewById(R.id.no_result);
+
+        editSearch.setOnEditorActionListener((v, actionId, event) -> {
+            if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                filter();
+                return true;
+            }
+            return false;
+        });
+
+        iconSearch.setOnClickListener(v -> filter());
+    }
+
+    @Override
+    public View onCreateView(String name, Context context, AttributeSet attrs) {
+        return super.onCreateView(name, context, attrs);
     }
 
     public void updateSwitch() {
@@ -95,13 +118,13 @@ public class AccordionFragment extends Fragment implements AccordionAdapter.OnIt
         if (persona.getTipo().equals(ACCORDION_TYPE)) {
             if (isChecked) {
                 adapter.setList(list);
-                view.findViewById(R.id.arrow_down).setVisibility(View.GONE);
-                view.findViewById(R.id.arrow_up).setVisibility(View.VISIBLE);
+                findViewById(R.id.arrow_down).setVisibility(View.GONE);
+                findViewById(R.id.arrow_up).setVisibility(View.VISIBLE);
                 isCollapsed = false;
             } else {
                 adapter.setList(collapsedList);
-                view.findViewById(R.id.arrow_down).setVisibility(View.VISIBLE);
-                view.findViewById(R.id.arrow_up).setVisibility(View.GONE);
+                findViewById(R.id.arrow_down).setVisibility(View.VISIBLE);
+                findViewById(R.id.arrow_up).setVisibility(View.GONE);
                 isCollapsed = true;
             }
         }
@@ -120,6 +143,53 @@ public class AccordionFragment extends Fragment implements AccordionAdapter.OnIt
         }
         adapter.notifyDataSetChanged();
         return true;
+    }
+
+    private void filter() {
+// editSearch.clearFocus();
+        if (sentence != null && sentence.equalsIgnoreCase(editSearch.getText().toString()))
+            return;
+        sentence = editSearch.getText().toString();
+        if (sentence.length() == 0) {
+            sentence = null;
+            clearFilteredList();
+            noResult.setVisibility(View.GONE);
+            recyclerView.setVisibility(View.VISIBLE);
+            adapter.setList(list);
+            adapter.notifyDataSetChanged();
+            return;
+        }
+        clearFilteredList();
+        if (list == null || list.size() == 0) {
+            recyclerView.setVisibility(View.GONE);
+            noResult.setVisibility(View.VISIBLE);
+            noResult.setText(R.string.no_list);
+            return;
+        }
+        for (Persona persona : list) {
+            if (persona == null)
+                continue;
+            if ((persona.getMsisdn() != null && persona.getMsisdn().toLowerCase().contains(sentence.toLowerCase()))
+                    || (persona.getNome() != null && persona.getNome().toLowerCase().contains(sentence.toLowerCase()))) {
+                filtered.add(persona);
+            }
+        }
+        if (filtered == null || filtered.size() == 0) {
+            recyclerView.setVisibility(View.GONE);
+            noResult.setVisibility(View.VISIBLE);
+        } else {
+            noResult.setVisibility(View.GONE);
+            recyclerView.setVisibility(View.VISIBLE);
+            adapter.setList(filtered);
+            adapter.notifyDataSetChanged();
+        }
+    }
+
+    private void clearFilteredList() {
+        if (filtered == null)
+            filtered = new ArrayList<>();
+        else
+            filtered.clear();
     }
 
     public List<Persona> init() {

@@ -1,12 +1,12 @@
-package com.example.giovanni.giovanni.recyclerviewcheckbox;
+package com.example.giovanni.giovanni.accordion;
 
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.TextView;
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.pojo.Persona;
@@ -22,7 +22,7 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
     private List<Persona> list;
     private OnItemViewClicked onItemViewClicked;
 
-    public AccordionAdapter(OnItemViewClicked onItemViewClicked) {
+    AccordionAdapter(OnItemViewClicked onItemViewClicked) {
         this.list = new ArrayList<>();
         this.onItemViewClicked = onItemViewClicked;
     }
@@ -31,14 +31,15 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
         this.list = list;
     }
 
+    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);
         return new AccordionAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         final Persona persona = list.get(position);
 
         if (persona.getTipo().equals(SWITCH_TYPE)) {
@@ -68,12 +69,9 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
 
             holder.checkBox.setOnCheckedChangeListener(null);
             holder.checkBox.setChecked(persona.isChecked());
-            holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    persona.setChecked(isChecked);
-                    onItemViewClicked.onItemClicked(persona, isChecked);
-                }
+            holder.checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+                persona.setChecked(isChecked);
+                onItemViewClicked.onItemClicked(persona, isChecked);
             });
         }
     }

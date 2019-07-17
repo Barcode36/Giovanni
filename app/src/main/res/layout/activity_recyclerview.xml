@@ -95,12 +95,12 @@
                 android:text="@string/recyclerview_viewpager" />
 
             <Button
-                android:id="@+id/recyclerview_search_checkbox"
+                android:id="@+id/recyclerview_accordion"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_search_checkbox" />
+                android:text="@string/recyclerview_accordion" />
 
         </LinearLayout>
 

@@ -8,7 +8,7 @@ import com.example.giovanni.giovanni.openfragment.OpenFragmentActivity;
 import com.example.giovanni.giovanni.recyclercambiaprezzo.RecyclerArticoliActivity;
 import com.example.giovanni.giovanni.recyclerviewadditem.RecyclerViewAddItemActivity;
 import com.example.giovanni.giovanni.recyclerviewheaderitem.RecyclerViewHeaderItemActivity;
-import com.example.giovanni.giovanni.recyclerviewcheckbox.CheckBoxSearchActivity;
+import com.example.giovanni.giovanni.accordion.AccordionActivity;
 import com.example.giovanni.giovanni.recyclerviewstickyheader.RecyclerViewStickyHeaderActivity;
 import com.example.giovanni.giovanni.recyclerviewproject.LoginActivity;
 import com.example.giovanni.giovanni.recyclerviewviewpager.RecyclerViewViewPagerActivity;
@@ -41,7 +41,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         findViewById(R.id.recyclerview_viewpager).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), RecyclerViewViewPagerActivity.class)));
 
-        findViewById(R.id.recyclerview_search_checkbox).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), CheckBoxSearchActivity.class)));
+        findViewById(R.id.recyclerview_accordion).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), AccordionActivity.class)));
     }
 }

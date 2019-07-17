@@ -140,7 +140,7 @@
     <string name="replace">Replace</string>
     <string name="start_progress">Start Progress</string>
 
-    <string name="recyclerview_search_checkbox">Search and RadioButton\nCheck 3 items and addTextChangedListener\nAccordion</string>
+    <string name="recyclerview_accordion">Accordion</string>
 
     <string name="text_layout">SetText\nSet Layout</string>
     <string name="setpivotx">setPivotX</string>
