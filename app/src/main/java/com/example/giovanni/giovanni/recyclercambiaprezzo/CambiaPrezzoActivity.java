@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -17,7 +16,6 @@ import java.util.regex.Pattern;
 public class CambiaPrezzoActivity extends AppCompatActivity {
 
     private EditText ePrezzo;
-    private Button bConferma;
     private Intent intent;
     private String prezzoString;
     private int input;
@@ -32,30 +30,27 @@ public class CambiaPrezzoActivity extends AppCompatActivity {
         intent = getIntent();
         input = intent.getIntExtra("INSERT",-1);
 
-        bConferma = findViewById(R.id.buttonConferma);
+        Button bConferma = findViewById(R.id.buttonConferma);
         ePrezzo = findViewById(R.id.editPrezzo);
 
-        bConferma.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        bConferma.setOnClickListener(v -> {
 
-                if (ePrezzo.getText().toString().equals("")) {
-                    Toast.makeText(getApplicationContext(), "Inserisci il prezzo", Toast.LENGTH_SHORT).show();
-                } else {
-                    prezzoString = ePrezzo.getText().toString();
-                    Pattern pPrezzo = Pattern.compile(PREZZO_REGEX);
-                    Matcher mPrezzo = pPrezzo.matcher(prezzoString);
-                    if (!mPrezzo.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore prezzo non valido", Toast.LENGTH_SHORT).show();
-                        ePrezzo.setText("");
-                    } else prezzo = Double.parseDouble(prezzoString);
+            if (ePrezzo.getText().toString().equals("")) {
+                Toast.makeText(getApplicationContext(), "Inserisci il prezzo", Toast.LENGTH_SHORT).show();
+            } else {
+                prezzoString = ePrezzo.getText().toString();
+                Pattern pPrezzo = Pattern.compile(PREZZO_REGEX);
+                Matcher mPrezzo = pPrezzo.matcher(prezzoString);
+                if (!mPrezzo.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore prezzo non valido", Toast.LENGTH_SHORT).show();
+                    ePrezzo.setText("");
+                } else prezzo = Double.parseDouble(prezzoString);
 
-                    if (mPrezzo.matches()) {
-                        intent.putExtra("POSIZIONE", input);
-                        intent.putExtra("PREZZO", prezzo);
-                        setResult(Activity.RESULT_OK, intent);
-                        finish();
-                    }
+                if (mPrezzo.matches()) {
+                    intent.putExtra("POSIZIONE", input);
+                    intent.putExtra("PREZZO", prezzo);
+                    setResult(Activity.RESULT_OK, intent);
+                    finish();
                 }
             }
         });

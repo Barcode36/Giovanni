@@ -71,14 +71,6 @@
                 android:text="@string/recyclerview_header_item" />
 
             <Button
-                android:id="@+id/recyclerview_sticky_header"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_sticky_header" />
-
-            <Button
                 android:id="@+id/recyclerview_openfragment"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"

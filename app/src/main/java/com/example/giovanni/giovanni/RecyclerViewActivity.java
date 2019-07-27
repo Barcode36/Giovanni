@@ -9,7 +9,6 @@ import com.example.giovanni.giovanni.recyclercambiaprezzo.RecyclerArticoliActivi
 import com.example.giovanni.giovanni.recyclerviewadditem.RecyclerViewAddItemActivity;
 import com.example.giovanni.giovanni.recyclerviewheaderitem.RecyclerViewHeaderItemActivity;
 import com.example.giovanni.giovanni.accordion.AccordionActivity;
-import com.example.giovanni.giovanni.recyclerviewstickyheader.RecyclerViewStickyHeaderActivity;
 import com.example.giovanni.giovanni.recyclerviewproject.LoginActivity;
 import com.example.giovanni.giovanni.recyclerviewviewpager.RecyclerViewViewPagerActivity;
 
@@ -31,9 +30,6 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
         findViewById(R.id.recyclerview_header_item).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), RecyclerViewHeaderItemActivity.class)));
-
-        findViewById(R.id.recyclerview_sticky_header).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), RecyclerViewStickyHeaderActivity.class)));
 
         findViewById(R.id.recyclerview_openfragment).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), OpenFragmentActivity.class)));

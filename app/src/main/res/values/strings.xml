@@ -125,9 +125,6 @@
     <!-- RECYCLERVIEW HEADER ITEM -->
     <string name="recyclerview_header_item">Header Item</string>
 
-    <!-- STICKY HEADER -->
-    <string name="recyclerview_sticky_header">Sticky Header</string>
-
     <string name="recyclerview_openfragment">OpenFragment\nOnItemViewClicked Interface\naddViews</string>
 
     <!-- RECYCLERVIEW VIEWPAGER -->
