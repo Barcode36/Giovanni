@@ -173,7 +173,12 @@
     <string name="no_list">Nessuna lista presente.</string>
     <string name="reset">Reset</string>
 
+    <!-- GOOGLE MAPS -->
     <string name="google_maps">Google Maps</string>
     <string name="title_activity_maps">Map</string>
+    <string name="normal_map">normal map</string>
+    <string name="hybrid_map">hybrid map</string>
+    <string name="satellite_map">satellite map</string>
+    <string name="terrain_map">terrain map</string>
 
 </resources>
