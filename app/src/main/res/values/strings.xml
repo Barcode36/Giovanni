@@ -173,4 +173,7 @@
     <string name="no_list">Nessuna lista presente.</string>
     <string name="reset">Reset</string>
 
+    <string name="google_maps">Google Maps</string>
+    <string name="title_activity_maps">Map</string>
+
 </resources>

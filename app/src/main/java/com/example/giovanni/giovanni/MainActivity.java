@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import com.example.giovanni.giovanni.fragmentdialog.MainDialogActivity;
+import com.example.giovanni.giovanni.googlemaps.MapsActivity;
 import com.example.giovanni.giovanni.log.LogActivity;
 import com.example.giovanni.giovanni.mvpaddtextchangedlistener.AddTextActivity;
 import com.example.giovanni.giovanni.asynctaskcounter.AsyncTaskCounterActivity;
@@ -82,5 +83,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.fragment_dialog).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), MainDialogActivity.class)));
+
+        findViewById(R.id.google_maps).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), MapsActivity.class)));
     }
 }
