@@ -1,8 +1,10 @@
 package com.example.giovanni.giovanni.textlayout;
 
 import android.content.res.Resources;
+import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.animation.ScaleAnimation;
 import android.widget.Button;
@@ -130,6 +132,24 @@ public class TextLayoutActivity extends AppCompatActivity {
             bart.startAnimation(scaleAnimation);
             bartContainer.startAnimation(scaleAnimation);
         });
+
+        // SIZE & DENSITY
+        // Il codice seguente setta la dimensione delle textView, degli editText e dei button secondo i valori forniti da screenw_px.
+
+        // Size
+        Point size = new Point();
+        getWindowManager().getDefaultDisplay().getSize(size);
+        int screenw_px = size.x; // px sta per pixel.
+
+        // Density
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        float screen_density = metrics.density;
+
+        TextView sizeDensityText = findViewById(R.id.size_density_text);
+
+        sizeDensityText.setTextSize(screenw_px / (15 * screen_density));
+        // NOTA: più il numero è grande, più la dimensione del testo è piccola.
     }
 
     private String formatCount(String string) {

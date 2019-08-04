@@ -1,6 +1,8 @@
 package com.example.giovanni.giovanni.loginintent;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,10 +37,16 @@ public class LoginIntentActivity extends AppCompatActivity {
     private boolean signUp;
     private Intent intent;
 
+    private SharedPreferences preferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent_login);
+
+        // preferences = getPreferences(MODE_PRIVATE);
+        // preferences = getSharedPreferences("File", MODE_PRIVATE);
+        preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
         Button bLogin = findViewById(R.id.button_login);
         Button bSignUp = findViewById(R.id.button_signup);
@@ -50,42 +58,51 @@ public class LoginIntentActivity extends AppCompatActivity {
         buttonTwo = findViewById(R.id.button_two);
 
         database = new DatabaseUtenti();
-
         database.inserisci(new Persona("Giovanni", "123"));
-        database.inserisci(new Persona("Gianluigi", "234"));
-        database.inserisci(new Persona("Mariano", "345"));
-        database.inserisci(new Persona("Daniele", "456"));
-        database.inserisci(new Persona("Frank", "567"));
-        database.inserisci(new Persona("Lino", "678"));
-        database.inserisci("Raffaele", "789");
+        database.inserisci("Raffaele", "234");
+        database.init();
 
         Log.i(TAG, "" + database.getUtenti());
         Log.i(TAG, "" + database.toString());
 
-        bLogin.setOnClickListener(v -> {
-            username = eUsername.getText().toString();
-            password = ePassword.getText().toString();
+        username = preferences.getString("USERNAME", "" + database.returnUsername(username));
+        eUsername.setText(username);
 
-            if (username.equals("") || password.equals("")) {
-                tAccedi.setText(alert);
-            } else {
-                login = database.checkLogin(username, password);
-                if (login) {
-                    tAccedi.setText(loginSuccess);
-                    tRegistrati.setText("");
+        if (eUsername.getText().toString().equals(database.returnUsername(username))) {
 
-                    intent = new Intent(getApplicationContext(), PodcastActivity.class);
-                    // Oppure:
-                    // intent = new Intent();
-                    // intent.setClass(getApplicationContext(), PodcastActivity.class);
-                    intent.putExtra("KEY", "" + username);
-                    startActivity(intent);
+            intent = new Intent(getApplicationContext(), PodcastActivity.class);
+            startActivity(intent);
+        } else {
+            eUsername.setText("");
+            bLogin.setOnClickListener(v -> {
+                username = eUsername.getText().toString();
+                password = ePassword.getText().toString();
+
+                if (username.equals("") || password.equals("")) {
+                    tAccedi.setText(alert);
                 } else {
-                    tAccedi.setText(loginError);
-                    tRegistrati.setText("");
+                    login = database.checkLogin(username, password);
+                    if (login) {
+                        tAccedi.setText(loginSuccess);
+                        tRegistrati.setText("");
+
+                        saveStateToPreferences();
+
+                        intent = new Intent(getApplicationContext(), PodcastActivity.class);
+                        // Oppure:
+                        // intent = new Intent();
+                        // intent.setClass(getApplicationContext(), PodcastActivity.class);
+                        intent.putExtra("KEY", "" + username);
+                        startActivity(intent);
+                    } else {
+                        eUsername.setText("");
+                        ePassword.setText("");
+                        tAccedi.setText(loginError);
+                        tRegistrati.setText("");
+                    }
                 }
-            }
-        });
+            });
+        }
 
         bSignUp.setOnClickListener(v -> {
             username = eUsername.getText().toString();
@@ -94,7 +111,7 @@ public class LoginIntentActivity extends AppCompatActivity {
             if (username.equals("") || password.equals("")) {
                 tRegistrati.setText(alert);
             } else {
-                signUp = database.verificaUsername(username);
+                signUp = database.checkUsername(username);
                 if (signUp) {
                     database.inserisci(username, password);
                     tRegistrati.setText(signupSuccess);
@@ -121,5 +138,11 @@ public class LoginIntentActivity extends AppCompatActivity {
                 buttonOne.setSelected(false);
             }
         });
+    }
+
+    private void saveStateToPreferences() {
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("USERNAME", eUsername.getText().toString());
+        editor.apply();
     }
 }

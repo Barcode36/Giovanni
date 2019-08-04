@@ -168,6 +168,22 @@
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/google_maps" />
 
+            <Button
+                android:id="@+id/high_score"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/high_score" />
+
+            <Button
+                android:id="@+id/firebase"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase" />
+
         </LinearLayout>
 
     </ScrollView>

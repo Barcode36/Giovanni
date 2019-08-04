@@ -19,7 +19,7 @@
     <string name="invio">Invio</string>
     <string name="long_text">Il contenuto di questa stringa è troppo lungo per essere contenuto tutto nel layout.</string>
 
-    <string name="login_intent">Login\n@style/CustomButton\n@drawable/round_button\n@drawable/custom_button\nCustomButton Class\n@drawable/button_selector\nIntent + startActivityForResult</string>
+    <string name="login_intent">Login\n@style/CustomButton\n@drawable/round_button\n@drawable/custom_button\nCustomButton Class\n@drawable/button_selector\nIntent + startActivityForResult\nSharedPreferences</string>
     <string name="android">Android</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
@@ -27,7 +27,7 @@
     <string name="signup">Sign Up</string>
     <string name="accedi">Accedi</string>
     <string name="registrati">Registrati</string>
-    <string name="dati_utenti">Giovanni 123\nGianluigi 234\nMariano 345\nDaniele 456\nFrank 567\nLino 678\nRaffaele 789</string>
+    <string name="dati_utenti">Giovanni 123\nRaffaele 234\nGianluigi 345\nMariano 456\nDaniele 567\nFrank 678\nLino 789</string>
     <string name="email">Email</string>
 
     <string name="fake">FAKE</string>
@@ -180,5 +180,11 @@
     <string name="hybrid_map">hybrid map</string>
     <string name="satellite_map">satellite map</string>
     <string name="terrain_map">terrain map</string>
+
+    <!-- SHARED PREFERENCES -->
+    <string name="high_score">High Score</string>
+
+    <!-- FIREBASE -->
+    <string name="firebase">Firebase</string>
 
 </resources>

@@ -270,6 +270,19 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/size_density_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Density Size Text"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
     </LinearLayout>
 
 </ScrollView>

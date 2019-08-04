@@ -2,6 +2,8 @@ package com.example.giovanni.giovanni.loginintent;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -22,6 +24,9 @@ public class PodcastActivity extends AppCompatActivity {
     private Intent intent;
     private TextView textResult;
 
+    String output;
+    private SharedPreferences preferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +36,14 @@ public class PodcastActivity extends AppCompatActivity {
         Button bEnjoy = findViewById(R.id.buttonEnjoy);
         eInput = findViewById(R.id.editInput);
         textResult = findViewById(R.id.textResult);
+        Button bLogout = findViewById(R.id.buttonLogout);
 
         intent = getIntent();
-        String output = "ciao " + intent.getStringExtra("KEY") + "!";
+        output = "ciao " + intent.getStringExtra("KEY") + "!";
+
+        preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        output = "ciao " + preferences.getString("USERNAME", "") + "!";
+
         tOutput.setText(output.toUpperCase());
 
         utente = new Persona();
@@ -60,6 +70,17 @@ public class PodcastActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             }
+        });
+
+        bLogout.setOnClickListener(v -> {
+
+            intent = new Intent(getApplicationContext(), LoginIntentActivity.class);
+
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.clear();
+            editor.apply();
+
+            startActivity(intent);
         });
     }
 

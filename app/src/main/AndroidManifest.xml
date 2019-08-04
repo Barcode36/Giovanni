@@ -90,6 +90,9 @@
         <activity android:name=".fragmentdialog.MainDialogActivity" />
         <activity android:name=".accordion.AccordionActivity" />
         <activity android:name=".log.LogActivity" />
+        <activity android:name=".highscore.HighScoreActivity" />
+        <activity android:name=".highscore.RankingActivity" />
+        <activity android:name=".firebase.FirebaseActivity" />
     </application>
 
 </manifest>

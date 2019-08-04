@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DatabaseUtenti {
 
-    public List<Persona> utenti;
+    private List<Persona> utenti;
 
     public DatabaseUtenti() {
         this.utenti = new ArrayList<>();
@@ -40,7 +40,7 @@ public class DatabaseUtenti {
         return false;
     }
 
-    public boolean verificaUsername(String username) {
+    public boolean checkUsername(String username) {
         for(Persona utente : utenti) {
             if (utente.getUsername().equals(username)) {
                 return false;
@@ -49,10 +49,34 @@ public class DatabaseUtenti {
         return true;
     }
 
+    public String returnUsername(String username) {
+        for(Persona utente : utenti) {
+            if(utente.getUsername().equals(username)) {
+                return username;
+            }
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         return "Database{" +
                 "utenti=" + utenti +
                 '}';
+    }
+
+    public void init() {
+
+        Persona utente1 = new Persona("Gianluigi", "345");
+        Persona utente2 = new Persona("Mariano", "456");
+        Persona utente3 = new Persona("Daniele", "567");
+        Persona utente4 = new Persona("Frank", "678");
+        Persona utente5 = new Persona("Lino", "789");
+
+        utenti.add(utente1);
+        utenti.add(utente2);
+        utenti.add(utente3);
+        utenti.add(utente4);
+        utenti.add(utente5);
     }
 }

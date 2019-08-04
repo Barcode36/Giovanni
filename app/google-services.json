@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1000031012014",
+    "firebase_url": "https://giovanni-740a0.firebaseio.com",
+    "project_id": "giovanni-740a0",
+    "storage_bucket": "giovanni-740a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000031012014:android:5e52541a0d4b69ad",
+        "android_client_info": {
+          "package_name": "com.example.giovanni.giovanni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000031012014-e8t0h9khss9isv23np52udmv6f9nkf36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.giovanni.giovanni",
+            "certificate_hash": "196f40617dc456a14a03b6f6beea74165b13b692"
+          }
+        },
+        {
+          "client_id": "1000031012014-o4rkn3sec1nmq7brdcv4gq738603spqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVqhOggvUoueuMY-zLKCUjGHIUppmKEWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000031012014-o4rkn3sec1nmq7brdcv4gq738603spqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
