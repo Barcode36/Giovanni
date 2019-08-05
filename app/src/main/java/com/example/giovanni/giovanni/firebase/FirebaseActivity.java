@@ -13,9 +13,13 @@ public class FirebaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase);
 
-        TextView textView = findViewById(R.id.textHello);
+        TextView hello = findViewById(R.id.text_nome);
+        TextView textPersona = findViewById(R.id.text_persona);
+        TextView textLista = findViewById(R.id.text_lista);
 
-        FirebaseService.listenerFirebase(textView, "utente1");
+        FirebaseService.listener1(hello, "utente1");
+        FirebaseService.listener2(textPersona, "utente1");
+        FirebaseService.listener3(textLista);
 
         /*
         // Write a message to the database
