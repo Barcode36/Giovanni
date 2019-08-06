@@ -2,7 +2,6 @@ package com.example.giovanni.giovanni.firebase;
 
 import android.support.annotation.NonNull;
 import android.util.Log;
-import android.widget.TextView;
 import com.example.giovanni.giovanni.pojo.Persona;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -15,9 +14,11 @@ import java.util.List;
 class FirebaseService {
 
     private static Persona persona;
-    private static String value;
+    private static String nome;
+    private static String nomeCognome;
+    private static String lista;
 
-    static void listener1(final TextView hello, String utente) {
+    static String listener1(String utente) {
 
         // Write a message to the database.
         FirebaseDatabase database = FirebaseDatabase.getInstance(); // L'istanza è l'URL principale.
@@ -34,8 +35,7 @@ class FirebaseService {
             // i dati in questa posizione vengono aggiornati.
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                value = dataSnapshot.getValue(String.class);
-                hello.setText(value);
+                nome = dataSnapshot.getValue(String.class);
             }
 
             @Override
@@ -43,9 +43,10 @@ class FirebaseService {
                 Log.w("TAGFIREBASE", "Failed to read value.", error.toException());
             }
         });
+        return nome;
     }
 
-    static void listener2(final TextView textPersona, String utente) {
+    static String listener2(String utente) {
 
         Log.i("TAGFIREBASE", utente);
         // Write a message to the database.
@@ -73,8 +74,7 @@ class FirebaseService {
                     id = String.valueOf(persona.getId());
                 }
 
-                String result = nome + " " + cognome + " " + id;
-                textPersona.setText(result);
+                nomeCognome = nome + " " + cognome + " " + id;
             }
 
             @Override
@@ -83,9 +83,10 @@ class FirebaseService {
                 Log.w("TAGFIREBASE", "Failed to read value.", error.toException());
             }
         });
+        return nomeCognome;
     }
 
-    static void listener3(final TextView textLista) {
+    static String listener3() {
 
         // Write a message to the database.
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -105,9 +106,8 @@ class FirebaseService {
                     list.add(person);
                 }
 
-                String result = list.get(0).getNome() + " " + list.get(0).getCognome() + ", id " + list.get(0).getId() + "\n" +
+                lista = list.get(0).getNome() + " " + list.get(0).getCognome() + ", id " + list.get(0).getId() + "\n" +
                         list.get(1).getNome() + " " + list.get(1).getCognome() + ", id " + list.get(1).getId();
-                textLista.setText(result);
             }
 
             @Override
@@ -116,5 +116,6 @@ class FirebaseService {
                 Log.w("TAGFIREBASE", "Failed to read value.", error.toException());
             }
         });
+        return lista;
     }
 }

@@ -32,4 +32,40 @@
         android:textSize="24sp"
         android:layout_below="@+id/text_persona"/>
 
+    <TextView
+        android:id="@+id/text_rest_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:layout_below="@+id/text_lista"/>
+
+    <TextView
+        android:id="@+id/text_rest_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:layout_below="@+id/text_rest_1"/>
+
+    <TextView
+        android:id="@+id/text_rest_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:layout_below="@+id/text_rest_2"/>
+
 </RelativeLayout>
