@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Articolo;
+import com.example.giovanni.giovanni.model.Articolo;
 import java.util.List;
 
 public class ArticoliAdapter extends RecyclerView.Adapter<ArticoliViewHolder> {

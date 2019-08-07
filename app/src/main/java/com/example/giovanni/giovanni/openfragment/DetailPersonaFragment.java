@@ -12,8 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.DetailPersona;
-import com.example.giovanni.giovanni.pojo.Persona;
+import com.example.giovanni.giovanni.model.DetailPersona;
+import com.example.giovanni.giovanni.model.Persona;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -10,10 +10,10 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Azienda;
-import com.example.giovanni.giovanni.pojo.Developer;
-import com.example.giovanni.giovanni.pojo.Inserviente;
-import com.example.giovanni.giovanni.pojo.Manager;
+import com.example.giovanni.giovanni.model.Azienda;
+import com.example.giovanni.giovanni.model.Developer;
+import com.example.giovanni.giovanni.model.Inserviente;
+import com.example.giovanni.giovanni.model.Manager;
 
 import java.util.ArrayList;
 import java.util.List;

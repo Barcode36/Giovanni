@@ -4,13 +4,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import com.example.giovanni.giovanni.R;
+import com.example.giovanni.giovanni.utils.FirebaseRestClient;
+import com.example.giovanni.giovanni.utils.FirebaseService;
+import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import cz.msebera.android.httpclient.Header;
 
 public class FirebaseActivity extends AppCompatActivity {
 
-    private String stringRest1;
-    private String stringRest2;
+    private static String stringRest1;
+    private static String stringRest2;
+    private static String stringRest3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +29,8 @@ public class FirebaseActivity extends AppCompatActivity {
         TextView textRest2 = findViewById(R.id.text_rest_2);
         TextView textRest3 = findViewById(R.id.text_rest_3);
 
-        textNome.setText(FirebaseService.listener1("utente1"));
-        textPersona.setText(FirebaseService.listener2("utente1"));
+        textNome.setText(FirebaseService.listener1("01"));
+        textPersona.setText(FirebaseService.listener2("01"));
         textLista.setText(FirebaseService.listener3());
 
         /*
@@ -59,7 +63,7 @@ public class FirebaseActivity extends AppCompatActivity {
 
         textRest1.setText(callRest1("response.json"));
         textRest2.setText(callRest2());
-        textRest3.setText(FirebaseRestClient.callRest3());
+        textRest3.setText(callRest3());
     }
 
     public String callRest1(String url) {
@@ -94,5 +98,35 @@ public class FirebaseActivity extends AppCompatActivity {
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {}
         });
         return stringRest2;
+    }
+
+    public String callRest3() {
+
+        AsyncHttpClient client = new AsyncHttpClient();
+        client.get("https://giovanni-740a0.firebaseio.com/response.json", new AsyncHttpResponseHandler() {
+
+            @Override
+            public void onStart() {
+                super.onStart();
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                if (statusCode == 200) {
+                    stringRest3 = new String(responseBody);
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                stringRest3 = new String(responseBody);
+            }
+
+            @Override
+            public void onRetry(int retryNo) {
+                super.onRetry(retryNo);
+            }
+        });
+        return stringRest3;
     }
 }

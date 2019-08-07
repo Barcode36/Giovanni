@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Azienda;
+import com.example.giovanni.giovanni.model.Azienda;
 
 public class LoginActivity extends AppCompatActivity {
 

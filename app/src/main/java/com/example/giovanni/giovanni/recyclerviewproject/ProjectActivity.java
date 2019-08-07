@@ -9,7 +9,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Azienda;
+import com.example.giovanni.giovanni.model.Azienda;
 
 public class ProjectActivity extends AppCompatActivity {
 

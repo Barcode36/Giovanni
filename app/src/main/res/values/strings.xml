@@ -186,5 +186,6 @@
 
     <!-- FIREBASE -->
     <string name="firebase">Firebase</string>
+    <string name="json_parse">JSON Parse</string>
 
 </resources>

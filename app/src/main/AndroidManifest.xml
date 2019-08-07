@@ -93,6 +93,7 @@
         <activity android:name=".highscore.HighScoreActivity" />
         <activity android:name=".highscore.RankingActivity" />
         <activity android:name=".firebase.FirebaseActivity" />
+        <activity android:name=".firebaseparse.JSONParseActivity" />
     </application>
 
 </manifest>

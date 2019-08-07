@@ -11,8 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.DatabaseUtenti;
-import com.example.giovanni.giovanni.pojo.Persona;
+import com.example.giovanni.giovanni.model.DatabaseUtenti;
+import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.utils.CustomButton;
 
 public class LoginIntentActivity extends AppCompatActivity {

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Body;
+import com.example.giovanni.giovanni.model.Body;
 
 import java.util.List;
 

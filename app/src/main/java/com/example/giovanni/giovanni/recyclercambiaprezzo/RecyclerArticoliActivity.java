@@ -8,7 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Articolo;
+import com.example.giovanni.giovanni.model.Articolo;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

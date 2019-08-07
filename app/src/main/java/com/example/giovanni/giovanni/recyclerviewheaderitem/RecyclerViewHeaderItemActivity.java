@@ -8,7 +8,7 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.ListMaking;
+import com.example.giovanni.giovanni.model.ListMaking;
 
 public class RecyclerViewHeaderItemActivity extends AppCompatActivity {
 

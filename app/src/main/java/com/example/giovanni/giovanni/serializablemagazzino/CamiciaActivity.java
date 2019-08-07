@@ -9,8 +9,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Camicia;
-import com.example.giovanni.giovanni.pojo.Magazzino;
+import com.example.giovanni.giovanni.model.Camicia;
+import com.example.giovanni.giovanni.model.Magazzino;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

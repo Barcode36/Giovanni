@@ -8,9 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Azienda;
-import com.example.giovanni.giovanni.pojo.Dipendente;
-import com.example.giovanni.giovanni.pojo.Progetto;
+import com.example.giovanni.giovanni.model.Azienda;
+import com.example.giovanni.giovanni.model.Dipendente;
+import com.example.giovanni.giovanni.model.Progetto;
 
 import java.util.List;
 

@@ -13,8 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Azienda;
-import com.example.giovanni.giovanni.pojo.Dipendente;
+import com.example.giovanni.giovanni.model.Azienda;
+import com.example.giovanni.giovanni.model.Dipendente;
 
 import java.util.List;
 import java.util.regex.Matcher;

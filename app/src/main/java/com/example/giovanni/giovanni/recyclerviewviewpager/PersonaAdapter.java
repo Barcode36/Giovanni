@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.utils.CustomButton;
-import com.example.giovanni.giovanni.pojo.Persona;
+import com.example.giovanni.giovanni.model.Persona;
 
 import java.util.List;
 

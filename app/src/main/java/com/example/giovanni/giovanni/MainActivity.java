@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.giovanni.giovanni.firebase.FirebaseActivity;
+import com.example.giovanni.giovanni.firebaseparse.JSONParseActivity;
 import com.example.giovanni.giovanni.fragmentdialog.MainDialogActivity;
 import com.example.giovanni.giovanni.googlemaps.MapsActivity;
 import com.example.giovanni.giovanni.highscore.HighScoreActivity;
@@ -95,5 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.firebase).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), FirebaseActivity.class)));
+
+        findViewById(R.id.json_parse).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), JSONParseActivity.class)));
     }
 }

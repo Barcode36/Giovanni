@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Dipendente;
-import com.example.giovanni.giovanni.pojo.Progetto;
+import com.example.giovanni.giovanni.model.Dipendente;
+import com.example.giovanni.giovanni.model.Progetto;
 
 public class DipendenteProgettoFragment extends Fragment {
 

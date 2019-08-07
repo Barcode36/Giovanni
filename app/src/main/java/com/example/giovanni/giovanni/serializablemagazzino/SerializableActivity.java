@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Magazzino;
+import com.example.giovanni.giovanni.model.Magazzino;
 
 public class SerializableActivity extends AppCompatActivity {
 

@@ -7,8 +7,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.pojo.Persona;
-import com.example.giovanni.giovanni.pojo.Rubrica;
+import com.example.giovanni.giovanni.model.Persona;
+import com.example.giovanni.giovanni.model.Rubrica;
 
 public class ListViewRubricaActivity extends AppCompatActivity {
 
