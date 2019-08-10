@@ -39,9 +39,9 @@ public class AdapterContatto extends ArrayAdapter<Persona> {
         TextView tNome;
         TextView tNumero;
 
-        tID = convertView.findViewById(R.id.textID);
-        tNome = convertView.findViewById(R.id.textNome);
-        tNumero = convertView.findViewById(R.id.textNumero);
+        tID = convertView.findViewById(R.id.text_id);
+        tNome = convertView.findViewById(R.id.text_nome);
+        tNumero = convertView.findViewById(R.id.text_msisdn);
 
         String ID = String.valueOf(contatto.getId());
         String nome = contatto.getNome() + " " + contatto.getCognome();

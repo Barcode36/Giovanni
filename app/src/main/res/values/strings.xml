@@ -79,9 +79,7 @@
     <string name="cerca_id">Cerca dipendente per ID progetto</string>
     <string name="mostra_azienda">Mostra azienda</string>
 
-    <string name="listview_adapter_rubrica">ListView Adapter\nRubrica</string>
-    <string name="rubrica">RUBRICA TELEFONICA</string>
-    <string name="contatti">Contatti</string>
+    <string name="listview_adapter_rubrica">ListView Adapter Rubrica\nInternal Storage</string>
     <string name="id">ID</string>
     <string name="nome">Nome</string>
     <string name="cognome">Cognome</string>

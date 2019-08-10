@@ -27,7 +27,7 @@ public class TwoListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_twolist);
 
         rubrica1 = new Rubrica();
-        rubrica1.init();
+        rubrica1.init2();
 
         rubrica2 = new Rubrica();
 

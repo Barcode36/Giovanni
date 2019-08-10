@@ -68,7 +68,6 @@
         <activity android:name=".listview.ListItemActivity" />
         <activity android:name=".listviewazienda.ListActivity" />
         <activity android:name=".twolistviewonebutton.TwoListViewOneButtonActivity" />
-        <activity android:name=".listviewadapterrubrica.RubricaActivity" />
         <activity android:name=".listviewadapterrubrica.ListViewRubricaActivity" />
         <activity android:name=".twolistviewonebuttonadapter.TwoListActivity" />
         <activity android:name=".recyclercambiaprezzo.RecyclerArticoliActivity" />
