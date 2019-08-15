@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.DatabaseUtenti;
+import com.example.giovanni.giovanni.model.PersonaManager;
 import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.utils.CustomButton;
 
@@ -32,7 +32,7 @@ public class LoginIntentActivity extends AppCompatActivity {
     private CustomButton buttonTwo;
     private String username;
     private String password;
-    private DatabaseUtenti database;
+    private PersonaManager database;
     private boolean login;
     private boolean signUp;
     private Intent intent;
@@ -57,7 +57,7 @@ public class LoginIntentActivity extends AppCompatActivity {
         buttonOne = findViewById(R.id.button_one);
         buttonTwo = findViewById(R.id.button_two);
 
-        database = new DatabaseUtenti();
+        database = new PersonaManager();
         database.inserisci(new Persona("Giovanni", "123"));
         database.inserisci("Raffaele", "234");
         database.init();

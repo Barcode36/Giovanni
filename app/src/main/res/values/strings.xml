@@ -103,7 +103,6 @@
     <string name="dettagli">Dettagli</string>
     <string name="personali">Personali</string>
     <string name="completi">Completi</string>
-    <string name="go">Go</string>
 
     <string name="recyclerview_add_item">Add Item</string>
     <string name="san_martino">La nebbia a gl\'irti colli\npiovigginando sale,\ne sotto il maestrale\nurla e biancheggia il mar;\n\nma per le vie del borgo\ndal ribollir de\' tini\nva l\'aspro odor de i vini\nl\'anime a rallegrar.\n\nGira su\' ceppi accesi\nlo spiedo scoppiettando:\nsta il cacciator fischiando\nsu l\'uscio a rimirar\n\ntra le rossastre nubi\nstormi d\'uccelli neri,\ncom\'esuli pensieri,\nnel vespero migrar.</string>
@@ -183,7 +182,8 @@
     <string name="high_score">High Score</string>
 
     <!-- FIREBASE -->
-    <string name="firebase">Firebase</string>
-    <string name="json_parse">JSON Parse</string>
+    <string name="firebase">Firebase Rest</string>
+    <string name="json_parse">Firebase Rest\nJSON Parse</string>
+    <string name="firebase_login">Firebase Rest Login\nJSON Parse\nShared Preferences\nInternal Storage</string>
 
 </resources>

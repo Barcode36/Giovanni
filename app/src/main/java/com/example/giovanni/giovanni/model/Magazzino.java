@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Magazzino implements Serializable {
 
-    public List<Articolo> articoli;
+    private List<Articolo> articoli;
 
     public Magazzino() {
         this.articoli = new ArrayList<>();

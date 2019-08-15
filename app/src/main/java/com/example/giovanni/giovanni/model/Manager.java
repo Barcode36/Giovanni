@@ -4,17 +4,9 @@ import java.io.Serializable;
 
 public class Manager extends Dipendente implements Serializable {
 
-    public int malattia;
-
-    public int bonus;
-    public int idProgetto;
-
-    public Manager() {
-        super();
-        malattia = 0;
-        this.bonus = 0;
-        this.idProgetto = 0;
-    }
+    private int malattia;
+    private int bonus;
+    private int idProgetto;
 
     public Manager(String matricola, double stipendio, double straordinario) {
         super(matricola, stipendio, straordinario);
@@ -24,12 +16,6 @@ public class Manager extends Dipendente implements Serializable {
     public Manager(String matricola, double stipendio, double straordinario, int malattia) {
         super(matricola, stipendio, straordinario);
         this.malattia = malattia;
-    }
-
-    public Manager(int id, String nome, String cognome) {
-        super(id, nome, cognome);
-        this.bonus = 0;
-        this.idProgetto = 0;
     }
 
     public Manager(int id, String nome, String cognome, double stipendio, int bonus, int idProgetto) {

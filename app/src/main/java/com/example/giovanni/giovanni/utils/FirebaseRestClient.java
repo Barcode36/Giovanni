@@ -20,8 +20,4 @@ public class FirebaseRestClient {
     private static String getAbsoluteUrl(String relativeUrl) {
         return BASE_URL + relativeUrl;
     }
-
-    public interface ITaskDelegate {
-        void taskCompletionResult(String result);
-    }
 }

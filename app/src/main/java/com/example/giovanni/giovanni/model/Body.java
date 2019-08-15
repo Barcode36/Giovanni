@@ -2,8 +2,8 @@ package com.example.giovanni.giovanni.model;
 
 public class Body {
 
-    public static final int HEADER_TYPE = 0;
-    public static final int ITEM_TYPE = 1;
+    static final int HEADER_TYPE = 0;
+    static final int ITEM_TYPE = 1;
 
     private int type;
     private String title;

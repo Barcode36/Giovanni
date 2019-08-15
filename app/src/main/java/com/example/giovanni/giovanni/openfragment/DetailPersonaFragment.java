@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.DetailPersona;
+import com.example.giovanni.giovanni.model.PersonaDetail;
 import com.example.giovanni.giovanni.model.Persona;
 
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class DetailPersonaFragment extends Fragment {
 
     private Persona persona;
     private LinearLayout bodyContainer;
-    private List<DetailPersona> details;
+    private List<PersonaDetail> details;
 
     public static DetailPersonaFragment newInstance(Persona persona) {
         DetailPersonaFragment fragment = new DetailPersonaFragment();
@@ -46,34 +46,34 @@ public class DetailPersonaFragment extends Fragment {
         return view;
     }
 
-    public List<DetailPersona> init(Persona persona) {
+    public List<PersonaDetail> init(Persona persona) {
 
-        List<DetailPersona> list = new ArrayList<>();
+        List<PersonaDetail> list = new ArrayList<>();
 
-        list.add(new DetailPersona(persona.getNome(), persona.getCognome()));
+        list.add(new PersonaDetail(persona.getNome(), persona.getCognome()));
 
-        list.add(new DetailPersona("Sesso", persona.getSesso()));
-        list.add(new DetailPersona("Data di nascita", persona.getDataNascita()));
-        list.add(new DetailPersona("Luogo di nascita", persona.getLuogoNascita()));
-        list.add(new DetailPersona("Provincia", persona.getProvincia()));
-        list.add(new DetailPersona("Msisdn", persona.getMsisdn()));
-        list.add(new DetailPersona("Età", "valore"));
-        list.add(new DetailPersona("Username", "valore"));
-        list.add(new DetailPersona("Email", "valore"));
-        list.add(new DetailPersona("Codice Fiscale", "valore"));
+        list.add(new PersonaDetail("Sesso", persona.getSesso()));
+        list.add(new PersonaDetail("Data di nascita", persona.getDataNascita()));
+        list.add(new PersonaDetail("Luogo di nascita", persona.getLuogoNascita()));
+        list.add(new PersonaDetail("Provincia", persona.getProvincia()));
+        list.add(new PersonaDetail("Msisdn", persona.getMsisdn()));
+        list.add(new PersonaDetail("Età", "valore"));
+        list.add(new PersonaDetail("Username", "valore"));
+        list.add(new PersonaDetail("Email", "valore"));
+        list.add(new PersonaDetail("Codice Fiscale", "valore"));
 
         return list;
     }
 
     @TargetApi(Build.VERSION_CODES.M)
-    private void addViews(List<DetailPersona> details) {
+    private void addViews(List<PersonaDetail> details) {
         if (details == null)
             return;
         if (details.size() == 0)
             return;
 
         bodyContainer.removeAllViews();
-        for (DetailPersona detail : details) {
+        for (PersonaDetail detail : details) {
             if (detail == null)
                 continue;
 

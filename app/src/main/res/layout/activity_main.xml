@@ -192,6 +192,14 @@
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/json_parse" />
 
+            <Button
+                android:id="@+id/firebase_login"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase_login" />
+
         </LinearLayout>
 
     </ScrollView>

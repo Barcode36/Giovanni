@@ -92,7 +92,12 @@
         <activity android:name=".highscore.HighScoreActivity" />
         <activity android:name=".highscore.RankingActivity" />
         <activity android:name=".firebase.FirebaseActivity" />
-        <activity android:name=".firebaseparse.JSONParseActivity" />
+        <activity android:name=".firebaseparse.FirebaseParseActivity" />
+        <activity android:name=".firebaseparselogin.FirebaseParseLoginActivity" />
+        <activity android:name=".firebaseparselogin.LoginSignupActivity" />
+        <activity android:name=".firebaseparselogin.HomeActivity" />
+        <activity android:name=".firebaseparselogin.UtentiActivity" />
+        <activity android:name=".firebaseparselogin.SignoutActivity" />
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.giovanni.giovanni.model;
 
+import android.support.annotation.NonNull;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -13,16 +14,6 @@ public class Progetto implements Serializable {
     private String user;
     private Date data;
 
-    public Progetto() {
-        this.id = 0;
-        this.nome = null;
-        this.budget = 0;
-        this.dipendente = new Dipendente();
-        this.stato = null;
-        this.user = null;
-        this.data = null;
-    }
-
     public Progetto(String nome, int budget) {
         this.nome = nome;
         this.budget = budget;
@@ -32,11 +23,6 @@ public class Progetto implements Serializable {
         this.nome = nome;
         this.budget = budget;
         this.dipendente = dipendente;
-    }
-
-    public Progetto(int id, String nome) {
-        this.id = id;
-        this.nome = nome;
     }
 
     public Progetto(int id, String nome, String stato, String user, Date data) {
@@ -103,7 +89,7 @@ public class Progetto implements Serializable {
         this.data = data;
     }
 
-    @Override
+    @NonNull
     public String toString() {
         return "Progetto {" +
                 "nome: " + nome + '\'' +

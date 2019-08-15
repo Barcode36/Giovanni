@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Rubrica implements Serializable {
 
-    public List<Persona> contatti;
+    private List<Persona> contatti;
 
     public Rubrica() {
         this.contatti = new ArrayList<>();

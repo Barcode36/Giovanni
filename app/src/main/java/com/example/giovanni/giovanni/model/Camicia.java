@@ -2,8 +2,8 @@ package com.example.giovanni.giovanni.model;
 
 public class Camicia extends Articolo {
 
-    public int taglia;
-    public String colore;
+    private int taglia;
+    private String colore;
 
     public Camicia() {
         super(); // Richiamo il costruttore della classe padre.

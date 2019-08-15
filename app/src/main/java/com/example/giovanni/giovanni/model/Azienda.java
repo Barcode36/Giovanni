@@ -10,9 +10,9 @@ import java.util.Locale;
 
 public class Azienda extends Dipendente implements Serializable {
 
-    public String nome;
-    public List<Dipendente> dipendenti;
-    public List<Progetto> progetti;
+    private String nome;
+    private List<Dipendente> dipendenti;
+    private List<Progetto> progetti;
 
     public Azienda() {
         this.nome = null;

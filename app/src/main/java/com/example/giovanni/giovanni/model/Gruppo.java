@@ -2,15 +2,9 @@ package com.example.giovanni.giovanni.model;
 
 public class Gruppo {
 
-    public int id;
-    public String nome;
-    public int componenti;
-
-    public Gruppo() {
-        this.id = 0;
-        this.nome = null;
-        this.componenti = 0;
-    }
+    private int id;
+    private String nome;
+    private int componenti;
 
     public Gruppo(int id, String nome, int componenti) {
         this.id = id;

@@ -6,20 +6,8 @@ import java.util.List;
 
 public class Developer extends Dipendente implements Serializable {
 
-    public int idProgetto;
-    public List<String> skills;
-
-    public Developer() {
-        super();
-        this.idProgetto = 0;
-        this.skills = new ArrayList<>();
-    }
-
-    public Developer(int id, String nome, String cognome) {
-        super(id, nome, cognome);
-        this.idProgetto = 0;
-        this.skills = new ArrayList<>();
-    }
+    private int idProgetto;
+    private List<String> skills;
 
     public Developer(int id, String nome, String cognome, double stipendio, int idProgetto, List<String> skills) {
         super(id, nome, cognome, stipendio);

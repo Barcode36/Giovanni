@@ -1,5 +1,7 @@
 package com.example.giovanni.giovanni.model;
 
+import android.support.annotation.NonNull;
+
 import java.io.Serializable;
 
 public class Dipendente implements Serializable {
@@ -9,9 +11,9 @@ public class Dipendente implements Serializable {
     public String cognome;
     private String username;
     private String password;
-    public String matricola;
-    public double stipendio;
-    public double straordinario;
+    private String matricola;
+    private double stipendio;
+    private double straordinario;
 
     public Dipendente() {
         this.id = 0;
@@ -121,7 +123,7 @@ public class Dipendente implements Serializable {
         this.straordinario = straordinario;
     }
 
-    @Override
+    @NonNull
     public String toString() {
         return "Impiegato {" +
                 "nome: " + nome + '\'' +

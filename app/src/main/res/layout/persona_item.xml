@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/text_nome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nome"
         android:textColor="@color/colorPrimary"
@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/text_cognome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cognome"
         android:textColor="@color/colorPrimary"
@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/text_matricola"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Matricola"
         android:textColor="@color/colorPrimary"

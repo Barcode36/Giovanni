@@ -2,14 +2,8 @@ package com.example.giovanni.giovanni.model;
 
 public class Libro extends Articolo {
 
-    public String autore;
+    private String autore;
     private double sconto;
-
-    public Libro() {
-        super(); // Richiamo il costruttore della classe padre.
-        this.autore = null;
-        this.sconto = 0.0d;
-    }
 
     public Libro(int id, String nome, double prezzo, String autore) {
         super(id, nome, prezzo);
