@@ -208,31 +208,4 @@ public class JSONParse {
         }
         return index;
     }
-
-    public static int getProductKey(String json) {
-
-        int index = 1;
-        try {
-            JSONObject jsonObject1 = new JSONObject(json);
-            Iterator<String> iterator1 = jsonObject1.keys();
-
-            while (iterator1.hasNext()) {
-                String key1 = iterator1.next();
-                JSONObject jsonObject2 = jsonObject1.getJSONObject(key1);
-                Iterator iterator2 = jsonObject2.keys();
-
-                while (iterator2.hasNext()) {
-                    index++;
-                    iterator2.next();
-                }
-
-                // index++;
-                // iterator1.next();
-            }
-        }
-        catch (JSONException ex) {
-            ex.printStackTrace();
-        }
-        return index;
-    }
 }
