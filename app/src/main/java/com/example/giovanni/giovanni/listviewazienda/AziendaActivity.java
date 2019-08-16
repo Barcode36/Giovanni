@@ -4,18 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Azienda;
 
 public class AziendaActivity extends AppCompatActivity {
 
-    private Button bAzienda;
-    private Button bInserisci;
-    private Button bCerca;
     private Azienda azienda;
     private Intent intent;
 
@@ -27,38 +22,29 @@ public class AziendaActivity extends AppCompatActivity {
         azienda = new Azienda();
         azienda.init();
 
-        bAzienda = findViewById(R.id.buttonAzienda);
-        bInserisci = findViewById(R.id.buttonInserisci);
-        bCerca = findViewById(R.id.buttonCerca);
+        Button bAzienda = findViewById(R.id.buttonAzienda);
+        Button bInserisci = findViewById(R.id.buttonInserisci);
+        Button bCerca = findViewById(R.id.buttonCerca);
 
-        bAzienda.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        bAzienda.setOnClickListener(v -> {
 
-                intent = new Intent(getApplicationContext(), ListActivity.class);
-                intent.putExtra("AZIENDA", azienda);
-                startActivity(intent);
-            }
+            intent = new Intent(getApplicationContext(), ListActivity.class);
+            intent.putExtra("AZIENDA", azienda);
+            startActivity(intent);
         });
 
-        bInserisci.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        bInserisci.setOnClickListener(v -> {
 
-                intent = new Intent(getApplicationContext(), InsertActivity.class);
-                intent.putExtra("INSERT", azienda);
-                startActivityForResult(intent, 500);
-            }
+            intent = new Intent(getApplicationContext(), InsertActivity.class);
+            intent.putExtra("INSERT", azienda);
+            startActivityForResult(intent, 500);
         });
 
-        bCerca.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        bCerca.setOnClickListener(v -> {
 
-                intent = new Intent(getApplicationContext(), FindActivity.class);
-                intent.putExtra("FIND", azienda);
-                startActivity(intent);
-            }
+            intent = new Intent(getApplicationContext(), FindActivity.class);
+            intent.putExtra("FIND", azienda);
+            startActivity(intent);
         });
     }
 

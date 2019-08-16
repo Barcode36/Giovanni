@@ -87,8 +87,8 @@ public class PodcastActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if(requestCode == 500) {
-            if(resultCode == Activity.RESULT_OK) {
+        if (requestCode == 500) {
+            if (resultCode == Activity.RESULT_OK) {
                 String message = "Hai ascoltato i " + data.getStringExtra("RESULT") + ", ottima scelta!";
                 textResult.setText(message);
             }

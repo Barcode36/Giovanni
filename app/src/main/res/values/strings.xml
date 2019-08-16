@@ -185,5 +185,6 @@
     <string name="firebase">Firebase Rest</string>
     <string name="json_parse">Firebase Rest\nJSON Parse</string>
     <string name="firebase_login">Firebase Rest Login\nJSON Parse\nShared Preferences\nInternal Storage</string>
+    <string name="firebase_articoli">Firebase Articoli</string>
 
 </resources>

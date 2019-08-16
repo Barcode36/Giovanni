@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image_articolo"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:id="@+id/articoli_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/image_articolo"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/nome_articolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Articolo"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/prezzo_articolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prezzo"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/red"
+        android:layout_below="@id/articoli_container" />
+
+</RelativeLayout>

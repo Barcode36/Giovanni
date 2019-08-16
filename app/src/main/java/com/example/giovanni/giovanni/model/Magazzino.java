@@ -12,10 +12,6 @@ public class Magazzino implements Serializable {
         this.articoli = new ArrayList<>();
     }
 
-    public Magazzino(List<Articolo> articoli) {
-        this.articoli = articoli;
-    }
-
     public List<Articolo> getArticoli() {
         return articoli;
     }

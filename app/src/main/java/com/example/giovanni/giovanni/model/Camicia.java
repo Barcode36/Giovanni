@@ -7,12 +7,14 @@ public class Camicia extends Articolo {
 
     public Camicia() {
         super(); // Richiamo il costruttore della classe padre.
-        this.taglia = 0;
-        this.colore = null;
+    }
+
+    public Camicia(String nome, double prezzo) {
+        super(nome, prezzo);
     }
 
     public Camicia(int id, String descrizione, double prezzo, int quantita) {
-        super(id, descrizione, prezzo, quantita); // Richiamo il costruttore della classe padre.
+        super(id, descrizione, prezzo, quantita);
     }
 
     public Camicia(int id, String nome, double prezzo, int taglia, String colore) {

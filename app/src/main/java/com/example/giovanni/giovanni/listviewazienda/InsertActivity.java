@@ -3,7 +3,6 @@ package com.example.giovanni.giovanni.listviewazienda;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -22,7 +21,6 @@ import java.util.regex.Pattern;
 
 public class InsertActivity extends AppCompatActivity {
 
-    private Button bConferma;
     private Spinner sTipo;
     private EditText eIDProgetto;
     private EditText eNome;
@@ -52,83 +50,80 @@ public class InsertActivity extends AppCompatActivity {
         intent = getIntent();
         azienda = (Azienda) intent.getSerializableExtra("INSERT");
 
-        bConferma = findViewById(R.id.buttonConferma);
+        Button bConferma = findViewById(R.id.buttonConferma);
         sTipo = findViewById(R.id.spinner);
         eIDProgetto = findViewById(R.id.editID);
         eNome = findViewById(R.id.editNome);
         eCognome = findViewById(R.id.editCognome);
 
-        bConferma.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        bConferma.setOnClickListener(v -> {
 
-                if (eIDProgetto.getText().toString().equals("") ||
-                        eNome.getText().toString().equals("") ||
-                        eCognome.getText().toString().equals("")) {
-                    Toast.makeText(getApplicationContext(), "Riempi tutti i campi", Toast.LENGTH_LONG).show();
-                } else {
-                    tipo = sTipo.getSelectedItem().toString();
+            if (eIDProgetto.getText().toString().equals("") ||
+                    eNome.getText().toString().equals("") ||
+                    eCognome.getText().toString().equals("")) {
+                Toast.makeText(getApplicationContext(), "Riempi tutti i campi", Toast.LENGTH_LONG).show();
+            } else {
+                tipo = sTipo.getSelectedItem().toString();
 
-                    IDProgetto = eIDProgetto.getText().toString();
-                    Pattern pIDProgetto = Pattern.compile(INT_REGEX);
-                    Matcher mIDProgetto = pIDProgetto.matcher(IDProgetto);
-                    if (!mIDProgetto.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore ID non valido", Toast.LENGTH_SHORT).show();
-                        eIDProgetto.setText("");
-                    } else
-                        IDProgettoInt = Integer.parseInt(IDProgetto);
+                IDProgetto = eIDProgetto.getText().toString();
+                Pattern pIDProgetto = Pattern.compile(INT_REGEX);
+                Matcher mIDProgetto = pIDProgetto.matcher(IDProgetto);
+                if (!mIDProgetto.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore ID non valido", Toast.LENGTH_SHORT).show();
+                    eIDProgetto.setText("");
+                } else
+                    IDProgettoInt = Integer.parseInt(IDProgetto);
 
-                    nome = eNome.getText().toString();
-                    Pattern pNome = Pattern.compile(STRING_REGEX);
-                    Matcher mNome = pNome.matcher(nome);
-                    if (!mNome.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore nome non valido", Toast.LENGTH_SHORT).show();
-                        eNome.setText("");
-                    }
+                nome = eNome.getText().toString();
+                Pattern pNome = Pattern.compile(STRING_REGEX);
+                Matcher mNome = pNome.matcher(nome);
+                if (!mNome.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore nome non valido", Toast.LENGTH_SHORT).show();
+                    eNome.setText("");
+                }
 
-                    cognome = eCognome.getText().toString();
-                    Pattern pCognome = Pattern.compile(STRING_REGEX);
-                    Matcher mCognome = pCognome.matcher(cognome);
-                    if (!mCognome.matches()) {
-                        Toast.makeText(getApplicationContext(), "Valore cognome non valido", Toast.LENGTH_SHORT).show();
-                        eCognome.setText("");
-                    }
+                cognome = eCognome.getText().toString();
+                Pattern pCognome = Pattern.compile(STRING_REGEX);
+                Matcher mCognome = pCognome.matcher(cognome);
+                if (!mCognome.matches()) {
+                    Toast.makeText(getApplicationContext(), "Valore cognome non valido", Toast.LENGTH_SHORT).show();
+                    eCognome.setText("");
+                }
 
-                    if (tipo.equalsIgnoreCase("Manager") && mIDProgetto.matches() && mNome.matches() && mCognome.matches()) {
+                if (tipo.equalsIgnoreCase("Manager") && mIDProgetto.matches() && mNome.matches() && mCognome.matches()) {
 
-                        manager = new Manager(123, "" + nome, "" + cognome,2400,0, IDProgettoInt);
-                        if (azienda.verificaID(IDProgettoInt)) {
-                            azienda.inserisciDipendente(manager);
-                            Toast.makeText(getApplicationContext(), "Add Complete", Toast.LENGTH_LONG).show();
-                        } else {
-                            Toast.makeText(getApplicationContext(), "Invalid Project ID", Toast.LENGTH_LONG).show();
-                            eIDProgetto.setText("");
-                        }
-                    }
-
-                    if (tipo.equalsIgnoreCase("Developer") && mIDProgetto.matches() && mNome.matches() && mCognome.matches()) {
-                        skills = new ArrayList<>();
-                        developer = new Developer(55, "" + nome, "" + cognome, 1500, IDProgettoInt, skills);
-                        if (azienda.verificaID(IDProgettoInt)) {
-                            azienda.inserisciDipendente(developer);
-                            Toast.makeText(getApplicationContext(), "Add Complete", Toast.LENGTH_LONG).show();
-                        } else {
-                            Toast.makeText(getApplicationContext(), "Invalid Project ID", Toast.LENGTH_LONG).show();
-                            eIDProgetto.setText("");
-                        }
-                    }
-                    if (tipo.equalsIgnoreCase("Inserviente")) {
-
-                        inserviente = new Inserviente(0, "" + nome, "" + cognome, 110, 55);
-                        azienda.inserisciDipendente(inserviente);
+                    manager = new Manager(123, "" + nome, "" + cognome,2400,0, IDProgettoInt);
+                    if (azienda.verificaID(IDProgettoInt)) {
+                        azienda.inserisciDipendente(manager);
                         Toast.makeText(getApplicationContext(), "Add Complete", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Invalid Project ID", Toast.LENGTH_LONG).show();
+                        eIDProgetto.setText("");
                     }
+                }
 
-                    if (azienda.verificaID(IDProgettoInt) && mIDProgetto.matches() && mNome.matches() && mCognome.matches()) {
-                        intent.putExtra("result", azienda);
-                        setResult(RESULT_OK, intent);
-                        finish();
+                if (tipo.equalsIgnoreCase("Developer") && mIDProgetto.matches() && mNome.matches() && mCognome.matches()) {
+                    skills = new ArrayList<>();
+                    developer = new Developer(55, "" + nome, "" + cognome, 1500, IDProgettoInt, skills);
+                    if (azienda.verificaID(IDProgettoInt)) {
+                        azienda.inserisciDipendente(developer);
+                        Toast.makeText(getApplicationContext(), "Add Complete", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Invalid Project ID", Toast.LENGTH_LONG).show();
+                        eIDProgetto.setText("");
                     }
+                }
+                if (tipo.equalsIgnoreCase("Inserviente")) {
+
+                    inserviente = new Inserviente(0, "" + nome, "" + cognome, 110, 55);
+                    azienda.inserisciDipendente(inserviente);
+                    Toast.makeText(getApplicationContext(), "Add Complete", Toast.LENGTH_LONG).show();
+                }
+
+                if (azienda.verificaID(IDProgettoInt) && mIDProgetto.matches() && mNome.matches() && mCognome.matches()) {
+                    intent.putExtra("result", azienda);
+                    setResult(RESULT_OK, intent);
+                    finish();
                 }
             }
         });

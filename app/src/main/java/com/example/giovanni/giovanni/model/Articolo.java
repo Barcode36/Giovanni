@@ -20,6 +20,11 @@ public class Articolo implements Serializable {
         this.data = null;
     }
 
+    public Articolo(String nome, double prezzo) {
+        this.nome = nome;
+        this.prezzo = prezzo;
+    }
+
     public Articolo(int id, String descrizione, double prezzo, int quantita) {
         this.id = id;
         this.descrizione = descrizione;
@@ -89,5 +94,16 @@ public class Articolo implements Serializable {
 
     public void setData(String data) {
         this.data = data;
+    }
+
+    public static class Gelato extends Articolo {
+
+        public Gelato() {
+            super();
+        }
+
+        public Gelato(String nome, double prezzo) {
+            super(nome, prezzo);
+        }
     }
 }

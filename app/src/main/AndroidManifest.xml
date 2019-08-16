@@ -98,6 +98,8 @@
         <activity android:name=".firebaseparselogin.HomeActivity" />
         <activity android:name=".firebaseparselogin.UtentiActivity" />
         <activity android:name=".firebaseparselogin.SignoutActivity" />
+        <activity android:name=".firebasearticoli.FirebaseArticoliActivity" />
+        <activity android:name=".firebasearticoli.FirebaseInsertActivity" />
     </application>
 
 </manifest>
