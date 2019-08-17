@@ -39,30 +39,38 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/double_listview"
+                android:id="@+id/istview_simple"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dimen_10dp"
                 android:layout_marginEnd="@dimen/dimen_10dp"
                 android:layout_marginBottom="@dimen/dimen_10dp"
-                android:text="@string/double_listview" />
+                android:text="@string/istview_simple" />
 
             <Button
-                android:id="@+id/twolistview_onebutton"
+                android:id="@+id/two_listview_copy"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/twolistview_onebutton" />
+                android:text="@string/two_listview_copy" />
 
             <Button
-                android:id="@+id/azienda_listview"
+                android:id="@+id/two_listview_adapter"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/azienda_listview" />
+                android:text="@string/two_listview_adapter" />
+
+            <Button
+                android:id="@+id/two_listview_thread"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/two_listview_thread" />
 
             <Button
                 android:id="@+id/listview_adapter_rubrica"
@@ -73,12 +81,12 @@
                 android:text="@string/listview_adapter_rubrica" />
 
             <Button
-                android:id="@+id/twolistview_onebutton_adapter"
+                android:id="@+id/listview_azienda"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/twolistview_onebutton_adapter" />
+                android:text="@string/listview_azienda" />
 
         </LinearLayout>
 

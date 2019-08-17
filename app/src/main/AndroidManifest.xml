@@ -63,13 +63,11 @@
         <activity android:name=".listviewazienda.AziendaActivity" />
         <activity android:name=".listviewazienda.FindActivity" />
         <activity android:name=".listviewazienda.InsertActivity" />
-        <activity android:name=".listview.ListViewChoiceActivity" />
-        <activity android:name=".listview.SimpleListItemActivity" />
-        <activity android:name=".listview.ListItemActivity" />
-        <activity android:name=".listviewazienda.ListActivity" />
-        <activity android:name=".twolistviewonebutton.TwoListViewOneButtonActivity" />
+        <activity android:name=".listview.ListViewSimpleActivity" />
+        <activity android:name=".listviewazienda.ListViewAziendaActivity" />
+        <activity android:name=".twolistviewcopy.TwoListViewCopyActivity" />
         <activity android:name=".listviewadapterrubrica.ListViewRubricaActivity" />
-        <activity android:name=".twolistviewonebuttonadapter.TwoListActivity" />
+        <activity android:name=".twolistviewadapter.TwoListViewAdapterActivity" />
         <activity android:name=".recyclercambiaprezzo.RecyclerArticoliActivity" />
         <activity android:name=".recyclercambiaprezzo.CambiaPrezzoActivity" />
         <activity android:name=".recyclerviewproject.LoginActivity" />
@@ -102,6 +100,7 @@
         <activity android:name=".firebasearticoli.FirebaseInsertActivity" />
         <activity android:name=".threadpics.ThreadPicsActivity" />
         <activity android:name=".threadasynctask.ThreadAsyncTaskActivity" />
+        <activity android:name=".twolistviewthread.TwoListViewThreadActivity" />
     </application>
 
 </manifest>

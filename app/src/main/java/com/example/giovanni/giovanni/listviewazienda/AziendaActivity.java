@@ -28,7 +28,7 @@ public class AziendaActivity extends AppCompatActivity {
 
         bAzienda.setOnClickListener(v -> {
 
-            intent = new Intent(getApplicationContext(), ListActivity.class);
+            intent = new Intent(getApplicationContext(), ListViewAziendaActivity.class);
             intent.putExtra("AZIENDA", azienda);
             startActivity(intent);
         });

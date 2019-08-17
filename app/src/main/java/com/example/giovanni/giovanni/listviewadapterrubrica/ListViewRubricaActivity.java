@@ -7,8 +7,6 @@ import android.widget.Toast;
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.model.Rubrica;
-import com.example.giovanni.giovanni.utils.InternalStorage;
-
 import java.util.List;
 
 public class ListViewRubricaActivity extends AppCompatActivity {
@@ -39,19 +37,10 @@ public class ListViewRubricaActivity extends AppCompatActivity {
         lista.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
-        // INTERNAL STORAGE (WRITE)
-        String fileRubrica = "FileRubrica";
-        InternalStorage.writeObject(this, fileRubrica, rubrica);
-
         lista.setOnItemClickListener((parent, view, position, id) -> {
 
-            // INTERNAL STORAGE (READ)
-            Rubrica rubricaFile = (Rubrica) InternalStorage.readObject(this,"FileRubrica");
-
             contatto = (Persona) lista.getItemAtPosition(position);
-            message = "Hai eliminato " + contatto.getNome() + " " + contatto.getCognome() + "\n\n" +
-                    "Rubrica aggiornata:" + "\n\n" +
-                    rubricaFile.getInfoContatti(contatti);
+            message = "Hai eliminato " + contatto.getNome() + " " + contatto.getCognome();
             Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
 
             rubrica.elimina(position);

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Giovanni</string>
 
-    <string name="menu">Menu</string>
+    <string name="home">Home</string>
     <string name="listview">ListView</string>
     <string name="recyclerview">RecyclerView</string>
 
@@ -60,15 +60,24 @@
     <string name="digita_autore">Digita l\'autore</string>
     <string name="aggiungi">Aggiungi al carrello</string>
 
-    <string name="double_listview">simple_list_item_1\nlist_item</string>
-    <string name="list_item">list_item</string>
-    <string name="simple_list_item_1">simple_list_item_1</string>
+    <!-- LISTVIEW -->
 
-    <string name="twolistview_onebutton">Two ListView One Button</string>
-    <string name="sposta">Sposta</string>
+    <string name="istview_simple">simple_list_item_1\nlist_item</string>
 
-    <string name="azienda_listview">Serializable Azienda + Spinner</string>
-    <string name="home">HOME</string>
+    <string name="two_listview_copy">Two ListView copy</string>
+    <string name="copy">Copia</string>
+
+    <string name="two_listview_adapter">Two ListView\nAdapter</string>
+
+    <string name="two_listview_thread">Two ListView\nThread</string>
+
+    <string name="listview_adapter_rubrica">ListView\nAdapter Rubrica</string>
+    <string name="id">ID</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="numero">Numero</string>
+
+    <string name="listview_azienda">Azienda Serializable\nSpinner</string>
     <string name="inserisci_dipendente">Inserisci dipendente</string>
     <string name="cerca_dipendente">Cerca dipendente</string>
     <string name="scegli_dipendente">Quale dipendente vuoi inserire?</string>
@@ -78,14 +87,6 @@
     <string name="conferma">Conferma</string>
     <string name="cerca_id">Cerca dipendente per ID progetto</string>
     <string name="mostra_azienda">Mostra azienda</string>
-
-    <string name="listview_adapter_rubrica">ListView Adapter Rubrica\nInternal Storage</string>
-    <string name="id">ID</string>
-    <string name="nome">Nome</string>
-    <string name="cognome">Cognome</string>
-    <string name="numero">Numero</string>
-
-    <string name="twolistview_onebutton_adapter">Two ListView One Button\nAdapter Rubrica</string>
 
     <string name="recyclerview_cambiaprezzo">CardView cambia prezzo\nsetOnClickListener\nclipToPadding</string>
     <string name="prodotto">Prodotto:</string>
