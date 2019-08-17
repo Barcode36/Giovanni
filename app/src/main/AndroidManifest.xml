@@ -100,6 +100,7 @@
         <activity android:name=".firebaseparselogin.SignoutActivity" />
         <activity android:name=".firebasearticoli.FirebaseArticoliActivity" />
         <activity android:name=".firebasearticoli.FirebaseInsertActivity" />
+        <activity android:name=".threadpics.ThreadPicsActivity" />
     </application>
 
 </manifest>

@@ -187,4 +187,7 @@
     <string name="firebase_login">Firebase Rest Login\nJSON Parse\nShared Preferences\nInternal Storage</string>
     <string name="firebase_articoli">Firebase Articoli</string>
 
+    <!-- THREAD -->
+    <string name="thread_pics">Thread pics</string>
+
 </resources>

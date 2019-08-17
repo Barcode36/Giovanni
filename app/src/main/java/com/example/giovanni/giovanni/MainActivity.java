@@ -23,6 +23,7 @@ import com.example.giovanni.giovanni.navigationdrawer.NavigationDrawerActivity;
 import com.example.giovanni.giovanni.offset.OffsetActivity;
 import com.example.giovanni.giovanni.serializablemagazzino.SerializableActivity;
 import com.example.giovanni.giovanni.textlayout.TextLayoutActivity;
+import com.example.giovanni.giovanni.threadpics.ThreadPicsActivity;
 import com.example.giovanni.giovanni.viewpagernewinstance.ViewPagerNewInstanceActivity;
 import com.example.giovanni.giovanni.viewpagertablayout.ViewPagerActivity;
 
@@ -107,5 +108,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.firebase_articoli).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), FirebaseArticoliActivity.class)));
+
+        findViewById(R.id.thread_pics).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), ThreadPicsActivity.class)));
     }
 }
