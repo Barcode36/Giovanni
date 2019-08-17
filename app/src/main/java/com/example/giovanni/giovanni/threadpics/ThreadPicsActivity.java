@@ -20,13 +20,13 @@ public class ThreadPicsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_thread_pics);
+        setContentView(R.layout.activity_thread);
 
         imageThread = findViewById(R.id.image_thread);
         textViewCounter = findViewById(R.id.textview_counter);
     }
 
-    public void loadImages(View v) {
+    public void loadPics(View v) {
 
         new Thread(() -> {
 

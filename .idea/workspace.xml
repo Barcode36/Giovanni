@@ -21,8 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb15062-0009-4c18-b97c-6bb09067d994" name="Default" comment="Implement .gitIgnore file">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadpics/ThreadPicsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_pics.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctask/ThreadAsyncTaskActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -36,7 +35,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadpics/ThreadPicsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadpics/ThreadPicsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_pics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,25 +95,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadpics/ThreadPicsActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctask/ThreadAsyncTaskActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="72" lean-forward="true" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
+            <state relative-caret-position="388">
+              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_thread_pics.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="41" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -124,14 +115,13 @@
         <option value="resourceFile" />
         <option value="Interface" />
         <option value="valueResourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>final_step_video_switch</find>
       <find>inputtype</find>
       <find>set_la</find>
       <find>switch</find>
@@ -161,6 +151,7 @@
       <find>Floati</find>
       <find>FloatingActionButton</find>
       <find>getReferenceFromUrl</find>
+      <find>ProgressBar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,12 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Rubrica.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Gruppo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Inserviente.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Dipendente.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Developer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/DetailPersona.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/DatabaseUtenti.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Body.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Azienda.java" />
@@ -215,12 +200,18 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_articolo.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebasearticoli/FirebaseInsertActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/JSONParse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_pics.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadsleep/ThreadSleepActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadprogressbar/ThreadSleepActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadprogressbar/ThreadProgressBarActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctask/ThreadProgressBarActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_pics.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadpics/ThreadPicsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_thread.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctask/ThreadAsyncTaskActivity.java" />
       </list>
     </option>
   </component>
@@ -253,22 +244,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Giovanni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Giovanni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Giovanni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Giovanni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -292,14 +269,35 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="giovanni" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="loginintent" type="462c0819:PsiDirectoryNode" />
+              <item name="threadasynctask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Giovanni" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="giovanni" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="threadpics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Giovanni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Giovanni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Giovanni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Giovanni" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -653,9 +651,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="723" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="723" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49835527" visible="true" weight="0.16397415" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49835527" visible="true" weight="0.2197092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" sideWeight="0.50164473" side_tool="true" weight="0.24474959" />
@@ -719,17 +717,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Implement .gitIgnore file" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebaseparselogin/FirebaseParseLoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#711#743#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login_signup.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1066,21 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="102" column="66" selection-start-line="102" selection-start-column="66" selection-end-line="102" selection-end-column="66" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1103,24 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-          <folding>
-            <element signature="e#2105#2127#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/loginintent/PodcastActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1138,23 +1092,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="180">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_thread_pics.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="41" />
+        <state relative-caret-position="468">
+          <caret line="103" column="68" selection-start-line="103" selection-start-column="68" selection-end-line="103" selection-end-column="68" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="115" column="43" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="218" column="19" selection-start-line="218" selection-start-column="19" selection-end-line="218" selection-end-column="19" />
+          <folding>
+            <element signature="e#9048#9075#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadpics/ThreadPicsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="72" lean-forward="true" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
+        <state relative-caret-position="135">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_thread.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctask/ThreadAsyncTaskActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

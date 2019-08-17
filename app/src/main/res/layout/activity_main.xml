@@ -216,6 +216,14 @@
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/thread_pics" />
 
+            <Button
+                android:id="@+id/thread_async_task"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/thread_async_task" />
+
         </LinearLayout>
 
     </ScrollView>

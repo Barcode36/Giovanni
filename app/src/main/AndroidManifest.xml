@@ -101,6 +101,7 @@
         <activity android:name=".firebasearticoli.FirebaseArticoliActivity" />
         <activity android:name=".firebasearticoli.FirebaseInsertActivity" />
         <activity android:name=".threadpics.ThreadPicsActivity" />
+        <activity android:name=".threadasynctask.ThreadAsyncTaskActivity" />
     </application>
 
 </manifest>

@@ -189,5 +189,6 @@
 
     <!-- THREAD -->
     <string name="thread_pics">Thread pics</string>
+    <string name="thread_async_task">Thread AsyncTask</string>
 
 </resources>
