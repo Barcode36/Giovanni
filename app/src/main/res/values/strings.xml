@@ -130,11 +130,6 @@
 
     <string name="offset">ViewPager + TabLayout Custom\nScrollView Sticky\nOffset</string>
 
-    <!-- ASYNCTASKCOUNTER -->
-    <string name="asynctask_counter">AsyncTaskCounter</string>
-    <string name="replace">Replace</string>
-    <string name="start_progress">Start Progress</string>
-
     <string name="recyclerview_accordion">Accordion</string>
 
     <string name="text_layout">SetText\nSet Layout</string>
@@ -191,5 +186,8 @@
     <!-- THREAD -->
     <string name="thread_pics">Thread pics</string>
     <string name="thread_async_task">Thread AsyncTask</string>
+    <string name="thread_async_task_counter">Thread AsyncTask Counter</string>
+    <string name="replace">Replace</string>
+    <string name="start_progress">Start Progress</string>
 
 </resources>

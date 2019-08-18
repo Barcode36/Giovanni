@@ -48,7 +48,7 @@
         <activity android:name=".viewpagertablayout.ViewPagerActivity" />
         <activity android:name=".recyclerviewheaderitem.RecyclerViewHeaderItemActivity" />
         <activity android:name=".loginintent.LoginIntentActivity" />
-        <activity android:name=".asynctaskcounter.AsyncTaskCounterActivity" />
+        <activity android:name=".threadasynctaskcounter.ThreadAsyncTaskCounterActivity" />
         <activity android:name=".recyclerviewadditem.RecyclerViewAddItemActivity" />
         <activity android:name=".recyclerviewviewpager.RecyclerViewViewPagerActivity" />
         <activity android:name=".viewpagernewinstance.ViewPagerNewInstanceActivity" />

@@ -2,18 +2,18 @@ package com.example.giovanni.giovanni.model;
 
 import java.io.Serializable;
 
-public class Manager extends Dipendente implements Serializable {
+public class Manager extends Persona implements Serializable {
 
     private int malattia;
     private int bonus;
     private int idProgetto;
 
-    public Manager(String matricola, double stipendio, double straordinario) {
+    public Manager(long matricola, double stipendio, double straordinario) {
         super(matricola, stipendio, straordinario);
         this.malattia = 0;
     }
 
-    public Manager(String matricola, double stipendio, double straordinario, int malattia) {
+    public Manager(long matricola, double stipendio, double straordinario, int malattia) {
         super(matricola, stipendio, straordinario);
         this.malattia = malattia;
     }
@@ -56,11 +56,10 @@ public class Manager extends Dipendente implements Serializable {
     public double paga(int oreStraordinario) {
         double p;
         p = super.paga(oreStraordinario);
-        if (this.malattia == 0) {
+        if (this.malattia == 0)
             return p;
-        } else {
+        else
             return p = p - this.malattia * 15.0;
-        }
     }
 
     public String stampaMalattia() {

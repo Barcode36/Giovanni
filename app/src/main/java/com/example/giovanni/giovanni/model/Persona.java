@@ -23,6 +23,8 @@ public class Persona implements Serializable {
     private String password;
     private List<Gruppo> lista;
     private String tipo;
+    private double stipendio;
+    private double straordinario;
     private boolean checked;
 
     public Persona() {
@@ -42,6 +44,9 @@ public class Persona implements Serializable {
         this.codiceFiscale = null;
         this.password = null;
         this.lista = new ArrayList<>();
+        this.tipo = null;
+        this.stipendio = 0.0;
+        this.straordinario = 0.0;
         this.checked = false;
     }
 
@@ -103,6 +108,34 @@ public class Persona implements Serializable {
         this.msisdn = msisdn;
         this.tipo = tipo;
         this.checked = checked;
+    }
+
+    /*
+    public Persona(int id, String nome, String cognome) {
+        this.id = id;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.stipendio = 0.0;
+    }
+    */
+
+    public Persona(int id, String nome, String cognome, double stipendio) {
+        this.id = id;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.stipendio = stipendio;
+    }
+
+    public Persona(long matricola, double stipendio, double straordinario) {
+        this.matricola = matricola;
+        this.stipendio = stipendio;
+        this.straordinario = straordinario;
+    }
+
+    public Persona(String nome, String username, String password) {
+        this.nome = nome;
+        this.username = username;
+        this.password = password;
     }
 
     public int getId() {
@@ -241,6 +274,22 @@ public class Persona implements Serializable {
         this.tipo = tipo;
     }
 
+    public double getStipendio() {
+        return stipendio;
+    }
+
+    public void setStipendio(double stipendio) {
+        this.stipendio = stipendio;
+    }
+
+    public double getStraordinario() {
+        return straordinario;
+    }
+
+    public void setStraordinario(double straordinario) {
+        this.straordinario = straordinario;
+    }
+
     public boolean isChecked() {
         return checked;
     }
@@ -282,5 +331,16 @@ public class Persona implements Serializable {
             }
         }
         return null;
+    }
+
+    public double paga(int oreStraordinario) {
+        return stipendio = stipendio + oreStraordinario * straordinario;
+    }
+
+    public String stampa() {
+        return "Dati dipendente {" +
+                "matricola: " + getMatricola() +
+                ", stipendio: " + getStipendio() +
+                ", straordinario: " + getStraordinario() + '}';
     }
 }

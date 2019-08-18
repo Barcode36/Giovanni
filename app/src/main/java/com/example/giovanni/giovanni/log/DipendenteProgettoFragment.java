@@ -1,6 +1,7 @@
 package com.example.giovanni.giovanni.log;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -8,28 +9,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Dipendente;
+import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.model.Progetto;
 
 public class DipendenteProgettoFragment extends Fragment {
 
     public static String TAG = "TAGDIPENDENTEPROGETTO";
 
-    Dipendente dipendente;
+    Persona dipendente;
     Progetto progetto1;
     Progetto progetto2;
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_log, container, false);
 
         TextView textLog = view.findViewById(R.id.text_log);
         textLog.setText(R.string.dipendente_progetto);
 
-        dipendente = new Dipendente();
+        dipendente = new Persona();
         dipendente.setNome("Giovanni");
         dipendente.setCognome("Petito");
 

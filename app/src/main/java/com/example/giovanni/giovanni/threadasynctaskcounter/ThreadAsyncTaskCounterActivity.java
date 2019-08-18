@@ -1,7 +1,6 @@
-package com.example.giovanni.giovanni.asynctaskcounter;
+package com.example.giovanni.giovanni.threadasynctaskcounter;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -10,10 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
 import com.example.giovanni.giovanni.R;
 
-public class AsyncTaskCounterActivity extends AppCompatActivity implements View.OnClickListener {
+public class ThreadAsyncTaskCounterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonCounter;
     private AsyncCounter counter;
@@ -21,25 +19,22 @@ public class AsyncTaskCounterActivity extends AppCompatActivity implements View.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_asynctask_counter);
+        setContentView(R.layout.activity_thread_asynctask_counter);
 
         buttonCounter = findViewById(R.id.button_counter);
         buttonCounter.setOnClickListener(this);
 
-        counter = new AsyncCounter(new AsyncTaskCounterActivity());
+        counter = new AsyncCounter();
     }
 
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.button_counter:
-                if(counter.isCancelled() || counter.getStatus() == AsyncTask.Status.FINISHED) {
-                    counter = new AsyncCounter(new AsyncTaskCounterActivity());
-                }
-                if(counter.getStatus() == AsyncTask.Status.PENDING)
-                    counter.execute();
-                else
-                    counter.cancel(true);
-                break;
+        if (view.getId() == R.id.button_counter) {
+            if (counter.isCancelled() || counter.getStatus() == AsyncTask.Status.FINISHED)
+                counter = new AsyncCounter();
+            if (counter.getStatus() == AsyncTask.Status.PENDING)
+                counter.execute();
+            else
+                counter.cancel(true);
         }
     }
 
@@ -49,7 +44,7 @@ public class AsyncTaskCounterActivity extends AppCompatActivity implements View.
         TextView txt;
         ProgressBar progressBar;
 
-        private AsyncCounter(Activity activity) {
+        private AsyncCounter() {
             txt = findViewById(R.id.output);
             progressBar = findViewById(R.id.progressBar);
         }
@@ -73,9 +68,8 @@ public class AsyncTaskCounterActivity extends AppCompatActivity implements View.
             for(int i=0; i<=5; i++) {
                 try {
                     publishProgress(i);
-                    if(i < 5) {
+                    if (i < 5)
                         Thread.sleep(1000);
-                    }
                 } catch (InterruptedException e) {
                     // TODO Auto-generated catch block
                     Thread.interrupted();
@@ -90,8 +84,8 @@ public class AsyncTaskCounterActivity extends AppCompatActivity implements View.
         @Override
         protected void onProgressUpdate(Integer ... values) {
             super.onProgressUpdate(values);
-            if(values != null && values.length > 0) {
-                buttonCounter.setText("" + values[0]);
+            if (values != null && values.length > 0) {
+                buttonCounter.setText(String.valueOf(values[0]));
                 progressBar.setProgress(values[0]);
             }
         }

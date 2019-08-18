@@ -9,7 +9,7 @@ public class Progetto implements Serializable {
     public int id;
     private String nome;
     private int budget;
-    private Dipendente dipendente;
+    private Persona dipendente;
     private String stato;
     private String user;
     private Date data;
@@ -19,7 +19,7 @@ public class Progetto implements Serializable {
         this.budget = budget;
     }
 
-    public Progetto(String nome, int budget, Dipendente dipendente) {
+    public Progetto(String nome, int budget, Persona dipendente) {
         this.nome = nome;
         this.budget = budget;
         this.dipendente = dipendente;
@@ -57,11 +57,11 @@ public class Progetto implements Serializable {
         this.budget = budget;
     }
 
-    public Dipendente getDipendente() {
+    public Persona getDipendente() {
         return dipendente;
     }
 
-    public void setDipendente(Dipendente dipendente) {
+    public void setDipendente(Persona dipendente) {
         this.dipendente = dipendente;
     }
 

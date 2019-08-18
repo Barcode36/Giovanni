@@ -8,10 +8,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class Azienda extends Dipendente implements Serializable {
+public class Azienda extends Persona implements Serializable {
 
     private String nome;
-    private List<Dipendente> dipendenti;
+    private List<Persona> dipendenti;
     private List<Progetto> progetti;
 
     public Azienda() {
@@ -34,11 +34,11 @@ public class Azienda extends Dipendente implements Serializable {
         this.nome = nome;
     }
 
-    public List<Dipendente> getDipendenti() {
+    public List<Persona> getDipendenti() {
         return dipendenti;
     }
 
-    public void setDipendenti(List<Dipendente> dipendenti) {
+    public void setDipendenti(List<Persona> dipendenti) {
         this.dipendenti = dipendenti;
     }
 
@@ -50,28 +50,27 @@ public class Azienda extends Dipendente implements Serializable {
         this.progetti = progetti;
     }
 
-    public void inserisci(Dipendente dipendente) {
+    public void inserisci(Persona dipendente) {
         dipendenti.add(dipendente);
     }
 
-    public void elimina(Dipendente dipendente) {
+    public void elimina(Persona dipendente) {
         dipendenti.remove(dipendente);
     }
 
-    public Dipendente cercaPerMatricola(String matricola) {
+    public Persona cercaPerMatricola(long matricola) {
 
-        for(Dipendente dipendente : dipendenti) {
-            if (matricola.equals(dipendente.getMatricola())) {
+        for(Persona dipendente : dipendenti) {
+            if (matricola == dipendente.getMatricola())
                 return dipendente;
-            }
         }
         return null;
     }
 
-    public Dipendente cercaPerStipendioMassimo() {
-        Dipendente ricco = null;
+    public Persona cercaPerStipendioMassimo() {
+        Persona ricco = null;
         double stipendioMassimo = 0.0;
-        for(Dipendente dipendente : dipendenti) {
+        for(Persona dipendente : dipendenti) {
             if (dipendente.getStipendio() > stipendioMassimo) {
                 stipendioMassimo = dipendente.getStipendio();
                 ricco = dipendente;
@@ -106,11 +105,11 @@ public class Azienda extends Dipendente implements Serializable {
     }
 
     // Il metodo returnEmployeesOnProject(), ricevuto un intero, ritorna una lista di tutti i dipendenti associati a quel progetto.
-    public List<Dipendente> returnEmployeesOnProject(int ID) {
+    public List<Persona> returnEmployeesOnProject(int ID) {
 
-        List<Dipendente> lista = new ArrayList<>();
+        List<Persona> lista = new ArrayList<>();
 
-        for(Dipendente dipendente : dipendenti) {
+        for(Persona dipendente : dipendenti) {
             if (dipendente instanceof Manager) {
                 Manager manager = (Manager) dipendente;
                 if (manager.getIdProgetto() == ID){
@@ -127,7 +126,7 @@ public class Azienda extends Dipendente implements Serializable {
         return lista;
     }
 
-    public void inserisciDipendente(Dipendente dipendente){
+    public void inserisciDipendente(Persona dipendente){
         dipendenti.add(dipendente);
     }
 
@@ -144,7 +143,7 @@ public class Azienda extends Dipendente implements Serializable {
 
         List<String> lista = new ArrayList<>();
 
-        for(Dipendente dipendente : dipendenti) {
+        for(Persona dipendente : dipendenti) {
             String stringa = "Dipendente " + dipendente.getId() + ": " + dipendente.getNome() + " " + dipendente.getCognome();
             lista.add(stringa);
         }
@@ -188,9 +187,9 @@ public class Azienda extends Dipendente implements Serializable {
         progetti.add(new Progetto(11,"Programmare","Chiusi", "giangio", sdf.parse("29/11/2018", new ParsePosition(0))));
         progetti.add(new Progetto(12,"Sviluppare","Pending", "lino", sdf.parse("18/12/2018", new ParsePosition(0))));
 
-        dipendenti.add(new Dipendente("Giovanni Petito","giovanni06","123"));
-        dipendenti.add(new Dipendente("Gianluigi Santillo","giangio","456"));
-        dipendenti.add(new Dipendente("Pasquale Amato","lino","789"));
+        dipendenti.add(new Persona("Giovanni Petito","giovanni06","123"));
+        dipendenti.add(new Persona("Gianluigi Santillo","giangio","456"));
+        dipendenti.add(new Persona("Pasquale Amato","lino","789"));
     }
 
     // Metodo che riceve in input lo stato del progetto (Aperti/Chiusi/Pending) e restituisce la lista di progetti con quello stato.
@@ -220,7 +219,7 @@ public class Azienda extends Dipendente implements Serializable {
 
     // Metodo che riceve username e password e controlla se il dipendente è presente in azienda.
     public boolean cercaDipendente(String username, String password) {
-        for(Dipendente dipendente : dipendenti) {
+        for(Persona dipendente : dipendenti) {
             if (dipendente.getUsername().equals(username) && dipendente.getPassword().equals(password)) {
                 return true;
             }
@@ -230,7 +229,7 @@ public class Azienda extends Dipendente implements Serializable {
 
     // Metodo che, dato l'username, restituisce il nome dell'utente (se esiste).
     public String mostraDipendente(String username) {
-        for(Dipendente dipendente : dipendenti) {
+        for(Persona dipendente : dipendenti) {
             if (dipendente.getUsername().equals(username)) {
                 return dipendente.getNome();
             }

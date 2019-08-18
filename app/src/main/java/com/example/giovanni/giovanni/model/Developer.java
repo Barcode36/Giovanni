@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Developer extends Dipendente implements Serializable {
+public class Developer extends Persona implements Serializable {
 
     private int idProgetto;
     private List<String> skills;

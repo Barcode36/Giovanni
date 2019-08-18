@@ -15,7 +15,7 @@ import com.example.giovanni.giovanni.googlemaps.MapsActivity;
 import com.example.giovanni.giovanni.highscore.HighScoreActivity;
 import com.example.giovanni.giovanni.log.LogActivity;
 import com.example.giovanni.giovanni.mvpaddtextchangedlistener.AddTextActivity;
-import com.example.giovanni.giovanni.asynctaskcounter.AsyncTaskCounterActivity;
+import com.example.giovanni.giovanni.threadasynctaskcounter.ThreadAsyncTaskCounterActivity;
 import com.example.giovanni.giovanni.fragments.FragmentsActivity;
 import com.example.giovanni.giovanni.loginintent.LoginIntentActivity;
 import com.example.giovanni.giovanni.mvploginkotlin.login.LoginKotlinActivity;
@@ -71,9 +71,6 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.viewpager_newinstance).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), ViewPagerNewInstanceActivity.class)));
 
-        findViewById(R.id.asynctask_counter).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), AsyncTaskCounterActivity.class)));
-
         findViewById(R.id.text_layout).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), TextLayoutActivity.class)));
 
@@ -115,5 +112,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.thread_async_task).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), ThreadAsyncTaskActivity.class)));
+
+        findViewById(R.id.thread_async_task_counter).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), ThreadAsyncTaskCounterActivity.class)));
     }
 }

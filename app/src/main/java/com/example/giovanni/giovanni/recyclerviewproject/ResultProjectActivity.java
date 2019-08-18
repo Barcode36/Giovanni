@@ -6,12 +6,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
-
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Azienda;
-import com.example.giovanni.giovanni.model.Dipendente;
+import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.model.Progetto;
-
 import java.util.List;
 
 public class ResultProjectActivity extends AppCompatActivity {
@@ -27,7 +25,7 @@ public class ResultProjectActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Azienda azienda = (Azienda) intent.getSerializableExtra("AZIENDA");
-        List<Dipendente> dipendenti = azienda.getDipendenti();
+        List<Persona> dipendenti = azienda.getDipendenti();
         List<Progetto> progetti = azienda.getProgetti(); // Ho ricavato pure la lista di task anche se non mi serve.
 
         username = intent.getStringExtra("UTENTE");

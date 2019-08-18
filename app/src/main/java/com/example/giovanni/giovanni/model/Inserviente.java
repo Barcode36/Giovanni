@@ -2,7 +2,7 @@ package com.example.giovanni.giovanni.model;
 
 import java.io.Serializable;
 
-public class Inserviente extends Dipendente implements Serializable {
+public class Inserviente extends Persona implements Serializable {
 
     private int idUfficio;
 

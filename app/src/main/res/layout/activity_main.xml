@@ -113,14 +113,6 @@
                 android:text="@string/viewpager_newinstance" />
 
             <Button
-                android:id="@+id/asynctask_counter"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/asynctask_counter" />
-
-            <Button
                 android:id="@+id/offset"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
@@ -223,6 +215,14 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/thread_async_task" />
+
+            <Button
+                android:id="@+id/thread_async_task_counter"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/thread_async_task_counter" />
 
         </LinearLayout>
 
