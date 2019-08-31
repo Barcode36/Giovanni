@@ -4,7 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class Utils {
 
@@ -29,5 +33,20 @@ public class Utils {
             intent.setData(Uri.parse(url));
             context.startActivity(intent);
         }
+    }
+
+    public static Date formatToDate(String date) {
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss", Locale.ITALY);
+        return format.parse(date, new ParsePosition(0));
+    }
+
+    public static String formatToString1(Date date) {
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy", Locale.ITALY);
+        return format.format(date);
+    }
+
+    public static String formatToString2(Date date) {
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss", Locale.ITALY);
+        return format.format(date);
     }
 }

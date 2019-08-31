@@ -1,22 +1,29 @@
 package com.example.giovanni.giovanni.model;
 
-public class Gruppo {
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
-    private int id;
+public class Gruppo implements Serializable {
+
     private String nome;
     private int componenti;
+    private List<Post> listaPost;
+    private Date date;
+    private int id;
 
-    public Gruppo(int id, String nome, int componenti) {
-        this.id = id;
+    public Gruppo() {
+        this.nome = null;
+        this.componenti = 0;
+        this.listaPost = new ArrayList<>();
+        this.date = new Date();
+        this.id = 0;
+    }
+
+    public Gruppo(String nome, int componenti, int id) {
         this.nome = nome;
         this.componenti = componenti;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
         this.id = id;
     }
 
@@ -34,5 +41,29 @@ public class Gruppo {
 
     public void setComponenti(int componenti) {
         this.componenti = componenti;
+    }
+
+    public List<Post> getListaPost() {
+        return listaPost;
+    }
+
+    public void setListaPost(List<Post> listaPost) {
+        this.listaPost = listaPost;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

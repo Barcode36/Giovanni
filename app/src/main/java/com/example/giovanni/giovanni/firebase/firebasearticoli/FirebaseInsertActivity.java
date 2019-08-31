@@ -1,4 +1,4 @@
-package com.example.giovanni.giovanni.firebasearticoli;
+package com.example.giovanni.giovanni.firebase.firebasearticoli;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -58,10 +58,10 @@ public class FirebaseInsertActivity extends AppCompatActivity implements ITaskDe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase_insert);
 
-        eNomeProdotto = findViewById(R.id.editNomeProdotto);
-        ePrezzoProdotto = findViewById(R.id.editPrezzoProdotto);
+        eNomeProdotto = findViewById(R.id.edit_nome_prodotto);
+        ePrezzoProdotto = findViewById(R.id.edit_prezzo_prodotto);
         tipoProdotto = findViewById(R.id.spinner);
-        Button bInserisci = findViewById(R.id.buttonInserisci);
+        Button bInserisci = findViewById(R.id.button_inserisci);
         bodyContainer = findViewById(R.id.body_container);
 
         nome = "";

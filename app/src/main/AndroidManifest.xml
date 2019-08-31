@@ -11,6 +11,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
@@ -89,15 +91,23 @@
         <activity android:name=".log.LogActivity" />
         <activity android:name=".highscore.HighScoreActivity" />
         <activity android:name=".highscore.RankingActivity" />
-        <activity android:name=".firebase.FirebaseActivity" />
-        <activity android:name=".firebaseparse.FirebaseParseActivity" />
-        <activity android:name=".firebaseparselogin.FirebaseParseLoginActivity" />
-        <activity android:name=".firebaseparselogin.LoginSignupActivity" />
-        <activity android:name=".firebaseparselogin.HomeActivity" />
-        <activity android:name=".firebaseparselogin.UtentiActivity" />
-        <activity android:name=".firebaseparselogin.SignoutActivity" />
-        <activity android:name=".firebasearticoli.FirebaseArticoliActivity" />
-        <activity android:name=".firebasearticoli.FirebaseInsertActivity" />
+        <activity android:name=".FirebaseActivity" />
+        <activity android:name=".firebase.firebaserest.FirebaseRestActivity" />
+        <activity android:name=".firebase.firebaseparse.FirebaseParseActivity" />
+        <activity android:name=".firebase.firebaseparselogin.FirebaseParseLoginActivity" />
+        <activity android:name=".firebase.firebaseparselogin.LoginSignupActivity" />
+        <activity android:name=".firebase.firebaseparselogin.HomeActivity" />
+        <activity android:name=".firebase.firebaseparselogin.UtentiActivity" />
+        <activity android:name=".firebase.firebaseparselogin.SignoutActivity" />
+        <activity android:name=".firebase.firebasearticoli.FirebaseArticoliActivity" />
+        <activity android:name=".firebase.firebasearticoli.FirebaseInsertActivity" />
+        <activity android:name=".firebase.firebasecommunity.PostAddActivity" />
+        <activity android:name=".firebase.firebasecommunity.PostDetailActivity" />
+        <activity android:name=".firebase.firebasecommunity.PostHomeActivity" />
+        <activity android:name=".firebase.firebasecommunity.PostListActivity" />
+        <activity android:name=".firebase.firebasecommunity.PostLoginActivity" />
+        <activity android:name=".firebase.firebasepush.FirebasePushActivity" />
+        <service android:name=".firebase.firebasepush.FirebasePush" />
         <activity android:name=".threadpics.ThreadPicsActivity" />
         <activity android:name=".threadasynctask.ThreadAsyncTaskActivity" />
         <activity android:name=".twolistviewthread.TwoListViewThreadActivity" />

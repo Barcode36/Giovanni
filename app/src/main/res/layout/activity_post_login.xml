@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Inserisci l'username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edit_username"
+        android:layout_below="@+id/edit_username"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Inserisci la password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/giovanni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentStart="true"
+        android:text="Username: giovanni\nPassword: ciao"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/button_login"/>
+
+    <TextView
+        android:id="@+id/raffaele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"
+        android:text="Username: raffaele\nPassword: hello"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/giovanni"/>
+
+</RelativeLayout>

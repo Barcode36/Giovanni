@@ -9,21 +9,37 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.example.giovanni.giovanni.R;
+import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.utils.BaseFragment;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
+import java.util.Random;
 
 public class FragmentPull extends BaseFragment {
 
     private TextView dataAttuale;
+    private TextView randomResult1;
+    private TextView randomResult2;
+    private List<Persona> lista1;
+    private List<Persona> lista2;
+    private Random randomGenerator = new Random();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_pull, container, false);
 
-        dataAttuale = view.findViewById(R.id.textDataAttuale);
+        dataAttuale = view.findViewById(R.id.text_data_attuale);
+        randomResult1 = view.findViewById(R.id.text_random_result_1);
+        randomResult2 = view.findViewById(R.id.text_random_result_2);
+
+        lista1 = new ArrayList<>();
+        lista1 = init();
+        lista2 = new ArrayList<>();
+        lista2 = init();
 
         return view;
     }
@@ -48,6 +64,52 @@ public class FragmentPull extends BaseFragment {
             Log.i("TAG", "Data: " + data + "\nData modificata: " + dataModificata);
 
             stopSwipeRefresh();
+
+            int random1 = randomGenerator.nextInt(6); // Genera un numero casuale che va da 0 a 5.
+            int random2 = randomGenerator.nextInt(6); // Genera un numero casuale che va da 0 a 5.
+
+            String risultato1 = sorteggio1(lista1, random1);
+            String risultato2 = sorteggio2(lista2, random2);
+
+            randomResult1.setText(risultato1);
+            randomResult2.setText(risultato2);
         });
+    }
+
+    private List<Persona> init() {
+
+        List<Persona> list = new ArrayList<>();
+
+        list.add(new Persona("Giovanni",0));
+        list.add(new Persona("Raffaele",1));
+        list.add(new Persona("Teresa & Ilenia",2));
+        list.add(new Persona("Angela",3));
+        list.add(new Persona("Vincenzo",4));
+        list.add(new Persona("Salvatore",5));
+
+        return list;
+    }
+
+    public String sorteggio1(List<Persona> lista, int numero) {
+        Persona persona = new Persona();
+        for (Persona temp : lista) {
+            if (temp.getId() == numero) {
+                persona = temp;
+                break;
+            }
+        }
+        return persona.getNome();
+    }
+
+    public String sorteggio2(List<Persona> lista, int numero) {
+        Persona persona = new Persona();
+        for (Persona temp : lista) {
+            if (temp.getId() == numero) {
+                persona = temp;
+                lista.remove(temp);
+                break;
+            }
+        }
+        return persona.getNome();
     }
 }

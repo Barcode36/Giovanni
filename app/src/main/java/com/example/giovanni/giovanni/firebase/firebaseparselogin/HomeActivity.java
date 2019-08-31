@@ -1,4 +1,4 @@
-package com.example.giovanni.giovanni.firebaseparselogin;
+package com.example.giovanni.giovanni.firebase.firebaseparselogin;
 
 import android.app.ProgressDialog;
 import android.content.Intent;

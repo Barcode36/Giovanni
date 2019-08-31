@@ -52,7 +52,7 @@
         </RelativeLayout>
 
         <EditText
-            android:id="@+id/editNomeProdotto"
+            android:id="@+id/edit_nome_prodotto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/spinner_container"
@@ -64,10 +64,10 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editPrezzoProdotto"
+            android:id="@+id/edit_prezzo_prodotto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editNomeProdotto"
+            android:layout_below="@+id/edit_nome_prodotto"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp"
             android:ems="10"
@@ -76,15 +76,15 @@
             android:textAlignment="center" />
 
         <Button
-            android:id="@+id/buttonInserisci"
+            android:id="@+id/button_inserisci"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/editPrezzoProdotto"
+            android:layout_below="@id/edit_prezzo_prodotto"
             android:layout_marginTop="24dp"
             android:text="inserisci"
-            android:background="#FF0000"
-            android:textColor="#FFFFFF"/>
+            android:background="@color/red"
+            android:textColor="@color/white"/>
 
     </RelativeLayout>
 

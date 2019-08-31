@@ -6,10 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.giovanni.giovanni.firebase.FirebaseActivity;
-import com.example.giovanni.giovanni.firebasearticoli.FirebaseArticoliActivity;
-import com.example.giovanni.giovanni.firebaseparselogin.FirebaseParseLoginActivity;
-import com.example.giovanni.giovanni.firebaseparse.FirebaseParseActivity;
 import com.example.giovanni.giovanni.fragmentdialog.MainDialogActivity;
 import com.example.giovanni.giovanni.googlemaps.MapsActivity;
 import com.example.giovanni.giovanni.highscore.HighScoreActivity;
@@ -95,18 +91,6 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.high_score).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), HighScoreActivity.class)));
 
-        findViewById(R.id.firebase).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), FirebaseActivity.class)));
-
-        findViewById(R.id.json_parse).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), FirebaseParseActivity.class)));
-
-        findViewById(R.id.firebase_login).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), FirebaseParseLoginActivity.class)));
-
-        findViewById(R.id.firebase_articoli).setOnClickListener(view ->
-                startActivity(new Intent(getApplicationContext(), FirebaseArticoliActivity.class)));
-
         findViewById(R.id.thread_pics).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), ThreadPicsActivity.class)));
 
@@ -115,5 +99,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.thread_async_task_counter).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), ThreadAsyncTaskCounterActivity.class)));
+
+        findViewById(R.id.firebase).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), FirebaseActivity.class)));
     }
 }

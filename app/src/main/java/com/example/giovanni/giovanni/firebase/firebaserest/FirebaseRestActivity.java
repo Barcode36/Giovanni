@@ -1,4 +1,4 @@
-package com.example.giovanni.giovanni.firebase;
+package com.example.giovanni.giovanni.firebase.firebaserest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +10,7 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import cz.msebera.android.httpclient.Header;
 
-public class FirebaseActivity extends AppCompatActivity {
+public class FirebaseRestActivity extends AppCompatActivity {
 
     private static String stringRest1;
     private static String stringRest2;
@@ -19,7 +19,7 @@ public class FirebaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firebase);
+        setContentView(R.layout.activity_firebase_rest);
 
         TextView textNome = findViewById(R.id.text_nome);
         TextView textPersona = findViewById(R.id.text_persona);

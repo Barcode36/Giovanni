@@ -1,88 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".FirebaseActivity"
+    android:background="@color/yellow"
+    android:padding="@dimen/dimen_15dp">
+
+    <RelativeLayout
+        android:id="@+id/title_firebase_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/firebase"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="@dimen/dimen_15dp"
+            android:textColor="@color/yellow" />
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_firebase_container"
+        android:background="@color/white">
 
-        <RelativeLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/text_nome"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/firebase_rest"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp" />
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase_rest" />
 
-            <TextView
-                android:id="@+id/text_persona"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/firebase_json_parse"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                android:layout_below="@+id/text_nome"/>
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase_json_parse" />
 
-            <TextView
-                android:id="@+id/text_lista"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/firebase_login"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                android:layout_below="@+id/text_persona"/>
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase_login" />
 
-            <TextView
-                android:id="@+id/text_rest_1"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/firebase_articoli"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                android:layout_below="@+id/text_lista"/>
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase_articoli" />
 
-            <TextView
-                android:id="@+id/text_rest_2"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/firebase_community"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                android:layout_below="@+id/text_rest_1"/>
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase_community" />
 
-            <TextView
-                android:id="@+id/text_rest_3"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/firebase_push"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="24dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                android:layout_below="@+id/text_rest_2"/>
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase_push" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </ScrollView>
 
-</FrameLayout>
+</RelativeLayout>

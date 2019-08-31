@@ -1,4 +1,4 @@
-package com.example.giovanni.giovanni.firebasearticoli;
+package com.example.giovanni.giovanni.firebase.firebasearticoli;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

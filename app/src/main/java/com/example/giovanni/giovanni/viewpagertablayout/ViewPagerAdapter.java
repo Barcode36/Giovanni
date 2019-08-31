@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    private String [] fragments = {"Calcolatrice", "Parallax effect", "Pin effect", "Pull to refresh", "Open Url"};
+    private String [] fragments = {"Calcolatrice", "Parallax effect", "Pin effect", "Pull to refresh + Random", "Open Url"};
 
     private FragmentCalcolatrice fragmentCalcolatrice = new FragmentCalcolatrice();
     private FragmentParallax fragmentParallax = new FragmentParallax();

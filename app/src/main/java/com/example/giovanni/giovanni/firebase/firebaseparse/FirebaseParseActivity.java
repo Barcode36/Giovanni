@@ -1,4 +1,4 @@
-package com.example.giovanni.giovanni.firebaseparse;
+package com.example.giovanni.giovanni.firebase.firebaseparse;
 
 import android.annotation.TargetApi;
 import android.app.ProgressDialog;

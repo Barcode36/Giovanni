@@ -54,6 +54,11 @@ public class Persona implements Serializable {
         this.cognome = cognome;
     }
 
+    public Persona(String nome, int id) {
+        this.nome = nome;
+        this.id = id;
+    }
+
     public Persona(int id, String nome, String cognome, String msisdn) {
         this.id = id;
         this.nome = nome;
@@ -300,11 +305,11 @@ public class Persona implements Serializable {
 
     public void init() {
 
-        inserisci(new Gruppo(1, "Nirvana", 3));
-        inserisci(new Gruppo(2, "Pearl Jam", 5));
-        inserisci(new Gruppo(3, "Soundgarden", 4));
-        inserisci(new Gruppo(4, "Stone Temple Pilots", 4));
-        inserisci(new Gruppo(5, "Audioslave", 4));
+        inserisci(new Gruppo("Nirvana", 3, 1));
+        inserisci(new Gruppo("Parl Jam", 5, 2));
+        inserisci(new Gruppo("Soundgarden", 4, 3));
+        inserisci(new Gruppo("Stone Temple Pilots", 4, 4));
+        inserisci(new Gruppo("Audioslave", 4, 5));
     }
 
     private void inserisci(Gruppo gruppo) {

@@ -169,38 +169,6 @@
                 android:text="@string/high_score" />
 
             <Button
-                android:id="@+id/firebase"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase" />
-
-            <Button
-                android:id="@+id/json_parse"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/json_parse" />
-
-            <Button
-                android:id="@+id/firebase_login"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase_login" />
-
-            <Button
-                android:id="@+id/firebase_articoli"
-                style="@style/MenuButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase_articoli" />
-
-            <Button
                 android:id="@+id/thread_pics"
                 style="@style/MenuButton"
                 android:layout_width="match_parent"
@@ -223,6 +191,14 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/thread_async_task_counter" />
+
+            <Button
+                android:id="@+id/firebase"
+                style="@style/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/firebase" />
 
         </LinearLayout>
 
