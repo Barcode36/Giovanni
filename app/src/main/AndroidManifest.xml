@@ -48,11 +48,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".viewpagertablayout.ViewPagerActivity" />
-        <activity android:name=".recyclerviewheaderitem.RecyclerViewHeaderItemActivity" />
+        <activity android:name=".recyclerview.recyclerviewheaderitem.RecyclerViewHeaderItemActivity" />
         <activity android:name=".loginintent.LoginIntentActivity" />
         <activity android:name=".threadasynctaskcounter.ThreadAsyncTaskCounterActivity" />
-        <activity android:name=".recyclerviewadditem.RecyclerViewAddItemActivity" />
-        <activity android:name=".recyclerviewviewpager.RecyclerViewViewPagerActivity" />
+        <activity android:name=".recyclerview.recyclerviewadditem.RecyclerViewAddItemActivity" />
+        <activity android:name=".recyclerview.recyclerviewviewpager.RecyclerViewViewPagerActivity" />
         <activity android:name=".viewpagernewinstance.ViewPagerNewInstanceActivity" />
         <activity android:name=".textlayout.TextLayoutActivity" />
         <activity android:name=".offset.OffsetActivity" />
@@ -62,23 +62,23 @@
         <activity android:name=".serializablemagazzino.StoreActivity" />
         <activity android:name=".serializablemagazzino.LibroActivity" />
         <activity android:name=".serializablemagazzino.CamiciaActivity" />
-        <activity android:name=".listviewazienda.AziendaActivity" />
-        <activity android:name=".listviewazienda.FindActivity" />
-        <activity android:name=".listviewazienda.InsertActivity" />
-        <activity android:name=".listview.ListViewSimpleActivity" />
-        <activity android:name=".listviewazienda.ListViewAziendaActivity" />
-        <activity android:name=".twolistviewcopy.TwoListViewCopyActivity" />
-        <activity android:name=".listviewadapterrubrica.ListViewRubricaActivity" />
-        <activity android:name=".twolistviewadapter.TwoListViewAdapterActivity" />
-        <activity android:name=".recyclercambiaprezzo.RecyclerArticoliActivity" />
-        <activity android:name=".recyclercambiaprezzo.CambiaPrezzoActivity" />
-        <activity android:name=".recyclerviewproject.LoginActivity" />
-        <activity android:name=".recyclerviewproject.ProjectActivity" />
-        <activity android:name=".recyclerviewproject.ResultProjectActivity" />
+        <activity android:name=".listview.listviewazienda.AziendaActivity" />
+        <activity android:name=".listview.listviewazienda.FindActivity" />
+        <activity android:name=".listview.listviewazienda.InsertActivity" />
+        <activity android:name=".listview.listviewsimple.ListViewSimpleActivity" />
+        <activity android:name=".listview.listviewazienda.ListViewAziendaActivity" />
+        <activity android:name=".listview.twolistviewcopy.TwoListViewCopyActivity" />
+        <activity android:name=".listview.listviewadapterrubrica.ListViewRubricaActivity" />
+        <activity android:name=".listview.twolistviewadapter.TwoListViewAdapterActivity" />
+        <activity android:name=".recyclerview.recyclercambiaprezzo.RecyclerArticoliActivity" />
+        <activity android:name=".recyclerview.recyclercambiaprezzo.CambiaPrezzoActivity" />
+        <activity android:name=".recyclerview.recyclerviewproject.LoginActivity" />
+        <activity android:name=".recyclerview.recyclerviewproject.ProjectActivity" />
+        <activity android:name=".recyclerview.recyclerviewproject.ResultProjectActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".fragments.FragmentsActivity" />
-        <activity android:name=".openfragment.OpenFragmentActivity" />
+        <activity android:name=".recyclerview.openfragment.OpenFragmentActivity" />
         <activity
             android:name=".navigationdrawer.NavigationDrawerActivity"
             android:label="@string/navigationdrawer"
@@ -87,7 +87,7 @@
         <activity android:name=".mvploginkotlin.login.LoginKotlinActivity" />
         <activity android:name=".mvploginkotlin.main.MainLoginKotlinActivity" />
         <activity android:name=".fragmentdialog.MainDialogActivity" />
-        <activity android:name=".accordion.AccordionActivity" />
+        <activity android:name=".recyclerview.accordion.AccordionActivity" />
         <activity android:name=".log.LogActivity" />
         <activity android:name=".highscore.HighScoreActivity" />
         <activity android:name=".highscore.RankingActivity" />
@@ -110,7 +110,7 @@
         <service android:name=".firebase.firebasepush.FirebasePush" />
         <activity android:name=".threadpics.ThreadPicsActivity" />
         <activity android:name=".threadasynctask.ThreadAsyncTaskActivity" />
-        <activity android:name=".twolistviewthread.TwoListViewThreadActivity" />
+        <activity android:name=".listview.twolistviewthread.TwoListViewThreadActivity" />
     </application>
 
 </manifest>

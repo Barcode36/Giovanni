@@ -14,7 +14,7 @@
         <item name="android:background">@drawable/button_selector</item>
     </style>
 
-    <style name="MenuButton">
+    <style name="HomeButton">
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/menu_button</item>
         <item name="android:padding">@dimen/dimen_10dp</item>

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecyclerViewActivity"
     android:background="@color/red"
     android:padding="@dimen/dimen_15dp">
 
@@ -40,59 +37,59 @@
 
             <Button
                 android:id="@+id/recyclerview_cambiaprezzo"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_cambiaprezzo" />
+                android:text="@string/recyclerview_cambiaprezzo"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/recyclerview_project"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_project" />
+                android:text="@string/recyclerview_project"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/recyclerview_add_item"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_add_item" />
+                android:text="@string/recyclerview_add_item"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/recyclerview_header_item"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_header_item" />
+                android:text="@string/recyclerview_header_item"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/recyclerview_openfragment"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_openfragment" />
+                android:text="@string/recyclerview_openfragment"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/recyclerview_viewpager"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_viewpager" />
+                android:text="@string/recyclerview_viewpager"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/recyclerview_accordion"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview_accordion" />
+                android:text="@string/recyclerview_accordion"
+                style="@style/HomeButton" />
 
         </LinearLayout>
 

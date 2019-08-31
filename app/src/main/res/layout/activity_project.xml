@@ -83,6 +83,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/dimen_50dp"
         android:text="@string/show_projects"
-        style="@style/MenuButton" />
+        style="@style/HomeButton" />
 
 </RelativeLayout>

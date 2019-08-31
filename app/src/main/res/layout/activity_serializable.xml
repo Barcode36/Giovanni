@@ -23,7 +23,7 @@
         android:layout_marginTop="@dimen/dimen_200dp"
         android:layout_centerHorizontal="true"
         android:text="@string/camicia"
-        style="@style/MenuButton" />
+        style="@style/HomeButton" />
 
     <Button
         android:id="@+id/buttonLibro"
@@ -33,6 +33,6 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/buttonCamicia"
         android:text="@string/libro"
-        style="@style/MenuButton" />
+        style="@style/HomeButton" />
 
 </RelativeLayout>

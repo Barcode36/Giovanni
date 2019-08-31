@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/dialog_button"
-        style="@style/MenuButton"
+        style="@style/HomeButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_20dp"

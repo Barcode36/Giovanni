@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".recyclercambiaprezzo.CambiaPrezzoActivity">
+    tools:context=".recyclerview.recyclercambiaprezzo.CambiaPrezzoActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -34,6 +34,6 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/conferma"
-        style="@style/MenuButton" />
+        style="@style/HomeButton" />
 
 </RelativeLayout>

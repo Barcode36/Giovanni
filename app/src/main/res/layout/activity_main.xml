@@ -40,165 +40,168 @@
 
             <Button
                 android:id="@+id/log"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dimen_10dp"
                 android:layout_marginEnd="@dimen/dimen_10dp"
                 android:layout_marginBottom="@dimen/dimen_10dp"
-                android:text="@string/log" />
+                android:text="@string/log"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/login_intent"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/login_intent" />
+                android:text="@string/login_intent"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/serializable"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/serializable" />
+                android:text="@string/serializable"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/text_layout"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/text_layout" />
+                android:text="@string/text_layout"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/listview"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/listview" />
+                android:text="@string/listview"
+                android:textColor="@color/orange"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/recyclerview"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/recyclerview" />
+                android:text="@string/recyclerview"
+                android:textColor="@color/red"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/fragments"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/fragments" />
+                android:text="@string/fragments"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/viewpager_tablayout"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/viewpager_tablayout" />
+                android:text="@string/viewpager_tablayout"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/viewpager_newinstance"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/viewpager_newinstance" />
+                android:text="@string/viewpager_newinstance"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/offset"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/offset" />
+                android:text="@string/offset"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/navigationdrawer"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/navigationdrawer" />
+                android:text="@string/navigationdrawer"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/addtextchangedlistener"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/addtextchangedlistener" />
+                android:text="@string/addtextchangedlistener"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/mvp_kotlin_login"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/mvp_kotlin_login" />
+                android:text="@string/mvp_kotlin_login"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/fragment_dialog"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/fragment_dialog" />
+                android:text="@string/fragment_dialog"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/google_maps"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/google_maps" />
+                android:text="@string/google_maps"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/high_score"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/high_score" />
+                android:text="@string/high_score"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/thread_pics"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/thread_pics" />
+                android:text="@string/thread_pics"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/thread_async_task"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/thread_async_task" />
+                android:text="@string/thread_async_task"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/thread_async_task_counter"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/thread_async_task_counter" />
+                android:text="@string/thread_async_task_counter"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/firebase"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase" />
+                android:text="@string/firebase"
+                android:textColor="@color/yellow"
+                style="@style/HomeButton" />
 
         </LinearLayout>
 

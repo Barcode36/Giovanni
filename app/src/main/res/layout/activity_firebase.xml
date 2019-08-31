@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirebaseActivity"
     android:background="@color/yellow"
     android:padding="@dimen/dimen_15dp">
 
@@ -40,51 +37,51 @@
 
             <Button
                 android:id="@+id/firebase_rest"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase_rest" />
+                android:text="@string/firebase_rest"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/firebase_json_parse"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase_json_parse" />
+                android:text="@string/firebase_json_parse"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/firebase_login"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase_login" />
+                android:text="@string/firebase_login"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/firebase_articoli"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase_articoli" />
+                android:text="@string/firebase_articoli"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/firebase_community"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase_community" />
+                android:text="@string/firebase_community"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/firebase_push"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/firebase_push" />
+                android:text="@string/firebase_push"
+                style="@style/HomeButton" />
 
         </LinearLayout>
 

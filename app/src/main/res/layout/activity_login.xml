@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".recyclerviewproject.LoginActivity">
+    tools:context=".recyclerview.recyclerviewproject.LoginActivity">
 
     <Button
         android:id="@+id/buttonLogin"
@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/login"
-        style="@style/MenuButton" />
+        style="@style/HomeButton" />
 
     <EditText
         android:id="@+id/editUsername"

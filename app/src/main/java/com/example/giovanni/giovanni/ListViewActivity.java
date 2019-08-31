@@ -3,12 +3,12 @@ package com.example.giovanni.giovanni;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.example.giovanni.giovanni.listview.ListViewSimpleActivity;
-import com.example.giovanni.giovanni.listviewadapterrubrica.ListViewRubricaActivity;
-import com.example.giovanni.giovanni.listviewazienda.AziendaActivity;
-import com.example.giovanni.giovanni.twolistviewcopy.TwoListViewCopyActivity;
-import com.example.giovanni.giovanni.twolistviewadapter.TwoListViewAdapterActivity;
-import com.example.giovanni.giovanni.twolistviewthread.TwoListViewThreadActivity;
+import com.example.giovanni.giovanni.listview.listviewsimple.ListViewSimpleActivity;
+import com.example.giovanni.giovanni.listview.listviewadapterrubrica.ListViewRubricaActivity;
+import com.example.giovanni.giovanni.listview.listviewazienda.AziendaActivity;
+import com.example.giovanni.giovanni.listview.twolistviewcopy.TwoListViewCopyActivity;
+import com.example.giovanni.giovanni.listview.twolistviewadapter.TwoListViewAdapterActivity;
+import com.example.giovanni.giovanni.listview.twolistviewthread.TwoListViewThreadActivity;
 
 public class ListViewActivity extends AppCompatActivity {
 

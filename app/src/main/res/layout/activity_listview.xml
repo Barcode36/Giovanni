@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListViewActivity"
     android:background="@color/orange"
     android:padding="@dimen/dimen_15dp">
 
@@ -40,53 +37,53 @@
 
             <Button
                 android:id="@+id/istview_simple"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dimen_10dp"
                 android:layout_marginEnd="@dimen/dimen_10dp"
                 android:layout_marginBottom="@dimen/dimen_10dp"
-                android:text="@string/istview_simple" />
+                android:text="@string/istview_simple"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/two_listview_copy"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/two_listview_copy" />
+                android:text="@string/two_listview_copy"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/two_listview_adapter"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/two_listview_adapter" />
+                android:text="@string/two_listview_adapter"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/two_listview_thread"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/two_listview_thread" />
+                android:text="@string/two_listview_thread"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/listview_adapter_rubrica"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/listview_adapter_rubrica" />
+                android:text="@string/listview_adapter_rubrica"
+                style="@style/HomeButton" />
 
             <Button
                 android:id="@+id/listview_azienda"
-                style="@style/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
-                android:text="@string/listview_azienda" />
+                android:text="@string/listview_azienda"
+                style="@style/HomeButton" />
 
         </LinearLayout>
 
