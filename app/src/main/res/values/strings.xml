@@ -193,4 +193,14 @@
     <string name="firebase_community">Community</string>
     <string name="firebase_push">Push</string>
 
+    <!-- DATA BINDING -->
+    <string name="data_binding_meteo">Data Binding Meteo</string>
+    <string name="data_binding_url">Data Binding Url</string>
+    <string name="data_binding_layout">Data Binding Layout</string>
+
+    <string name="url_1">https://peopledotcom.files.wordpress.com/2013/08/icon_love_44.png</string>
+    <string name="url_2">https://secure.gravatar.com/avatar/2d9999abdeffcd449b65c0a6b3d9d496?s=44&amp;d=mm&amp;r=pg</string>
+    <string name="url_3">https://2.gravatar.com/avatar/8c15d3b2c70c476d353056aebf8ab0c7?s=44&amp;d=identicon&amp;r=G</string>
+    <string name="url_4">https://secure.gravatar.com/avatar/d1d7225eec483cbfbc2ff07b46cc1c30?s=44&amp;d=blank&amp;r=pg</string>
+
 </resources>

@@ -120,6 +120,10 @@ public class TextLayoutActivity extends AppCompatActivity {
         Button buttonHomer = findViewById(R.id.button_homer);
         Button buttonBart = findViewById(R.id.button_bart);
 
+        // bart.setBackgroundResource(R.drawable.bart);
+        // Oppure:
+        // bart.setSfondo(getDrawable(R.drawable.bart));
+
         buttonHomer.setOnClickListener(v -> {
             homerContainer.setPivotX(0);
             homerContainer.animate().scaleX(0).setDuration(2000);

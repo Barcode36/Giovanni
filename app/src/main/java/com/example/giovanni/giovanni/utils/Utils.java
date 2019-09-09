@@ -2,7 +2,12 @@ package com.example.giovanni.giovanni.utils;
 
 import android.content.Context;
 import android.content.Intent;
+import android.databinding.BindingAdapter;
 import android.net.Uri;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.example.giovanni.giovanni.R;
 
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
@@ -48,5 +53,13 @@ public class Utils {
     public static String formatToString2(Date date) {
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss", Locale.ITALY);
         return format.format(date);
+    }
+
+    @BindingAdapter("android:src")
+    public static void setImageUrl(ImageView view, String url) {
+        Glide.with(view.getContext()).
+                load(url).
+                placeholder(R.drawable.ico_favourite_selected).
+                into(view);
     }
 }

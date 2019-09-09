@@ -8,7 +8,7 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.ListMaking;
+import com.example.giovanni.giovanni.model.InitList;
 
 public class RecyclerViewHeaderItemActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class RecyclerViewHeaderItemActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        HeaderItemAdapter adapter = new HeaderItemAdapter(ListMaking.getData());
+        HeaderItemAdapter adapter = new HeaderItemAdapter(InitList.getData());
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, OrientationHelper.VERTICAL, false);
         RecyclerView recyclerView = findViewById(R.id.recyclerview_headeritem);
         recyclerView.setLayoutManager(mLayoutManager);

@@ -203,6 +203,30 @@
                 android:textColor="@color/yellow"
                 style="@style/HomeButton" />
 
+            <Button
+                android:id="@+id/data_binding_meteo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/data_binding_meteo"
+                style="@style/HomeButton" />
+
+            <Button
+                android:id="@+id/data_binding_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/data_binding_url"
+                style="@style/HomeButton" />
+
+            <Button
+                android:id="@+id/data_binding_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/data_binding_layout"
+                style="@style/HomeButton" />
+
         </LinearLayout>
 
     </ScrollView>

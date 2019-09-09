@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="temp2"
+            type="com.example.giovanni.giovanni.model.DataBindingModel" />
+
+        <variable
+            name="presenter"
+            type="com.example.giovanni.giovanni.databinding.DataBindingPresenter" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@{temp2.colore}">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textColor="@color/yellow" />
+
+    </RelativeLayout>
+
+</layout>

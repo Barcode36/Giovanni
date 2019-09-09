@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="temp"
+            type="com.example.giovanni.giovanni.model.DataBindingModel" />
+
+        <variable
+            name="presenter"
+            type="com.example.giovanni.giovanni.databinding.DataBindingPresenter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:background="@{temp.sfondo ? @color/green : @color/red}"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={temp.luogo}"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/azzurro_fiordaliso"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Luogo"
+            android:text="@={temp.luogo}"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@={temp.temperatura}"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/azzurro_fiordaliso"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Temperatura"
+            android:text="@={temp.temperatura}"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_data_binding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Show data model\nChange background color"
+                android:onClick="@{() -> presenter.onShowDataModel(temp)}"
+                style="@style/HomeButton" />
+
+            <Button
+                android:id="@+id/button_show_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_50dp"
+                android:text="Show list"
+                android:onClick="@{() -> presenter.onShowList()}"
+                android:layout_below="@+id/button_data_binding"
+                style="@style/HomeButton" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

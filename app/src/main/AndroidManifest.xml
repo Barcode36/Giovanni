@@ -111,6 +111,10 @@
         <activity android:name=".threadpics.ThreadPicsActivity" />
         <activity android:name=".threadasynctask.ThreadAsyncTaskActivity" />
         <activity android:name=".listview.twolistviewthread.TwoListViewThreadActivity" />
+        <activity android:name=".databinding.dbmeteo.MeteoActivity" />
+        <activity android:name=".databinding.dbmeteo.MeteoListActivity" />
+        <activity android:name=".databinding.dburl.UrlActivity" />
+        <activity android:name=".databinding.dblayout.LayoutActivity" />
     </application>
 
 </manifest>

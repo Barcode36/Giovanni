@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.giovanni.giovanni.databinding.dblayout.LayoutActivity;
+import com.example.giovanni.giovanni.databinding.dbmeteo.MeteoActivity;
+import com.example.giovanni.giovanni.databinding.dburl.UrlActivity;
 import com.example.giovanni.giovanni.fragmentdialog.MainDialogActivity;
 import com.example.giovanni.giovanni.googlemaps.MapsActivity;
 import com.example.giovanni.giovanni.highscore.HighScoreActivity;
@@ -102,5 +105,14 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.firebase).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), FirebaseActivity.class)));
+
+        findViewById(R.id.data_binding_meteo).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), MeteoActivity.class)));
+
+        findViewById(R.id.data_binding_url).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), UrlActivity.class)));
+
+        findViewById(R.id.data_binding_layout).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), LayoutActivity.class)));
     }
 }
