@@ -6,10 +6,12 @@ import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 import android.graphics.drawable.Drawable;
 import android.preference.PreferenceManager;
+import android.view.View;
 
 import com.android.databinding.library.baseAdapters.BR;
 import com.example.giovanni.giovanni.R;
 
+@SuppressWarnings("ALL")
 public class DataBindingModel extends BaseObservable {
 
     private String luogo;
@@ -18,6 +20,7 @@ public class DataBindingModel extends BaseObservable {
     private boolean sfondo;
     private int colore;
     private Drawable logo;
+    private int visibilita;
 
     public DataBindingModel(String luogo, String temperatura) {
         this.luogo = luogo;
@@ -44,9 +47,11 @@ public class DataBindingModel extends BaseObservable {
         if (isGreen) {
             colore = context.getResources().getColor(R.color.green);
             logo = context.getResources().getDrawable(R.drawable.homer);
+            visibilita = View.VISIBLE;
         } else {
             colore = context.getResources().getColor(R.color.red);
             logo = context.getResources().getDrawable(R.drawable.bart);
+            visibilita = View.GONE;
         }
     }
 
@@ -108,5 +113,15 @@ public class DataBindingModel extends BaseObservable {
     public void setLogo(Drawable logo) {
         this.logo = logo;
         notifyPropertyChanged(BR.logo);
+    }
+
+    @Bindable
+    public int getVisibilita() {
+        return visibilita;
+    }
+
+    public void setVisibilita(int visibilita) {
+        this.visibilita = visibilita;
+        notifyPropertyChanged(BR.visibilita);
     }
 }

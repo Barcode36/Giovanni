@@ -28,19 +28,49 @@
                 android:layout_height="match_parent"
                 android:background="@{temp.colore}">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/dimen_150dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_gravity="center"
-                    android:src="@{temp.logo}" />
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_150dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@{temp.logo}" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_150dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/homer"
+                            android:visibility="@{temp.visibilita}"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="24dp"
                     android:layout_alignParentBottom="true"
-                    android:text="Change background color"
+                    android:text="Change background color\nChange Drawable\nChange visibility"
                     android:onClick="@{() -> presenter.onSetLayout(temp)}"
                     style="@style/HomeButton" />
 
