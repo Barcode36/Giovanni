@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/spinner_direct_aa" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ab" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ac" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ad" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ae" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_af" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ag" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ah" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ai" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_al" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_am" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_an" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ao" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ap" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_aq" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_ar" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_as" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_at" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_au" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_av" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_az" android:duration="1000" />
+    <item android:drawable="@drawable/spinner_direct_ba" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_bb" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_bc" android:duration="50" />
+    <item android:drawable="@drawable/spinner_direct_bd" android:duration="1000" />
+
+</animation-list>

@@ -28,7 +28,23 @@
                 android:layout_height="match_parent"
                 android:background="@{temp.colore}">
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_50dp"
+                    android:layout_above="@+id/container">
+
+                    <ImageView
+                        android:id="@+id/spinner_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@{temp.spinner}" />
+
+                </RelativeLayout>
+
                 <LinearLayout
+                    android:id="@+id/container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"

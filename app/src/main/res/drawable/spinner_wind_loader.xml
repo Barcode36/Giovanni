@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/spinner_aa" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ab" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ac" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ad" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ae" android:duration="50" />
+    <item android:drawable="@drawable/spinner_af" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ag" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ah" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ai" android:duration="50" />
+    <item android:drawable="@drawable/spinner_al" android:duration="50" />
+    <item android:drawable="@drawable/spinner_am" android:duration="50" />
+    <item android:drawable="@drawable/spinner_an" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ao" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ap" android:duration="50" />
+    <item android:drawable="@drawable/spinner_aq" android:duration="50" />
+    <item android:drawable="@drawable/spinner_ar" android:duration="50" />
+    <item android:drawable="@drawable/spinner_as" android:duration="50" />
+    <item android:drawable="@drawable/spinner_at" android:duration="50" />
+    <item android:drawable="@drawable/spinner_au" android:duration="50" />
+    <item android:drawable="@drawable/spinner_av" android:duration="50" />
+    <item android:drawable="@drawable/spinner_az" android:duration="1000" />
+    <item android:drawable="@drawable/spinner_ba" android:duration="50" />
+    <item android:drawable="@drawable/spinner_bb" android:duration="50" />
+    <item android:drawable="@drawable/spinner_bc" android:duration="50" />
+    <item android:drawable="@drawable/spinner_bd" android:duration="1000" />
+
+</animation-list>

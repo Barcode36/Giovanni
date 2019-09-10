@@ -2,8 +2,12 @@ package com.example.giovanni.giovanni.utils;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.databinding.BindingAdapter;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -61,5 +65,28 @@ public class Utils {
                 load(url).
                 placeholder(R.drawable.ico_favourite_selected).
                 into(view);
+    }
+
+    @SuppressWarnings("deprecation")
+    @BindingAdapter("android:background")
+    public static void setSpinnerLogo(ImageView view, Drawable spinner) {
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
+        boolean isGreen = preferences.getBoolean("GREEN", true);
+
+        if (isGreen) {
+            spinner = view.getContext().getResources().getDrawable(R.drawable.spinner_wind_loader);
+            view.setBackground(spinner);
+        } else {
+            spinner = view.getContext().getResources().getDrawable(R.drawable.spinner_direct_loader);
+            view.setBackground(spinner);
+        }
+
+        AnimationDrawable spinnerAnimation = (AnimationDrawable) view.getBackground();
+        view.post(() -> {
+            try {
+                spinnerAnimation.start();
+            } catch (Exception e) {}
+        });
     }
 }

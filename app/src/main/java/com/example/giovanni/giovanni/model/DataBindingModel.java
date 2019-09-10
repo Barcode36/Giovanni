@@ -20,6 +20,7 @@ public class DataBindingModel extends BaseObservable {
     private boolean sfondo;
     private int colore;
     private Drawable logo;
+    private Drawable spinner;
     private int visibilita;
 
     public DataBindingModel(String luogo, String temperatura) {
@@ -113,6 +114,16 @@ public class DataBindingModel extends BaseObservable {
     public void setLogo(Drawable logo) {
         this.logo = logo;
         notifyPropertyChanged(BR.logo);
+    }
+
+    @Bindable
+    public Drawable getSpinner() {
+        return spinner;
+    }
+
+    public void setSpinner(Drawable spinner) {
+        this.spinner = spinner;
+        notifyPropertyChanged(BR.spinner);
     }
 
     @Bindable
