@@ -54,7 +54,7 @@ public class AdapterRubrica extends ArrayAdapter<Persona> {
     @Nullable
     @Override
     public Persona getItem(int position) {
-        for(int i=0; i<contatti.size(); i++) {
+        for (int i=0; i<contatti.size(); i++) {
             if (i == position) {
                 return contatti.get(i);
             }

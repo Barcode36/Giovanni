@@ -75,8 +75,7 @@ public class FirebaseArticoliActivity extends AppCompatActivity implements ITask
                         delegate.taskCompletionResult("Benvenuto");
 
                         addViews(articoli);
-                    }
-                    catch(JSONException ex) {
+                    } catch (JSONException ex) {
                         ex.printStackTrace();
                     }
                 }

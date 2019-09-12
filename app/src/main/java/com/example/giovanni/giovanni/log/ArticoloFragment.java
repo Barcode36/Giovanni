@@ -64,16 +64,15 @@ public class ArticoloFragment extends Fragment {
     }
 
     public void stampaInfo(Articolo[] arrayArticoli) {
-        for(int i=0; i<arrayArticoli.length; i++) {
+        for (int i=0; i<arrayArticoli.length; i++) {
             Log.i(TAG, "Descrizione: "+ arrayArticoli[i].getDescrizione() + ", prezzo: " + arrayArticoli[i].getPrezzo() + ".");
         }
     }
 
     public void getArticoloByID(int id) {
-        for(Articolo articolo : listaArticoli) {
-            if(articolo.getId() == id) {
+        for (Articolo articolo : listaArticoli) {
+            if (articolo.getId() == id)
                 Log.i(TAG, "L'articolo con ID " + articolo.getId() + " è: "+articolo.getDescrizione() + ", " + articolo.getPrezzo() + ".");
-            }
         }
     }
 }

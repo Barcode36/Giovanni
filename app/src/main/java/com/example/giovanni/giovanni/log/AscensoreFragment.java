@@ -50,7 +50,7 @@ public class AscensoreFragment extends Fragment {
         public void chiamaAscensore(int p, int d) {
             String message;
             int pianiRimanenti = d;
-            while(p != d) {
+            while (p != d) {
                 if (p < d) {
                     message = "Piano " + p + ": devo salire altri " + pianiRimanenti + " piani.";
                     Log.i("" + TAG, "" + message);

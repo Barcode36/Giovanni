@@ -64,7 +64,7 @@ public class FindActivity extends AppCompatActivity {
                 if (azienda.verificaID(idInt)) {
 
                     List<Persona> dipendenti = azienda.returnEmployeesOnProject(idInt);
-                    for(Persona dipendente : dipendenti) {
+                    for (Persona dipendente : dipendenti) {
                         textElenco = textElenco + dipendente.getNome() + " " + dipendente.getCognome() + "\n";
                         listElenco = listElenco + dipendente.getNome() + " " + dipendente.getCognome() + ",";
                     }

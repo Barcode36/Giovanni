@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import cz.msebera.android.httpclient.Header;
 
+@SuppressWarnings("deprecation")
 public class SignoutActivity extends AppCompatActivity implements ITaskDelegate {
 
     private EditText ePwd;
@@ -49,20 +50,16 @@ public class SignoutActivity extends AppCompatActivity implements ITaskDelegate 
 
         bConferma.setOnClickListener(view -> {
 
-            if(ePwd.getText().toString().equals("")) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Inserisci la password", Toast.LENGTH_SHORT);
-                toast.show();
-            }
+            if (ePwd.getText().toString().equals(""))
+                Toast.makeText(getApplicationContext(), "Inserisci la password", Toast.LENGTH_SHORT).show();
             else {
-                if(ePwd.getText().toString().equals(password)) {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Password corretta", Toast.LENGTH_SHORT);
-                    toast.show();
+                if (ePwd.getText().toString().equals(password)) {
+                    Toast.makeText(getApplicationContext(), "Password corretta", Toast.LENGTH_SHORT).show();
 
                     // callRestEliminaUtente(delegate); Da decommentare solo quando l'app non crasha.
                 }
                 else {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Password errata", Toast.LENGTH_SHORT);
-                    toast.show();
+                    Toast.makeText(getApplicationContext(), "Password errata", Toast.LENGTH_SHORT).show();
                     ePwd.setText("");
                 }
             }
@@ -79,23 +76,21 @@ public class SignoutActivity extends AppCompatActivity implements ITaskDelegate 
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
 
-                if(statusCode == 200) {
+                if (statusCode == 200) {
                     String text = new String(responseBody);
                     String[] array = text.split("\\{|\"|:|password|,|username|\\}");
 
                     List<String> lista = new ArrayList<>();
-                    for(int i=0; i<array.length; i++) {
-                        if (!array[i].equals("")) {
+                    for (int i=0; i<array.length; i++) {
+                        if (!array[i].equals(""))
                             lista.add(array[i]);
-                        }
                     }
                     Object[] array2 = lista.toArray();
 
                     String indice = null;
-                    for(int i=0; i<array2.length; i++) {
-                        if(array2[i].equals(password)) {
+                    for (int i=0; i<array2.length; i++) {
+                        if (array2[i].equals(password))
                             indice = (String) array2[i - 1];
-                        }
                     }
 
                     databaseReference.child("utenti").child(indice).child("password").removeValue();

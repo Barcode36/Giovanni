@@ -85,13 +85,12 @@ public class HomeActivity extends AppCompatActivity implements ITaskDelegate {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                if(statusCode == 200) {
+                if (statusCode == 200) {
                     String text = new String(responseBody);
                     try {
                         utenti = JSONParse.getUtenti(text);
                         delegate.taskCompletionResult("Caricamento utenti completato");
-                    }
-                    catch(JSONException ex) {
+                    } catch (JSONException ex) {
                         ex.printStackTrace();
                     }
                 }

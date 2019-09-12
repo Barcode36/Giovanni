@@ -1,47 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".threadasynctaskcounter.ThreadAsyncTaskCounterActivity"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/output"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_30dp">
+        android:layout_marginTop="24dp"
+        android:text="@string/replace"
+        android:textAlignment="center"
+        android:textColor="@color/giada"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/output"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/replace"
-            android:textSize="18sp"
-            android:textColor="@color/giada"/>
-    </RelativeLayout>
-
-    <RelativeLayout
+    <Button
+        android:id="@+id/button_counter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_15dp">
-        <Button
-            android:id="@+id/button_counter"
-            style="@style/CustomButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/start_progress" >
-        </Button>
-    </RelativeLayout>
+        android:layout_centerInParent="true"
+        android:text="@string/start_progress"
+        style="@style/CustomButton" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_30dp"
-        android:max="5" />
+        android:max="5"
+        android:layout_alignParentBottom="true"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+    <!-- style="?android:attr/progressBarStyleHorizontal" -->
 
-</LinearLayout>
+    <!-- NOTA: android:progress="1" setta staticamente lo stato di avanzamento della progressBar. -->
+
+</RelativeLayout>

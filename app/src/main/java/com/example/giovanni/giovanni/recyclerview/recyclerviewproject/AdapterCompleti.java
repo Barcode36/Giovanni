@@ -39,7 +39,7 @@ public class AdapterCompleti extends RecyclerView.Adapter<AdapterCompleti.ViewHo
         holder.tID.setText(String.valueOf(progetto.getId()));
         holder.tProgetto.setText(progetto.getNome());
 
-        for(Persona dipendente : dipendenti) {
+        for (Persona dipendente : dipendenti) {
             if (progetto.getUser().equals(dipendente.getUsername())) {
                 if (dipendente.getUsername().equals(userlogged))
                     user = "Tu";

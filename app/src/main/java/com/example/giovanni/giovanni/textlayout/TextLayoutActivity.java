@@ -63,7 +63,7 @@ public class TextLayoutActivity extends AppCompatActivity {
 
         bInvioNome.setOnClickListener(v -> {
             nome = eNome.getText().toString();
-            if(!nome.equals("")) {
+            if (!nome.equals("")) {
                 String hello = "CIAO " + nome.toUpperCase() + "!";
                 String howAreYou = "come stai?";
                 tHello.setText(hello);
@@ -160,17 +160,17 @@ public class TextLayoutActivity extends AppCompatActivity {
         char[] array = string.toCharArray();
         String formatted = "";
         int index = 0;
-        if(array.length > 0) {
-            for(int i = array.length - 1; i >= 0; i --) {
+        if (array.length > 0) {
+            for (int i = array.length - 1; i >= 0; i --) {
                 char c = array[i];
                 formatted = c + formatted;
                 index ++;
-                if(index == 3) {
+                if (index == 3) {
                     index = 0;
                     formatted = "." + formatted;
                 }
             }
-            if(formatted.startsWith(".")) {
+            if (formatted.startsWith(".")) {
                 formatted = formatted.substring(1);
             }
         }

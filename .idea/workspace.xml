@@ -20,71 +20,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb15062-0009-4c18-b97c-6bb09067d994" name="Default" comment="Implement .gitIgnore file">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_aa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ae.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_af.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ah.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_al.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_am.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_an.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_aq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_as.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_at.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_au.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_av.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_az.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_ba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_bb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_bc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_bd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_aa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ae.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_af.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ah.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_al.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_am.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_an.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_aq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_as.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_at.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_au.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_av.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_az.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_ba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_bb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_bc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_direct_bd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spinner_direct_loader.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spinner_wind_loader.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dblayout/LayoutFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dblayout/LayoutFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/DataBindingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/DataBindingModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasearticoli/FirebaseArticoliActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasearticoli/FirebaseArticoliActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostLoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostLoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparse/FirebaseParseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparse/FirebaseParseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/FirebaseParseLoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/FirebaseParseLoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/HomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/LoginSignupActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/LoginSignupActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/SignoutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/SignoutActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/googlemaps/MapsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/googlemaps/MapsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/highscore/HighScoreActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/highscore/HighScoreActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/listviewadapterrubrica/AdapterRubrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/listviewadapterrubrica/AdapterRubrica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/listviewazienda/FindActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/listviewazienda/FindActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewadapter/ContattoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewadapter/ContattoAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewthread/TwoListViewThreadActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewthread/TwoListViewThreadActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/ArrayFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/ArrayFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/ArticoloFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/ArticoloFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/AscensoreFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/AscensoreFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Azienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Azienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/PersonaManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/PersonaManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Rubrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Rubrica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewheaderitem/HeaderItemAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewheaderitem/HeaderItemAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/AdapterCompleti.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/AdapterCompleti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/AdapterPersonali.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/AdapterPersonali.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewviewpager/RecyclerViewViewPagerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewviewpager/RecyclerViewViewPagerActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/serializablemagazzino/CamiciaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/serializablemagazzino/CamiciaActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/textlayout/TextLayoutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/textlayout/TextLayoutActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctaskcounter/ThreadAsyncTaskCounterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctaskcounter/ThreadAsyncTaskCounterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/InternalStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/InternalStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/JSONParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/JSONParse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/viewpagertablayout/CheckBoxFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/viewpagertablayout/CheckBoxFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_asynctask_counter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_asynctask_counter.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,102 +118,28 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dblayout/LayoutFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasepush/FirebasePushActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/DataBindingModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3230#3231#0" expanded="true" />
-                <element signature="e#3260#3261#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="18" column="63" lean-forward="true" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlBaseAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="24" column="83" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/Utils.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasepush/FirebasePush.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="90" column="11" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
+            <state relative-caret-position="45">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1305#1306#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_url.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_layout.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="41" column="63" lean-forward="true" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
-              <folding>
-                <element signature="e#1197#1216#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -257,12 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>context</find>
-      <find>datePickerDialog</find>
-      <find>multi_swipe_refresh_layout</find>
-      <find>cambia</find>
-      <find>iconSearch</find>
-      <find>clear</find>
       <find>MapsA</find>
       <find>dati_</find>
       <find>getMe</find>
@@ -287,6 +182,12 @@
       <find>spinner_data_binding</find>
       <find>databinding</find>
       <find>.gradle/workspace-id.txt</find>
+      <find>setSpinnerLogo</find>
+      <find>for(</find>
+      <find>if(</find>
+      <find>catch(</find>
+      <find>while(</find>
+      <find>catch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -296,39 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_post_login.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_pull.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_post.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_button.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/viewpagertablayout/ViewPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_firebase.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/FirebaseActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostAddActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Post.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Community.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Gruppo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Persona.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/JSONParse.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostDetailActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostHomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostListActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostLoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasepush/FirebasePush.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasepush/FirebasePushActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/viewpagertablayout/FragmentPull.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/openfragment/OpenFragmentActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/ListMaking.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/InitList.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/textlayout/TextLayoutActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_url.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_meteo.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dbmeteo/MeteoListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_meteo_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_meteo.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dbmeteo/MeteoListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlBaseAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlAdapter.java" />
@@ -345,12 +213,45 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/spinner_direct_loader.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/DataBindingModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dblayout/LayoutFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dblayout/LayoutFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctaskcounter/ThreadAsyncTaskCounterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewadapter/ContattoAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewthread/TwoListViewThreadActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/listviewadapterrubrica/AdapterRubrica.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/ArrayFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Persona.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/AdapterCompleti.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/listviewazienda/FindActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Azienda.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/PersonaManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Rubrica.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/ArticoloFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewviewpager/RecyclerViewViewPagerActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/viewpagertablayout/CheckBoxFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/SignoutActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/LoginSignupActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/highscore/HighScoreActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/AdapterPersonali.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewheaderitem/HeaderItemAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/serializablemagazzino/CamiciaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/textlayout/TextLayoutActivity.java" />
+        <option value="$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/giovanni/giovanni/databinding/ActivityMeteoBindingImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/AscensoreFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostLoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/googlemaps/MapsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparse/FirebaseParseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/InternalStorage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasearticoli/FirebaseArticoliActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/FirebaseParseLoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/JSONParse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostListActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_asynctask_counter.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="723" />
@@ -379,8 +280,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -397,7 +298,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -752,10 +653,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="723" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="723" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49835527" weight="0.23101777" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49835527" weight="0.4878049" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" sideWeight="0.50164473" side_tool="true" weight="0.24474959" />
@@ -771,8 +672,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4983845" weight="0.40296054" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4983845" visible="true" weight="0.40131578" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016155" side_tool="true" weight="0.36348686" />
       <window_info anchor="bottom" id="Logcat" order="10" weight="0.5871711" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -819,340 +720,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Implement .gitIgnore file" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2109">
-          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1265#1297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostLoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="e#859#891#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasepush/FirebasePush.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#3881#3913#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasepush/FirebasePushActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/viewpagertablayout/FragmentPull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/openfragment/DetailPersonaFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_detail_persona.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_openfragment.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/openfragment/OpenFragmentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#451#483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/RecyclerViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_recyclerview.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-          <folding>
-            <element signature="e#2055#2085#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spinner_container.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Body.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/InitList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Persona.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3675">
-          <caret line="327" column="46" selection-start-line="327" selection-start-column="46" selection-end-line="327" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-          <folding>
-            <element signature="e#8085#8104#0" expanded="true" />
-            <element signature="e#8455#8474#0" expanded="true" />
-            <element signature="e#8514#8542#0" expanded="true" />
-            <element signature="e#8825#8844#0" expanded="true" />
-            <element signature="e#8902#8928#0" expanded="true" />
-            <element signature="e#9195#9214#0" expanded="true" />
-            <element signature="e#9291#9320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
-          <folding>
-            <element signature="e#10440#10445#0" expanded="true" />
-            <element signature="e#10449#10454#0" expanded="true" />
-            <element signature="e#10560#10565#0" expanded="true" />
-            <element signature="e#10576#10581#0" expanded="true" />
-            <element signature="e#10691#10696#0" expanded="true" />
-            <element signature="e#10703#10708#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/textlayout/TextLayoutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/android/databinding/library/baseAdapters/BR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_url.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_data_binding_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dbmeteo/MeteoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_meteo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/giovanni/giovanni/DataBinderMapperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/IDataBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_content.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#761#779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dblayout/LayoutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#392#424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/spinner_aq.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spinner_direct_loader.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spinner_wind_loader.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_meteo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dbmeteo/MeteoListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dbmeteo/MeteoListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/DataBindingPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1163,36 +730,6 @@
             <element signature="e#644#645#0" expanded="true" />
             <element signature="e#874#875#0" expanded="true" />
             <element signature="e#913#914#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="18" column="63" lean-forward="true" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlBaseAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="24" column="83" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1215,10 +752,66 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlBaseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="24" column="83" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dburl/UrlActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/giovanni/giovanni/databinding/FragmentLayoutBindingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="251" column="93" lean-forward="true" selection-start-line="251" selection-start-column="93" selection-end-line="251" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="89" column="11" lean-forward="true" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2284#2316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/DataBindingModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        <state relative-caret-position="291">
+          <caret line="123" column="46" lean-forward="true" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3230#3231#0" expanded="true" />
@@ -1229,31 +822,313 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/databinding/dblayout/LayoutFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        <state relative-caret-position="786">
+          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_layout.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_thread.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadpics/ThreadPicsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" column="63" lean-forward="true" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
+        <state relative-caret-position="213">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewadapter/ContattoAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/listviewadapterrubrica/AdapterRubrica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/ArrayFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Persona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="327" column="25" lean-forward="true" selection-start-line="327" selection-start-column="25" selection-end-line="327" selection-end-column="25" />
           <folding>
-            <element signature="e#1197#1216#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/AdapterCompleti.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/listviewazienda/FindActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/PersonaManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/ArticoloFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="71" column="41" lean-forward="true" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Rubrica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewviewpager/RecyclerViewViewPagerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/viewpagertablayout/CheckBoxFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/model/Azienda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="231" column="12" selection-start-line="231" selection-start-column="12" selection-end-line="231" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/LoginSignupActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="141" column="19" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewproject/AdapterPersonali.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/SignoutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="61" column="98" selection-start-line="61" selection-start-column="98" selection-end-line="61" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/highscore/HighScoreActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/recyclerview/recyclerviewheaderitem/HeaderItemAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/giovanni/giovanni/databinding/ActivityMeteoBindingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="274" column="39" lean-forward="true" selection-start-line="274" selection-start-column="39" selection-end-line="274" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/textlayout/TextLayoutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="167" column="19" selection-start-line="167" selection-start-column="19" selection-end-line="167" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/serializablemagazzino/CamiciaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/log/AscensoreFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/InternalStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasearticoli/FirebaseArticoliActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/FirebaseParseLoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparselogin/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewcopy/TwoListViewCopyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2460">
+          <caret line="195" column="54" lean-forward="true" selection-start-line="195" selection-start-column="54" selection-end-line="195" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/JSONParse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3381">
+          <caret line="268" column="10" selection-start-line="268" selection-start-column="10" selection-end-line="268" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebaseparse/FirebaseParseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/googlemaps/MapsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasecommunity/PostLoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="124" column="44" lean-forward="true" selection-start-line="124" selection-start-column="44" selection-end-line="124" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctask/ThreadAsyncTaskActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="61" column="68" lean-forward="true" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
+          <folding>
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1868#1869#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_thread_asynctask_counter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/utils/Utils.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/threadasynctaskcounter/ThreadAsyncTaskCounterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
-          <caret line="90" column="11" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
+          <caret line="73" column="43" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/listview/twolistviewthread/TwoListViewThreadActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasepush/FirebasePushActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/giovanni/giovanni/firebase/firebasepush/FirebasePush.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1305#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>

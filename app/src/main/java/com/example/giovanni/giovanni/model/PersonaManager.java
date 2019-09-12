@@ -14,10 +14,6 @@ public class PersonaManager implements Serializable {
         this.utenti = new ArrayList<>();
     }
 
-    public PersonaManager(List<Persona> utenti) {
-        this.utenti = utenti;
-    }
-
     public List<Persona> getUtenti() {
         return utenti;
     }
@@ -35,38 +31,33 @@ public class PersonaManager implements Serializable {
     }
 
     public boolean checkLogin(String username, String password) {
-        for(Persona utente : utenti) {
-            if (utente.getUsername().equalsIgnoreCase(username) &&
-                    utente.getPassword().equalsIgnoreCase(password)) {
+        for (Persona utente : utenti) {
+            if (utente.getUsername().equalsIgnoreCase(username) && utente.getPassword().equalsIgnoreCase(password))
                 return true;
-            }
         }
         return false;
     }
 
     public boolean checkUsername(String username) {
-        for(Persona utente : utenti) {
-            if (utente.getUsername().equalsIgnoreCase(username)) {
+        for (Persona utente : utenti) {
+            if (utente.getUsername().equalsIgnoreCase(username))
                 return false;
-            }
         }
         return true;
     }
 
     public String returnUsername(String username) {
-        for(Persona utente : utenti) {
-            if (utente.getUsername().equalsIgnoreCase(username)) {
+        for (Persona utente : utenti) {
+            if (utente.getUsername().equalsIgnoreCase(username))
                 return username;
-            }
         }
         return null;
     }
 
     public boolean verificaUsername(String username) {
-        for(Persona persona : utenti) {
-            if (persona.getUsername().equalsIgnoreCase(username)) {
+        for (Persona persona : utenti) {
+            if (persona.getUsername().equalsIgnoreCase(username))
                 return true;
-            }
         }
         return false;
     }

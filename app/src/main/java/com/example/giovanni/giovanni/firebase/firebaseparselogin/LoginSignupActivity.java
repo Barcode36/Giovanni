@@ -139,7 +139,7 @@ public class LoginSignupActivity extends AppCompatActivity implements ITaskDeleg
         FirebaseRestClient.get("response/utenti.json", null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                if(statusCode == 200) {
+                if (statusCode == 200) {
                     String text = new String(responseBody);
                     int index = JSONParse.getKey(text);
 

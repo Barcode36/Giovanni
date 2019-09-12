@@ -44,7 +44,7 @@ public class ArrayFragment extends Fragment {
         int k = 1;
 
         Log.i(TAG, "Articoli disponibili:");
-        for(int i=0; i<articoli.length; i++) {
+        for (int i=0; i<articoli.length; i++) {
             Log.i(TAG, k + "° articolo: "+articoli[i]);
             k++;
         }
@@ -52,7 +52,7 @@ public class ArrayFragment extends Fragment {
 
         int scelta = 3;
         Log.i(TAG, "Hai acquistato il prodotto: " + articoli[scelta] + "\nArticoli disponibili:");
-        for(int i=0; i<articoli.length; i++) {
+        for (int i=0; i<articoli.length; i++) {
             if (i == scelta) {
                 articoli[i] = "acquistato";
             }
@@ -105,7 +105,7 @@ public class ArrayFragment extends Fragment {
     public void occorrenzeVocali(String stringa) {
         int occorrenze = 0;
         String array[] = stringa.split("");
-        for(int i=0; i<array.length; i++) {
+        for (int i=0; i<array.length; i++) {
             if (array[i].equals("a") ||
                     array[i].equals("e") ||
                     array[i].equals("i") ||
@@ -121,7 +121,7 @@ public class ArrayFragment extends Fragment {
         int occ[] = new int[] {0, 0, 0, 0 , 0};
         String array[] = stringa.split("");
 
-        for(int i=0; i<array.length; i++) {
+        for (int i=0; i<array.length; i++) {
             switch(array[i]) {
                 case "a": occ[0] = occ[0] + 1;
                     break;

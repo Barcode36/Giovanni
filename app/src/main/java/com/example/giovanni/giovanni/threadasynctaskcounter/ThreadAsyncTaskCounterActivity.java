@@ -41,45 +41,30 @@ public class ThreadAsyncTaskCounterActivity extends AppCompatActivity implements
     @SuppressLint("StaticFieldLeak")
     private class AsyncCounter extends AsyncTask<Context, Integer, String> {
 
-        TextView txt;
-        ProgressBar progressBar;
+        private TextView output;
+        private ProgressBar progressBar;
 
         private AsyncCounter() {
-            txt = findViewById(R.id.output);
-            progressBar = findViewById(R.id.progressBar);
+            output = findViewById(R.id.output);
+            progressBar = findViewById(R.id.progress_bar);
         }
 
         @Override
-        protected void onPostExecute(String result) {
-            String executed = "Executed";
-            txt.setText(executed);
-            buttonCounter.setText(executed);
-        }
-
-        @Override
-        protected void onCancelled() {
-            super.onCancelled();
-            String canceled = "Canceled";
-            txt.setText(canceled);
-        }
+        protected void onPreExecute() {}
 
         @Override
         protected String doInBackground(Context... contexts) {
-            for(int i=0; i<=5; i++) {
+            for (int i=0; i<=5; i++) {
                 try {
                     publishProgress(i);
                     if (i < 5)
                         Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
                     Thread.interrupted();
                 }
             }
             return "Executed";
         }
-
-        @Override
-        protected void onPreExecute() {}
 
         @Override
         protected void onProgressUpdate(Integer ... values) {
@@ -88,6 +73,20 @@ public class ThreadAsyncTaskCounterActivity extends AppCompatActivity implements
                 buttonCounter.setText(String.valueOf(values[0]));
                 progressBar.setProgress(values[0]);
             }
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            String executed = "Executed";
+            output.setText(executed);
+            buttonCounter.setText(executed);
+        }
+
+        @Override
+        protected void onCancelled() {
+            super.onCancelled();
+            String canceled = "Canceled";
+            output.setText(canceled);
         }
     }
 }

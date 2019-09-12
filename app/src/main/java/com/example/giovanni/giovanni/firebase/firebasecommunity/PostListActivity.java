@@ -140,8 +140,7 @@ public class PostListActivity extends AppCompatActivity implements ITaskDelegate
                         gruppo.setListaPost(listapost);
 
                         delegate.taskCompletionResult("Post caricati");
-                    }
-                    catch(Exception ex) {
+                    } catch (Exception ex) {
                         ex.printStackTrace();
                     }
                 }

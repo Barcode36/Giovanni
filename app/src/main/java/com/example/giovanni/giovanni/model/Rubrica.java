@@ -51,7 +51,7 @@ public class Rubrica implements Serializable {
 
         String stringa;
         List<String> lista = new ArrayList<>();
-        for(Persona contatto : contatti) {
+        for (Persona contatto : contatti) {
             stringa = contatto.getId() +") " + contatto.getNome() + " " + contatto.getCognome() +
                     "\nCellulare: " + contatto.getNumero();
             lista.add(stringa);
@@ -62,9 +62,8 @@ public class Rubrica implements Serializable {
     }
 
     public void elimina(int index) {
-        if(index < contatti.size()) {
+        if (index < contatti.size())
             contatti.remove(index);
-        }
     }
 
     public Persona aggiungi(Persona contatto) {
@@ -74,7 +73,7 @@ public class Rubrica implements Serializable {
 
     public String getInfoContatti(List<Persona> contatti) {
         String info = "";
-        for(Persona persona : contatti) {
+        for (Persona persona : contatti) {
             info = info + (persona.getNome() + " " + persona.getCognome() + "\n");
         }
         return info;
@@ -85,7 +84,7 @@ public class Rubrica implements Serializable {
 
         List<Long> matricole = new ArrayList<>();
         long matricola;
-        for(Persona persona : contatti) {
+        for (Persona persona : contatti) {
             matricola = persona.getMatricola();
             matricole.add(matricola);
         }
@@ -95,7 +94,7 @@ public class Rubrica implements Serializable {
     public Persona getDipendenteFromMatricola(long matricola) {
         Persona persona = new Persona();
         for (Persona temp : contatti) {
-            if(matricola == temp.getMatricola()) {
+            if (matricola == temp.getMatricola()) {
                 persona = temp;
             }
         }
@@ -104,7 +103,7 @@ public class Rubrica implements Serializable {
 
     public String getInfoDipendenti(List<Persona> listaDipendenti) {
         String info = "";
-        for(Persona persona : listaDipendenti) {
+        for (Persona persona : listaDipendenti) {
             info = info + (persona.getNome() + persona.getCognome() + persona.getMatricola());
         }
         return info;

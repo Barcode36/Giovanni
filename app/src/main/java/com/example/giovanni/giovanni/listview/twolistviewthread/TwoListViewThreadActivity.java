@@ -44,7 +44,7 @@ public class TwoListViewThreadActivity extends AppCompatActivity {
         fullList.setAdapter(fullArrayAdapter);
 
         new Thread(() -> {
-            for(int i=0; i<emptyArray.length; i++) {
+            for (int i=0; i<emptyArray.length; i++) {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {

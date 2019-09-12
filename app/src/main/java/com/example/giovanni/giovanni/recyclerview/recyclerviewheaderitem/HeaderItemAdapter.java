@@ -28,7 +28,7 @@ public class HeaderItemAdapter extends RecyclerView.Adapter<HeaderItemAdapter.Vi
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Body body = list.get(position);
-        if(body != null) {
+        if (body != null) {
             if (body.getType() == 0) {
                 holder.header.setText(body.getTitle());
             } else if (body.getType() == 1) {
@@ -41,7 +41,7 @@ public class HeaderItemAdapter extends RecyclerView.Adapter<HeaderItemAdapter.Vi
     @Override
     public int getItemViewType(int position) {
         Body body = list.get(position);
-        if(body != null) {
+        if (body != null) {
             switch (body.getType()) {
                 case 0:
                     return R.layout.row_header;

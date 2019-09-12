@@ -67,7 +67,7 @@ public class RecyclerViewViewPagerActivity extends AppCompatActivity implements 
     @Override
     public void onItemClicked(Persona persona, int position) {
 
-        for(int i=0; i<lista.size(); i++) {
+        for (int i=0; i<lista.size(); i++) {
             if (persona.equals(lista.get(i))) {
                 position = i;
                 break;

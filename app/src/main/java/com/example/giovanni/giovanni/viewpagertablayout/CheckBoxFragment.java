@@ -56,16 +56,15 @@ public class CheckBoxFragment extends Fragment {
         });
 
         checkbox2.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (isChecked) {
+            if (isChecked)
                 lista.add("CheckBox 2");
-            } else {
+            else
                 lista.remove("CheckBox 2");
-            }
         });
 
         buttonCheck.setOnClickListener(v -> {
             StringBuilder text = new StringBuilder();
-            for(String scelta : lista) {
+            for (String scelta : lista) {
                 text.append(scelta).append("\n");
             }
             tCheck.setText(text.toString());

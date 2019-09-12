@@ -43,12 +43,8 @@ public class AdapterPersonali extends RecyclerView.Adapter<AdapterPersonali.View
 
     @Override
     public int getItemCount() {
-        if(list == null) {
-            return 0;
-        }
-        else {
-            return list.size();
-        }
+        if (list == null) return 0;
+        else return list.size();
     }
 
     private String formatDate(Date data) {

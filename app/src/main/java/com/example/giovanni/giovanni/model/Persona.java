@@ -317,7 +317,7 @@ public class Persona implements Serializable {
     }
 
     public boolean cercaGruppo(String nome) {
-        for(Gruppo gruppo : lista) {
+        for (Gruppo gruppo : lista) {
             if (nome.equalsIgnoreCase(gruppo.getNome())) {
                 return true;
             }
@@ -326,7 +326,7 @@ public class Persona implements Serializable {
     }
 
     public String returnGruppo(String input) {
-        for(Gruppo gruppo : lista) {
+        for (Gruppo gruppo : lista) {
             if (input.equalsIgnoreCase(gruppo.getNome())) {
                 if (gruppo.getNome().equals("Stone Temple Pilots") || gruppo.getNome().equals("Audioslave")) {
                     return "gli " + gruppo.getNome() + ", numero componenti: " + gruppo.getComponenti();

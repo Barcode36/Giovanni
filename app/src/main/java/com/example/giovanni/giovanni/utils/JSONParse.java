@@ -61,8 +61,7 @@ public class JSONParse {
                     }
                 }
             }
-        }
-        catch (JSONException ex) {
+        } catch (JSONException ex) {
             ex.printStackTrace();
         }
         return persone;
@@ -109,8 +108,7 @@ public class JSONParse {
                     }
                 }
             }
-        }
-        catch (JSONException ex) {
+        } catch (JSONException ex) {
             ex.printStackTrace();
         }
         return utenti;
@@ -190,8 +188,7 @@ public class JSONParse {
                     }
                 }
             }
-        }
-        catch (JSONException ex) {
+        } catch (JSONException ex) {
             ex.printStackTrace();
         }
         return articoli;
@@ -220,8 +217,7 @@ public class JSONParse {
                 }
                 list.add(gruppo);
             }
-        }
-        catch (JSONException ex) {
+        } catch (JSONException ex) {
             ex.printStackTrace();
         }
         return list;
@@ -270,8 +266,7 @@ public class JSONParse {
                 }
                 listaPost.add(post);
             }
-        }
-        catch (JSONException e) {
+        } catch (JSONException e) {
             e.printStackTrace();
         }
         return listaPost;
@@ -286,8 +281,7 @@ public class JSONParse {
                 index++;
                 iterator.next();
             }
-        }
-        catch (JSONException ex) {
+        } catch (JSONException ex) {
             ex.printStackTrace();
         }
         return index;

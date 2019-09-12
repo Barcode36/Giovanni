@@ -48,8 +48,7 @@ public class FirebaseParseLoginActivity extends AppCompatActivity implements ITa
                     try {
                         utenti = JSONParse.getUtenti(text);
                         delegate.taskCompletionResult("Caricamento utenti completato");
-                    }
-                    catch(JSONException ex) {
+                    } catch (JSONException ex) {
                         ex.printStackTrace();
                     }
                 }

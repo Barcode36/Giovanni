@@ -134,7 +134,7 @@ public class CamiciaActivity extends AppCompatActivity {
                     eColore.setText("");
                 }
 
-                if(mID.matches() && mNome.matches() && mPrezzo.matches() && mTaglia.matches() && mColore.matches()) {
+                if (mID.matches() && mNome.matches() && mPrezzo.matches() && mTaglia.matches() && mColore.matches()) {
 
                     camicia = new Camicia(idInt, nome, prezzoDouble, tagliaInt, colore);
                     magazzino.addArticoli(camicia);

@@ -60,7 +60,7 @@ public class Azienda extends Persona implements Serializable {
 
     public Persona cercaPerMatricola(long matricola) {
 
-        for(Persona dipendente : dipendenti) {
+        for (Persona dipendente : dipendenti) {
             if (matricola == dipendente.getMatricola())
                 return dipendente;
         }
@@ -70,7 +70,7 @@ public class Azienda extends Persona implements Serializable {
     public Persona cercaPerStipendioMassimo() {
         Persona ricco = null;
         double stipendioMassimo = 0.0;
-        for(Persona dipendente : dipendenti) {
+        for (Persona dipendente : dipendenti) {
             if (dipendente.getStipendio() > stipendioMassimo) {
                 stipendioMassimo = dipendente.getStipendio();
                 ricco = dipendente;
@@ -109,7 +109,7 @@ public class Azienda extends Persona implements Serializable {
 
         List<Persona> lista = new ArrayList<>();
 
-        for(Persona dipendente : dipendenti) {
+        for (Persona dipendente : dipendenti) {
             if (dipendente instanceof Manager) {
                 Manager manager = (Manager) dipendente;
                 if (manager.getIdProgetto() == ID){
@@ -131,7 +131,7 @@ public class Azienda extends Persona implements Serializable {
     }
 
     public boolean verificaID(int input) {
-        for(Progetto progetto : progetti) {
+        for (Progetto progetto : progetti) {
             if (progetto.getId() == input) {
                 return true;
             }
@@ -143,7 +143,7 @@ public class Azienda extends Persona implements Serializable {
 
         List<String> lista = new ArrayList<>();
 
-        for(Persona dipendente : dipendenti) {
+        for (Persona dipendente : dipendenti) {
             String stringa = "Dipendente " + dipendente.getId() + ": " + dipendente.getNome() + " " + dipendente.getCognome();
             lista.add(stringa);
         }
@@ -156,7 +156,7 @@ public class Azienda extends Persona implements Serializable {
 
         List<String> lista = new ArrayList<>();
 
-        for(Progetto progetto : progetti) {
+        for (Progetto progetto : progetti) {
             String stringa = "Progetto " + progetto.getId() + ": " + progetto.getNome();
             lista.add(stringa);
         }
@@ -196,7 +196,7 @@ public class Azienda extends Persona implements Serializable {
     public List<Progetto> getProgettiCompleti(String stato) {
 
         List<Progetto> lista = new ArrayList<>();
-        for(Progetto progetto : progetti) {
+        for (Progetto progetto : progetti) {
             if (progetto.getStato().equals(stato)) {
                 lista.add(progetto);
             }
@@ -209,7 +209,7 @@ public class Azienda extends Persona implements Serializable {
     public List<Progetto> getProgettiPersonali(String username, String stato) {
 
         List<Progetto> lista = new ArrayList<>();
-        for(Progetto progetto : progetti) {
+        for (Progetto progetto : progetti) {
             if (progetto.getUser().equals(username) && progetto.getStato().equals(stato)) {
                 lista.add(progetto);
             }
@@ -219,7 +219,7 @@ public class Azienda extends Persona implements Serializable {
 
     // Metodo che riceve username e password e controlla se il dipendente è presente in azienda.
     public boolean cercaDipendente(String username, String password) {
-        for(Persona dipendente : dipendenti) {
+        for (Persona dipendente : dipendenti) {
             if (dipendente.getUsername().equals(username) && dipendente.getPassword().equals(password)) {
                 return true;
             }
@@ -229,7 +229,7 @@ public class Azienda extends Persona implements Serializable {
 
     // Metodo che, dato l'username, restituisce il nome dell'utente (se esiste).
     public String mostraDipendente(String username) {
-        for(Persona dipendente : dipendenti) {
+        for (Persona dipendente : dipendenti) {
             if (dipendente.getUsername().equals(username)) {
                 return dipendente.getNome();
             }

@@ -74,7 +74,7 @@ public class HighScoreActivity extends AppCompatActivity {
     }
 
     private boolean checkName() {
-        if(eName.getText().toString().length() != 0) return true;
+        if (eName.getText().toString().length() != 0) return true;
         else Toast.makeText(getApplicationContext(), "Inserisci il nome.", Toast.LENGTH_SHORT).show();
         return false;
     }
@@ -85,7 +85,7 @@ public class HighScoreActivity extends AppCompatActivity {
             counter++;
             tCounter.setText(String.valueOf(counter));
 
-            if(counter > highScore1) {
+            if (counter > highScore1) {
                 String result = eName.getText().toString() + " Updated Highscore: " + counter;
                 tHighScore.setText(result);
             }

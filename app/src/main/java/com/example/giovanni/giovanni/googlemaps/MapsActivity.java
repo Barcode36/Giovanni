@@ -40,13 +40,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         geolocationButton.setOnClickListener(v -> {
             editLocation = findViewById(R.id.edit_search);
             location = editLocation.getText().toString();
-            if(!location.equals("")) {
+            if (!location.equals("")) {
                 List<Address> addressList = new ArrayList<>();
                 Geocoder geocoder = new Geocoder(MapsActivity.this);
                 try {
                     addressList = geocoder.getFromLocationName(location, 5);
-                }
-                catch (IOException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
                 Address address = addressList.get(0);

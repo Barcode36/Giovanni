@@ -122,8 +122,7 @@ public class PostLoginActivity extends AppCompatActivity implements ITaskDelegat
                         intent = new Intent(getApplicationContext(), PostHomeActivity.class);
                         intent.putExtra("LOGINCOMMUNITY", community);
                         startActivity(intent);
-                    }
-                    catch(Exception ex) {
+                    } catch (Exception ex) {
                         ex.printStackTrace();
                     }
                     delegate.taskCompletionResult("Accesso effettuato");
