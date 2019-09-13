@@ -14,6 +14,7 @@ import com.example.giovanni.giovanni.googlemaps.MapsActivity;
 import com.example.giovanni.giovanni.highscore.HighScoreActivity;
 import com.example.giovanni.giovanni.log.LogActivity;
 import com.example.giovanni.giovanni.mvpaddtextchangedlistener.AddTextActivity;
+import com.example.giovanni.giovanni.sqlite.SQLiteActivity;
 import com.example.giovanni.giovanni.threadasynctaskcounter.ThreadAsyncTaskCounterActivity;
 import com.example.giovanni.giovanni.fragments.FragmentsActivity;
 import com.example.giovanni.giovanni.loginintent.LoginIntentActivity;
@@ -105,6 +106,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.firebase).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), FirebaseActivity.class)));
+
+        findViewById(R.id.sqlite_database).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), SQLiteActivity.class)));
 
         findViewById(R.id.data_binding_meteo).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), MeteoActivity.class)));

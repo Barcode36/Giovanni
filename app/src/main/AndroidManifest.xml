@@ -115,6 +115,9 @@
         <activity android:name=".databinding.dbmeteo.MeteoListActivity" />
         <activity android:name=".databinding.dburl.UrlActivity" />
         <activity android:name=".databinding.dblayout.LayoutActivity" />
+        <activity android:name=".sqlite.SQLiteActivity" />
+        <activity android:name=".sqlite.SQLiteDetailActivity"/>
+        <activity android:name=".sqlite.SQLiteInsertActivity" />
     </application>
 
 </manifest>

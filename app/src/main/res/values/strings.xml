@@ -5,7 +5,7 @@
     <string name="listview">ListView</string>
     <string name="recyclerview">RecyclerView</string>
 
-    <string name="log">Toast\nArray\nArticolo\nAscensore\nDipendente e Progetto\nDipendente, Manager e Azienda\nViewPager + TabLayout\naddOnPageChangeListener</string>
+    <string name="log">Toast\nArray\nArticolo\nAscensore\nDipendente e Progetto\nViewPager + TabLayout\naddOnPageChangeListener\nDipendente, Manager e Azienda</string>
     <string name="title">Titolo</string>
     <string name="study_the_code">Studiare l\'applicazione analizzando su Logcat i suoi log e inserendo il TAG opportuno.</string>
     <string name="array">Array</string>
@@ -19,7 +19,7 @@
     <string name="invio">Invio</string>
     <string name="long_text">Il contenuto di questa stringa è troppo lungo per essere contenuto tutto nel layout.</string>
 
-    <string name="login_intent">Login\n@style/CustomButton\n@drawable/round_button\n@drawable/custom_button\nCustomButton Class\n@drawable/button_selector\nIntent + startActivityForResult\nSharedPreferences</string>
+    <string name="login_intent">Login\nSharedPreferences\nCustomButton Class\n@style/CustomButton\n@drawable/round_button\n@drawable/custom_button\n@drawable/button_selector\nIntent + startActivityForResult</string>
     <string name="android">Android</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
@@ -202,5 +202,8 @@
     <string name="url_2">https://secure.gravatar.com/avatar/2d9999abdeffcd449b65c0a6b3d9d496?s=44&amp;d=mm&amp;r=pg</string>
     <string name="url_3">https://2.gravatar.com/avatar/8c15d3b2c70c476d353056aebf8ab0c7?s=44&amp;d=identicon&amp;r=G</string>
     <string name="url_4">https://secure.gravatar.com/avatar/d1d7225eec483cbfbc2ff07b46cc1c30?s=44&amp;d=blank&amp;r=pg</string>
+
+    <!-- SQLITE DATABASE -->
+    <string name="sqlite_database">SQLite Database</string>
 
 </resources>
