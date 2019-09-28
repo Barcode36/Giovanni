@@ -1,18 +1,19 @@
 package com.example.giovanni.giovanni.viewpagertablayout;
 
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    private String [] fragments = {"Calcolatrice", "Parallax effect", "Pin effect", "Pull to refresh + Random", "Open Url"};
+    private String [] fragments = {"Calcolatrice", "Pin effect", "Parallax effect", "CheckBox + Open Url", "Pull to refresh + Random"};
 
     private FragmentCalcolatrice fragmentCalcolatrice = new FragmentCalcolatrice();
-    private FragmentParallax fragmentParallax = new FragmentParallax();
     private FragmentPin fragmentPin = new FragmentPin();
-    private FragmentPull fragmentPull = new FragmentPull();
+    private FragmentParallax fragmentParallax = new FragmentParallax();
     private CheckBoxFragment checkBoxFragment = new CheckBoxFragment();
+    private FragmentPull fragmentPull = new FragmentPull();
 
     ViewPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -22,10 +23,10 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0: return fragmentCalcolatrice;
-            case 1: return fragmentParallax;
-            case 2: return fragmentPin;
-            case 3: return fragmentPull;
-            case 4: return checkBoxFragment;
+            case 1: return fragmentPin;
+            case 2: return fragmentParallax;
+            case 3: return checkBoxFragment;
+            case 4: return fragmentPull;
         }
         return null;
     }
@@ -36,7 +37,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public int getItemPosition(Object object) {
+    public int getItemPosition(@NonNull Object object) {
         return super.getItemPosition(object);
     }
 

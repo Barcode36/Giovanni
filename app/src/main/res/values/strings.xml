@@ -45,7 +45,7 @@
     <string name="economic_conditions">Ho preso visione e accetto le Condizioni Economiche di Contratto</string>
     <string name="conditions_accepted">Condizioni accettate</string>
 
-    <string name="serializable">Serializable Magazzino\nRegex</string>
+    <string name="serializable">Regex\nSerializable Magazzino</string>
     <string name="scegli_articolo">QUALE ARTICOLO VUOI INSERIRE?</string>
     <string name="camicia">Camicia</string>
     <string name="dvd">DVD</string>
@@ -62,14 +62,14 @@
 
     <!-- LISTVIEW -->
 
-    <string name="istview_simple">simple_list_item_1\nlist_item</string>
+    <string name="istview_simple">list_item\nsimple_list_item_1</string>
 
     <string name="two_listview_copy">Two ListView copy</string>
     <string name="copy">Copia</string>
 
-    <string name="two_listview_adapter">Two ListView\nAdapter</string>
+    <string name="two_listview_adapter">Adapter\nTwo ListView</string>
 
-    <string name="two_listview_thread">Two ListView\nThread</string>
+    <string name="two_listview_thread">Thread\nTwo ListView</string>
 
     <string name="listview_adapter_rubrica">ListView\nAdapter Rubrica</string>
     <string name="id">ID</string>
@@ -77,7 +77,7 @@
     <string name="cognome">Cognome</string>
     <string name="numero">Numero</string>
 
-    <string name="listview_azienda">Azienda Serializable\nSpinner</string>
+    <string name="listview_azienda">Spinner\nAzienda Serializable</string>
     <string name="inserisci_dipendente">Inserisci dipendente</string>
     <string name="cerca_dipendente">Cerca dipendente</string>
     <string name="scegli_dipendente">Quale dipendente vuoi inserire?</string>
@@ -88,7 +88,7 @@
     <string name="cerca_id">Cerca dipendente per ID progetto</string>
     <string name="mostra_azienda">Mostra azienda</string>
 
-    <string name="recyclerview_cambiaprezzo">CardView cambia prezzo\nsetOnClickListener\nclipToPadding</string>
+    <string name="recyclerview_cambiaprezzo">clipToPadding\nsetOnClickListener\nCardView cambia prezzo</string>
     <string name="prodotto">Prodotto:</string>
     <string name="prezzo">Prezzo:</string>
     <string name="cambia_prezzo">Cambia il prezzo</string>
@@ -107,7 +107,7 @@
 
     <string name="recyclerview_add_item">Add Item</string>
     <string name="san_martino">La nebbia a gl\'irti colli\npiovigginando sale,\ne sotto il maestrale\nurla e biancheggia il mar;\n\nma per le vie del borgo\ndal ribollir de\' tini\nva l\'aspro odor de i vini\nl\'anime a rallegrar.\n\nGira su\' ceppi accesi\nlo spiedo scoppiettando:\nsta il cacciator fischiando\nsu l\'uscio a rimirar\n\ntra le rossastre nubi\nstormi d\'uccelli neri,\ncom\'esuli pensieri,\nnel vespero migrar.</string>
-    <string name="viewpager_tablayout">Calcolatrice\nParallax Effect\nPin Effect + FAB\nPull to Refresh + Random\nCheckBox and openUrl</string>
+    <string name="viewpager_tablayout">Calcolatrice\nPin Effect + FAB\nParallax Effect\nCheckBox + openUrl\nPull to Refresh + Random</string>
     <string name="fragment_1">Fragment 1</string>
     <string name="fragment_2">Fragment 2</string>
     <string name="fragment_3">Fragment 3</string>
@@ -123,12 +123,12 @@
     <!-- RECYCLERVIEW HEADER ITEM -->
     <string name="recyclerview_header_item">Header Item</string>
 
-    <string name="recyclerview_openfragment">OpenFragment\nOnItemViewClicked Interface\naddViews</string>
+    <string name="recyclerview_openfragment">addViews\nOpenFragment\nOnItemViewClicked Interface</string>
 
     <!-- RECYCLERVIEW VIEWPAGER -->
-    <string name="recyclerview_viewpager">ViewPager\nnotifyItemRemoved\nLayoutTransition</string>
+    <string name="recyclerview_viewpager">ViewPager\nLayoutTransition\nnotifyItemRemoved</string>
 
-    <string name="offset">ViewPager + TabLayout Custom\nScrollView Sticky\nOffset</string>
+    <string name="offset">Offset\nScrollView Sticky\nViewPager + TabLayout Custom</string>
 
     <string name="recyclerview_accordion">Accordion</string>
 
@@ -151,7 +151,7 @@
     <string name="nav_header_subtitle_email_giovanni">giovanni.petito88@gmail.com</string>
     <string name="msisdn_giovanni">3331582355</string>
 
-    <string name="addtextchangedlistener">MVP Pattern\nAddTextChangedListener\nProgressBar</string>
+    <string name="addtextchangedlistener">MVP Pattern\nProgressBar\nAddTextChangedListener</string>
     <string name="mvp_kotlin_login">MVP Pattern\nKotlin Login\nProgressBar</string>
     <string name="username_error">Il campo Username non può essere vuoto</string>
     <string name="password_error">Il campo Password non può essere vuoto</string>

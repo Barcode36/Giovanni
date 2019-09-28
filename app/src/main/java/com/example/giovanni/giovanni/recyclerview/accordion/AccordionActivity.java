@@ -1,11 +1,9 @@
 package com.example.giovanni.giovanni.recyclerview.accordion;
 
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.AttributeSet;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
@@ -65,19 +63,13 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
         iconSearch.setOnClickListener(v -> filter());
     }
 
-    @Override
-    public View onCreateView(String name, Context context, AttributeSet attrs) {
-        return super.onCreateView(name, context, attrs);
-    }
-
     public void updateSwitch() {
 
         collapsedList = new ArrayList<>();
 
         for (Persona persona : list) {
-            if (!persona.getTipo().equals(CHECKBOX_TYPE)) {
+            if (!persona.getTipo().equals(CHECKBOX_TYPE))
                 collapsedList.add(persona);
-            }
         }
 
         for (Persona persona : list) {
@@ -90,14 +82,12 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
 
         for (Persona cognome : cognomi) {
             for (Persona persona : list) {
-                if (persona.getCognome().equalsIgnoreCase(cognome.getCognome())) {
+                if (persona.getCognome().equalsIgnoreCase(cognome.getCognome()))
                     persona.setChecked(true);
-                }
             }
             for (Persona persona : collapsedList) {
-                if (persona.getCognome().equalsIgnoreCase(cognome.getCognome())) {
+                if (persona.getCognome().equalsIgnoreCase(cognome.getCognome()))
                     persona.setChecked(true);
-                }
             }
         }
         adapter.setList(collapsedList);
@@ -109,11 +99,10 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
 
         if (persona.getTipo().equals(SWITCH_TYPE)) {
             persona.setChecked(isChecked);
-            if (isCollapsed) {
+            if (isCollapsed)
                 adapter.setList(collapsedList);
-            } else {
+            else
                 adapter.setList(list);
-            }
         }
         if (persona.getTipo().equals(ACCORDION_TYPE)) {
             if (isChecked) {
@@ -131,9 +120,7 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
         if (persona.getTipo().equals(CHECKBOX_TYPE)) {
             if (isChecked) {
                 for (int i=0; i<list.size(); i++) {
-                    list.get(i).setChecked(list.get(i).getTipo().equals(CHECKBOX_TYPE)
-                            ? list.get(i) == persona
-                            : list.get(i).isChecked());
+                    list.get(i).setChecked(list.get(i).getTipo().equals(CHECKBOX_TYPE) ? list.get(i) == persona : list.get(i).isChecked());
                 }
             } else {
                 for (int i=0; i<list.size(); i++) {
@@ -146,7 +133,7 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
     }
 
     private void filter() {
-// editSearch.clearFocus();
+        // editSearch.clearFocus();
         if (sentence != null && sentence.equalsIgnoreCase(editSearch.getText().toString()))
             return;
         sentence = editSearch.getText().toString();
@@ -170,9 +157,8 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
             if (persona == null)
                 continue;
             if ((persona.getMsisdn() != null && persona.getMsisdn().toLowerCase().contains(sentence.toLowerCase()))
-                    || (persona.getNome() != null && persona.getNome().toLowerCase().contains(sentence.toLowerCase()))) {
+                    || (persona.getNome() != null && persona.getNome().toLowerCase().contains(sentence.toLowerCase())))
                 filtered.add(persona);
-            }
         }
         if (filtered == null || filtered.size() == 0) {
             recyclerView.setVisibility(View.GONE);
