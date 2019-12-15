@@ -151,7 +151,7 @@
     <string name="nav_header_subtitle_email_giovanni">giovanni.petito88@gmail.com</string>
     <string name="msisdn_giovanni">3331582355</string>
 
-    <string name="addtextchangedlistener">MVP Pattern\nProgressBar\nAddTextChangedListener</string>
+    <string name="addtextchangedlistener">MVP Pattern\nProgressBar\nAddTextChangedListener\nAutoCompleteTextView</string>
     <string name="mvp_kotlin_login">MVP Pattern\nKotlin Login\nProgressBar</string>
     <string name="username_error">Il campo Username non può essere vuoto</string>
     <string name="password_error">Il campo Password non può essere vuoto</string>
@@ -205,5 +205,9 @@
 
     <!-- SQLITE DATABASE -->
     <string name="sqlite_database">SQLite Database</string>
+
+    <!-- AUTOCOMPLETETEXTVIEW -->
+    <string name="search_family">Cerca un membro della famiglia</string>
+    <string name="drop_down">Drop Down</string>
 
 </resources>

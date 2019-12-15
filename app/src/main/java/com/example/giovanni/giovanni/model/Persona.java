@@ -303,13 +303,36 @@ public class Persona implements Serializable {
         this.checked = checked;
     }
 
-    public void init() {
+    public void initBand() {
 
         inserisci(new Gruppo("Nirvana", 3, 1));
         inserisci(new Gruppo("Parl Jam", 5, 2));
         inserisci(new Gruppo("Soundgarden", 4, 3));
         inserisci(new Gruppo("Stone Temple Pilots", 4, 4));
         inserisci(new Gruppo("Audioslave", 4, 5));
+    }
+
+    public static List<Persona> initPersone() {
+
+        List<Persona> list = new ArrayList<>();
+        list.add(new Persona("Giovanni", "Petito", "3331582355"));
+        list.add(new Persona("Raffaele", "Petito", "3802689011"));
+        list.add(new Persona("Angelina", "Basile", "3334392578"));
+        list.add(new Persona("Vincenzo", "Petito", "3666872262"));
+        list.add(new Persona("Teresa", "Petito", "3343540536"));
+        list.add(new Persona("Ilenia", "Pragliola", "3343540536"));
+        list.add(new Persona("Salvatore", "Pragliola", "3384672609"));
+        list.add(new Persona("Giovanni", "Basile", "3884723340"));
+        list.add(new Persona("Marco", "Basile", "3892148853"));
+        list.add(new Persona("Antonio", "D'Ascia", "3315605694"));
+        list.add(new Persona("Giovanni", "D'Ascia", "3331711437"));
+        list.add(new Persona("Mariano", "Pinto", "3397016728"));
+        list.add(new Persona("Pasquale", "Amato", "3665917760"));
+        list.add(new Persona("Francesco", "Mongiello", "3299376402"));
+        list.add(new Persona("Gianluigi", "Santillo", "3386124867"));
+        list.add(new Persona("Daniele", "Musacchia", "3494977374"));
+
+        return list;
     }
 
     private void inserisci(Gruppo gruppo) {

@@ -6,12 +6,19 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.giovanni.giovanni.R;
+import com.example.giovanni.giovanni.model.Persona;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AddTextActivity extends AppCompatActivity implements AddTextPresenter.View {
 
@@ -62,13 +69,36 @@ public class AddTextActivity extends AppCompatActivity implements AddTextPresent
                 hideProgressBar();
             }
         });
+
+        AutoCompleteTextView actv1 = findViewById(R.id.search_family_1);
+        AutoCompleteTextView actv2 = findViewById(R.id.search_family_2);
+
+        List<Persona> list = Persona.initPersone();
+        List<String> listaNomi = new ArrayList<>();
+
+        for (Persona persona : list) {
+            listaNomi.add(persona.getNome());
+        }
+
+        String[] arrayNomi = listaNomi.toArray(new String[list.size()]);
+
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, arrayNomi);
+        actv1.setAdapter(adapter1);
+
+        PersonaArrayAdapter adapter2 = new PersonaArrayAdapter(this, list);
+        actv2.setAdapter(adapter2);
+
+        Button dropDown = findViewById(R.id.button_drop_down);
+        dropDown.setOnClickListener(view ->
+                actv2.showDropDown()
+        );
     }
 
     private void initProgressBar() {
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleSmall);
         progressBar.setIndeterminate(true);
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(Resources.getSystem().getDisplayMetrics().widthPixels,
-                250);
+        RelativeLayout.LayoutParams params =
+                new RelativeLayout.LayoutParams(Resources.getSystem().getDisplayMetrics().widthPixels, 250);
         params.addRule(RelativeLayout.CENTER_IN_PARENT);
         this.addContentView(progressBar, params);
         showProgressBar();

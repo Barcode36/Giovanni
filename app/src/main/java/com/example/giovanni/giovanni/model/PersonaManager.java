@@ -71,16 +71,12 @@ public class PersonaManager implements Serializable {
 
     public void init() {
 
-        Persona utente1 = new Persona("Gianluigi", "345");
-        Persona utente2 = new Persona("Mariano", "456");
-        Persona utente3 = new Persona("Daniele", "567");
-        Persona utente4 = new Persona("Frank", "678");
-        Persona utente5 = new Persona("Lino", "789");
+        Persona utente = new Persona("Gianluigi", "345");
 
-        utenti.add(utente1);
-        utenti.add(utente2);
-        utenti.add(utente3);
-        utenti.add(utente4);
-        utenti.add(utente5);
+        utenti.add(utente);
+        utenti.add(new Persona("Mariano", "456"));
+        utenti.add(new Persona("Daniele", "567"));
+        utenti.add(new Persona("Frank", "678"));
+        utenti.add(new Persona("Lino", "789"));
     }
 }

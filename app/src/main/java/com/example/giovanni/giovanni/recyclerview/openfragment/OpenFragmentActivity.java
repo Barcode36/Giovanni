@@ -54,9 +54,11 @@ public class OpenFragmentActivity extends AppCompatActivity implements OpenFragm
         Persona persona1 = new Persona("Giovanni", "Petito", "M", "06/02/1988", "Mugnano di Napoli", "Napoli", "3331582355");
         list.add(persona1);
         list.add(new Persona("Raffaele", "Petito", "M", "06/02/1988", "Mugnano di Napoli", "Napoli", "3802689011"));
-        list.add(new Persona("Teresa", "Petito", "F", "18/06/1984", "Mugnano di Napoli", "Napoli", "3343540536"));
         list.add(new Persona("Angelina", "Basile", "F", "05/04/1959", "Villaricca", "Napoli", "3334392578"));
         list.add(new Persona("Vincenzo", "Petito", "M", "20/07/1958", "Giugliano in Campania", "Napoli", "3666872262"));
+        list.add(new Persona("Teresa", "Petito", "F", "18/06/1984", "Mugnano di Napoli", "Napoli", "3343540536"));
+        list.add(new Persona("Salvatore", "Pragliola", "M", "03/03/1985", "Mugnano di Napoli", "Napoli", "3384672609"));
+        list.add(new Persona("Ilenia", "Pragliola", "F", "11/09/2018", "Napoli", "Napoli", "3343540536"));
 
         return list;
     }

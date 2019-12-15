@@ -40,6 +40,10 @@ public class CamiciaActivity extends AppCompatActivity {
     private final static String INT_REGEX = "\\d{2}";
     private final static String PREZZO_REGEX = "\\d+|(\\d+.\\d+)"; // Il punto serve a rappresentare i numeri decimali.
 
+    private final static String MSISDN_1_REGEX = "(\\+*393|3)\\d{9}";
+    private final static String MSISDN_2_REGEX = "(\\+*393|3)\\d{9,11}";
+    private final static String MSISDN_3_REGEX = "(\\+*393|3)\\d{9,}";
+
     /*
     [0-9]:           espressione regolare che individua un numero intero.                                Corrisponde a \d
     [0-9]+:          regex che individua uno o più numeri interi.                                        Corrisponde a \d+

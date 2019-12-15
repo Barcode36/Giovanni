@@ -47,7 +47,7 @@ public class PodcastActivity extends AppCompatActivity {
         tOutput.setText(output.toUpperCase());
 
         utente = new Persona();
-        utente.init();
+        utente.initBand();
 
         bEnjoy.setOnClickListener(v -> {
 

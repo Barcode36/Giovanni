@@ -10,7 +10,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textNome"
+            android:id="@+id/text_nome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
@@ -24,7 +24,7 @@
             android:background="@color/azzurro_fiordaliso"/>
 
         <TextView
-            android:id="@+id/textCognome"
+            android:id="@+id/text_cognome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"

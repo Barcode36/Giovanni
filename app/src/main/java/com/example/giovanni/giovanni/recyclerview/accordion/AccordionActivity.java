@@ -183,9 +183,10 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
         List<Persona> list = new ArrayList<>();
         list.add(new Persona("Giovanni", "Petito", "3331582355", "switch", false));
         list.add(new Persona("Raffaele", "Petito", "3802689011", "switch", false));
-        list.add(new Persona("Teresa", "Petito", "3343540536", "switch", false));
         list.add(new Persona("Angelina", "Basile", "3334392578", "switch", false));
         list.add(new Persona("Vincenzo", "Petito", "3666872262", "switch", false));
+        list.add(new Persona("Teresa", "Petito", "3343540536", "switch", false));
+        list.add(new Persona("Ilenia", "Pragliola", "3343540536", "switch", false));
         list.add(new Persona("Salvatore", "Pragliola", "3384672609", "accordion", false));
         list.add(new Persona("Giovanni", "Basile", "3884723340", "checkbox", false));
         list.add(new Persona("Marco", "Basile", "3892148853", "checkbox", false));

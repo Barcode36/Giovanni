@@ -25,24 +25,22 @@ public class OffsetActivity extends AppCompatActivity {
 
         appBarLayout = findViewById(R.id.appBarLayout);
 
-        viewPager = (ViewPager) findViewById(R.id.pager);
+        viewPager = findViewById(R.id.pager);
         viewPager.setAdapter(new OffsetAdapter(getSupportFragmentManager()));
 
-        tabLayout = (TabLayout) findViewById(R.id.tabDots);
+        tabLayout = findViewById(R.id.tabDots);
         tabLayout.setupWithViewPager(viewPager);
 
-        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
-            @Override
-            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-                if (verticalOffset == 0) {
-                    Toast.makeText(getApplicationContext(), "offset = 0", Toast.LENGTH_SHORT).show();
-                }
+        appBarLayout.addOnOffsetChangedListener((appBarLayout, verticalOffset) -> {
+            if (verticalOffset == 0) {
+                Toast.makeText(getApplicationContext(), "offset = 0", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
+    @SuppressWarnings("deprecation")
     private void setBodyText() {
-        TextView textView = (TextView) findViewById(R.id.body_text);
+        TextView textView = findViewById(R.id.body_text);
         String text = "La nebbia a gl\'irti colli<br/>piovigginando sale,<br/>e sotto il maestrale<br/>" +
                 "urla e biancheggia il mar;<br/><br/>ma per le vie del borgo<br/>dal ribollir de\' tini<br/>" +
                 "va l\'aspro odor de i vini<br/>l\'anime a rallegrar.<br/><br/>Gira su\' ceppi accesi<br/>" +

@@ -1,5 +1,6 @@
 package com.example.giovanni.giovanni.recyclerview.openfragment;
 
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,7 @@ public class OpenFragmentAdapter extends RecyclerView.Adapter<OpenFragmentAdapte
     private List<Persona> list;
     private OnItemViewClicked onItemViewClicked;
 
-    public OpenFragmentAdapter(OnItemViewClicked onItemViewClicked) {
+    OpenFragmentAdapter(OnItemViewClicked onItemViewClicked) {
         this.list = new ArrayList<>();
         this.onItemViewClicked = onItemViewClicked;
     }
@@ -26,6 +27,7 @@ public class OpenFragmentAdapter extends RecyclerView.Adapter<OpenFragmentAdapte
         this.list = list;
     }
 
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);
@@ -47,11 +49,10 @@ public class OpenFragmentAdapter extends RecyclerView.Adapter<OpenFragmentAdapte
 
     @Override
     public int getItemCount() {
-        if (list == null) {
+        if (list == null)
             return 0;
-        } else {
+        else
             return list.size();
-        }
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -61,8 +62,8 @@ public class OpenFragmentAdapter extends RecyclerView.Adapter<OpenFragmentAdapte
 
         public ViewHolder(View itemView) {
             super(itemView);
-            this.nome = itemView.findViewById(R.id.textNome);
-            this.cognome = itemView.findViewById(R.id.textCognome);
+            this.nome = itemView.findViewById(R.id.text_nome);
+            this.cognome = itemView.findViewById(R.id.text_cognome);
         }
     }
 
