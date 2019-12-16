@@ -207,7 +207,7 @@
     <string name="sqlite_database">SQLite Database</string>
 
     <!-- AUTOCOMPLETETEXTVIEW -->
-    <string name="search_family">Cerca un membro della famiglia</string>
+    <string name="search_family">Cerca un familiare</string>
     <string name="drop_down">Drop Down</string>
 
 </resources>

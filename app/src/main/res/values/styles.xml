@@ -43,11 +43,25 @@
         <item name="android:colorForeground">#A9AAAB</item>
     </style>
 
-    <style name="EmployeeEditText" parent="android:Widget.EditText">
+    <style name="EditText1" parent="android:Widget.EditText">
+        <item name="android:background">@null</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="EditText2" parent="android:Widget.EditText">
         <item name="android:background">@null</item>
         <item name="android:textColorHighlight">@color/black</item>
         <item name="colorAccent">@color/black</item>
         <item name="android:activatedBackgroundIndicator">@null</item>
+    </style>
+
+    <style name="EditText3" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:colorAccent">@color/white</item>
+        <item name="android:colorPrimary">@color/white</item>
     </style>
 
 </resources>

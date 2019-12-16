@@ -1,9 +1,13 @@
 package com.example.giovanni.giovanni.textlayout;
 
+import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.graphics.Point;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.Spanned;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.animation.ScaleAnimation;
@@ -33,6 +37,8 @@ public class TextLayoutActivity extends AppCompatActivity {
     private RelativeLayout homerContainer;
     private RelativeLayout bartContainer;
 
+    @SuppressWarnings("deprecation")
+    @SuppressLint("ObsoleteSdkInt")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -154,6 +160,26 @@ public class TextLayoutActivity extends AppCompatActivity {
 
         sizeDensityText.setTextSize(screenw_px / (15 * screen_density));
         // NOTA: più il numero è grande, più la dimensione del testo è piccola.
+
+        TextView htmlText1 = findViewById(R.id.html_text_1);
+        TextView htmlText2 = findViewById(R.id.html_text_2);
+        Spanned spanned;
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            htmlText1.setText(Html.fromHtml("<h2>Title 1</h2><br><p>Description 1</p>",
+                    Html.FROM_HTML_MODE_COMPACT)); // Oppure: Html.FROM_HTML_MODE_LEGACY
+        } else {
+            htmlText1.setText(Html.fromHtml("<h2>Title 1</h2><br><p>Description 1</p>"));
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            spanned = Html.fromHtml(Html.fromHtml("<h2>Title 2</h2><br><p>Description 2</p>",
+                    Html.FROM_HTML_MODE_COMPACT).toString(), Html.FROM_HTML_MODE_COMPACT); // Oppure: Html.FROM_HTML_MODE_LEGACY
+        } else {
+            spanned = Html.fromHtml(Html.fromHtml("<h2>Title 2</h2><br><p>Description 2</p>").toString());
+        }
+
+        htmlText2.setText(spanned);
     }
 
     private String formatCount(String string) {

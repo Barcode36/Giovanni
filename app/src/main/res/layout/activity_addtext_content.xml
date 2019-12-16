@@ -73,14 +73,17 @@
         <AutoCompleteTextView
             android:id="@+id/search_family_1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:textColorHint="@color/grey"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:paddingStart="24dp"
             android:hint="@string/search_family"
             android:paddingEnd="24dp"
-            android:completionThreshold="2" />
+            android:completionThreshold="2"
+            android:layout_centerVertical="true"
+            android:dropDownHeight="@dimen/dimen_250dp"
+            style="@style/EditText1" />
 
     </RelativeLayout>
 
@@ -100,14 +103,17 @@
         <AutoCompleteTextView
             android:id="@+id/search_family_2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:textColorHint="@color/grey"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:paddingStart="24dp"
             android:hint="@string/search_family"
             android:paddingEnd="24dp"
-            android:completionThreshold="2" />
+            android:completionThreshold="2"
+            android:layout_centerVertical="true"
+            android:dropDownHeight="@dimen/dimen_250dp"
+            style="@style/EditText1" />
 
     </RelativeLayout>
 
