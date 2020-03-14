@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".listview.listviewazienda.InsertActivity"
     android:orientation="vertical">
 
     <TextView
@@ -27,7 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:entries="@array/items_employees"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:overlapAnchor="false" />
 
     </RelativeLayout>
 

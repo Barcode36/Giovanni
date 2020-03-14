@@ -70,6 +70,16 @@
         android:textAlignment="center" />
 
     <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_60dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/back"
+        android:layout_below="@+id/imageLibro"
+        style="@style/HomeButton" />
+
+    <Button
         android:id="@+id/buttonAggiungi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

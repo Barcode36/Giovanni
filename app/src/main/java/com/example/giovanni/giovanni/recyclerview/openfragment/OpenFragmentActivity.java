@@ -1,7 +1,7 @@
 package com.example.giovanni.giovanni.recyclerview.openfragment;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,7 +13,6 @@ import com.example.giovanni.giovanni.model.Persona;
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("deprecation")
 public class OpenFragmentActivity extends AppCompatActivity implements OpenFragmentAdapter.OnItemViewClicked {
 
     private FragmentManager fm;
@@ -33,7 +32,7 @@ public class OpenFragmentActivity extends AppCompatActivity implements OpenFragm
         adapter.setList(list);
         adapter.notifyDataSetChanged();
 
-        fm = getFragmentManager();
+        fm = getSupportFragmentManager();
     }
 
     @Override

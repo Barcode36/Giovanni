@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 
 public class InsertActivity extends AppCompatActivity {
 
-    private Spinner sTipo;
+    private Spinner spinnerDipendenti;
     private EditText eIDProgetto;
     private EditText eNome;
     private EditText eCognome;
@@ -51,7 +51,7 @@ public class InsertActivity extends AppCompatActivity {
         azienda = (Azienda) intent.getSerializableExtra("INSERT");
 
         Button bConferma = findViewById(R.id.buttonConferma);
-        sTipo = findViewById(R.id.spinner);
+        spinnerDipendenti = findViewById(R.id.spinner);
         eIDProgetto = findViewById(R.id.editID);
         eNome = findViewById(R.id.editNome);
         eCognome = findViewById(R.id.editCognome);
@@ -63,7 +63,7 @@ public class InsertActivity extends AppCompatActivity {
                     eCognome.getText().toString().equals("")) {
                 Toast.makeText(getApplicationContext(), "Riempi tutti i campi", Toast.LENGTH_LONG).show();
             } else {
-                tipo = sTipo.getSelectedItem().toString();
+                tipo = spinnerDipendenti.getSelectedItem().toString();
 
                 IDProgetto = eIDProgetto.getText().toString();
                 Pattern pIDProgetto = Pattern.compile(INT_REGEX);

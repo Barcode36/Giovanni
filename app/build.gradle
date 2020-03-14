@@ -56,6 +56,9 @@ dependencies {
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    // Volley is used to download the gallery json by making HTTP call.
+    implementation 'com.android.volley:volley:1.1.1'
 }
 
 apply plugin: 'kotlin-android'

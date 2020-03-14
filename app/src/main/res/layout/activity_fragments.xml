@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/dimen_5dp"
-    tools:context=".fragments.FragmentsActivity"
     android:orientation="vertical"
     android:background="@color/carta_da_zucchero">
 
@@ -29,7 +26,7 @@
                 android:text="Inserisci A"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="inserisciA"/>
+                android:onClick="inserisciA" />
 
             <Button
                 android:layout_width="0dp"
@@ -39,7 +36,7 @@
                 android:text="Inserisci B"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="inserisciB"/>
+                android:onClick="inserisciB" />
 
             <Button
                 android:layout_width="0dp"
@@ -49,7 +46,7 @@
                 android:text="Inserisci C"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="inserisciC"/>
+                android:onClick="inserisciC" />
 
         </LinearLayout>
 
@@ -66,7 +63,7 @@
                 android:text="Rimuovi A"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="rimuoviA"/>
+                android:onClick="rimuoviA" />
 
             <Button
                 android:layout_width="0dp"
@@ -76,7 +73,7 @@
                 android:text="Rimuovi B"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="rimuoviB"/>
+                android:onClick="rimuoviB" />
 
             <Button
                 android:layout_width="0dp"
@@ -86,7 +83,7 @@
                 android:text="Rimuovi C"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="rimuoviC"/>
+                android:onClick="rimuoviC" />
 
         </LinearLayout>
 
@@ -103,7 +100,7 @@
                 android:text="Da A a B"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="daAaB"/>
+                android:onClick="daAaB" />
 
             <Button
                 android:layout_width="0dp"
@@ -113,7 +110,7 @@
                 android:text="Da B a A"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="daBaA"/>
+                android:onClick="daBaA" />
 
         </LinearLayout>
 
@@ -130,7 +127,7 @@
                 android:text="Attach A"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="attachA"/>
+                android:onClick="attachA" />
 
             <Button
                 android:layout_width="0dp"
@@ -140,7 +137,7 @@
                 android:text="Detach A"
                 android:textColor="@color/azzurro_fiordaliso"
                 android:background="@drawable/custom_button"
-                android:onClick="detachA"/>
+                android:onClick="detachA" />
 
         </LinearLayout>
 
@@ -151,8 +148,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
-        android:background="@color/white">
-
-    </FrameLayout>
+        android:background="@color/white" />
 
 </LinearLayout>

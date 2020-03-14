@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".listview.listviewazienda.FindActivity"
     android:background="@color/white">
 
     <ImageView
@@ -12,7 +10,8 @@
         android:layout_height="@dimen/dimen_250dp"
         app:srcCompat="@drawable/dipendenti2"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/dimen_20dp" />
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:contentDescription="@string/app_name" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +29,8 @@
             android:textAlignment="center"
             android:textSize="18sp"
             android:textColorHint="@color/azzurro_scuro"
-            android:textColor="@color/azzurro_scuro" />
+            android:textColor="@color/azzurro_scuro"
+            android:autofillHints="@string/cerca_id" />
 
         <RelativeLayout
             android:layout_width="match_parent"

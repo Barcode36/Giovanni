@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -20,11 +19,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FF0000"
+                android:background="@color/red"
                 android:onClick="buttonDecrease"
-                android:text="-"
-                android:textColor="#FFFF00"
-                android:textSize="18sp" />
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                tools:text="-" />
 
             <TextView
                 android:id="@+id/textCounter"
@@ -34,17 +33,17 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="0"
                 android:text="0"
-                android:textColor="#FFA500"
+                android:textColor="@color/yellow"
                 android:textSize="18sp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#00A86B"
+                android:background="@color/giada"
                 android:onClick="buttonIncrease"
                 android:text="+"
-                android:textColor="#FFFF00"
+                android:textColor="@color/yellow"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -61,11 +60,7 @@
         android:layout_marginTop="16dp"
         android:text="HighScore"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#007FFF" />
+        android:textColor="@color/azzurro" />
 
     <EditText
         android:id="@+id/editName"
@@ -75,11 +70,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
         android:ems="10"
-        android:hint="Inserisci il tuo nome"
+        android:hint="@string/insert_name"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:textColor="#FF0000" />
+        android:textColor="@color/red"
+        android:autofillHints=""/>
 
     <Button
         android:layout_width="wrap_content"
@@ -90,7 +86,7 @@
         android:onClick="launchHighScoreActivity"
         android:text="Show Record"
         android:textSize="18sp"
-        android:background="#2A52BE"
-        android:textColor="#FFFFF0" />
+        android:background="@color/blu_ceruleo"
+        android:textColor="@color/avorio" />
 
 </RelativeLayout>

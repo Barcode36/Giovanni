@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.giovanni.giovanni.R;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static com.example.giovanni.giovanni.utils.Utils.turnToString;
@@ -39,6 +40,13 @@ public class ArrayFragment extends Fragment {
         // Log.i(TAG, sommaString);
 
         Log.i(TAG, "La somma tra " + primo + " e " + ultimo + " vale " + somma + ".");
+
+        // list è una lista di stringhe.
+        List<String> list = Arrays.asList("10€", "20€", "30€", "40€", "50€");
+
+        // Come ottenere un Double da una stringa:
+        Double double1 = Double.parseDouble("5");
+        Double double2 = Double.valueOf("4");
 
         String[] articoli = new String[] {"camicia", "pantaloni", "scarpe", "calzini"};
         int k = 1;

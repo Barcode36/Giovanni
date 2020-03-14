@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -58,10 +59,11 @@
             android:layout_below="@+id/spinner_container"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp"
-            android:ems="10"
-            android:hint="Nome Prodotto"
+            android:hint="@string/digita_nome_prodotto"
             android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:autofillHints=""
+            android:ems="10" />
 
         <EditText
             android:id="@+id/edit_prezzo_prodotto"
@@ -70,10 +72,11 @@
             android:layout_below="@+id/edit_nome_prodotto"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp"
-            android:ems="10"
-            android:hint="Prezzo"
+            android:hint="@string/digita_prezzo"
             android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:autofillHints=""
+            android:ems="10" />
 
         <Button
             android:id="@+id/button_inserisci"
@@ -82,9 +85,9 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/edit_prezzo_prodotto"
             android:layout_marginTop="24dp"
-            android:text="inserisci"
             android:background="@color/red"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:text="inserisci" />
 
     </RelativeLayout>
 

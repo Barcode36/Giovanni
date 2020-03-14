@@ -1,20 +1,15 @@
 package com.example.giovanni.giovanni.fragments;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.example.giovanni.giovanni.R;
 
 public class FragmentsActivity extends AppCompatActivity {
-
-    private void log(String string) {
-        Log.d("DEBUG", "Main: " + string);
-    }
 
     FragmentManager fm;
 
@@ -23,8 +18,7 @@ public class FragmentsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragments);
 
-        fm = getFragmentManager();
-        log("onCreate");
+        fm = getSupportFragmentManager();
     }
 
     public void inserisciA(View v) {

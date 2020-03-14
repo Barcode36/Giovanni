@@ -52,9 +52,6 @@ public class PostListActivity extends AppCompatActivity implements ITaskDelegate
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_list);
 
-        // Ricevo l'intent da communityActivity e per quel gruppo mi prendo tutti i post e in una
-        // recyclerwiew metto tutti i post relativi con autore, titolo e data.
-
         Intent intent = getIntent();
         nomeGruppo = intent.getStringExtra("NOMEGRUPPO");
         community = (Community) intent.getSerializableExtra("HOMECOMMUNITY");

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items_animations">
+        <item>left to right</item>
+        <item>right to left</item>
+        <item>bottom to up</item>
+        <item>up to bottom</item>
+        <item>fade in to fade out</item>
+        <item>rotate out to rotate in</item>
+    </string-array>
+</resources>

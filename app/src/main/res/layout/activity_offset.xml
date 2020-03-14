@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".offset.OffsetActivity">
+    android:layout_height="wrap_content">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -41,6 +40,7 @@
                     app:tabBackground="@drawable/tab_selector"
                     app:tabGravity="center"
                     app:tabIndicatorHeight="0dp" />
+
             </RelativeLayout>
 
         </android.support.design.widget.CollapsingToolbarLayout>
@@ -71,9 +71,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="San Martino"
                     android:textColor="@color/white"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    tools:text="San Martino" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -88,9 +88,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Giosuè Carducci"
                     android:textSize="30sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    tools:text="Giosuè Carducci" />
             </RelativeLayout>
 
             <android.support.v4.widget.NestedScrollView
@@ -117,7 +117,9 @@
                         android:text="@string/app_name"
                         android:textSize="30sp"
                         android:textColor="@color/black" />
+
                 </LinearLayout>
+
             </android.support.v4.widget.NestedScrollView>
 
         </RelativeLayout>

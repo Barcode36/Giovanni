@@ -11,12 +11,12 @@ import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NOME = "Rubrica.db";
-    public static final String CONTACTS_TABLE_NOME = "contacts";
-    public static final String CONTACTS_COLUMN_NOME = "nome";
-    public static final String CONTACTS_COLUMN_COGNOME = "cognome";
+    private static final String DATABASE_NOME = "Rubrica.db";
+    private static final String CONTACTS_TABLE_NOME = "contacts";
+    static final String CONTACTS_COLUMN_NOME = "nome";
+    static final String CONTACTS_COLUMN_COGNOME = "cognome";
 
-    public DatabaseHelper(Context context) {
+    DatabaseHelper(Context context) {
         super(context, DATABASE_NOME , null, 1);
     }
 
@@ -31,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public void insertContact (String nome, String cognome) {
+    void insertContact(String nome, String cognome) {
         SQLiteDatabase database = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("nome", nome);
@@ -44,7 +44,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return database.rawQuery( "select * from contacts where id="+id+"", null );
     }
 
-    public Cursor getDataByName(String nome) {
+    Cursor getDataByName(String nome) {
         SQLiteDatabase database = this.getReadableDatabase();
         String query = "select * from contacts where nome='"+nome+"'";
         return database.rawQuery(query, null);
@@ -63,13 +63,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         database.update("contacts", contentValues, "id = ? ", new String[] { Integer.toString(id) } );
     }
 
-    public void deleteContact (String nome) {
+    void deleteContact(String nome) {
         SQLiteDatabase database = this.getWritableDatabase();
         database.delete("contacts", "nome = ? ", new String[] { nome });
     }
 
-    public ArrayList<String> getAllCotacts() {
-        ArrayList<String> list = new ArrayList<String>();
+    ArrayList<String> getAllCotacts() {
+        ArrayList<String> list = new ArrayList<>();
 
         // hp = new HashMap();
         SQLiteDatabase database = this.getReadableDatabase();

@@ -1,7 +1,7 @@
 package com.example.giovanni.giovanni.recyclerview.openfragment;
 
 import android.annotation.TargetApi;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,7 +22,6 @@ public class DetailPersonaFragment extends Fragment {
 
     private Persona persona;
     private LinearLayout bodyContainer;
-    private List<PersonaDetail> details;
 
     public static DetailPersonaFragment newInstance(Persona persona) {
         DetailPersonaFragment fragment = new DetailPersonaFragment();
@@ -40,7 +39,7 @@ public class DetailPersonaFragment extends Fragment {
 
         bodyContainer = view.findViewById(R.id.bodyContainer);
 
-        details = init(persona);
+        List<PersonaDetail> details = init(persona);
         addViews(details);
 
         return view;

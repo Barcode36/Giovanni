@@ -45,8 +45,9 @@
     <string name="economic_conditions">Ho preso visione e accetto le Condizioni Economiche di Contratto</string>
     <string name="conditions_accepted">Condizioni accettate</string>
 
-    <string name="serializable">Regex\nSerializable Magazzino</string>
+    <string name="serializable">Regex\nonBackPressed\nSpinnerHintAdapter\nSerializable Magazzino\nActivity Transition Animation</string>
     <string name="scegli_articolo">QUALE ARTICOLO VUOI INSERIRE?</string>
+    <string name="scegli_animazione">Scegli l\'animazione da associare al Button Camicia.</string>
     <string name="camicia">Camicia</string>
     <string name="dvd">DVD</string>
     <string name="libro">Libro</string>
@@ -176,6 +177,7 @@
 
     <!-- SHARED PREFERENCES -->
     <string name="high_score">High Score</string>
+    <string name="insert_name">Inserisci il tuo nome</string>
 
     <!-- THREAD -->
     <string name="thread_pics">Thread pics</string>
@@ -209,5 +211,14 @@
     <!-- AUTOCOMPLETETEXTVIEW -->
     <string name="search_family">Cerca un familiare</string>
     <string name="drop_down">Drop Down</string>
+
+    <string-array name="animations">
+        <item>left to right</item>
+        <item>right to left</item>
+        <item>bottom to up</item>
+        <item>up to bottom</item>
+        <item>fade in to fade out</item>
+        <item>rotate out to rotate in</item>
+    </string-array>
 
 </resources>

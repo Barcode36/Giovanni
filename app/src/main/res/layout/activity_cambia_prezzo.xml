@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".recyclerview.recyclercambiaprezzo.CambiaPrezzoActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/denaro" />
+        app:srcCompat="@drawable/denaro"
+        android:contentDescription="@string/app_name" />
 
     <EditText
         android:id="@+id/editPrezzo"
@@ -25,7 +24,8 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textColorHint="@color/colorPrimary"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:autofillHints="@string/cambia_prezzo" />
 
     <Button
         android:id="@+id/buttonConferma"

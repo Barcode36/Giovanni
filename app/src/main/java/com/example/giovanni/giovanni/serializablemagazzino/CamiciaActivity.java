@@ -149,5 +149,14 @@ public class CamiciaActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Button backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(view -> onBackPressed());
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.out_left_to_right, R.anim.out_right_to_left);
     }
 }
