@@ -14,7 +14,6 @@ import com.example.giovanni.giovanni.R;
 public class SpinnerHintAdapter implements SpinnerAdapter, ListAdapter {
 
     private static final int PIVOT = 1;
-
     protected Context context;
     protected SpinnerAdapter adapter;
     private String message;
