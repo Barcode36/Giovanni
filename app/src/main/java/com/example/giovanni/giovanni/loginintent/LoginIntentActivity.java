@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.PersonaManager;
 import com.example.giovanni.giovanni.model.Persona;
-import com.example.giovanni.giovanni.utils.CustomButton;
+import com.example.giovanni.giovanni.customview.CustomButton;
 
 public class LoginIntentActivity extends AppCompatActivity {
 

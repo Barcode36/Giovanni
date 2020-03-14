@@ -15,11 +15,11 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <com.example.giovanni.giovanni.utils.CustomButton
+        <com.example.giovanni.giovanni.customview.CustomButton
             android:id="@+id/custombutton"
             android:layout_width="@dimen/dimen_200dp"
             android:layout_height="@dimen/dimen_200dp">
-        </com.example.giovanni.giovanni.utils.CustomButton>
+        </com.example.giovanni.giovanni.customview.CustomButton>
 
         <RelativeLayout
             android:layout_width="match_parent"

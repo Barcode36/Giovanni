@@ -1,5 +1,6 @@
-package com.example.giovanni.giovanni.utils;
+package com.example.giovanni.giovanni.customview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -9,7 +10,7 @@ import android.widget.AbsListView;
 
 public class MultiSwipeRefreshLayout extends SwipeRefreshLayout {
 
-    private View[] mSwipeableChildren;
+    private View[] swipeableChildren;
 
     public MultiSwipeRefreshLayout(Context context) {
         super(context);
@@ -27,9 +28,9 @@ public class MultiSwipeRefreshLayout extends SwipeRefreshLayout {
         assert ids != null;
 
         // Iterate through the ids and find the Views
-        mSwipeableChildren = new View[ids.length];
+        swipeableChildren = new View[ids.length];
         for (int i = 0; i < ids.length; i++) {
-            mSwipeableChildren[i] = findViewById(ids[i]);
+            swipeableChildren[i] = findViewById(ids[i]);
         }
     }
 
@@ -45,9 +46,9 @@ public class MultiSwipeRefreshLayout extends SwipeRefreshLayout {
      */
     @Override
     public boolean canChildScrollUp() {
-        if (mSwipeableChildren != null && mSwipeableChildren.length > 0) {
+        if (swipeableChildren != null && swipeableChildren.length > 0) {
             // Iterate through the scrollable children and check if any of them can not scroll up
-            for (View view : mSwipeableChildren) {
+            for (View view : swipeableChildren) {
                 if (view != null && view.isShown() && !canViewScrollUp(view)) {
                     // If the view is shown, and can not scroll upwards, return false and start the gesture.
                     return false;
@@ -64,6 +65,8 @@ public class MultiSwipeRefreshLayout extends SwipeRefreshLayout {
      * Handles platform version differences, providing backwards compatible functionality where
      * needed.
      */
+    @SuppressWarnings("deprecation")
+    @SuppressLint("ObsoleteSdkInt")
     private static boolean canViewScrollUp(View view) {
         if (android.os.Build.VERSION.SDK_INT >= 14) {
             // For ICS and above we can call canScrollVertically() to determine this

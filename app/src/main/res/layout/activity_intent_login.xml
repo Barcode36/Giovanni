@@ -120,12 +120,12 @@
             android:layout_height="match_parent"
             android:layout_weight="0.46">
 
-            <com.example.giovanni.giovanni.utils.CustomButton
+            <com.example.giovanni.giovanni.customview.CustomButton
                 android:id="@+id/button_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true">
-            </com.example.giovanni.giovanni.utils.CustomButton>
+            </com.example.giovanni.giovanni.customview.CustomButton>
 
         </RelativeLayout>
 
@@ -134,12 +134,12 @@
             android:layout_height="match_parent"
             android:layout_weight="0.46">
 
-            <com.example.giovanni.giovanni.utils.CustomButton
+            <com.example.giovanni.giovanni.customview.CustomButton
                 android:id="@+id/button_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true">
-            </com.example.giovanni.giovanni.utils.CustomButton>
+            </com.example.giovanni.giovanni.customview.CustomButton>
 
         </RelativeLayout>
 

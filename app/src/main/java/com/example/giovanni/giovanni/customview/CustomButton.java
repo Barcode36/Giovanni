@@ -1,4 +1,4 @@
-package com.example.giovanni.giovanni.utils;
+package com.example.giovanni.giovanni.customview;
 
 import android.content.Context;
 import android.support.annotation.Nullable;

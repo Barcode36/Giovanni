@@ -31,7 +31,6 @@ public class IntentAnimationManager {
                 break;
             default:
                 break;
-
         }
     }
 }
