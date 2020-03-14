@@ -13,20 +13,20 @@ import com.example.giovanni.giovanni.R;
 
 public class SpinnerHintAdapter implements SpinnerAdapter, ListAdapter {
 
-    protected static final int PIVOT = 1;
+    private static final int PIVOT = 1;
 
     protected Context context;
     protected SpinnerAdapter adapter;
-    protected int hintLayout;
     private String message;
-    protected int hintDropdownLayout;
-    protected LayoutInflater layoutInflater;
+    private int hintLayout;
+    private int hintDropdownLayout;
+    private LayoutInflater layoutInflater;
 
     public SpinnerHintAdapter(Context context, SpinnerAdapter spinnerAdapter, int hintLayout, String message) {
         this(context, spinnerAdapter, hintLayout, message, -1);
     }
 
-    public SpinnerHintAdapter(Context context, SpinnerAdapter spinnerAdapter, int hintLayout, String message, int hintDropdownLayout) {
+    private SpinnerHintAdapter(Context context, SpinnerAdapter spinnerAdapter, int hintLayout, String message, int hintDropdownLayout) {
         this.context = context;
         this.adapter = spinnerAdapter;
         this.hintLayout = hintLayout;
@@ -67,7 +67,7 @@ public class SpinnerHintAdapter implements SpinnerAdapter, ListAdapter {
         return adapter.getDropDownView(position - PIVOT, null, parent);
     }
 
-    protected View getHintDropdownView(ViewGroup parent) {
+    private View getHintDropdownView(ViewGroup parent) {
         return layoutInflater.inflate(hintDropdownLayout, parent, false);
     }
 
