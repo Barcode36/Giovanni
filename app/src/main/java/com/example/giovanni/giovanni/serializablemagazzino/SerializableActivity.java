@@ -2,11 +2,13 @@ package com.example.giovanni.giovanni.serializablemagazzino;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.customview.SpinnerHintAdapter;
 import com.example.giovanni.giovanni.model.Magazzino;

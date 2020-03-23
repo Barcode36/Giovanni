@@ -6,14 +6,15 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Articolo;
 import com.example.giovanni.giovanni.model.Camicia;
@@ -23,6 +24,7 @@ import com.example.giovanni.giovanni.utils.FirebaseRestClient;
 import com.example.giovanni.giovanni.utils.ITaskDelegate;
 import com.example.giovanni.giovanni.utils.InternalStorage;
 import com.example.giovanni.giovanni.utils.JSONParse;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import org.json.JSONException;
 import java.util.ArrayList;
@@ -133,7 +135,7 @@ public class FirebaseArticoliActivity extends AppCompatActivity implements ITask
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 500) {
             if (resultCode == Activity.RESULT_OK) {
                 callRest(delegate);

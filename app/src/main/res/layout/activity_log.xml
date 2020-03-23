@@ -9,7 +9,7 @@
     android:orientation="vertical">
 
     <!-- Con: app:tabMode="scrollable" le voci del TabLayout scrollano se queste non ci stanno tutte all'interno. -->
-    <android.support.design.widget.TabLayout
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_50dp"
@@ -20,30 +20,29 @@
         app:tabTextColor="@color/grey"
         app:tabMode="scrollable">
 
-        <!--app:tabGravity="fill"-->
-        <!--app:tabMode="fixed"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabMode="fixed"-->
 
-        <!--<android.support.design.widget.TabItem-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Left" />-->
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Left" />-->
 
-        <!--<android.support.design.widget.TabItem-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Center" />-->
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Center" />-->
 
-        <!--<android.support.design.widget.TabItem-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Right" />-->
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Right" />-->
 
-    </android.support.design.widget.TabLayout>
+    </com.google.android.material.tabs.TabLayout>
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v4.view.ViewPager>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

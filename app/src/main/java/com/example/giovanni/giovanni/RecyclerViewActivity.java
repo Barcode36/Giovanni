@@ -1,8 +1,9 @@
 package com.example.giovanni.giovanni;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.recyclerview.openfragment.OpenFragmentActivity;
 import com.example.giovanni.giovanni.recyclerview.recyclercambiaprezzo.RecyclerArticoliActivity;

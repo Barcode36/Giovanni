@@ -87,7 +87,7 @@
             android:layout_marginTop="24dp"
             android:background="@color/red"
             android:textColor="@color/white"
-            android:text="inserisci" />
+            android:text="Inserisci" />
 
     </RelativeLayout>
 

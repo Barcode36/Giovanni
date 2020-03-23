@@ -1,13 +1,14 @@
 package com.example.giovanni.giovanni.log;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
 
@@ -32,12 +33,12 @@ public class AscensoreFragment extends Fragment {
         return view;
     }
 
-    public class Ascensore {
+    public static class Ascensore {
 
         private int partenza;
         private int destinazione;
 
-        public Ascensore() {
+        Ascensore() {
             this.partenza = 0;
             this.destinazione = 0;
         }
@@ -47,7 +48,7 @@ public class AscensoreFragment extends Fragment {
             this.destinazione = destinazione;
         }
 
-        public void chiamaAscensore(int p, int d) {
+        void chiamaAscensore(int p, int d) {
             String message;
             int pianiRimanenti = d;
             while (p != d) {

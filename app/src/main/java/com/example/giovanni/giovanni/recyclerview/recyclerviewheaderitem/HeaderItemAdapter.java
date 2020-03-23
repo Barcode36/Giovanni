@@ -1,10 +1,12 @@
 package com.example.giovanni.giovanni.recyclerview.recyclerviewheaderitem;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Body;
@@ -15,10 +17,11 @@ public class HeaderItemAdapter extends RecyclerView.Adapter<HeaderItemAdapter.Vi
 
     private List<Body> list;
 
-    public HeaderItemAdapter(List<Body> list) {
+    HeaderItemAdapter(List<Body> list) {
         this.list = list;
     }
 
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);
@@ -26,7 +29,7 @@ public class HeaderItemAdapter extends RecyclerView.Adapter<HeaderItemAdapter.Vi
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Body body = list.get(position);
         if (body != null) {
             if (body.getType() == 0) {
@@ -61,7 +64,7 @@ public class HeaderItemAdapter extends RecyclerView.Adapter<HeaderItemAdapter.Vi
         }
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView header;
         private TextView item1;

@@ -1,7 +1,6 @@
 package com.example.giovanni.giovanni.recyclerview.openfragment;
 
 import android.annotation.TargetApi;
-import android.support.v4.app.Fragment;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.PersonaDetail;

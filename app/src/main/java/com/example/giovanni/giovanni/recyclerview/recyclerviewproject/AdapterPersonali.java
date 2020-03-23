@@ -1,10 +1,12 @@
 package com.example.giovanni.giovanni.recyclerview.recyclerviewproject;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Progetto;
@@ -18,10 +20,11 @@ public class AdapterPersonali extends RecyclerView.Adapter<AdapterPersonali.View
 
     private List<Progetto> list;
 
-    public AdapterPersonali(List<Progetto> list) {
+    AdapterPersonali(List<Progetto> list) {
         this.list = list;
     }
 
+    @NonNull
     @Override
     public AdapterPersonali.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);

@@ -1,12 +1,13 @@
 package com.example.giovanni.giovanni.fragmentdialog;
 
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
 
@@ -16,21 +17,22 @@ public class MainDialogFragment extends Fragment {
 
     public static class MenuItem implements Serializable {
 
-        public int theme;
+        int theme;
         public int style;
         public String title;
-        public String description;
+        String description;
     }
 
     public MenuItem item = new MenuItem();
     public DialogItemListener listener;
 
-    public static MainDialogFragment getMenuFragment(final DialogItemListener listener) {
+    static MainDialogFragment getMenuFragment(final DialogItemListener listener) {
         MainDialogFragment fragment = new MainDialogFragment();
         fragment.setDialogItemListener(listener);
         return fragment;
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main_dialog, container, false);
@@ -51,7 +53,7 @@ public class MainDialogFragment extends Fragment {
     }
 
     // Utility method to save the listener.
-    public void setDialogItemListener(final DialogItemListener listener) {
+    private void setDialogItemListener(final DialogItemListener listener) {
         this.listener = listener;
     }
 

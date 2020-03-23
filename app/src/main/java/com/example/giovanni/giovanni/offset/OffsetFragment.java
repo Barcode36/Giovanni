@@ -1,15 +1,17 @@
 package com.example.giovanni.giovanni.offset;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.example.giovanni.giovanni.R;
 
-public class OffsetFragment extends android.support.v4.app.Fragment {
+public class OffsetFragment extends Fragment {
 
     private TextView textFragment;
     private int position;

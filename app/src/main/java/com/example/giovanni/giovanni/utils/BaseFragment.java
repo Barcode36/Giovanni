@@ -2,9 +2,11 @@ package com.example.giovanni.giovanni.utils;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.widget.FrameLayout;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.customview.MultiSwipeRefreshLayout;
 

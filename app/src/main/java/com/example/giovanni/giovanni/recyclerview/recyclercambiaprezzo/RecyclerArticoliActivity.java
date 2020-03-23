@@ -2,10 +2,11 @@ package com.example.giovanni.giovanni.recyclerview.recyclercambiaprezzo;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Articolo;
@@ -54,6 +55,7 @@ public class RecyclerArticoliActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 50) {
             if (resultCode == Activity.RESULT_OK) {
                 int position = data.getIntExtra("POSIZIONE", -1);

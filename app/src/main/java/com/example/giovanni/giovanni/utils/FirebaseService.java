@@ -1,7 +1,9 @@
 package com.example.giovanni.giovanni.utils;
 
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+
 import com.example.giovanni.giovanni.model.Persona;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

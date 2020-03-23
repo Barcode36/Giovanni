@@ -1,12 +1,14 @@
 package com.example.giovanni.giovanni.recyclerview.recyclerviewproject;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.model.Progetto;
@@ -32,6 +34,7 @@ public class AdapterCompleti extends RecyclerView.Adapter<AdapterCompleti.ViewHo
         return new AdapterCompleti.ViewHolder(view);
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public void onBindViewHolder(@NonNull AdapterCompleti.ViewHolder holder, int position) {
         String userlogged = ResultProjectActivity.getUserLogged(); // Sostituisce il nome e il cognome dell'utente loggato con la stringa "tu".

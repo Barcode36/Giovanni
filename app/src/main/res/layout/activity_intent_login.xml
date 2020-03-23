@@ -55,7 +55,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5">
 
-            <!-- @drawable/round_button richiama il file xml all'interno della cartella drawable e lo associa a buttonSignUp -->
             <Button
                 android:id="@+id/button_signup"
                 android:layout_width="wrap_content"
@@ -124,8 +123,7 @@
                 android:id="@+id/button_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
-            </com.example.giovanni.giovanni.customview.CustomButton>
+                android:layout_centerInParent="true" />
 
         </RelativeLayout>
 
@@ -138,8 +136,7 @@
                 android:id="@+id/button_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
-            </com.example.giovanni.giovanni.customview.CustomButton>
+                android:layout_centerInParent="true" />
 
         </RelativeLayout>
 

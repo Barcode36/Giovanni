@@ -5,7 +5,7 @@ public class User {
     private String username = "";
     private String email = "";
 
-    public User() {}
+    User() {}
 
     public User(String username, String email) {
         this.username = username;
@@ -20,11 +20,11 @@ public class User {
         this.username = username;
     }
 
-    public String getEmail() {
+    private String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    void setEmail(String email) {
         this.email = email;
     }
 

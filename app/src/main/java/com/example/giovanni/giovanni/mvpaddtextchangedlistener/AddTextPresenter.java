@@ -5,17 +5,17 @@ public class AddTextPresenter {
     private User user;
     private View view;
 
-    public AddTextPresenter(View view) {
+    AddTextPresenter(View view) {
         this.user = new User();
         this.view = view;
     }
 
-    public void updateUsername(String username) {
+    void updateUsername(String username) {
         user.setUsername(username);
         view.updateUserInfoTextView(user.toString());
     }
 
-    public void updateEmail(String email) {
+    void updateEmail(String email) {
         user.setEmail(email);
         view.updateUserInfoTextView(user.toString());
     }

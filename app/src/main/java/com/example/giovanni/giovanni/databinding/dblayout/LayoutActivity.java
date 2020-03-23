@@ -1,17 +1,17 @@
 package com.example.giovanni.giovanni.databinding.dblayout;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.example.giovanni.giovanni.R;
 
-@SuppressWarnings("deprecation")
 public class LayoutActivity extends AppCompatActivity {
 
     private FragmentManager fm;
@@ -24,7 +24,7 @@ public class LayoutActivity extends AppCompatActivity {
 
         container = findViewById(R.id.activity_direct_container);
         Button open = findViewById(R.id.button_open_fragment);
-        fm = getFragmentManager();
+        fm = getSupportFragmentManager();
 
         open.setOnClickListener(v -> {
             container.setVisibility(View.GONE);

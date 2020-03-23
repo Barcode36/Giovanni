@@ -1,13 +1,14 @@
 package com.example.giovanni.giovanni.databinding.dbmeteo;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.android.databinding.library.baseAdapters.BR;
+import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
+import androidx.databinding.library.baseAdapters.BR;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.DataBindingModel;
 
@@ -17,7 +18,7 @@ public class MeteoListAdapter extends RecyclerView.Adapter<MeteoListAdapter.Mete
 
     private List<DataBindingModel> list;
 
-    public MeteoListAdapter(List<DataBindingModel> modelList) {
+    MeteoListAdapter(List<DataBindingModel> modelList) {
         list = modelList;
     }
 
@@ -43,16 +44,16 @@ public class MeteoListAdapter extends RecyclerView.Adapter<MeteoListAdapter.Mete
         return list.size();
     }
 
-    public class MeteoListViewHolder extends RecyclerView.ViewHolder {
+    static class MeteoListViewHolder extends RecyclerView.ViewHolder {
 
         private final ViewDataBinding binding;
 
-        public MeteoListViewHolder(ViewDataBinding binding) {
+        MeteoListViewHolder(ViewDataBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }
 
-        public void bind(Object obj) {
+        void bind(Object obj) {
             binding.setVariable(BR.obj, obj);
             binding.executePendingBindings();
         }

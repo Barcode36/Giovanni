@@ -2,11 +2,12 @@ package com.example.giovanni.giovanni.customview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.AbsListView;
+
+import androidx.core.view.ViewCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 public class MultiSwipeRefreshLayout extends SwipeRefreshLayout {
 
@@ -35,15 +36,6 @@ public class MultiSwipeRefreshLayout extends SwipeRefreshLayout {
     }
 
     // BEGIN_INCLUDE(can_child_scroll_up)
-
-    /**
-     * This method controls when the swipe-to-refresh gesture is triggered. By returning false here
-     * we are signifying that the view is in a state where a refresh gesture can start.
-     * <p>
-     * <p>As {@link android.support.v4.widget.SwipeRefreshLayout} only supports one direct child by
-     * default, we need to manually iterate through our swipeable children to see if any are in a
-     * state to trigger the gesture. If so we return false to start the gesture.
-     */
     @Override
     public boolean canChildScrollUp() {
         if (swipeableChildren != null && swipeableChildren.length > 0) {

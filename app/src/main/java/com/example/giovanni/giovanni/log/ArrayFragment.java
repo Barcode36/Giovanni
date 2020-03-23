@@ -1,13 +1,14 @@
 package com.example.giovanni.giovanni.log;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
 
@@ -19,7 +20,7 @@ import static com.example.giovanni.giovanni.utils.Utils.turnToString;
 
 public class ArrayFragment extends Fragment {
 
-    public static String TAG = "TAGARRAY";
+    private static String TAG = "TAGARRAY";
 
     @Nullable
     @Override
@@ -86,19 +87,19 @@ public class ArrayFragment extends Fragment {
         return view;
     }
 
-    public int sommatoria(int a, int b) {
+    private int sommatoria(int a, int b) {
         return a + b;
     }
 
-    public void rimpiazza(String stringa) {
+    private void rimpiazza(String stringa) {
         Log.i(TAG, stringa.replace("fragili", "")); // Il metodo replace() rimpiazza in una stringa il target con il replacement.
     }
 
-    public void eliminaEstremi(String stringa) {
+    private void eliminaEstremi(String stringa) {
         Log.i(TAG, stringa.substring(1, stringa.length() - 1)); // Il metodo substring() restituisce una stringa a partire da un indice all'altro indicati.
     }
 
-    public void occorrenzeA(String stringa) {
+    private void occorrenzeA(String stringa) {
         int occorrenze = 0;
         String array[] = stringa.split(""); // Il metodo split() divide una stringa in base alla regex, in tal caso divide ogni carattere della
         // stringa dall'altro e lo inserisce in un array di stringhe che alla fine sarà popolato di tutti i caratteri della stringa.
@@ -110,7 +111,7 @@ public class ArrayFragment extends Fragment {
         Log.i(TAG, "La lettera a si ripete " + occorrenze + " volte.");
     }
 
-    public void occorrenzeVocali(String stringa) {
+    private void occorrenzeVocali(String stringa) {
         int occorrenze = 0;
         String array[] = stringa.split("");
         for (int i=0; i<array.length; i++) {
@@ -125,7 +126,7 @@ public class ArrayFragment extends Fragment {
         Log.i(TAG, "Le vocali si ripetono " + occorrenze + " volte.");
     }
 
-    public void occorrenzeOgniVocale(String stringa) {
+    private void occorrenzeOgniVocale(String stringa) {
         int occ[] = new int[] {0, 0, 0, 0 , 0};
         String array[] = stringa.split("");
 

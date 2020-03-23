@@ -5,11 +5,13 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class LinePagerIndicatorDecoration extends RecyclerView.ItemDecoration {
 
@@ -45,7 +47,7 @@ public class LinePagerIndicatorDecoration extends RecyclerView.ItemDecoration {
 
     private final Paint mPaint = new Paint();
 
-    public LinePagerIndicatorDecoration() {
+    LinePagerIndicatorDecoration() {
         mPaint.setStrokeCap(Paint.Cap.BUTT); // Sostituire con ROUND se si vogliono ottenere i pallini.
         mPaint.setStrokeWidth(mIndicatorStrokeWidth);
         mPaint.setStyle(Paint.Style.STROKE);
@@ -53,7 +55,7 @@ public class LinePagerIndicatorDecoration extends RecyclerView.ItemDecoration {
     }
 
     @Override
-    public void onDrawOver(Canvas c, RecyclerView parent, RecyclerView.State state) {
+    public void onDrawOver(@NonNull Canvas c, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
         super.onDrawOver(c, parent, state);
 
         int itemCount = parent.getAdapter().getItemCount();
@@ -136,7 +138,7 @@ public class LinePagerIndicatorDecoration extends RecyclerView.ItemDecoration {
     }
 
     @Override
-    public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+    public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
         super.getItemOffsets(outRect, view, parent, state);
         outRect.bottom = mIndicatorHeight;
     }

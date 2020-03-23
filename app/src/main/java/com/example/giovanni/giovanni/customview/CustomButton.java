@@ -1,13 +1,14 @@
 package com.example.giovanni.giovanni.customview;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.example.giovanni.giovanni.R;
 
@@ -70,7 +71,7 @@ public class CustomButton extends RelativeLayout {
         super.onMeasure(View.MeasureSpec.makeMeasureSpec(min, View.MeasureSpec.EXACTLY), View.MeasureSpec.makeMeasureSpec(min, View.MeasureSpec.EXACTLY));
     }
 
-    public class CustomButtonViewHolder {
+    public static class CustomButtonViewHolder {
 
         ImageView imageView;
         TextView textView;

@@ -1,13 +1,13 @@
 package com.example.giovanni.giovanni.databinding.dburl;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.android.databinding.library.baseAdapters.BR;
+import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
+import androidx.databinding.library.baseAdapters.BR;
+import androidx.recyclerview.widget.RecyclerView;
 
 public abstract class UrlBaseAdapter extends RecyclerView.Adapter<UrlBaseAdapter.UrlBaseViewHolder> {
 
@@ -18,7 +18,7 @@ public abstract class UrlBaseAdapter extends RecyclerView.Adapter<UrlBaseAdapter
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
         ViewDataBinding binding = DataBindingUtil.inflate(layoutInflater, getLayoutIdForType(viewType), viewGroup, false);
 
-        return new UrlBaseAdapter.UrlBaseViewHolder(binding);
+        return new UrlBaseViewHolder(binding);
     }
 
     @Override
@@ -31,16 +31,16 @@ public abstract class UrlBaseAdapter extends RecyclerView.Adapter<UrlBaseAdapter
 
     public abstract int getLayoutIdForType(int viewType);
 
-    public class UrlBaseViewHolder extends RecyclerView.ViewHolder {
+    static class UrlBaseViewHolder extends RecyclerView.ViewHolder {
 
         private final ViewDataBinding binding;
 
-        public UrlBaseViewHolder(ViewDataBinding binding) {
+        UrlBaseViewHolder(ViewDataBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }
 
-        public void bind(Object obj) {
+        void bind(Object obj) {
             binding.setVariable(BR.obj, obj);
             binding.executePendingBindings();
         }

@@ -3,12 +3,14 @@ package com.example.giovanni.giovanni.firebase.firebaseparselogin;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.model.PersonaManager;

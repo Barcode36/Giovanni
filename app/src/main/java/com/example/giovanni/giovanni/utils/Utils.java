@@ -3,12 +3,13 @@ package com.example.giovanni.giovanni.utils;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.databinding.BindingAdapter;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.widget.ImageView;
+
+import androidx.databinding.BindingAdapter;
 
 import com.bumptech.glide.Glide;
 import com.example.giovanni.giovanni.R;

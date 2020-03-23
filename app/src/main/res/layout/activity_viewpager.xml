@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <!-- Con: app:tabMode="scrollable" le voci del TabLayout scrollano se queste non ci stanno tutte all'interno. -->
-    <android.support.design.widget.TabLayout
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_50dp"
@@ -19,11 +19,10 @@
         app:tabTextColor="@color/grey"
         app:tabMode="scrollable" />
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </android.support.v4.view.ViewPager>
+        android:layout_height="match_parent" />
 
     <!-- Contenitore del Pull to Refresh -->
     <FrameLayout

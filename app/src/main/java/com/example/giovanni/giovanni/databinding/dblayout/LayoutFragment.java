@@ -1,13 +1,14 @@
 package com.example.giovanni.giovanni.databinding.dblayout;
 
-import android.app.Fragment;
 import android.content.SharedPreferences;
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.databinding.DataBindingPresenter;

@@ -1,6 +1,6 @@
 package com.example.giovanni.giovanni.model;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.io.Serializable;
 import java.util.ArrayList;

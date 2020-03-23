@@ -3,8 +3,10 @@ package com.example.giovanni.giovanni.firebase.firebaseparselogin;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Persona;
 import com.example.giovanni.giovanni.model.PersonaManager;

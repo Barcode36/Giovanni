@@ -2,13 +2,14 @@ package com.example.giovanni.giovanni.model;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
 import android.graphics.drawable.Drawable;
 import android.preference.PreferenceManager;
 import android.view.View;
 
-import com.android.databinding.library.baseAdapters.BR;
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
+
+import com.example.giovanni.giovanni.BR;
 import com.example.giovanni.giovanni.R;
 
 @SuppressWarnings("ALL")

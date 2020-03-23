@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_persona"
@@ -18,8 +18,7 @@
         <com.example.giovanni.giovanni.customview.CustomButton
             android:id="@+id/custombutton"
             android:layout_width="@dimen/dimen_200dp"
-            android:layout_height="@dimen/dimen_200dp">
-        </com.example.giovanni.giovanni.customview.CustomButton>
+            android:layout_height="@dimen/dimen_200dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -46,4 +45,4 @@
 
     </LinearLayout>
 
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>

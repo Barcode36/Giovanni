@@ -1,9 +1,9 @@
 package com.example.giovanni.giovanni.mvploginkotlin.main
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.example.giovanni.giovanni.R
 
 class MainKotlinAdapter(private val items: List<String>, private val listener: (String) -> Unit) : RecyclerView.Adapter<MainKotlinAdapter.MainViewHolder>() {

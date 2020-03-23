@@ -1,10 +1,6 @@
 package com.example.giovanni.giovanni.viewpagertablayout;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +8,12 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.fragment.app.Fragment;
+
 import com.example.giovanni.giovanni.R;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +29,7 @@ public class CheckBoxFragment extends Fragment {
     private Boolean contractConditionsChecked = false;
     private Boolean economicConditionsChecked = false;
 
+    @SuppressWarnings("deprecation")
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -1,10 +1,12 @@
 package com.example.giovanni.giovanni.recyclerview.recyclerviewviewpager;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.customview.CustomButton;
@@ -17,7 +19,7 @@ public class PersonaAdapter extends RecyclerView.Adapter<PersonaAdapter.ViewHold
     private List<Persona> list;
     private OnItemViewClicked onItemViewClicked;
 
-    public PersonaAdapter(OnItemViewClicked onItemViewClicked, List<Persona> list) {
+    PersonaAdapter(OnItemViewClicked onItemViewClicked, List<Persona> list) {
         this.onItemViewClicked = onItemViewClicked;
         this.list = list;
     }
@@ -26,6 +28,7 @@ public class PersonaAdapter extends RecyclerView.Adapter<PersonaAdapter.ViewHold
         this.list = list;
     }
 
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);
@@ -65,7 +68,7 @@ public class PersonaAdapter extends RecyclerView.Adapter<PersonaAdapter.ViewHold
         }
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         private CustomButton customButton;
         private TextView nome;

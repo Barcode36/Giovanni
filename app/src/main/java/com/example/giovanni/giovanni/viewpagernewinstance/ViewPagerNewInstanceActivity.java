@@ -1,11 +1,12 @@
 package com.example.giovanni.giovanni.viewpagernewinstance;
 
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import com.example.giovanni.giovanni.R;
+import com.google.android.material.tabs.TabLayout;
 
 public class ViewPagerNewInstanceActivity extends AppCompatActivity {
 

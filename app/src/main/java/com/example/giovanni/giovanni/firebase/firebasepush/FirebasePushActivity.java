@@ -2,8 +2,9 @@ package com.example.giovanni.giovanni.firebase.firebasepush;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
 

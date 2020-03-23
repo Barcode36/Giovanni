@@ -1,9 +1,9 @@
 package com.example.giovanni.giovanni.mvploginkotlin.main
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.giovanni.giovanni.R
 import kotlinx.android.synthetic.main.activity_mainlogin_kotlin.*
 

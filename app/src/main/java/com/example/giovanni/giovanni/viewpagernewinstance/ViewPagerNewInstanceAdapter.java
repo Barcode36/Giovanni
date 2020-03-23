@@ -1,15 +1,16 @@
 package com.example.giovanni.giovanni.viewpagernewinstance;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 public class ViewPagerNewInstanceAdapter extends FragmentPagerAdapter {
 
     private String[] fragments = {"OGGI", "SETTIMANA", "MESE"};
     private ContentFragment[] contentFragments;
 
-    public ViewPagerNewInstanceAdapter(FragmentManager fm) {
+    ViewPagerNewInstanceAdapter(FragmentManager fm) {
         super(fm);
         contentFragments = new ContentFragment[] {ContentFragment.newInstance(0),
                 ContentFragment.newInstance(1), ContentFragment.newInstance(2)};
@@ -21,6 +22,7 @@ public class ViewPagerNewInstanceAdapter extends FragmentPagerAdapter {
 //    }
 
     // Ho riscritto il metodo getItem() in seguito all'aggiunta dell'array contentFragments.
+    @NonNull
     @Override
     public Fragment getItem(int position) {
         return contentFragments[position];
@@ -32,7 +34,7 @@ public class ViewPagerNewInstanceAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public int getItemPosition(Object object) {
+    public int getItemPosition(@NonNull Object object) {
         return super.getItemPosition(object);
     }
 

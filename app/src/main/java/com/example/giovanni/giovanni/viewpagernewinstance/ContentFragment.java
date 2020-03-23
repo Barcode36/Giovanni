@@ -1,7 +1,6 @@
 package com.example.giovanni.giovanni.viewpagernewinstance;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,12 +8,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.example.giovanni.giovanni.R;
 
-public class ContentFragment extends android.support.v4.app.Fragment {
+public class ContentFragment extends Fragment {
 
     private TextView textFragment;
-    private Button buttonShow;
     private int position;
 
     public static ContentFragment newInstance(int position) {
@@ -38,27 +39,25 @@ public class ContentFragment extends android.support.v4.app.Fragment {
 
         switchPosition();
 
-        buttonShow = view.findViewById(R.id.button_content_fragment);
-        buttonShow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch (position) {
-                    case 0:
-                        Toast.makeText(getContext(), "Position 1", Toast.LENGTH_SHORT).show();
-                        break;
-                    case 1:
-                        Toast.makeText(getContext(), "Position 2", Toast.LENGTH_SHORT).show();
-                        break;
-                    case 2:
-                        Toast.makeText(getContext(), "Position 3", Toast.LENGTH_SHORT).show();
-                        break;
-                }
+        Button buttonShow = view.findViewById(R.id.button_content_fragment);
+        buttonShow.setOnClickListener(v -> {
+            switch (position) {
+                case 0:
+                    Toast.makeText(getContext(), "Position 1", Toast.LENGTH_SHORT).show();
+                    break;
+                case 1:
+                    Toast.makeText(getContext(), "Position 2", Toast.LENGTH_SHORT).show();
+                    break;
+                case 2:
+                    Toast.makeText(getContext(), "Position 3", Toast.LENGTH_SHORT).show();
+                    break;
             }
         });
 
         return view;
     }
 
+    @SuppressWarnings("deprecation")
     private void switchPosition() {
         switch (position) {
             case 0:

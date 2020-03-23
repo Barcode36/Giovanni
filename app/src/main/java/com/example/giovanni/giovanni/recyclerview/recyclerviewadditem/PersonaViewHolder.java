@@ -1,8 +1,9 @@
 package com.example.giovanni.giovanni.recyclerview.recyclerviewadditem;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
 
@@ -12,7 +13,7 @@ public class PersonaViewHolder extends RecyclerView.ViewHolder {
     public TextView numero;
     public TextView giovanni;
 
-    public PersonaViewHolder(View view) {
+    PersonaViewHolder(View view) {
         super(view);
 
         nome = view.findViewById(R.id.text_nome);

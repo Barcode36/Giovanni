@@ -2,8 +2,9 @@ package com.example.giovanni.giovanni.firebase.firebasecommunity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Post;

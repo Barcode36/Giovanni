@@ -1,8 +1,9 @@
 package com.example.giovanni.giovanni.log;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 public class LogAdapter extends FragmentPagerAdapter {
 
@@ -36,7 +37,7 @@ public class LogAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public int getItemPosition(Object object) {
+    public int getItemPosition(@NonNull Object object) {
         return super.getItemPosition(object);
     }
 

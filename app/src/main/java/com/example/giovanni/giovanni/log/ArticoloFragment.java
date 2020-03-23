@@ -1,13 +1,14 @@
 package com.example.giovanni.giovanni.log;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.Articolo;
@@ -19,7 +20,7 @@ import java.util.List;
 
 public class ArticoloFragment extends Fragment {
 
-    public static String TAG = "TAGARTICOLO";
+    private static String TAG = "TAGARTICOLO";
     private List<Articolo> listaArticoli;
 
     @Nullable
@@ -63,13 +64,13 @@ public class ArticoloFragment extends Fragment {
         return view;
     }
 
-    public void stampaInfo(Articolo[] arrayArticoli) {
+    private void stampaInfo(Articolo[] arrayArticoli) {
         for (int i=0; i<arrayArticoli.length; i++) {
             Log.i(TAG, "Descrizione: "+ arrayArticoli[i].getDescrizione() + ", prezzo: " + arrayArticoli[i].getPrezzo() + ".");
         }
     }
 
-    public void getArticoloByID(int id) {
+    private void getArticoloByID(int id) {
         for (Articolo articolo : listaArticoli) {
             if (articolo.getId() == id)
                 Log.i(TAG, "L'articolo con ID " + articolo.getId() + " è: "+articolo.getDescrizione() + ", " + articolo.getPrezzo() + ".");

@@ -1,10 +1,11 @@
 package com.example.giovanni.giovanni.fragments;
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
 
