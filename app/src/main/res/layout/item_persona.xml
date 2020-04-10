@@ -20,7 +20,7 @@
             android:textColor="@color/black"
             android:textSize="18sp"
             android:gravity="start|center_vertical"
-            android:background="@color/azzurro_fiordaliso"/>
+            android:background="@color/azzurro_2" />
 
         <TextView
             android:id="@+id/text_cognome"
@@ -34,7 +34,7 @@
             android:textColor="@color/black"
             android:textSize="18sp"
             android:gravity="start|center_vertical"
-            android:background="@color/giallo_pastello"/>
+            android:background="@color/giallo_2" />
 
     </LinearLayout>
 

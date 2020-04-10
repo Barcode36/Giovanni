@@ -7,7 +7,8 @@
     <ImageView
         android:id="@+id/image_articolo"
         android:layout_width="48dp"
-        android:layout_height="48dp" />
+        android:layout_height="48dp"
+        android:contentDescription="@string/app_name" />
 
     <LinearLayout
         android:id="@+id/articoli_container"
@@ -22,7 +23,7 @@
             android:id="@+id/nome_articolo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Articolo"
+            android:text="@string/articolo"
             android:textSize="18sp"
             android:textColor="@color/colorPrimary" />
 
@@ -30,7 +31,7 @@
             android:id="@+id/prezzo_articolo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Prezzo"
+            android:text="@string/prezzo_articolo"
             android:textSize="18sp"
             android:textColor="@color/colorPrimary"/>
 
@@ -40,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_1dp"
         android:layout_marginTop="@dimen/dimen_5dp"
-        android:background="@color/red"
+        android:background="@color/rosso_2"
         android:layout_below="@id/articoli_container" />
 
 </RelativeLayout>

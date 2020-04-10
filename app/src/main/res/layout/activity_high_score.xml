@@ -19,9 +19,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/red"
+                android:background="@color/rosso_2"
                 android:onClick="buttonDecrease"
-                android:textColor="@color/yellow"
+                android:textColor="@color/giallo_1"
                 android:textSize="18sp"
                 tools:text="-" />
 
@@ -33,17 +33,17 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="0"
                 android:text="0"
-                android:textColor="@color/yellow"
+                android:textColor="@color/giallo_1"
                 android:textSize="18sp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/giada"
+                android:background="@color/verde_3"
                 android:onClick="buttonIncrease"
                 android:text="+"
-                android:textColor="@color/yellow"
+                android:textColor="@color/giallo_1"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -58,9 +58,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="12dp"
         android:layout_marginTop="16dp"
-        android:text="HighScore"
+        android:text="@string/high_score"
         android:textSize="18sp"
-        android:textColor="@color/azzurro" />
+        android:textColor="@color/azzurro_4" />
 
     <EditText
         android:id="@+id/editName"
@@ -74,7 +74,7 @@
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:textColor="@color/red"
+        android:textColor="@color/rosso_2"
         android:autofillHints=""/>
 
     <Button
@@ -84,9 +84,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="85dp"
         android:onClick="launchHighScoreActivity"
-        android:text="Show Record"
+        android:text="@string/show_record"
         android:textSize="18sp"
-        android:background="@color/blu_ceruleo"
+        android:background="@color/azzurro_6"
         android:textColor="@color/avorio" />
 
 </RelativeLayout>

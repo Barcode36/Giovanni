@@ -13,30 +13,30 @@
         android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_50dp"
-        android:background="@color/blue"
-        app:tabIndicatorColor="@color/lightBlue"
+        android:background="@color/azzurro_7"
+        app:tabIndicatorColor="@color/azzurro_3"
         app:tabIndicatorHeight="4dp"
         app:tabSelectedTextColor="@android:color/white"
-        app:tabTextColor="@color/grey"
+        app:tabTextColor="@color/grey_4"
         app:tabMode="scrollable">
 
-<!--        app:tabGravity="fill"-->
-<!--        app:tabMode="fixed"-->
+    <!--app:tabGravity="fill"-->
+    <!--app:tabMode="fixed"-->
 
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Left" />-->
+    <!--<com.google.android.material.tabs.TabItem-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Left" />-->
 
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Center" />-->
+    <!--<com.google.android.material.tabs.TabItem-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Center" />-->
 
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Right" />-->
+    <!--<com.google.android.material.tabs.TabItem-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Right" />-->
 
     </com.google.android.material.tabs.TabLayout>
 

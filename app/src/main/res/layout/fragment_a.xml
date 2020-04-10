@@ -2,14 +2,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/azzurro">
+    android:background="@color/azzurro_4">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment A"
-        android:textColor="@color/yellow"
+        android:text="@string/fragment_a"
+        android:textColor="@color/giallo_1"
         android:textSize="50sp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 
 </FrameLayout>

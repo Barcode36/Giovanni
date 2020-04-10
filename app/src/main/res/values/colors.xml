@@ -1,37 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#3F51B5</color>
-    <color name="colorAccent2">#007FFF</color>
-    <color name="colorAccent3">#FF4081</color>
-
+    <color name="colorPrimary">#00B8DE</color>
+    <color name="colorPrimaryDark">#00B8DE</color>
+    <color name="colorAccent">#ffffff</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-
-    <color name="blue">#2D32AA</color>
-    <color name="green">#48D597</color>
-    <color name="lightgreen">#6AE368</color>
-    <color name="lightBlue">#00B8DE</color>
-    <color name="lightGrey">#E2E2E2</color>
-    <color name="darkGrey">#4A4A4A</color>
-    <color name="grey">#9B9B9B </color>
-    <color name="purple">#603668 </color>
-    <color name="red">#FF0000</color>
-
-    <color name="orange">#FFA500</color>
-    <color name="avorio">#FFFFF0</color>
-    <color name="azzurro">#007FFF</color>
-    <color name="azzurro_scuro">#4169E1</color>
-    <color name="azzurro_fiordaliso">#ABCDEF</color>
-    <color name="blu_ceruleo">#2A52BE</color>
-    <color name="carta_da_zucchero">#E0FFFF</color>
-    <color name="giada">#00A86B</color>
-    <color name="yellow">#FFFF00</color>
-    <color name="giallo_pastello">#FFFF66</color>
+    <color name="white_transparent">#99ffffff</color>
+    <color name="black_transparent_1">#CC050505</color>
+    <color name="black_transparent_2">#22000000</color>
+    <color name="transparent_1">#00000000</color>
+    <color name="transparent_2">#00FFFFFF</color>
+    <color name="grey_1">#E2E3E4</color>
+    <color name="grey_2">#9EA4A8</color>
+    <color name="grey_3">#485861</color>
+    <color name="grey_4">#9B9B9B </color>
+    <color name="grey_5">#4A4A4A</color>
+    <color name="dark">#273B44</color>
     <color name="magenta">#F9423A</color>
-
-    <color name="transparent">#00FFFFFF</color>
-    <color name="black_transparent">#22000000</color>
-
+    <color name="rosso_1">#F13C27</color>
+    <color name="rosso_2">#FF0000</color>
+    <color name="arancio">#FFA500</color>
+    <color name="giallo_1">#FFFF00</color>
+    <color name="giallo_2">#FFFF66</color>
+    <color name="giallo_3">#FEDC00</color>
+    <color name="avorio">#FFFFF0</color>
+    <color name="verde_1">#6AE368</color>
+    <color name="verde_2">#48D597</color>
+    <color name="verde_3">#00A86B</color>
+    <color name="azzurro_1">#E0FFFF</color>
+    <color name="azzurro_2">#ABCDEF</color>
+    <color name="azzurro_3">#00B8DE</color>
+    <color name="azzurro_4">#007FFF</color>
+    <color name="azzurro_5">#4169E1</color>
+    <color name="azzurro_6">#2A52BE</color>
+    <color name="azzurro_7">#2D32AA</color>
+    <color name="viola">#603668 </color>
 </resources>
+
+    <!-- HEXADECIMAL COLOR CODE FOR TRANSPARENCY - Hex Opacity Values from 0% to 100% alpha: -->
+
+    <!-- 0% - 00-->
+    <!-- 1% - 03 11% - 1C 21% - 36 31% - 4F 41% - 69 -->
+    <!-- 2% - 05 12% - 1F 22% - 38 32% - 52 42% - 6B -->
+    <!-- 3% - 08 13% - 21 23% - 3B 33% - 54 43% - 6E -->
+    <!-- 4% - 0A 14% - 24 24% - 3D 34% - 57 44% - 70 -->
+    <!-- 5% - 0D 15% - 26 25% - 40 35% - 59 45% - 73 -->
+    <!-- 6% - 0F 16% - 29 26% - 42 36% - 5C 46% - 75 -->
+    <!-- 7% - 12 17% - 2B 27% - 45 37% - 5E 47% - 78 -->
+    <!-- 8% - 14 18% - 2E 28% - 47 38% - 61 48% - 7A -->
+    <!-- 9% - 17 19% - 30 29% - 4A 39% - 63 49% - 7D -->
+    <!-- 10% - 1A 20% - 33 30% - 4D 40% - 66 50% - 80 -->
+
+    <!-- 51% - 82 61% - 9C 71% - B5 81% - CF 91% - E8 -->
+    <!-- 52% - 85 62% - 9E 72% - B8 82% - D1 92% - EB -->
+    <!-- 53% - 87 63% - A1 73% - BA 83% - D4 93% - ED -->
+    <!-- 54% - 8A 64% - A3 74% - BD 84% - D6 94% - F0 -->
+    <!-- 55% - 8C 65% - A6 75% - BF 85% - D9 95% - F2 -->
+    <!-- 56% - 8F 66% - A8 76% - C2 86% - DB 96% - F5 -->
+    <!-- 57% - 91 67% - AB 77% - C4 87% - DE 97% - F7 -->
+    <!-- 58% - 94 68% - AD 78% - C7 88% - E0 98% - FA -->
+    <!-- 59% - 96 69% - B0 79% - C9 89% - E3 99% - FC -->
+    <!-- 60% - 99 70% - B3 80% - CC 90% - E6 100% - FF -->

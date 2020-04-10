@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/home"
         android:textAllCaps="true"
-        android:textColor="@color/azzurro"
+        android:textColor="@color/azzurro_4"
         android:textSize="50sp"
         android:textStyle="bold"
         android:layout_centerInParent="true"/>

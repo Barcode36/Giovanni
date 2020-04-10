@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             app:toolbarId="@+id/toolbar"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="@color/orange">
+            app:contentScrim="@color/arancio">
 
             <!-- contentScrim setta il colore della toolbar quando è collassata. -->
 
@@ -24,10 +24,11 @@
                 android:id="@+id/imageview_parallax"
                 android:layout_width="@dimen/dimen_100dp"
                 android:layout_height="@dimen/dimen_100dp"
-                app:srcCompat="@mipmap/ic_launcher_round"
                 android:layout_gravity="center"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@mipmap/ic_launcher_round"
                 app:layout_collapseMode="parallax" />
 
             <androidx.appcompat.widget.Toolbar
@@ -50,7 +51,7 @@
             android:layout_height="wrap_content"
             android:text="@string/san_martino"
             android:textSize="18sp"
-            android:textColor="@color/blu_ceruleo"
+            android:textColor="@color/azzurro_6"
             android:paddingStart="@dimen/dimen_15dp"
             android:paddingEnd="@dimen/dimen_15dp"
             android:paddingTop="@dimen/dimen_15dp" />

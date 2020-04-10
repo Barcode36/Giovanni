@@ -10,6 +10,7 @@
     <string name="study_the_code">Studiare l\'applicazione analizzando su Logcat i suoi log e inserendo il TAG opportuno.</string>
     <string name="array">Array</string>
     <string name="articolo">Articolo</string>
+    <string name="prezzo_articolo">Prezzo</string>
     <string name="ascensore">Ascensore</string>
     <string name="dipendente_progetto">Dipendente e Progetto</string>
     <string name="dipendente_manager_azienda">Dipendente, Manager e Azienda</string>
@@ -24,7 +25,9 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="logout">Logout</string>
     <string name="signup">Sign Up</string>
+    <string name="signout">Sign Out</string>
     <string name="accedi">Accedi</string>
     <string name="registrati">Registrati</string>
     <string name="dati_utenti">Giovanni 123\nRaffaele 234\nGianluigi 345\nMariano 456\nDaniele 567\nFrank 678\nLino 789</string>
@@ -60,6 +63,7 @@
     <string name="digita_regista">Digita il regista</string>
     <string name="digita_autore">Digita l\'autore</string>
     <string name="aggiungi">Aggiungi al carrello</string>
+    <string name="inserisci">Inserisci</string>
 
     <!-- LISTVIEW -->
 
@@ -88,6 +92,9 @@
     <string name="conferma">Conferma</string>
     <string name="cerca_id">Cerca dipendente per ID progetto</string>
     <string name="mostra_azienda">Mostra azienda</string>
+    <string name="mostra_utenti">Mostra utenti</string>
+    <string name="progetto">Progetto</string>
+    <string name="vario">Vario</string>
 
     <string name="recyclerview_cambiaprezzo">clipToPadding\nsetOnClickListener\nCardView cambia prezzo</string>
     <string name="prodotto">Prodotto:</string>
@@ -118,6 +125,10 @@
     <string name="move_bar">Move Bar</string>
     <string name="set_height">Set Height</string>
 
+    <string name="fragment_a">Fragment A</string>
+    <string name="fragment_b">Fragment B</string>
+    <string name="fragment_c">Fragment C</string>
+
     <string name="ciao">Ciao</string>
     <string name="back">Back</string>
 
@@ -136,6 +147,7 @@
     <string name="text_layout">SetText\nSet Layout</string>
     <string name="setpivotx">setPivotX</string>
     <string name="startanimation">startAnimation</string>
+    <string name="density_size_text">Density Size Text</string>
 
     <!-- NAVIGATION DRAWER -->
 
@@ -151,6 +163,8 @@
     <string name="nav_header_title_giovanni_petito">Giovanni Petito</string>
     <string name="nav_header_subtitle_email_giovanni">giovanni.petito88@gmail.com</string>
     <string name="msisdn_giovanni">3331582355</string>
+    <string name="name_giovanni">Giovanni</string>
+    <string name="surname_giovanni">Petito</string>
 
     <string name="addtextchangedlistener">MVP Pattern\nProgressBar\nAddTextChangedListener\nAutoCompleteTextView</string>
     <string name="mvp_kotlin_login">MVP Pattern\nKotlin Login\nProgressBar</string>
@@ -174,10 +188,12 @@
     <string name="hybrid_map">hybrid map</string>
     <string name="satellite_map">satellite map</string>
     <string name="terrain_map">terrain map</string>
+    <string name="cerca">Cerca…</string>
 
     <!-- SHARED PREFERENCES -->
     <string name="high_score">High Score</string>
     <string name="insert_name">Inserisci il tuo nome</string>
+    <string name="show_record">Show Record</string>
 
     <!-- THREAD -->
     <string name="thread_pics">Thread pics</string>
@@ -185,6 +201,8 @@
     <string name="thread_async_task_counter">Thread AsyncTask Counter</string>
     <string name="replace">Replace</string>
     <string name="start_progress">Start Progress</string>
+    <string name="upload_next_image">Carica la prossima immagine</string>
+    <string name="Increase_counter">Incrementa il contatore</string>
 
     <!-- FIREBASE -->
     <string name="firebase">Firebase</string>
@@ -194,11 +212,16 @@
     <string name="firebase_articoli">Articoli</string>
     <string name="firebase_community">Community</string>
     <string name="firebase_push">Push</string>
+    <string name="stop_service">Stop Service</string>
 
     <!-- DATA BINDING -->
     <string name="data_binding_meteo">Data Binding Meteo</string>
     <string name="data_binding_url">Data Binding Url</string>
     <string name="data_binding_layout">Data Binding Layout</string>
+    <string name="place">Luogo</string>
+    <string name="temperature">Temperatura</string>
+    <string name="show_data_model">Show data model\nChange background color</string>
+    <string name="show_list">Show list</string>
 
     <string name="url_1">https://peopledotcom.files.wordpress.com/2013/08/icon_love_44.png</string>
     <string name="url_2">https://secure.gravatar.com/avatar/2d9999abdeffcd449b65c0a6b3d9d496?s=44&amp;d=mm&amp;r=pg</string>

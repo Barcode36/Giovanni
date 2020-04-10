@@ -11,8 +11,8 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Carica la prossima immagine"
-        android:textColor="@color/azzurro_fiordaliso"
+        android:text="@string/upload_next_image"
+        android:textColor="@color/azzurro_2"
         android:textSize="18sp"
         android:background="@drawable/custom_button"
         android:onClick="loadPics" />
@@ -23,7 +23,8 @@
         android:layout_height="200dp"
         android:layout_margin="12dp"
         android:scaleType="centerInside"
-        android:background="@color/azzurro_fiordaliso" />
+        android:background="@color/azzurro_2"
+        android:contentDescription="@string/app_name" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,8 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="Incrementa il contatore"
-        android:textColor="@color/azzurro_fiordaliso"
+        android:text="@string/Increase_counter"
+        android:textColor="@color/azzurro_2"
         android:textSize="18sp"
         android:background="@drawable/custom_button"
         android:onClick="increase" />
@@ -55,6 +56,6 @@
         android:text="0"
         android:textAlignment="center"
         android:textSize="96sp"
-        android:textColor="@color/azzurro_scuro" />
+        android:textColor="@color/azzurro_5" />
 
 </LinearLayout>

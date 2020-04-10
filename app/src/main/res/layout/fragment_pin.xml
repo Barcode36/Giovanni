@@ -22,10 +22,10 @@
                 android:id="@+id/imageview_pin"
                 android:layout_width="@dimen/dimen_100dp"
                 android:layout_height="@dimen/dimen_100dp"
-                app:srcCompat="@mipmap/ic_launcher_round"
                 android:layout_gravity="center"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/ic_launcher_round"
                 app:layout_collapseMode="pin" />
 
             <androidx.appcompat.widget.Toolbar
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:text="@string/san_martino"
             android:textSize="18sp"
-            android:textColor="@color/blu_ceruleo"
+            android:textColor="@color/azzurro_6"
             android:paddingStart="@dimen/dimen_15dp"
             android:paddingEnd="@dimen/dimen_15dp"
             android:paddingTop="@dimen/dimen_15dp" />

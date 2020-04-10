@@ -39,23 +39,24 @@ public class OffsetFragment extends Fragment {
         return view;
     }
 
+    @SuppressWarnings("deprecation")
     private void switchPosition() {
         switch (position) {
             case 0:
                 textFragment.setText(R.string.fragment_1);
-                textFragment.setTextColor(getResources().getColor(R.color.azzurro));
+                textFragment.setTextColor(getResources().getColor(R.color.azzurro_4));
                 break;
             case 1:
                 textFragment.setText(R.string.fragment_2);
-                textFragment.setTextColor(getResources().getColor(R.color.giada));
+                textFragment.setTextColor(getResources().getColor(R.color.verde_3));
                 break;
             case 2:
                 textFragment.setText(R.string.fragment_3);
-                textFragment.setTextColor(getResources().getColor(R.color.red));
+                textFragment.setTextColor(getResources().getColor(R.color.rosso_2));
                 break;
             case 3:
                 textFragment.setText(R.string.fragment_4);
-                textFragment.setTextColor(getResources().getColor(R.color.yellow));
+                textFragment.setTextColor(getResources().getColor(R.color.giallo_1));
                 break;
         }
     }

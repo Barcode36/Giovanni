@@ -8,9 +8,10 @@
         android:id="@+id/imageGuitar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/guitar"
         android:layout_marginTop="@dimen/dimen_10dp"
-        android:layout_marginBottom="@dimen/dimen_10dp"/>
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/guitar" />
 
     <TextView
         android:id="@+id/textOutput"
@@ -18,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_100dp"
         android:textAlignment="center"
-        android:textColor="@color/giada"
+        android:textColor="@color/verde_3"
         android:textSize="32sp" />
 
     <Button

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/dimen_50dp"
-    android:background="@color/blue">
+    android:background="@color/azzurro_7">
 
     <View
         android:layout_width="match_parent"
@@ -29,8 +29,9 @@
         android:singleLine="true"
         android:textColor="@color/white"
         android:hint="@string/search_by_name_or_msisdn"
-        android:textColorHint="@color/grey"
-        android:textSize="16sp" />
+        android:textColorHint="@color/grey_4"
+        android:textSize="16sp"
+        android:autofillHints="@string/app_name" />
     <!-- android:imeOptions="actionSearch" fa comparire l'icona della ricerca nella tastiera del device. -->
 
     <ImageView
@@ -41,6 +42,7 @@
         android:layout_gravity="center"
         android:layout_marginEnd="@dimen/dimen_5dp"
         android:padding="@dimen/dimen_10dp"
-        android:src="@drawable/ico_search_rvd" />
+        android:src="@drawable/ico_search_rvd"
+        android:contentDescription="@string/app_name" />
 
 </RelativeLayout>

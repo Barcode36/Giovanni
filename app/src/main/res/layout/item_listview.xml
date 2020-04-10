@@ -9,14 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_10dp"
-        android:background="@color/carta_da_zucchero">
+        android:background="@color/azzurro_1">
 
         <TextView
             android:id="@+id/listview_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ciao"
-            android:textColor="@color/azzurro"
+            android:textColor="@color/azzurro_4"
             android:textStyle="bold"
             android:textSize="20sp" />
 

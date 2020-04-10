@@ -7,7 +7,7 @@
                 android:color="@color/colorPrimaryDark"
                 android:width="2dp" /> <!-- width è la larghezza del bordo (stroke) del bottone. -->
             <solid
-                android:color="@color/azzurro" />
+                android:color="@color/azzurro_4" />
             <size
                 android:height="85dp"
                 android:width="70dp" />

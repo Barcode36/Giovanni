@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/green"
+    android:background="@color/verde_2"
     android:padding="@dimen/dimen_15dp">
 
     <RelativeLayout
@@ -23,7 +23,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:padding="@dimen/dimen_15dp"
-            android:textColor="@color/green" />
+            android:textColor="@color/verde_2" />
 
     </RelativeLayout>
 
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/listview"
-                android:textColor="@color/orange"
+                android:textColor="@color/arancio"
                 style="@style/HomeButton" />
 
             <Button
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/recyclerview"
-                android:textColor="@color/red"
+                android:textColor="@color/rosso_2"
                 style="@style/HomeButton" />
 
             <Button
@@ -200,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimen_10dp"
                 android:text="@string/firebase"
-                android:textColor="@color/yellow"
+                android:textColor="@color/giallo_1"
                 style="@style/HomeButton" />
 
             <Button

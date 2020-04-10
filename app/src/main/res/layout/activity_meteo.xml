@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="12dp"
-        android:background="@{temp.sfondo ? @color/green : @color/red}"
+        android:background="@{temp.sfondo ? @color/verde_2 : @color/rosso_2}"
         android:orientation="vertical">
 
         <TextView
@@ -25,15 +25,17 @@
             android:textSize="18sp"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:background="@color/azzurro_fiordaliso"/>
+            android:background="@color/azzurro_2"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Luogo"
+            android:hint="@string/place"
             android:text="@={temp.luogo}"
             android:textSize="18sp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:inputType="textPersonName"
+            android:autofillHints="@string/app_name" />
 
         <TextView
             android:layout_width="match_parent"
@@ -43,15 +45,17 @@
             android:textSize="18sp"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:background="@color/azzurro_fiordaliso"/>
+            android:background="@color/azzurro_2"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Temperatura"
+            android:hint="@string/temperature"
             android:text="@={temp.temperatura}"
             android:textSize="18sp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:inputType="textPersonName"
+            android:autofillHints="@string/app_name" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -62,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Show data model\nChange background color"
+                android:text="@string/show_data_model"
                 android:onClick="@{() -> presenter.onShowDataModel(temp)}"
                 style="@style/HomeButton" />
 
@@ -71,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_50dp"
-                android:text="Show list"
+                android:text="@string/show_list"
                 android:onClick="@{() -> presenter.onShowList()}"
                 android:layout_below="@+id/button_data_binding"
                 style="@style/HomeButton" />

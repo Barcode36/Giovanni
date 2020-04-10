@@ -61,7 +61,7 @@
                 android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_50dp"
-                android:background="@color/green"
+                android:background="@color/verde_2"
                 android:layout_alignParentTop="true">
 
                 <TextView
@@ -79,7 +79,7 @@
                 android:id="@+id/footer"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_50dp"
-                android:background="@color/green"
+                android:background="@color/verde_2"
                 android:layout_alignParentBottom="true">
 
                 <TextView

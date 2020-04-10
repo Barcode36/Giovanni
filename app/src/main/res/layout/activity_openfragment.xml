@@ -33,7 +33,7 @@
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:gravity="start|center_vertical"
-                    android:background="@color/azzurro"/>
+                    android:background="@color/azzurro_4"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -48,7 +48,7 @@
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:gravity="start|center_vertical"
-                    android:background="@color/yellow"/>
+                    android:background="@color/giallo_1"/>
 
             </LinearLayout>
 

@@ -6,9 +6,9 @@
     <corners android:radius="@dimen/dimen_15dp" />
 
     <stroke
-        android:color="@color/lightGrey"
+        android:color="@color/grey_1"
         android:width="1dp" />
     <solid
         android:angle="0"
-        android:color="@color/transparent" />
+        android:color="@color/transparent_2" />
 </shape>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -85,9 +84,9 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/edit_prezzo_prodotto"
             android:layout_marginTop="24dp"
-            android:background="@color/red"
+            android:background="@color/rosso_2"
             android:textColor="@color/white"
-            android:text="Inserisci" />
+            android:text="@string/inserisci" />
 
     </RelativeLayout>
 

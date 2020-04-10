@@ -33,7 +33,7 @@
     <style name="PickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/white</item>
-        <item name="colorAccent">@color/azzurro</item>
+        <item name="colorAccent">@color/azzurro_4</item>
         <item name="android:windowBackground">@color/white</item>
     </style>
 

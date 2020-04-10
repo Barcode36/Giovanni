@@ -7,5 +7,5 @@
 
     <solid
         android:angle="0"
-        android:color="@color/blue" />
+        android:color="@color/azzurro_7" />
 </shape>

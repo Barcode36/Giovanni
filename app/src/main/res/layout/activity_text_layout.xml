@@ -16,7 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/dimen_10dp">
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:baselineAligned="false">
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -28,10 +29,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:textColor="@color/red"
+                    android:textColor="@color/rosso_2"
                     android:textStyle="bold"
                     android:ellipsize="end"
-                    android:maxLines="1"/>
+                    android:maxLines="1" />
 
             </RelativeLayout>
 
@@ -67,7 +68,8 @@
                 android:hint="@string/digita_nome"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:autofillHints="@string/app_name" />
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -79,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:background="@color/giada"
+                    android:background="@color/verde_3"
                     android:text="@string/invio"
                     android:textColor="@color/avorio" />
 
@@ -93,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_10dp"
             android:textSize="18sp"
-            android:textColor="@color/green"
+            android:textColor="@color/verde_2"
             android:ellipsize="end"
             android:maxLines="2" />
 
@@ -111,7 +113,8 @@
                 android:hint="@string/digita_numero"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:autofillHints="@string/app_name" />
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -123,7 +126,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:background="@color/blu_ceruleo"
+                    android:background="@color/azzurro_6"
                     android:text="@string/invio"
                     android:textColor="@color/avorio" />
 
@@ -138,7 +141,7 @@
             android:layout_marginTop="@dimen/dimen_10dp"
             android:layout_gravity="center_horizontal"
             android:textSize="18sp"
-            android:textColor="@color/azzurro"
+            android:textColor="@color/azzurro_4"
             android:ellipsize="end"
             android:maxLines="2" />
 
@@ -146,7 +149,7 @@
             android:id="@+id/relative_variable"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_10dp"
-            android:background="@color/azzurro"
+            android:background="@color/azzurro_4"
             android:layout_margin="@dimen/dimen_10dp">
 
         </RelativeLayout>
@@ -176,7 +179,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_50dp"
             android:layout_marginTop="@dimen/dimen_15dp"
-            android:background="@color/orange">
+            android:background="@color/arancio">
 
             <LinearLayout
                 android:id="@+id/linear_margin_bottom"
@@ -189,7 +192,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_50dp"
-            android:background="@color/giada">
+            android:background="@color/verde_3">
 
             <LinearLayout
                 android:id="@+id/linear_margin"
@@ -202,7 +205,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -219,8 +223,9 @@
                         android:id="@+id/homer"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/dimen_150dp"
-                        app:srcCompat="@drawable/homer"
-                        android:animateLayoutChanges="true"/>
+                        android:animateLayoutChanges="true"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/homer" />
 
                 </RelativeLayout>
 
@@ -251,8 +256,9 @@
                         android:id="@+id/bart"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/dimen_150dp"
-                        app:srcCompat="@drawable/bart"
-                        android:animateLayoutChanges="true"/>
+                        android:animateLayoutChanges="true"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/bart" />
 
                 </RelativeLayout>
 
@@ -278,9 +284,9 @@
             android:layout_marginBottom="@dimen/dimen_20dp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:text="Density Size Text"
+            android:text="@string/density_size_text"
             android:textAlignment="center"
-            android:textColor="@color/green"
+            android:textColor="@color/verde_2"
             android:textSize="14sp" />
 
         <TextView
@@ -288,7 +294,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:textColor="@color/green"
+            android:textColor="@color/verde_2"
             android:textSize="14sp"
             tools:text="HTML rendering 1" />
 
@@ -298,7 +304,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_20dp"
             android:textAlignment="center"
-            android:textColor="@color/green"
+            android:textColor="@color/verde_2"
             android:textSize="14sp"
             tools:text="HTML rendering 2" />
 

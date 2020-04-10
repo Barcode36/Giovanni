@@ -5,15 +5,15 @@
         <shape
             android:shape="rectangle">
             <gradient
-                android:startColor="@color/lightBlue"
-                android:centerColor="@color/azzurro"
-                android:endColor="@color/carta_da_zucchero"
+                android:startColor="@color/azzurro_3"
+                android:centerColor="@color/azzurro_4"
+                android:endColor="@color/azzurro_1"
                 android:angle="180" />
             <corners
                 android:radius="30dp" />
             <stroke
                 android:width="2dp"
-                android:color="@color/azzurro_scuro" />
+                android:color="@color/azzurro_5" />
         </shape>
     </item>
 

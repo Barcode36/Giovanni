@@ -51,7 +51,7 @@ public class AdapterCompleti extends RecyclerView.Adapter<AdapterCompleti.ViewHo
             }
         }
         holder.tVario.setText(user);
-        holder.tVario.setTextColor(context.getResources().getColor(R.color.red));
+        holder.tVario.setTextColor(context.getResources().getColor(R.color.rosso_2));
     }
 
     @Override

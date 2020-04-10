@@ -82,7 +82,7 @@ public class CheckBoxFragment extends Fragment {
             if (checked)
                 switchCompat.setTextColor(getResources().getColor(R.color.black));
             else
-                switchCompat.setTextColor(getResources().getColor(R.color.grey));
+                switchCompat.setTextColor(getResources().getColor(R.color.grey_4));
         });
         economicConditions.setOnCheckedChangeListener((buttonView, isChecked) -> {
             economicConditionsChecked = isChecked;
@@ -92,14 +92,14 @@ public class CheckBoxFragment extends Fragment {
             if (checked)
                 switchCompat.setTextColor(getResources().getColor(R.color.black));
             else
-                switchCompat.setTextColor(getResources().getColor(R.color.grey));
+                switchCompat.setTextColor(getResources().getColor(R.color.grey_4));
         });
 
         switchCompat.setOnClickListener(v -> {
             if (switchCompat.isChecked())
                 switchCompat.setTextColor(getResources().getColor(R.color.black));
             else {
-                switchCompat.setTextColor(getResources().getColor(R.color.grey));
+                switchCompat.setTextColor(getResources().getColor(R.color.grey_4));
                 contractConditions.setChecked(false);
                 economicConditions.setChecked(false);
             }

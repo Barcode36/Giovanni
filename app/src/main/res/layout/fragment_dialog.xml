@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/carta_da_zucchero"
+    android:background="@color/azzurro_1"
     android:orientation="vertical">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_marginEnd="@dimen/dimen_10dp"
         android:layout_marginTop="@dimen/dimen_10dp"
         android:textSize="24sp"
-        android:textColor="@color/azzurro_scuro"
+        android:textColor="@color/azzurro_5"
         android:ellipsize="end"
         android:maxLines="1"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         android:layout_marginTop="@dimen/dimen_5dp"
         android:layout_marginBottom="@dimen/dimen_150dp"
         android:textSize="20sp"
-        android:textColor="@color/azzurro"
+        android:textColor="@color/azzurro_4"
         android:ellipsize="end"
         android:maxLines="1"
         android:textAlignment="center" />

@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/personali"
-                android:textColor="@color/red"
+                android:textColor="@color/rosso_2"
                 android:textSize="18sp" />
 
         </RelativeLayout>
@@ -43,7 +43,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/carta_da_zucchero">
+            android:background="@color/azzurro_1">
 
             <TextView
                 android:id="@+id/textUserLogged"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:textAlignment="center"
-                android:textColor="@color/azzurro_scuro"
+                android:textColor="@color/azzurro_5"
                 android:textSize="18sp" />
 
         </RelativeLayout>
@@ -74,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/completi"
-                android:textColor="@color/red"
+                android:textColor="@color/rosso_2"
                 android:textSize="18sp" />
 
         </RelativeLayout>

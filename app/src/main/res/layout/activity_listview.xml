@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange"
+    android:background="@color/arancio"
     android:padding="@dimen/dimen_15dp">
 
     <RelativeLayout
@@ -20,7 +20,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:padding="@dimen/dimen_15dp"
-            android:textColor="@color/orange" />
+            android:textColor="@color/arancio" />
 
     </RelativeLayout>
 

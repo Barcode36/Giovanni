@@ -10,7 +10,7 @@
         android:layout_marginTop="@dimen/dimen_30dp"
         android:text="@string/scegli_dipendente"
         android:textAlignment="center"
-        android:textColor="@color/giada"
+        android:textColor="@color/verde_3"
         android:textSize="24sp" />
 
     <RelativeLayout
@@ -41,8 +41,9 @@
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textColorHint="@color/green"
-        android:textColor="@color/orange" />
+        android:textColorHint="@color/verde_2"
+        android:textColor="@color/arancio"
+        android:autofillHints="@string/app_name" />
 
     <EditText
         android:id="@+id/editNome"
@@ -55,8 +56,9 @@
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textColorHint="@color/green"
-        android:textColor="@color/orange" />
+        android:textColorHint="@color/verde_2"
+        android:textColor="@color/arancio"
+        android:autofillHints="@string/app_name" />
 
     <EditText
         android:id="@+id/editCognome"
@@ -69,8 +71,9 @@
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textColorHint="@color/green"
-        android:textColor="@color/orange" />
+        android:textColorHint="@color/verde_2"
+        android:textColor="@color/arancio"
+        android:autofillHints="@string/app_name" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -84,7 +87,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:text="@string/conferma"
-            android:textColor="@color/azzurro_fiordaliso"
+            android:textColor="@color/azzurro_2"
             android:background="@drawable/custom_button" />
 
     </RelativeLayout>

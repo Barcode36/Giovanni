@@ -28,8 +28,8 @@
             android:inputType="textPersonName"
             android:textAlignment="center"
             android:textSize="18sp"
-            android:textColorHint="@color/azzurro_scuro"
-            android:textColor="@color/azzurro_scuro"
+            android:textColorHint="@color/azzurro_5"
+            android:textColor="@color/azzurro_5"
             android:autofillHints="@string/cerca_id" />
 
         <RelativeLayout
@@ -67,7 +67,7 @@
                 android:layout_weight="0.5"
                 android:layout_marginStart="@dimen/dimen_5dp"
                 android:textSize="18sp"
-                android:textColor="@color/azzurro" />
+                android:textColor="@color/azzurro_4" />
 
         </LinearLayout>
 

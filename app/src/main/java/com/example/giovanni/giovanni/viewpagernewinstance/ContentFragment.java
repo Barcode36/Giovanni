@@ -62,15 +62,15 @@ public class ContentFragment extends Fragment {
         switch (position) {
             case 0:
                 textFragment.setText(R.string.fragment_1);
-                textFragment.setTextColor(getResources().getColor(R.color.azzurro));
+                textFragment.setTextColor(getResources().getColor(R.color.azzurro_4));
                 break;
             case 1:
                 textFragment.setText(R.string.fragment_2);
-                textFragment.setTextColor(getResources().getColor(R.color.giada));
+                textFragment.setTextColor(getResources().getColor(R.color.verde_3));
                 break;
             case 2:
                 textFragment.setText(R.string.fragment_3);
-                textFragment.setTextColor(getResources().getColor(R.color.red));
+                textFragment.setTextColor(getResources().getColor(R.color.rosso_2));
                 break;
         }
     }

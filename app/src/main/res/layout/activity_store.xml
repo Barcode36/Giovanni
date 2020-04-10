@@ -14,7 +14,7 @@
         android:text="@string/magazzino"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/giada" />
+        android:textColor="@color/verde_3" />
 
     <TextView
         android:id="@+id/textArticolo"
@@ -25,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/blu_ceruleo" />
+        android:textColor="@color/azzurro_6" />
 
     <TextView
         android:id="@+id/textArticoli"
@@ -35,6 +35,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/dimen_10dp"
         android:textSize="20sp"
-        android:textColor="@color/azzurro_scuro" />
+        android:textColor="@color/azzurro_5" />
 
 </RelativeLayout>

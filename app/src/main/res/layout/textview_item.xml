@@ -5,5 +5,5 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/dimen_15dp"
     android:text="@string/nav_header_title_giovanni_petito"
-    android:textColor="@color/azzurro_scuro"
-    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    android:textColor="@color/azzurro_5"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />

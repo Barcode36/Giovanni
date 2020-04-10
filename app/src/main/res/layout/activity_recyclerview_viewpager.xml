@@ -40,7 +40,7 @@
                         android:textAllCaps="true"
                         android:textAlignment="center"
                         android:textSize="30sp"
-                        android:textColor="@color/orange" />
+                        android:textColor="@color/arancio" />
 
                 </RelativeLayout>
 

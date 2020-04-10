@@ -23,8 +23,8 @@ public class FragmentParallax extends Fragment {
 
         CollapsingToolbarLayout collapsingToolbar = v.findViewById(R.id.collapsing_toolbar_parallax);
         collapsingToolbar.setTitle("San Martino");
-        collapsingToolbar.setCollapsedTitleTextColor(getResources().getColor(R.color.green));
-        collapsingToolbar.setBackgroundColor(getResources().getColor(R.color.giallo_pastello));
+        collapsingToolbar.setCollapsedTitleTextColor(getResources().getColor(R.color.verde_2));
+        collapsingToolbar.setBackgroundColor(getResources().getColor(R.color.giallo_2));
 
         ImageView imageParallax = v.findViewById(R.id.imageview_parallax);
 

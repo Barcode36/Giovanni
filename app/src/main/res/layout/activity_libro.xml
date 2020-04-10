@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/libro" />
 
     <TextView
@@ -23,7 +24,7 @@
         android:textAllCaps="true"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/giada" />
+        android:textColor="@color/verde_3" />
 
     <EditText
         android:id="@+id/editID"
@@ -34,7 +35,8 @@
         android:ems="10"
         android:hint="@string/digita_id"
         android:inputType="phone"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:autofillHints="@string/app_name" />
 
     <EditText
         android:id="@+id/editNome"
@@ -45,7 +47,8 @@
         android:ems="10"
         android:hint="@string/digita_nome_prodotto"
         android:inputType="textPersonName"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:autofillHints="@string/app_name" />
 
     <EditText
         android:id="@+id/editPrezzo"
@@ -56,7 +59,8 @@
         android:ems="10"
         android:hint="@string/digita_prezzo"
         android:inputType="phone"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:autofillHints="@string/app_name" />
 
     <EditText
         android:id="@+id/editAutore"
@@ -67,7 +71,8 @@
         android:ems="10"
         android:hint="@string/digita_autore"
         android:inputType="textPersonName"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:autofillHints="@string/app_name" />
 
     <Button
         android:id="@+id/backButton"
@@ -87,7 +92,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/dimen_30dp"
         android:text="@string/aggiungi"
-        android:textColor="@color/azzurro_fiordaliso"
+        android:textColor="@color/azzurro_2"
         android:background="@drawable/custom_button" />
 
 </RelativeLayout>

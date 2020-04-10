@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/azzurro_fiordaliso">
+    android:background="@color/azzurro_2">
 
     <TextView
         android:id="@+id/textOutput"
@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:textColor="@color/giada"
+        android:textColor="@color/verde_3"
         android:textSize="30sp" />
 
     <Button
@@ -20,15 +20,16 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@drawable/custom_button"
-        android:text="Mostra utenti"
-        android:textColor="@color/azzurro_fiordaliso" />
+        android:text="@string/mostra_utenti"
+        android:textColor="@color/azzurro_2" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -41,8 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:background="@drawable/custom_button"
-                android:text="Logout"
-                android:textColor="@color/azzurro_fiordaliso" />
+                android:text="@string/logout"
+                android:textColor="@color/azzurro_2" />
 
         </RelativeLayout>
 
@@ -57,8 +58,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:background="@drawable/custom_button"
-                android:text="Sign Out"
-                android:textColor="@color/azzurro_fiordaliso" />
+                android:text="@string/signout"
+                android:textColor="@color/azzurro_2" />
 
         </RelativeLayout>
 

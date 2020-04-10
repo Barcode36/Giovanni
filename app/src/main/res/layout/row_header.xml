@@ -9,7 +9,7 @@
         android:id="@+id/card_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/green"
+        app:cardBackgroundColor="@color/verde_2"
         app:cardCornerRadius="@dimen/dimen_5dp">
 
         <RelativeLayout
@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:textColor="@color/azzurro"
+                android:textColor="@color/azzurro_4"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 

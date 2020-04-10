@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical">
 
     <fragment xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map"
@@ -24,18 +24,20 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:layout_marginEnd="6dp"
-            android:hint="Cerca..."
-            android:textColorHint="@color/azzurro"
-            android:textColor="@color/black"/>
+            android:hint="@string/cerca"
+            android:textColorHint="@color/azzurro_4"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:autofillHints="@string/app_name" />
 
         <Button
             android:id="@+id/button_search"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="INVIO"
+            android:text="@string/invio"
             android:textColor="@color/white"
-            android:background="@color/azzurro"/>
+            android:background="@color/azzurro_4" />
 
     </LinearLayout>
 

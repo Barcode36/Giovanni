@@ -58,14 +58,14 @@
                 android:layout_weight="0.35"
                 android:text="giovanni06"
                 android:textSize="18sp"
-                android:textColor="@color/azzurro" />
+                android:textColor="@color/azzurro_4" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.65"
                 android:text="123"
-                android:textColor="@color/azzurro"
+                android:textColor="@color/azzurro_4"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -82,14 +82,14 @@
                 android:layout_weight="0.35"
                 android:text="giangio"
                 android:textSize="18sp"
-                android:textColor="@color/azzurro" />
+                android:textColor="@color/azzurro_4" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.65"
                 android:text="456"
-                android:textColor="@color/azzurro"
+                android:textColor="@color/azzurro_4"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -106,14 +106,14 @@
                 android:layout_weight="0.35"
                 android:text="lino"
                 android:textSize="18sp"
-                android:textColor="@color/azzurro" />
+                android:textColor="@color/azzurro_4" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.65"
                 android:text="789"
-                android:textColor="@color/azzurro"
+                android:textColor="@color/azzurro_4"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 

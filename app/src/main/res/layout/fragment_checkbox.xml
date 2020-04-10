@@ -57,7 +57,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:background="@drawable/ico_info"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name" />
 
             </RelativeLayout>
 
@@ -66,7 +67,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/grey"/>
+            android:background="@color/grey_4"/>
 
     </LinearLayout>
 
@@ -123,7 +124,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:background="@drawable/ico_info"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name" />
 
             </RelativeLayout>
 
@@ -132,7 +134,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/grey"/>
+            android:background="@color/grey_4"/>
 
     </LinearLayout>
 
@@ -152,6 +154,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/ico_description" />
 
         </RelativeLayout>
@@ -168,10 +171,10 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:text="@string/conditions_accepted"
-                android:textColor="@color/grey"
+                android:textColor="@color/grey_4"
                 android:textSize="14sp"
                 android:theme="@style/SwitchCompatTheme"
-                android:enabled="false"/>
+                android:enabled="false" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -182,7 +185,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/grey" />
+                    android:background="@color/grey_4" />
 
             </RelativeLayout>
 
@@ -224,11 +227,11 @@
 
         <Button
             android:id="@+id/button_check"
-            style="@style/HomeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="@string/check"
-            android:layout_centerInParent="true" />
+            style="@style/HomeButton" />
 
     </RelativeLayout>
 
@@ -242,7 +245,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:textColor="@color/red"
+            android:textColor="@color/rosso_2"
             android:textSize="18sp" />
 
     </RelativeLayout>

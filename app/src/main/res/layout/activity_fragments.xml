@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/dimen_5dp"
     android:orientation="vertical"
-    android:background="@color/carta_da_zucchero">
+    android:background="@color/azzurro_1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_margin="@dimen/dimen_5dp"
                 android:padding="@dimen/dimen_1dp"
                 android:text="Inserisci A"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="inserisciA" />
 
@@ -34,7 +34,7 @@
                 android:layout_weight="0.33"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Inserisci B"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="inserisciB" />
 
@@ -44,7 +44,7 @@
                 android:layout_weight="0.33"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Inserisci C"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="inserisciC" />
 
@@ -61,7 +61,7 @@
                 android:layout_weight="0.33"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Rimuovi A"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="rimuoviA" />
 
@@ -71,7 +71,7 @@
                 android:layout_weight="0.33"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Rimuovi B"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="rimuoviB" />
 
@@ -81,7 +81,7 @@
                 android:layout_weight="0.33"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Rimuovi C"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="rimuoviC" />
 
@@ -98,7 +98,7 @@
                 android:layout_weight="0.5"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Da A a B"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="daAaB" />
 
@@ -108,7 +108,7 @@
                 android:layout_weight="0.5"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Da B a A"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="daBaA" />
 
@@ -125,7 +125,7 @@
                 android:layout_weight="0.5"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Attach A"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="attachA" />
 
@@ -135,7 +135,7 @@
                 android:layout_weight="0.5"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:text="Detach A"
-                android:textColor="@color/azzurro_fiordaliso"
+                android:textColor="@color/azzurro_2"
                 android:background="@drawable/custom_button"
                 android:onClick="detachA" />
 

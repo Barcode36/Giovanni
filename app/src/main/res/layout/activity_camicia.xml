@@ -22,7 +22,7 @@
         android:textAllCaps="true"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/giada" />
+        android:textColor="@color/verde_3" />
 
     <EditText
         android:id="@+id/editID"
@@ -102,7 +102,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/dimen_30dp"
         android:text="@string/aggiungi"
-        android:textColor="@color/azzurro_fiordaliso"
+        android:textColor="@color/azzurro_2"
         android:background="@drawable/custom_button" />
 
 </RelativeLayout>

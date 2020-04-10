@@ -47,11 +47,11 @@ public class DataBindingModel extends BaseObservable {
         boolean isGreen = preferences.getBoolean("GREEN", true);
 
         if (isGreen) {
-            colore = context.getResources().getColor(R.color.green);
+            colore = context.getResources().getColor(R.color.verde_2);
             logo = context.getResources().getDrawable(R.drawable.homer);
             visibilita = View.VISIBLE;
         } else {
-            colore = context.getResources().getColor(R.color.red);
+            colore = context.getResources().getColor(R.color.rosso_2);
             logo = context.getResources().getDrawable(R.drawable.bart);
             visibilita = View.GONE;
         }
