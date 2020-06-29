@@ -37,7 +37,7 @@ public class FirebasePush extends Service { // La classe è riconosciuta come se
     // Questo metodo viene invocato quando parte il servizio.
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.i("FIREBASE_SERVICE", "START SERVICE");
+        Log.i("FIREBASE_PUSH", "START SERVICE");
         return Service.START_STICKY;
     }
 
@@ -45,7 +45,7 @@ public class FirebasePush extends Service { // La classe è riconosciuta come se
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.i("FIREBASE_SERVICE", "STOP SERVICE");
+        Log.i("FIREBASE_PUSH", "STOP SERVICE");
     }
 
     // Questo metodo forza l'applicazione a non terminare mai il servizio.
@@ -72,12 +72,12 @@ public class FirebasePush extends Service { // La classe è riconosciuta come se
 
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                Log.i("FIREBASE_SERVICE", "ADD: " + dataSnapshot.getKey());
+                Log.i("FIREBASE_PUSH", "ADD: " + dataSnapshot.getKey());
             }
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                Log.i("FIREBASE_SERVICE", "CHANGE: " + dataSnapshot.getKey());
+                Log.i("FIREBASE_PUSH", "CHANGE: " + dataSnapshot.getKey());
                 if (dataSnapshot.exists()) {
                     activePushValidation(dataSnapshot.getKey());
                 }
@@ -85,12 +85,12 @@ public class FirebasePush extends Service { // La classe è riconosciuta come se
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
-                Log.i("FIREBASE_SERVICE", "REMOVE: " + dataSnapshot.getKey());
+                Log.i("FIREBASE_PUSH", "REMOVE: " + dataSnapshot.getKey());
             }
 
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-                Log.i("FIREBASE_SERVICE", "MOVED: " + dataSnapshot.getKey());
+                Log.i("FIREBASE_PUSH", "MOVED: " + dataSnapshot.getKey());
             }
 
             @Override

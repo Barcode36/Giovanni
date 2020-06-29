@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="colorPrimary">#00B8DE</color>
     <color name="colorPrimaryDark">#00B8DE</color>
-    <color name="colorAccent">#ffffff</color>
+    <color name="colorAccent">#FAFAFA</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="white_transparent">#99ffffff</color>
+    <color name="white_transparent">#99FFFFFF</color>
     <color name="black_transparent_1">#CC050505</color>
     <color name="black_transparent_2">#22000000</color>
     <color name="transparent_1">#00000000</color>
     <color name="transparent_2">#00FFFFFF</color>
+    <color name="grey0">#F0F0F0</color>
     <color name="grey_1">#E2E3E4</color>
     <color name="grey_2">#9EA4A8</color>
     <color name="grey_3">#485861</color>
-    <color name="grey_4">#9B9B9B </color>
+    <color name="grey_4">#5E5F60 </color>
     <color name="grey_5">#4A4A4A</color>
     <color name="dark">#273B44</color>
     <color name="magenta">#F9423A</color>
@@ -24,8 +26,8 @@
     <color name="giallo_2">#FFFF66</color>
     <color name="giallo_3">#FEDC00</color>
     <color name="avorio">#FFFFF0</color>
-    <color name="verde_1">#6AE368</color>
-    <color name="verde_2">#48D597</color>
+    <color name="verde_1">#5CC7A1</color>
+    <color name="verde_2">#33B989</color>
     <color name="verde_3">#00A86B</color>
     <color name="azzurro_1">#E0FFFF</color>
     <color name="azzurro_2">#ABCDEF</color>
@@ -35,6 +37,9 @@
     <color name="azzurro_6">#2A52BE</color>
     <color name="azzurro_7">#2D32AA</color>
     <color name="viola">#603668 </color>
+
+    <color name="blueWave">#678AC5</color>
+
 </resources>
 
     <!-- HEXADECIMAL COLOR CODE FOR TRANSPARENCY - Hex Opacity Values from 0% to 100% alpha: -->

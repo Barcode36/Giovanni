@@ -22,6 +22,28 @@ import java.util.Locale;
 
 public class Utils {
 
+    /*
+    public void savePersona(Persona persona) {
+        SharedPreferences.Editor editor = getLastUserData().edit();
+        GsonBuilder builder = new GsonBuilder();
+        Gson gson = builder.serializeNulls().create();
+        String personaString = gson.toJson(persona);
+        editor.putString(KEY_PERSONA, personaString);
+        editor.apply();
+    }
+
+    public Persona loadPersona() {
+        String personaString = getLastUserData().getString(KEY_PERSONA, null);
+        Persona persona = null;
+        if (personaString != null && !personaString.equals("")) {
+            GsonBuilder builder = new GsonBuilder();
+            Gson gson = builder.serializeNulls().create();
+            persona = gson.fromJson(personaString, Persona.class);
+        }
+        return persona;
+    }
+    */
+
     public static String turnToString(List<String> list) {
         String combinations = "";
         for (int i=0; i<list.size(); i++) {
@@ -75,19 +97,20 @@ public class Utils {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
         boolean isGreen = preferences.getBoolean("GREEN", true);
 
-        if (isGreen) {
+        if (isGreen)
             spinner = view.getContext().getResources().getDrawable(R.drawable.spinner_wind_loader);
-            view.setBackground(spinner);
-        } else {
+        else
             spinner = view.getContext().getResources().getDrawable(R.drawable.spinner_direct_loader);
-            view.setBackground(spinner);
-        }
+
+        view.setBackground(spinner);
 
         AnimationDrawable spinnerAnimation = (AnimationDrawable) view.getBackground();
         view.post(() -> {
             try {
                 spinnerAnimation.start();
-            } catch (Exception e) {}
+            } catch (Exception e) {
+                // todo
+            }
         });
     }
 }

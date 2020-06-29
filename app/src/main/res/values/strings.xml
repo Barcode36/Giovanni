@@ -213,6 +213,14 @@
     <string name="firebase_community">Community</string>
     <string name="firebase_push">Push</string>
     <string name="stop_service">Stop Service</string>
+    <string name="subscribe_topics">Subscribe topics</string>
+    <string name="get_token">Get token</string>
+
+    <string name="firebase_token">Token: %1$s</string>
+    <string name="firebase_topic_subscription_success">Sottoscrizione al topic avvenuta con successo</string>
+    <string name="firebase_topic_subscription_failed">Sottoscrizione al topic avvenuta fallita</string>
+    <string name="firebase_notification_channel_id">giovanni_id</string>
+    <string name="firebase_notification_channel_name">giovanni_name</string>
 
     <!-- DATA BINDING -->
     <string name="data_binding_meteo">Data Binding Meteo</string>

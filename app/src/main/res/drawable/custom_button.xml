@@ -10,15 +10,15 @@
                 android:endColor="#0080C1"
                 android:angle="90" />
             <corners
-                android:radius="5dp" />
+                android:radius="24dp" />
             <stroke
                 android:width="2dp"
                 android:color="#5897CD" />
             <padding
-                android:left="15dp"
-                android:right="15dp"
-                android:top="15dp"
-                android:bottom="15dp" />
+                android:left="16dp"
+                android:right="16dp"
+                android:top="16dp"
+                android:bottom="16dp" />
         </shape>
     </item>
 
@@ -33,15 +33,15 @@
                 android:endColor="#082A8A"
                 android:angle="90" />
             <corners
-                android:radius="5dp" />
+                android:radius="24dp" />
             <stroke
                 android:width="2dp"
                 android:color="#000000" />
             <padding
-                android:left="15dp"
-                android:right="15dp"
-                android:top="15dp"
-                android:bottom="15dp" />
+                android:left="16dp"
+                android:right="16dp"
+                android:top="16dp"
+                android:bottom="16dp" />
         </shape>
     </item>
 </selector>
