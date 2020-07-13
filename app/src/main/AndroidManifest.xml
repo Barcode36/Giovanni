@@ -13,6 +13,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- Rimuovere queste uses-permissions quando migro il download del PDF su Arkivio. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
@@ -48,10 +53,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".viewpagertablayout.ViewPagerActivity" />
-        <activity android:name=".recyclerview.recyclerviewheaderitem.RecyclerViewHeaderItemActivity" />
+        <activity android:name=".recyclerview.recyclerviewheaderitem.HeaderItemActivity" />
         <activity android:name=".loginintent.LoginIntentActivity" />
         <activity android:name=".threadasynctaskcounter.ThreadAsyncTaskCounterActivity" />
-        <activity android:name=".recyclerview.recyclerviewadditem.RecyclerViewAddItemActivity" />
+        <activity android:name=".recyclerview.recyclerviewadditem.AddItemActivity" />
         <activity android:name=".recyclerview.recyclerviewviewpager.RecyclerViewViewPagerActivity" />
         <activity android:name=".viewpagernewinstance.ViewPagerNewInstanceActivity" />
         <activity android:name=".textlayout.TextLayoutActivity" />
@@ -70,11 +75,12 @@
         <activity android:name=".listview.twolistviewcopy.TwoListViewCopyActivity" />
         <activity android:name=".listview.listviewadapterrubrica.ListViewRubricaActivity" />
         <activity android:name=".listview.twolistviewadapter.TwoListViewAdapterActivity" />
-        <activity android:name=".recyclerview.recyclercambiaprezzo.RecyclerArticoliActivity" />
+        <activity android:name=".recyclerview.recyclercambiaprezzo.ArticoliActivity" />
         <activity android:name=".recyclerview.recyclercambiaprezzo.CambiaPrezzoActivity" />
         <activity android:name=".recyclerview.recyclerviewproject.LoginActivity" />
         <activity android:name=".recyclerview.recyclerviewproject.ProjectActivity" />
         <activity android:name=".recyclerview.recyclerviewproject.ResultProjectActivity" />
+        <activity android:name=".recyclerview.gridlayout.GridLayoutActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".fragments.FragmentsActivity" />

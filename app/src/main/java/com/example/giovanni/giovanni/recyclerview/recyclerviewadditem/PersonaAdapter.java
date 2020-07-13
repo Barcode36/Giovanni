@@ -1,10 +1,10 @@
 package com.example.giovanni.giovanni.recyclerview.recyclerviewadditem;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
@@ -16,14 +16,13 @@ import java.util.List;
 public class PersonaAdapter extends RecyclerView.Adapter<PersonaViewHolder> {
 
     private List<Persona> list;
-    private Context context;
 
-    public PersonaAdapter(List<Persona> list, Context context) {
+    public PersonaAdapter(List<Persona> list) {
         this.list = list;
-        this.context = context;
         setData(list);
     }
 
+    @NonNull
     @Override
     public PersonaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);
@@ -32,7 +31,7 @@ public class PersonaAdapter extends RecyclerView.Adapter<PersonaViewHolder> {
 
     // In holder è passato l'oggetto viewHolder del metodo onCreateViewHolder().
     @Override
-    public void onBindViewHolder(PersonaViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull PersonaViewHolder holder, int position) {
         Persona persona = list.get(position);
 
         if (persona.getNome() != null && persona.getNome().equals("Giovanni")) {

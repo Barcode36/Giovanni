@@ -25,9 +25,19 @@ public class FragmentPull extends BaseFragment {
     private TextView dataAttuale;
     private TextView randomResult1;
     private TextView randomResult2;
+    private TextView randomResult3;
     private List<Persona> lista1;
     private List<Persona> lista2;
     private Random randomGenerator = new Random();
+
+    private static final String[] FAMILY = new String[] {
+            "Giovanni",
+            "Raffaele",
+            "Teresa & Ilenia",
+            "Angela",
+            "Vincenzo",
+            "Salvatore"
+    };
 
     @Nullable
     @Override
@@ -37,6 +47,7 @@ public class FragmentPull extends BaseFragment {
         dataAttuale = view.findViewById(R.id.text_data_attuale);
         randomResult1 = view.findViewById(R.id.text_random_result_1);
         randomResult2 = view.findViewById(R.id.text_random_result_2);
+        randomResult3 = view.findViewById(R.id.text_random_result_3);
 
         lista1 = new ArrayList<>();
         lista1 = init();
@@ -59,8 +70,7 @@ public class FragmentPull extends BaseFragment {
             String data = sdf.format(new Date());
             dataAttuale.setText(data);
 
-            // NOTA 1: Locale.ITALY può anche essere omesso.
-            // NOTA 2: la a fa apparire AM o PM a seconda dei casi.
+            // NOTA: la a fa apparire AM o PM a seconda dei casi.
 
             String dataModificata = data.replaceFirst("01", "02");
             Log.i("TAG", "Data: " + data + "\nData modificata: " + dataModificata);
@@ -72,9 +82,11 @@ public class FragmentPull extends BaseFragment {
 
             String risultato1 = sorteggio1(lista1, random1);
             String risultato2 = sorteggio2(lista2, random2);
+            String risultato3 = sorteggio3();
 
             randomResult1.setText(risultato1);
             randomResult2.setText(risultato2);
+            randomResult3.setText(risultato3);
         });
     }
 
@@ -113,5 +125,9 @@ public class FragmentPull extends BaseFragment {
             }
         }
         return persona.getNome();
+    }
+
+    public String sorteggio3() {
+        return FAMILY[randomGenerator.nextInt(FAMILY.length)];
     }
 }

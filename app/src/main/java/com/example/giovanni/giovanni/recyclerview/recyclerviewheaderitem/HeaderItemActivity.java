@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.model.InitList;
 
-public class RecyclerViewHeaderItemActivity extends AppCompatActivity {
+public class HeaderItemActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recyclerview_header_item);
+        setContentView(R.layout.activity_header_item);
     }
 
     @Override

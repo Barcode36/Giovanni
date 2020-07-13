@@ -55,7 +55,7 @@ public class ArticoliAdapter extends RecyclerView.Adapter<ArticoliViewHolder> {
 
     @Override
     public int getItemViewType(int position) {
-        return R.layout.dettaglio_articolo;
+        return R.layout.row_articolo;
     }
 
     @Override

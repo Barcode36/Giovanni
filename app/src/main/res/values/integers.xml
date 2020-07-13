@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <integer name="duration_of_animation">200</integer>
+    <integer name="duration_of_animation">500</integer>
 
 </resources>

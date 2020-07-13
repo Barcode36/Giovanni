@@ -3,9 +3,10 @@
     android:exitFadeDuration="@integer/duration_of_animation"
     android:enterFadeDuration="@integer/duration_of_animation">
 
-    <corners android:radius="@dimen/dimen_15dp" />
+    <corners android:radius="@dimen/dimen_24dp" />
 
     <solid
         android:angle="0"
         android:color="@color/rosso_2" />
+
 </shape>

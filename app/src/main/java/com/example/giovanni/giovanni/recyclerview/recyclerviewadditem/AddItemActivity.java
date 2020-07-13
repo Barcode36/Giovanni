@@ -12,25 +12,24 @@ import com.example.giovanni.giovanni.model.Persona;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewAddItemActivity extends AppCompatActivity {
+public class AddItemActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recyclerview_add_item);
+        setContentView(R.layout.activity_add_item);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerview_persona);
         recyclerView.setHasFixedSize(true);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        // layoutManager = new GridLayoutManager(this, 2); Se voglio fare una griglia.
         recyclerView.setLayoutManager(layoutManager);
 
         List<Persona> lista = init();
         Persona persona = new Persona("Raffaele","Petito", 789);
         lista.add(persona);
 
-        PersonaAdapter adapter = new PersonaAdapter(lista, getApplicationContext());
+        PersonaAdapter adapter = new PersonaAdapter(lista);
         recyclerView.setAdapter(adapter);
     }
 

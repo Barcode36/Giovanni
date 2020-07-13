@@ -34,7 +34,6 @@ public class RecyclerViewViewPagerActivity extends AppCompatActivity implements 
         recyclerView.setHasFixedSize(true);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        // layoutManager = new GridLayoutManager(this, 2); Se voglio fare una griglia.
         recyclerView.setLayoutManager(layoutManager);
 
         // Le due righe di codice seguenti servono a conferire alla RecyclerView il comportamento del ViewPager.

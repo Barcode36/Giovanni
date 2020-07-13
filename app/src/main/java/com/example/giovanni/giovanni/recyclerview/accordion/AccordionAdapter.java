@@ -15,7 +15,7 @@ import com.example.giovanni.giovanni.model.Persona;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.ViewHolder> {
+public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.AccordionViewHolder> {
 
     private static final String SWITCH_TYPE = "switch";
     private static final String ACCORDION_TYPE = "accordion";
@@ -35,13 +35,13 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AccordionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);
-        return new AccordionAdapter.ViewHolder(view);
+        return new AccordionViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull AccordionViewHolder holder, final int position) {
         final Persona persona = list.get(position);
 
         if (persona.getTipo().equals(SWITCH_TYPE)) {
@@ -101,7 +101,7 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
         }
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class AccordionViewHolder extends RecyclerView.ViewHolder {
 
         TextView nomeSwitch;
         TextView cognomeSwitch;
@@ -113,7 +113,7 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
         TextView cognomeCheckBox;
         TextView msisdnCheckBox;
 
-        public ViewHolder(View itemView) {
+        public AccordionViewHolder(View itemView) {
             super(itemView);
             this.nomeSwitch = itemView.findViewById(R.id.text_nome_switch);
             this.cognomeSwitch = itemView.findViewById(R.id.text_cognome_switch);
@@ -128,6 +128,6 @@ public class AccordionAdapter extends RecyclerView.Adapter<AccordionAdapter.View
     }
 
     public interface OnItemViewClicked {
-        boolean onItemClicked(Persona persona, boolean isChecked);
+        void onItemClicked(Persona persona, boolean isChecked);
     }
 }

@@ -5,10 +5,9 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import androidx.annotation.Nullable;
 
 import com.example.giovanni.giovanni.R;
 
@@ -18,21 +17,21 @@ public class CustomButton extends RelativeLayout {
 
     public CustomButton(Context context) {
         super(context);
-        init(context, null, 0);
+        init();
     }
 
     // Questo costruttore consente all'editor di layout di creare e modificare un'istanza della View.
     public CustomButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init(context, attrs, 0);
+        init();
     }
 
     public CustomButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context, attrs, defStyleAttr);
+        init();
     }
 
-    protected void init(Context context, @Nullable AttributeSet attrs, int defStyle) {
+    protected void init() {
 
         // LayoutInflater instantiates a layout XML file into its corresponding View objects.
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -42,8 +41,8 @@ public class CustomButton extends RelativeLayout {
         // base class for widgets, which are used to create interactive UI components (buttons, text fields, etc.).
         if (holder == null) {
             holder = new CustomButtonViewHolder();
-            holder.imageView = myView.findViewById(R.id.image_android);
-            holder.textView = myView.findViewById(R.id.text_android);
+            holder.imageView = myView.findViewById(R.id.image_audioslave);
+            holder.textView = myView.findViewById(R.id.text_audioslave);
             holder.background = myView.findViewById(R.id.background);
         }
         // holder.textView.setText("text custom");
@@ -73,8 +72,8 @@ public class CustomButton extends RelativeLayout {
 
     public static class CustomButtonViewHolder {
 
+        LinearLayout background;
         ImageView imageView;
         TextView textView;
-        View background;
     }
 }

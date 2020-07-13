@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gridlayout_item"
+    android:layout_width="96dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="6dp">
+
+    <ImageView
+        android:id="@+id/icon_gridlayout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@mipmap/audioslave_blue" />
+
+    <CheckBox
+        android:id="@+id/checkbox_gridlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkbox_selector"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textview_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_gridlayout"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/azzurro_4"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="GridLayout Item" />
+
+</RelativeLayout>

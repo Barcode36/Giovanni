@@ -97,7 +97,7 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
     }
 
     @Override
-    public boolean onItemClicked(Persona persona, boolean isChecked) {
+    public void onItemClicked(Persona persona, boolean isChecked) {
 
         if (persona.getTipo().equals(SWITCH_TYPE)) {
             persona.setChecked(isChecked);
@@ -131,7 +131,6 @@ public class AccordionActivity extends AppCompatActivity implements AccordionAda
             }
         }
         adapter.notifyDataSetChanged();
-        return true;
     }
 
     private void filter() {
