@@ -5,9 +5,11 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -39,6 +41,9 @@ public class LoginIntentActivity extends AppCompatActivity {
     private Intent intent;
 
     private SharedPreferences preferences;
+
+    private int count = 0;
+    private long startMillis = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,5 +150,33 @@ public class LoginIntentActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("USERNAME", eUsername.getText().toString());
         editor.apply();
+    }
+
+    // Detect any touch event in the screen (instead of an specific view).
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+
+        int eventaction = event.getAction();
+        if (eventaction == MotionEvent.ACTION_UP) {
+
+            // Get system current milliseconds.
+            long time = System.currentTimeMillis();
+
+            // If it is the first time, or if it has been more than 3 seconds since the first tap, we reset everything.
+            if (startMillis == 0 || (time - startMillis > 3000) ) {
+                startMillis = time;
+                count = 1;
+            }
+            // It is not the first tap, and it has been less than 3 seconds since the first tap (time-startMillis < 3000).
+            else {
+                count++;
+            }
+
+            if (count == 5) {
+                Toast.makeText(getApplicationContext(), "onTouchEvent", Toast.LENGTH_LONG).show();
+            }
+            return true;
+        }
+        return false;
     }
 }

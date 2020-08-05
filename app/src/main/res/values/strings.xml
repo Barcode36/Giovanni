@@ -33,6 +33,7 @@
     <string name="registrati">Registrati</string>
     <string name="dati_utenti">Giovanni 123\nRaffaele 234\nGianluigi 345\nMariano 456\nDaniele 567\nFrank 678\nLino 789</string>
     <string name="email">Email</string>
+    <string name="ontouchevent_message">Tappa 5 volte sullo schermo in meno di 3 secondi.</string>
 
     <string name="fake">FAKE</string>
     <string name="scegli_gruppo">Quale gruppo vuoi ascoltare?</string>
