@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.customview.SpinnerHintAdapter;
-import com.example.giovanni.giovanni.model.Magazzino;
+import com.example.giovanni.giovanni.bean.Magazzino;
 import com.example.giovanni.giovanni.utils.IntentAnimationManager;
 
 public class SerializableActivity extends AppCompatActivity {

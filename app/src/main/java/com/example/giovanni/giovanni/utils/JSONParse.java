@@ -1,11 +1,11 @@
 package com.example.giovanni.giovanni.utils;
 
-import com.example.giovanni.giovanni.model.Articolo;
-import com.example.giovanni.giovanni.model.Camicia;
-import com.example.giovanni.giovanni.model.Gruppo;
-import com.example.giovanni.giovanni.model.Libro;
-import com.example.giovanni.giovanni.model.Persona;
-import com.example.giovanni.giovanni.model.Post;
+import com.example.giovanni.giovanni.bean.Articolo;
+import com.example.giovanni.giovanni.bean.Camicia;
+import com.example.giovanni.giovanni.bean.Gruppo;
+import com.example.giovanni.giovanni.bean.Libro;
+import com.example.giovanni.giovanni.bean.Persona;
+import com.example.giovanni.giovanni.bean.Post;
 
 import org.json.JSONException;
 import org.json.JSONObject;

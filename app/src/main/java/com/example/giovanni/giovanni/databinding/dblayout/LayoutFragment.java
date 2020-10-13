@@ -14,7 +14,7 @@ import com.example.giovanni.giovanni.R;
 import com.example.giovanni.giovanni.databinding.DataBindingPresenter;
 import com.example.giovanni.giovanni.databinding.FragmentLayoutBinding;
 import com.example.giovanni.giovanni.databinding.IDataBinding;
-import com.example.giovanni.giovanni.model.DataBindingModel;
+import com.example.giovanni.giovanni.bean.DataBindingModel;
 
 public class LayoutFragment extends Fragment implements IDataBinding.View {
 

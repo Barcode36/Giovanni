@@ -14,8 +14,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.PersonaManager;
-import com.example.giovanni.giovanni.model.Persona;
+import com.example.giovanni.giovanni.bean.PersonaManager;
+import com.example.giovanni.giovanni.bean.Persona;
 import com.example.giovanni.giovanni.customview.CustomButton;
 
 public class LoginIntentActivity extends AppCompatActivity {

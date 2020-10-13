@@ -4,7 +4,7 @@
     <data>
         <variable
             name="obj"
-            type="com.example.giovanni.giovanni.model.DataBindingModel" />
+            type="com.example.giovanni.giovanni.bean.DataBindingModel" />
     </data>
 
     <RelativeLayout

@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Azienda;
+import com.example.giovanni.giovanni.bean.Azienda;
 
 public class LoginActivity extends AppCompatActivity {
 

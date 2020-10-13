@@ -256,4 +256,8 @@
         <item>rotate out to rotate in</item>
     </string-array>
 
+    <!-- PAGINATION -->
+    <string name="pagination_1">Pagination 1</string>
+    <string name="pagination_2">Pagination 2</string>
+
 </resources>

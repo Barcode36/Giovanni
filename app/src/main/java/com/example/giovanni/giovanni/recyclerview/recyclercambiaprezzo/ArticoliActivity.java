@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Articolo;
+import com.example.giovanni.giovanni.bean.Articolo;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

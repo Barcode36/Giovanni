@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+apply plugin: 'com.google.gms.google-services' // Google Services Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics' // Crashlytics Gradle plugin
 
 android {
 
@@ -49,36 +51,36 @@ dependencies {
 
     // androidx
     implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'androidx.work:work-runtime:2.3.4'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.work:work-runtime:2.4.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation "androidx.biometric:biometric:1.0.1"
     implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
 
     // room
     implementation 'androidx.room:room-runtime:2.2.5'
     annotationProcessor 'androidx.room:room-compiler:2.2.5'
 
     // material
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
 
-    implementation 'commons-io:commons-io:2.4'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    implementation 'commons-io:commons-io:2.6'
 
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
 
-    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-database:19.5.0'
 
-    // Add the Firebase SDK for Google Analytics
-    implementation 'com.google.firebase:firebase-analytics:17.4.3'
+    // Add the Firebase SDK for Firebase Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.6.0'
 
     // Add the SDK for Firebase Cloud Messaging
-    implementation 'com.google.firebase:firebase-messaging:20.2.1'
-    implementation 'com.google.firebase:firebase-messaging-directboot:20.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.3.0'
+    implementation 'com.google.firebase:firebase-messaging-directboot:20.3.0'
 
-    // Check for v11.4.2 or higher
-    // implementation 'com.google.firebase:firebase-core:15.0.0'
-
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    // Add the SDK for Firebase Crashlytics
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.2'
 
     implementation "com.loopj.android:android-async-http:1.4.9"
 
@@ -88,4 +90,8 @@ dependencies {
 
     // Volley is used to download the gallery json by making HTTP call.
     implementation 'com.android.volley:volley:1.1.1'
+
+    // Retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 }

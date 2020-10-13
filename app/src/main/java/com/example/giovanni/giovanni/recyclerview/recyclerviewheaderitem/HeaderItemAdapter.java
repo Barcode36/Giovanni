@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Body;
+import com.example.giovanni.giovanni.bean.Body;
 
 import java.util.List;
 

@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Persona;
+import com.example.giovanni.giovanni.bean.Persona;
 import com.example.giovanni.giovanni.utils.FirebaseRestClient;
 import com.example.giovanni.giovanni.utils.ITaskDelegate;
 import com.example.giovanni.giovanni.utils.JSONParse;

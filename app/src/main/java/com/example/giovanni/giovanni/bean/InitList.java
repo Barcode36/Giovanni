@@ -1,10 +1,10 @@
-package com.example.giovanni.giovanni.model;
+package com.example.giovanni.giovanni.bean;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.giovanni.giovanni.model.Body.HEADER_TYPE;
-import static com.example.giovanni.giovanni.model.Body.ITEM_TYPE;
+import static com.example.giovanni.giovanni.bean.Body.HEADER_TYPE;
+import static com.example.giovanni.giovanni.bean.Body.ITEM_TYPE;
 
 public class InitList {
 

@@ -235,6 +235,22 @@
                 android:text="@string/data_binding_layout"
                 style="@style/HomeButton" />
 
+            <Button
+                android:id="@+id/pagination_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/pagination_1"
+                style="@style/HomeButton" />
+
+            <Button
+                android:id="@+id/pagination_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/pagination_2"
+                style="@style/HomeButton" />
+
         </LinearLayout>
 
     </ScrollView>

@@ -10,7 +10,7 @@ import androidx.databinding.library.baseAdapters.BR;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.DataBindingModel;
+import com.example.giovanni.giovanni.bean.DataBindingModel;
 
 import java.util.List;
 

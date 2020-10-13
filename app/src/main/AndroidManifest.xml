@@ -124,6 +124,8 @@
         <activity android:name=".sqlite.SQLiteActivity" />
         <activity android:name=".sqlite.SQLiteDetailActivity"/>
         <activity android:name=".sqlite.SQLiteInsertActivity" />
+        <activity android:name=".pagination.pagination1.Pagination1Activity" />
+        <activity android:name=".pagination.pagination2.Pagination2Activity" />
 
         <service
             android:name=".firebase.firebasepush.FirebasePushService"

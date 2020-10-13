@@ -13,8 +13,8 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.PersonaDetail;
-import com.example.giovanni.giovanni.model.Persona;
+import com.example.giovanni.giovanni.bean.PersonaDetail;
+import com.example.giovanni.giovanni.bean.Persona;
 
 import java.util.ArrayList;
 import java.util.List;

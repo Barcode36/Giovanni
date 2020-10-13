@@ -15,6 +15,8 @@ import com.example.giovanni.giovanni.googlemaps.MapsActivity;
 import com.example.giovanni.giovanni.highscore.HighScoreActivity;
 import com.example.giovanni.giovanni.log.LogActivity;
 import com.example.giovanni.giovanni.mvpaddtextchangedlistener.AddTextActivity;
+import com.example.giovanni.giovanni.pagination.pagination1.Pagination1Activity;
+import com.example.giovanni.giovanni.pagination.pagination2.Pagination2Activity;
 import com.example.giovanni.giovanni.sqlite.SQLiteActivity;
 import com.example.giovanni.giovanni.threadasynctaskcounter.ThreadAsyncTaskCounterActivity;
 import com.example.giovanni.giovanni.fragments.FragmentsActivity;
@@ -137,5 +139,11 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.data_binding_layout).setOnClickListener(view ->
                 startActivity(new Intent(getApplicationContext(), LayoutActivity.class)));
+
+        findViewById(R.id.pagination_1).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), Pagination1Activity.class)));
+
+        findViewById(R.id.pagination_2).setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), Pagination2Activity.class)));
     }
 }

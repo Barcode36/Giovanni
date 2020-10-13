@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Persona;
+import com.example.giovanni.giovanni.bean.Persona;
 import java.util.List;
 
 public class AdapterRubrica extends ArrayAdapter<Persona> {

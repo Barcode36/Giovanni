@@ -10,10 +10,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Azienda;
-import com.example.giovanni.giovanni.model.Developer;
-import com.example.giovanni.giovanni.model.Inserviente;
-import com.example.giovanni.giovanni.model.Manager;
+import com.example.giovanni.giovanni.bean.Azienda;
+import com.example.giovanni.giovanni.bean.Developer;
+import com.example.giovanni.giovanni.bean.Inserviente;
+import com.example.giovanni.giovanni.bean.Manager;
 
 import java.util.ArrayList;
 import java.util.List;

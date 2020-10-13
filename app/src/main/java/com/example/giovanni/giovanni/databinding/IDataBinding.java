@@ -1,6 +1,6 @@
 package com.example.giovanni.giovanni.databinding;
 
-import com.example.giovanni.giovanni.model.DataBindingModel;
+import com.example.giovanni.giovanni.bean.DataBindingModel;
 
 public interface IDataBinding {
 

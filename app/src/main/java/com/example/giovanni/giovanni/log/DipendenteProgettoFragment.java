@@ -12,8 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Persona;
-import com.example.giovanni.giovanni.model.Progetto;
+import com.example.giovanni.giovanni.bean.Persona;
+import com.example.giovanni.giovanni.bean.Progetto;
 
 public class DipendenteProgettoFragment extends Fragment {
 

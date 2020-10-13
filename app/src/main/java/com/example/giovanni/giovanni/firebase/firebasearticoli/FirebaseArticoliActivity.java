@@ -16,10 +16,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Articolo;
-import com.example.giovanni.giovanni.model.Camicia;
-import com.example.giovanni.giovanni.model.Libro;
-import com.example.giovanni.giovanni.model.Magazzino;
+import com.example.giovanni.giovanni.bean.Articolo;
+import com.example.giovanni.giovanni.bean.Camicia;
+import com.example.giovanni.giovanni.bean.Libro;
+import com.example.giovanni.giovanni.bean.Magazzino;
 import com.example.giovanni.giovanni.utils.FirebaseRestClient;
 import com.example.giovanni.giovanni.utils.ITaskDelegate;
 import com.example.giovanni.giovanni.utils.InternalStorage;

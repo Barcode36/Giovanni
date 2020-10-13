@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Azienda;
+import com.example.giovanni.giovanni.bean.Azienda;
 
 public class ProjectActivity extends AppCompatActivity {
 

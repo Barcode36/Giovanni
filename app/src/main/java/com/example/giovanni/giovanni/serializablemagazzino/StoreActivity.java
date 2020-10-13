@@ -7,9 +7,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Articolo;
-import com.example.giovanni.giovanni.model.Camicia;
-import com.example.giovanni.giovanni.model.Libro;
+import com.example.giovanni.giovanni.bean.Articolo;
+import com.example.giovanni.giovanni.bean.Camicia;
+import com.example.giovanni.giovanni.bean.Libro;
 
 public class StoreActivity extends AppCompatActivity {
 

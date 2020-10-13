@@ -11,9 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Articolo;
-import com.example.giovanni.giovanni.model.Camicia;
-import com.example.giovanni.giovanni.model.Libro;
+import com.example.giovanni.giovanni.bean.Articolo;
+import com.example.giovanni.giovanni.bean.Camicia;
+import com.example.giovanni.giovanni.bean.Libro;
 
 import java.util.ArrayList;
 import java.util.List;

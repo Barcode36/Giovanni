@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Progetto;
+import com.example.giovanni.giovanni.bean.Progetto;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

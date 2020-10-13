@@ -4,7 +4,7 @@
     <data>
         <variable
             name="temp2"
-            type="com.example.giovanni.giovanni.model.DataBindingModel" />
+            type="com.example.giovanni.giovanni.bean.DataBindingModel" />
 
         <variable
             name="presenter"

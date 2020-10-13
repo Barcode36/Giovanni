@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Persona;
-import com.example.giovanni.giovanni.model.Progetto;
+import com.example.giovanni.giovanni.bean.Persona;
+import com.example.giovanni.giovanni.bean.Progetto;
 import java.util.List;
 
 public class AdapterCompleti extends RecyclerView.Adapter<AdapterCompleti.ViewHolder> {

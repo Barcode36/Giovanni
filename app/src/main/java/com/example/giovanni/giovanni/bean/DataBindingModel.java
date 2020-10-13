@@ -1,4 +1,4 @@
-package com.example.giovanni.giovanni.model;
+package com.example.giovanni.giovanni.bean;
 
 import android.content.Context;
 import android.content.SharedPreferences;

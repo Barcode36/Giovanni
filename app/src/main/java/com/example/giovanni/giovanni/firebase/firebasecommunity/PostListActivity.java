@@ -18,9 +18,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Community;
-import com.example.giovanni.giovanni.model.Gruppo;
-import com.example.giovanni.giovanni.model.Post;
+import com.example.giovanni.giovanni.bean.Community;
+import com.example.giovanni.giovanni.bean.Gruppo;
+import com.example.giovanni.giovanni.bean.Post;
 import com.example.giovanni.giovanni.utils.FirebaseRestClient;
 import com.example.giovanni.giovanni.utils.ITaskDelegate;
 import com.example.giovanni.giovanni.utils.InternalStorage;

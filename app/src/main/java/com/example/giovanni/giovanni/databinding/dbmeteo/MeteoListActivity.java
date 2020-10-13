@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.DataBindingModel;
+import com.example.giovanni.giovanni.bean.DataBindingModel;
 
 import java.util.Arrays;
 import java.util.List;

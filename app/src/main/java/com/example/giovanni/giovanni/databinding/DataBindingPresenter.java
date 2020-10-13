@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.giovanni.giovanni.databinding.dbmeteo.MeteoListActivity;
-import com.example.giovanni.giovanni.model.DataBindingModel;
+import com.example.giovanni.giovanni.bean.DataBindingModel;
 
 public class DataBindingPresenter implements IDataBinding.Presenter {
 

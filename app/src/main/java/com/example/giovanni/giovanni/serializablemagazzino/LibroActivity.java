@@ -9,8 +9,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Libro;
-import com.example.giovanni.giovanni.model.Magazzino;
+import com.example.giovanni.giovanni.bean.Libro;
+import com.example.giovanni.giovanni.bean.Magazzino;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

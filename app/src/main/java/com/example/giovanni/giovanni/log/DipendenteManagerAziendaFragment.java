@@ -12,9 +12,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Azienda;
-import com.example.giovanni.giovanni.model.Manager;
-import com.example.giovanni.giovanni.model.Persona;
+import com.example.giovanni.giovanni.bean.Azienda;
+import com.example.giovanni.giovanni.bean.Manager;
+import com.example.giovanni.giovanni.bean.Persona;
 
 public class DipendenteManagerAziendaFragment extends Fragment {
 

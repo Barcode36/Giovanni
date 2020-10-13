@@ -1,4 +1,4 @@
-package com.example.giovanni.giovanni.model;
+package com.example.giovanni.giovanni.bean;
 
 public class Body {
 

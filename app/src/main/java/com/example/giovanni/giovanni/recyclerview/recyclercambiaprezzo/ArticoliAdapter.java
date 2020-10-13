@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Articolo;
+import com.example.giovanni.giovanni.bean.Articolo;
 import java.util.List;
 
 public class ArticoliAdapter extends RecyclerView.Adapter<ArticoliViewHolder> {

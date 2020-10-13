@@ -11,7 +11,7 @@ import androidx.appcompat.widget.SwitchCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Persona;
+import com.example.giovanni.giovanni.bean.Persona;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -12,8 +12,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.giovanni.giovanni.R;
-import com.example.giovanni.giovanni.model.Azienda;
-import com.example.giovanni.giovanni.model.Persona;
+import com.example.giovanni.giovanni.bean.Azienda;
+import com.example.giovanni.giovanni.bean.Persona;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
