@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:adjustViewBounds="true"
-            android:background="@mipmap/audioslave_blue"
+            android:background="@mipmap/audioslave_light_blue"
             android:contentDescription="@string/app_name"
             android:scaleType="centerInside" />
 

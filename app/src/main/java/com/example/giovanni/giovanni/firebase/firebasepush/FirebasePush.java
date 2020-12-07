@@ -25,8 +25,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class FirebasePush extends Service { // La classe è riconosciuta come service.
 
-    private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference reference = database.getReferenceFromUrl("https://giovanni-740a0.firebaseio.com/response/users");
+    private final FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private final DatabaseReference reference = database.getReferenceFromUrl("https://giovanni-740a0.firebaseio.com/response/users");
 
     @Nullable
     @Override
@@ -110,7 +110,7 @@ public class FirebasePush extends Service { // La classe è riconosciuta come se
     @SuppressWarnings("deprecation")
     public void sendNotification(Intent intent, String title, String body) { // title == Nuovo post
 
-        Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(), R.mipmap.audioslave_blue);
+        Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(), R.mipmap.audioslave_light_blue);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
 
@@ -120,7 +120,7 @@ public class FirebasePush extends Service { // La classe è riconosciuta come se
         builder.setContentText(body);
         builder.setAutoCancel(true);
         builder.setSound(uri);
-        builder.setSmallIcon(R.mipmap.audioslave_blue);
+        builder.setSmallIcon(R.mipmap.audioslave_light_blue);
         builder.setLargeIcon(bitmap);
         builder.setShowWhen(true);
         builder.setContentIntent(pendingIntent);

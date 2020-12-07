@@ -122,13 +122,13 @@ public class FirebasePushService extends FirebaseMessagingService {
         String channelId = getString(R.string.firebase_notification_channel_id);
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
-        Bitmap logo = new BitmapFactory().decodeResource(getResources(), R.mipmap.audioslave_blue);
+        Bitmap logo = new BitmapFactory().decodeResource(getResources(), R.mipmap.audioslave_light_blue);
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, channelId)
                 // .setContentTitle(getString(R.string.app_name))
                 .setContentTitle("Firebase local notification")
                 .setContentText(messageBody)
-                .setSmallIcon(R.mipmap.audioslave_blue)
+                .setSmallIcon(R.mipmap.audioslave_light_blue)
                 .setLargeIcon(logo)
                 .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(logo))
                 .setPriority(NotificationCompat.PRIORITY_MAX) // Set the intent that will fire when the user taps the notification

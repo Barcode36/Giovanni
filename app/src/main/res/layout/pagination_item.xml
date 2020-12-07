@@ -19,7 +19,7 @@
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:padding="8dp"
-            android:src="@mipmap/audioslave_blue"
+            android:src="@mipmap/audioslave_light_blue"
             android:contentDescription="@string/app_name" />
 
         <TextView

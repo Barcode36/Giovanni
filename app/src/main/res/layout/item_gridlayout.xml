@@ -18,7 +18,7 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:contentDescription="@string/app_name"
-        app:srcCompat="@mipmap/audioslave_blue" />
+        app:srcCompat="@mipmap/audioslave_light_blue" />
 
     <CheckBox
         android:id="@+id/checkbox_gridlayout"
