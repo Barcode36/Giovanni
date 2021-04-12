@@ -14,7 +14,7 @@ import com.example.giovanni.giovanni.R;
 
 public class AscensoreFragment extends Fragment {
 
-    private static String TAG = "TAGASCENSORE";
+    private static final String TAG = "TAGASCENSORE";
 
     @Nullable
     @Override

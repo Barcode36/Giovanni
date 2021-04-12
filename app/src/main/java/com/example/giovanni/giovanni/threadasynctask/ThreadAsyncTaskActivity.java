@@ -1,6 +1,5 @@
 package com.example.giovanni.giovanni.threadasynctask;
 
-import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -60,7 +59,6 @@ public class ThreadAsyncTaskActivity extends AppCompatActivity {
         textViewCounter.setText(String.valueOf(counter));
     }
 
-    @SuppressLint("StaticFieldLeak")
     class LoadPicsTask extends AsyncTask<Integer, Integer, Bitmap> {
 
         @Override

@@ -85,7 +85,6 @@ public class FirebasePushService extends FirebaseMessagingService {
     }
 
     // Schedule async work using WorkManager.
-    @SuppressWarnings("deprecation")
     private void scheduleJob() {
         OneTimeWorkRequest work = new OneTimeWorkRequest.Builder(PushWorker.class).build();
         WorkManager.getInstance().beginWith(work).enqueue();

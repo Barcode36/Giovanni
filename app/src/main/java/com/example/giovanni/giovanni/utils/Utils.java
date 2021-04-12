@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.widget.ImageView;
 
+import androidx.core.content.ContextCompat;
 import androidx.databinding.BindingAdapter;
 
 import com.bumptech.glide.Glide;
@@ -90,7 +91,6 @@ public class Utils {
                 into(view);
     }
 
-    @SuppressWarnings("deprecation")
     @BindingAdapter("android:background")
     public static void setSpinnerLogo(ImageView view, Drawable spinner) {
 
@@ -98,9 +98,9 @@ public class Utils {
         boolean isGreen = preferences.getBoolean("GREEN", true);
 
         if (isGreen)
-            spinner = view.getContext().getResources().getDrawable(R.drawable.spinner_wind_loader);
+            spinner = ContextCompat.getDrawable(view.getContext(), R.drawable.spinner_wind_loader);
         else
-            spinner = view.getContext().getResources().getDrawable(R.drawable.spinner_direct_loader);
+            spinner = ContextCompat.getDrawable(view.getContext(), R.drawable.spinner_direct_loader);
 
         view.setBackground(spinner);
 

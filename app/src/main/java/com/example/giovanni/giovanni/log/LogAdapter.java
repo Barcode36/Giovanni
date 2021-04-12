@@ -7,13 +7,13 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class LogAdapter extends FragmentPagerAdapter {
 
-    private String [] fragments = {"Array", "Articolo", "Ascensore", "Dipendente e progetto", "Dipendente, manager e azienda"};
+    private final String [] fragments = {"Array", "Articolo", "Ascensore", "Dipendente e progetto", "Dipendente, manager e azienda"};
 
-    private ArrayFragment arrayFragment = new ArrayFragment();
-    private ArticoloFragment articoloFragment = new ArticoloFragment();
-    private AscensoreFragment ascensoreFragment = new AscensoreFragment();
-    private DipendenteProgettoFragment dipendenteProgettoFragment = new DipendenteProgettoFragment();
-    private DipendenteManagerAziendaFragment dipendenteManagerAziendaFragment = new DipendenteManagerAziendaFragment();
+    private final ArrayFragment arrayFragment = new ArrayFragment();
+    private final ArticoloFragment articoloFragment = new ArticoloFragment();
+    private final AscensoreFragment ascensoreFragment = new AscensoreFragment();
+    private final DipendenteProgettoFragment dipendenteProgettoFragment = new DipendenteProgettoFragment();
+    private final DipendenteManagerAziendaFragment dipendenteManagerAziendaFragment = new DipendenteManagerAziendaFragment();
 
     LogAdapter(FragmentManager fm) {
         super(fm);

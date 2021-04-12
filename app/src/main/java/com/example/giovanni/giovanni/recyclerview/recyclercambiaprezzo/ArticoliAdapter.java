@@ -17,8 +17,8 @@ import java.util.List;
 
 public class ArticoliAdapter extends RecyclerView.Adapter<ArticoliViewHolder> {
 
-    private List<Articolo> articoli;
-    private Context context;
+    private final List<Articolo> articoli;
+    private final Context context;
 
     ArticoliAdapter(List<Articolo> articoli, Context context) {
         this.articoli = articoli;

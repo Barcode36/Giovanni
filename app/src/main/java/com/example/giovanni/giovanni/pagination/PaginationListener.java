@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 
 public abstract class PaginationListener extends RecyclerView.OnScrollListener {
 
-    private LinearLayoutManager layoutManager;
+    private final LinearLayoutManager layoutManager;
 
     public PaginationListener(LinearLayoutManager layoutManager) {
         this.layoutManager = layoutManager;

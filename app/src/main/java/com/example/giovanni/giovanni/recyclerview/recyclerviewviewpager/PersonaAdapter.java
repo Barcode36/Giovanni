@@ -17,7 +17,7 @@ import java.util.List;
 public class PersonaAdapter extends RecyclerView.Adapter<PersonaAdapter.ViewHolder> {
 
     private List<Persona> list;
-    private OnItemViewClicked onItemViewClicked;
+    private final OnItemViewClicked onItemViewClicked;
 
     PersonaAdapter(OnItemViewClicked onItemViewClicked, List<Persona> list) {
         this.onItemViewClicked = onItemViewClicked;
@@ -70,9 +70,9 @@ public class PersonaAdapter extends RecyclerView.Adapter<PersonaAdapter.ViewHold
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private CustomButton customButton;
-        private TextView nome;
-        private TextView numero;
+        private final CustomButton customButton;
+        private final TextView nome;
+        private final TextView numero;
 
         public ViewHolder(View view) {
             super(view);

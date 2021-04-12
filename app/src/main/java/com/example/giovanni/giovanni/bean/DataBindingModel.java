@@ -6,13 +6,13 @@ import android.graphics.drawable.Drawable;
 import android.preference.PreferenceManager;
 import android.view.View;
 
+import androidx.core.content.ContextCompat;
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
 import com.example.giovanni.giovanni.BR;
 import com.example.giovanni.giovanni.R;
 
-@SuppressWarnings("ALL")
 public class DataBindingModel extends BaseObservable {
 
     private String luogo;
@@ -47,12 +47,12 @@ public class DataBindingModel extends BaseObservable {
         boolean isGreen = preferences.getBoolean("GREEN", true);
 
         if (isGreen) {
-            colore = context.getResources().getColor(R.color.verde_2);
-            logo = context.getResources().getDrawable(R.drawable.homer);
+            colore = ContextCompat.getColor(context, R.color.verde_2);
+            logo = ContextCompat.getDrawable(context, R.drawable.homer);
             visibilita = View.VISIBLE;
         } else {
-            colore = context.getResources().getColor(R.color.rosso_2);
-            logo = context.getResources().getDrawable(R.drawable.bart);
+            colore = ContextCompat.getColor(context, R.color.rosso_2);
+            logo = ContextCompat.getDrawable(context, R.drawable.bart);
             visibilita = View.GONE;
         }
     }

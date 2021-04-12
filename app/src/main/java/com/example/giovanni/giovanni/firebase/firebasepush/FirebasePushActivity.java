@@ -27,7 +27,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Arrays;
+import java.nio.charset.StandardCharsets;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -77,21 +78,20 @@ public class FirebasePushActivity extends AppCompatActivity {
         }
 
         findViewById(R.id.get_token_button).setOnClickListener(v ->
-
                 FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(task -> {
-
                     if (!task.isSuccessful()) {
                         Log.i(TAG, "getInstanceId failed", task.getException());
                         return;
                     }
+                    if (task.getResult() != null) {
+                        // Get new Instance ID token
+                        String token = task.getResult().getToken();
 
-                    // Get new Instance ID token
-                    String token = task.getResult().getToken();
-
-                    // Log and toast
-                    String message = getString(R.string.firebase_token, token);
-                    Log.i(TAG, message);
-                    Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+                        // Log and toast
+                        String message = getString(R.string.firebase_token, token);
+                        Log.i(TAG, message);
+                        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+                    }
                 })
         );
 
@@ -183,11 +183,11 @@ public class FirebasePushActivity extends AppCompatActivity {
         JSONObject data = new JSONObject();
         data.put("operation", "add");
         data.put("notification_key_name", userEmail);
-        data.put("registration_ids", new JSONArray(Arrays.asList(registrationId)));
+        data.put("registration_ids", new JSONArray(Collections.singletonList(registrationId)));
         data.put("id_token", idToken);
 
         OutputStream os = con.getOutputStream();
-        os.write(data.toString().getBytes("UTF-8"));
+        os.write(data.toString().getBytes(StandardCharsets.UTF_8));
         os.close();
 
         // Read the response into a string
@@ -207,7 +207,7 @@ public class FirebasePushActivity extends AppCompatActivity {
         JSONObject data = new JSONObject();
         data.put("operation", "remove");
         data.put("notification_key_name", userEmail);
-        data.put("registration_ids", new JSONArray(Arrays.asList(registrationId)));
+        data.put("registration_ids", new JSONArray(Collections.singletonList(registrationId)));
         data.put("id_token", idToken);
         // [END fcm_remove_from_group]
     }
@@ -228,7 +228,6 @@ public class FirebasePushActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
         // GoogleApiAvailability.makeGooglePlayServicesAvailable();
     }
 }

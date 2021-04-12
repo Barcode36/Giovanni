@@ -15,7 +15,7 @@ import java.util.List;
 
 public class HeaderItemAdapter extends RecyclerView.Adapter<HeaderItemAdapter.ViewHolder> {
 
-    private List<Body> list;
+    private final List<Body> list;
 
     HeaderItemAdapter(List<Body> list) {
         this.list = list;
@@ -66,9 +66,9 @@ public class HeaderItemAdapter extends RecyclerView.Adapter<HeaderItemAdapter.Vi
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView header;
-        private TextView item1;
-        private TextView item2;
+        private final TextView header;
+        private final TextView item1;
+        private final TextView item2;
 
         public ViewHolder(View view) {
             super(view);

@@ -20,7 +20,7 @@ import static com.example.giovanni.giovanni.utils.Utils.turnToString;
 
 public class ArrayFragment extends Fragment {
 
-    private static String TAG = "TAGARRAY";
+    private static final String TAG = "TAGARRAY";
 
     @Nullable
     @Override

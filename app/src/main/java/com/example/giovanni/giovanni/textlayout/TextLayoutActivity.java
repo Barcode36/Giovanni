@@ -1,6 +1,5 @@
 package com.example.giovanni.giovanni.textlayout;
 
-import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.os.Build;
@@ -39,8 +38,6 @@ public class TextLayoutActivity extends AppCompatActivity {
     private RelativeLayout homerContainer;
     private RelativeLayout bartContainer;
 
-    @SuppressWarnings("deprecation")
-    @SuppressLint("ObsoleteSdkInt")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

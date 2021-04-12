@@ -16,10 +16,10 @@ public class SpinnerHintAdapter implements SpinnerAdapter, ListAdapter {
     private static final int PIVOT = 1;
     protected Context context;
     protected SpinnerAdapter adapter;
-    private String message;
-    private int hintLayout;
-    private int hintDropdownLayout;
-    private LayoutInflater layoutInflater;
+    private final String message;
+    private final int hintLayout;
+    private final int hintDropdownLayout;
+    private final LayoutInflater layoutInflater;
 
     public SpinnerHintAdapter(Context context, SpinnerAdapter spinnerAdapter, int hintLayout, String message) {
         this(context, spinnerAdapter, hintLayout, message, -1);

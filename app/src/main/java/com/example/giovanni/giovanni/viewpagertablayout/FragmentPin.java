@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
@@ -15,7 +16,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FragmentPin extends Fragment {
 
-    @SuppressWarnings("deprecation")
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -23,8 +23,8 @@ public class FragmentPin extends Fragment {
 
         CollapsingToolbarLayout collapsingToolbar = view.findViewById(R.id.collapsing_toolbar_pin);
         collapsingToolbar.setTitle("San Martino");
-        collapsingToolbar.setCollapsedTitleTextColor(getResources().getColor(R.color.verde_2));
-        collapsingToolbar.setBackgroundColor(getResources().getColor(R.color.giallo_2));
+        collapsingToolbar.setCollapsedTitleTextColor(ContextCompat.getColor(requireContext(), R.color.verde_2));
+        collapsingToolbar.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.giallo_2));
 
         FloatingActionButton floatingActionButtonPin = view.findViewById(R.id.floating_action_button_pin);
 

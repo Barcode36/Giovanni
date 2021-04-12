@@ -84,7 +84,7 @@ public class AddTextActivity extends AppCompatActivity implements AddTextPresent
         String[] arrayNomi = listaNomi.toArray(new String[list.size()]);
 
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, R.layout.item_persona_2, arrayNomi);
-        // actv1.setDropDownBackgroundDrawable(getResources().getDrawable(R.drawable.contatto));
+        // actv1.setDropDownBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.contatto));
         // actv1.setDropDownBackgroundResource(R.drawable.contatto);
         actv1.setAdapter(adapter1);
 

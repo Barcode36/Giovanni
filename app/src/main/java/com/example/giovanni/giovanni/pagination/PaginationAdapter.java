@@ -22,7 +22,7 @@ public class PaginationAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     private static final int PROGRESS = 0;
     private static final int ITEM = 1;
 
-    private Context context;
+    private final Context context;
     private final ArrayList<Movie> movies;
     private boolean isLoaderVisible = false;
 

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SwitchCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
@@ -29,7 +30,6 @@ public class CheckBoxFragment extends Fragment {
     private Boolean contractConditionsChecked = false;
     private Boolean economicConditionsChecked = false;
 
-    @SuppressWarnings("deprecation")
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -80,9 +80,9 @@ public class CheckBoxFragment extends Fragment {
             switchCompat.setEnabled(checked);
             switchCompat.setChecked(checked);
             if (checked)
-                switchCompat.setTextColor(getResources().getColor(R.color.black));
+                switchCompat.setTextColor(ContextCompat.getColor(requireContext(), R.color.black));
             else
-                switchCompat.setTextColor(getResources().getColor(R.color.grey_4));
+                switchCompat.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey_4));
         });
         economicConditions.setOnCheckedChangeListener((buttonView, isChecked) -> {
             economicConditionsChecked = isChecked;
@@ -90,16 +90,16 @@ public class CheckBoxFragment extends Fragment {
             switchCompat.setEnabled(checked);
             switchCompat.setChecked(checked);
             if (checked)
-                switchCompat.setTextColor(getResources().getColor(R.color.black));
+                switchCompat.setTextColor(ContextCompat.getColor(requireContext(), R.color.black));
             else
-                switchCompat.setTextColor(getResources().getColor(R.color.grey_4));
+                switchCompat.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey_4));
         });
 
         switchCompat.setOnClickListener(v -> {
             if (switchCompat.isChecked())
-                switchCompat.setTextColor(getResources().getColor(R.color.black));
+                switchCompat.setTextColor(ContextCompat.getColor(requireContext(), R.color.black));
             else {
-                switchCompat.setTextColor(getResources().getColor(R.color.grey_4));
+                switchCompat.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey_4));
                 contractConditions.setChecked(false);
                 economicConditions.setChecked(false);
             }

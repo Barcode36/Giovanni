@@ -107,7 +107,6 @@ public class FirebasePush extends Service { // La classe è riconosciuta come se
     }
 
     // Metodo che permette di inviare le notifiche push.
-    @SuppressWarnings("deprecation")
     public void sendNotification(Intent intent, String title, String body) { // title == Nuovo post
 
         Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(), R.mipmap.audioslave_light_blue);

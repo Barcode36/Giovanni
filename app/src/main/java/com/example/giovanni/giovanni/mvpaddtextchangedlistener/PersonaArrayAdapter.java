@@ -19,7 +19,7 @@ import java.util.List;
 
 public class PersonaArrayAdapter extends ArrayAdapter<Persona> {
 
-    private List<Persona> list;
+    private final List<Persona> list;
 
     PersonaArrayAdapter(@NonNull Context context, @NonNull List<Persona> persone) { // int resource
         super(context, 0, persone);
@@ -48,7 +48,7 @@ public class PersonaArrayAdapter extends ArrayAdapter<Persona> {
         return convertView;
     }
 
-    private Filter personaFilter = new Filter() {
+    private final Filter personaFilter = new Filter() {
 
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {

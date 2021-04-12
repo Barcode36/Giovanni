@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
@@ -15,7 +16,6 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 public class FragmentParallax extends Fragment {
 
-    @SuppressWarnings("deprecation")
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -23,8 +23,8 @@ public class FragmentParallax extends Fragment {
 
         CollapsingToolbarLayout collapsingToolbar = v.findViewById(R.id.collapsing_toolbar_parallax);
         collapsingToolbar.setTitle("San Martino");
-        collapsingToolbar.setCollapsedTitleTextColor(getResources().getColor(R.color.verde_2));
-        collapsingToolbar.setBackgroundColor(getResources().getColor(R.color.giallo_2));
+        collapsingToolbar.setCollapsedTitleTextColor(ContextCompat.getColor(requireContext(), R.color.verde_2));
+        collapsingToolbar.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.giallo_2));
 
         ImageView imageParallax = v.findViewById(R.id.imageview_parallax);
 

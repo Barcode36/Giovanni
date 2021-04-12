@@ -17,7 +17,7 @@ import com.example.giovanni.giovanni.bean.Progetto;
 
 public class DipendenteProgettoFragment extends Fragment {
 
-    private static String TAG = "TAGDIPENDENTEPROGETTO";
+    private static final String TAG = "TAGDIPENDENTEPROGETTO";
 
     @Nullable
     @Override

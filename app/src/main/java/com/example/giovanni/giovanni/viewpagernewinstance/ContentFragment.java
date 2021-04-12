@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.giovanni.giovanni.R;
@@ -57,20 +58,19 @@ public class ContentFragment extends Fragment {
         return view;
     }
 
-    @SuppressWarnings("deprecation")
     private void switchPosition() {
         switch (position) {
             case 0:
                 textFragment.setText(R.string.fragment_1);
-                textFragment.setTextColor(getResources().getColor(R.color.azzurro_4));
+                textFragment.setTextColor(ContextCompat.getColor(requireContext(), R.color.azzurro_4));
                 break;
             case 1:
                 textFragment.setText(R.string.fragment_2);
-                textFragment.setTextColor(getResources().getColor(R.color.verde_3));
+                textFragment.setTextColor(ContextCompat.getColor(requireContext(), R.color.verde_3));
                 break;
             case 2:
                 textFragment.setText(R.string.fragment_3);
-                textFragment.setTextColor(getResources().getColor(R.color.rosso_2));
+                textFragment.setTextColor(ContextCompat.getColor(requireContext(), R.color.rosso_2));
                 break;
         }
     }
