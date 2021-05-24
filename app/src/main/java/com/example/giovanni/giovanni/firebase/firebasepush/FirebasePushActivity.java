@@ -10,18 +10,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.giovanni.giovanni.R;
-import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.RemoteMessage;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -78,20 +73,18 @@ public class FirebasePushActivity extends AppCompatActivity {
         }
 
         findViewById(R.id.get_token_button).setOnClickListener(v ->
-                FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(task -> {
+
+                FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task -> {
                     if (!task.isSuccessful()) {
-                        Log.i(TAG, "getInstanceId failed", task.getException());
+                        Log.w(TAG, "Fetching FCM registration token failed", task.getException());
                         return;
                     }
-                    if (task.getResult() != null) {
-                        // Get new Instance ID token
-                        String token = task.getResult().getToken();
 
-                        // Log and toast
-                        String message = getString(R.string.firebase_token, token);
-                        Log.i(TAG, message);
-                        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
-                    }
+                    // Get new FCM registration token
+                    String token = task.getResult();
+                    String message = getString(R.string.firebase_token, token);
+                    Log.i(TAG, message);
+                    Toast.makeText(this, message, Toast.LENGTH_LONG).show();
                 })
         );
 

@@ -3,11 +3,10 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'realm-android'
-apply plugin: 'com.google.gms.google-services' // Google Services Gradle plugin
-apply plugin: 'com.google.firebase.crashlytics' // Crashlytics Gradle plugin
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -17,6 +16,8 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -27,20 +28,14 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    dataBinding {
-        enabled = true
-    }
-
-    sourceSets {
-        main {
-            res.srcDirs = [
-                    'src/main/res',
-                    'src/main/res/layouts'
-            ]
+    android {
+        buildFeatures {
+            dataBinding = true
+            viewBinding = true
         }
     }
 }
@@ -53,47 +48,38 @@ dependencies {
     // androidx
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.work:work-runtime:2.5.0'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation "androidx.biometric:biometric:1.1.0"
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.biometric:biometric:1.1.0'
     implementation 'androidx.preference:preference-ktx:1.1.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    // room
-    implementation 'androidx.room:room-runtime:2.2.6'
-    annotationProcessor 'androidx.room:room-compiler:2.2.6'
-
-    // material
+    // Material
     implementation 'com.google.android.material:material:1.3.0'
 
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    // Google Mobile Services
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
 
-    implementation 'commons-io:commons-io:2.6'
+    // Import the BoM for the Firebase platform. When using the BoM, you don't specify versions in
+    // Firebase library dependencies
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.loopj.android:android-async-http:1.4.11' // Firebase Realtime Database
 
-    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
-    implementation 'com.google.firebase:firebase-database:19.7.0'
-
-    // Add the Firebase SDK for Firebase Google Analytics
-    implementation 'com.google.firebase:firebase-analytics:18.0.3'
-
-    // Add the SDK for Firebase Cloud Messaging
-    implementation 'com.google.firebase:firebase-messaging:21.1.0'
-    implementation 'com.google.firebase:firebase-messaging-directboot:21.1.0'
-
-    // Add the SDK for Firebase Crashlytics
-    implementation 'com.google.firebase:firebase-crashlytics:17.4.1'
-
-    implementation "com.loopj.android:android-async-http:1.4.11"
+    // Volley
+    implementation 'com.android.volley:volley:1.2.0'
 
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
-
-    // Volley is used to download the gallery json by making HTTP call.
-    implementation 'com.android.volley:volley:1.2.0'
-
-    // Retrofit2
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 }
